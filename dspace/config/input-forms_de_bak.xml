@@ -1,0 +1,3685 @@
+<?xml version="1.0"?>
+<!DOCTYPE input-forms SYSTEM "input-forms.dtd">
+
+
+<input-forms>
+
+	<!-- The form-map maps collection handles to forms. DSpace does not       -->
+	<!-- require that a collection's name be unique, even within a community .-->
+	<!-- DSpace does however insure that each collection's handle is unique.  -->
+	<!-- Form-map provides the means to associate a unique collection name    -->
+	<!-- with a form. The form-map also provides the special handle "default" -->
+	<!-- (which is never a collection), here mapped to "traditional". Any     -->
+	<!-- collection which does not appear in this map will be associated with -->
+	<!-- the mapping for handle "default".                                    -->
+
+	<form-map>
+		<name-map collection-handle="default" form-name="traditional" />
+		<name-map collection-handle="11858/3528" form-name="archeo" />
+		<name-map collection-handle="11858/5" form-name="forst" />
+		<name-map collection-handle="11858/3540" form-name="CeMEAS" />
+		<name-map collection-handle="11858/3541" form-name="DigHum" />
+		<name-map collection-handle="11858/1056" form-name="GGNB" />
+		<name-map collection-handle="11858/19" form-name="med" />
+		<name-map collection-handle="11858/2" form-name="bio" />
+		<name-map collection-handle="11858/7" form-name="mathe" />
+		<name-map collection-handle="11858/6" form-name="geo" />
+	</form-map>
+
+
+	<!-- The form-definitions map lays out the detailed definition of all the -->
+	<!-- submission forms.Each separate form set has a unique name as an      -->
+	<!-- attribute. This name matches one of the names in the form-map. One   -->
+	<!-- named form set has the name "traditional"; as this name suggests,    -->
+	<!-- it is the old style and is also the default, which gets used when    -->
+	<!-- the specified collection has no correspondingly named form set.      -->
+	<!--                                                                      -->
+	<!-- Each form set contains an ordered set of pages; each page defines    -->
+	<!-- one submission metadata entry screen. Each page has an ordered list  -->
+	<!-- of field definitions, Each field definition corresponds to one       -->
+	<!-- metatdata entry (a so-called row), which has a DC element name, a    -->
+	<!-- displayed label, a text string prompt which is called a hint , and   -->
+	<!-- an input-type. Each field also may hold optional elements: DC        -->
+	<!-- qualifier name, a repeatable flag, and a text string whose presence  -->
+	<!-- serves as a 'this field is required' flag.                           -->
+
+	<form-definitions>
+
+		<form name="traditional">
+		
+			<page number="1">
+			
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>author</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Autor</label>
+					<input-type>name</input-type>
+					<hint>Nachname, Vorname Vorname2 von (geb. Mädchenname). Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte prüfen Sie den Autorennamen.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>dateOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsdatum</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>placeOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsort</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte Ihren Geburtsort an.</required>
+				</field>
+
+				<! --<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>street</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Straße und Hausnummer</label>
+					<input-type>onebox</input-type>
+					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
+					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>zipcode</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Postleitzahl</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>city</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Stadt</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Stadt an.</required>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>email</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* E-Mail</label>
+					<input-type>onebox</input-type>
+					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>language</dc-element>
+					<dc-qualifier>iso</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Sprache</label>
+					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
+					<required>Bitte wählen Sie eine Sprache aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Originaltitel der Arbeit</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
+					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>translated</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Titel der Arbeit auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternative</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternativeTranslated</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>advisor</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Betreuer</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>referee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>coReferee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zweitgutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>thirdReferee</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Weitere Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>date</dc-element>
+					<dc-qualifier>examination</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Tag der mündlichen Prüfung</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>type</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Art der Arbeit</label>
+					<input-type value-pairs-name="common_types">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
+				</field>
+
+				<!--
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>gokfull</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Göttinger Online-Klassifikation (GOK)</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie mindestens eine GOK-Kategorie aus.</required>
+					<vocabulary>gok</vocabulary>
+				</field>
+				-->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstracteng</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstract</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Zusammenfassung (Abstract) in einer anderen Sprache</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>eng</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Schlagwörter auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und Klicken Sie dann auf „+“.</hint>
+					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ger</dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>true</repeatable>
+					<label>Schlagwörter in der Sprache der Publikation</label>
+					<input-type>twobox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>false</repeatable>
+					<label>Nachricht an die Redaktion</label>
+					<input-type>textarea</input-type>
+					<hint>Hier haben Sie die Möglichkeit, intern spezielle Wünsche an die Redaktion zu äußern. Dieses Feld wird nicht öffentlich sichtbar.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>intern</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Anmerkungen</label>
+					<input-type>textarea</input-type>
+					<hint>Internes Feld: nur für Bearbeiter sichtbar! Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>printedThesis</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Druckexemplare</label>
+					<input-type value-pairs-name="print_existent">dropdown</input-type>
+					<hint>Interner Vermerk, ob die Druckexemplare abgegeben wurden. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>embargoed</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Embargo-Enddatum</label>
+					<input-type>date</input-type>
+					<hint>Das Datum, zu dem ein eventuelles Embargo aufgehoben werden soll.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+			</page>
+		</form>
+
+		<form name="forst">
+		
+			<page number="1">
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>author</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Autor</label>
+					<input-type>name</input-type>
+					<hint>>Nachname, Vorname Vorname2 von (geb. Mädchenname). Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte prüfen Sie den Autorennamen.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>dateOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsdatum</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>placeOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsort</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte Ihren Geburtsort an.</required>
+				</field>
+
+				<!-- <field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>street</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Straße und Hausnummer</label>
+					<input-type>onebox</input-type>
+					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
+					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>zipcode</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Postleitzahl</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>city</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Stadt</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Stadt an.</required>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>email</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* E-Mail</label>
+					<input-type>onebox</input-type>
+					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>language</dc-element>
+					<dc-qualifier>iso</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Sprache</label>
+					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
+					<required>Bitte wählen Sie eine Sprache aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Originaltitel der Arbeit</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
+					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>translated</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Titel der Arbeit auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternative</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternativeTranslated</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>advisor</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Betreuer</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>referee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>coReferee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zweitutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>thirdReferee</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Weitere Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>date</dc-element>
+					<dc-qualifier>examination</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Tag der mündlichen Prüfung</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
+				</field>
+
+				<!--
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>gokfull</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Göttinger Online-Klassifikation (GOK)</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie mindestens eine GOK-Kategorie aus.</required>
+					<vocabulary>gok</vocabulary>
+				</field>
+				-->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstracteng</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstract</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Zusammenfassung (Abstract) in einer anderen Sprache</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>type</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Art der Arbeit</label>
+					<input-type value-pairs-name="common_types">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ddc</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Klassifikation</label>
+					<input-type value-pairs-name="ddc_forst">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie mindestens eine GOK-Kategorie aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>eng</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Schlagwörter auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required>Geben Sie bitte mindestens ein Schlagwort englisch an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ger</dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>true</repeatable>
+					<label>Schlagwörter in der Sprache der Publikation</label>
+					<input-type>twobox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>false</repeatable>
+					<label>Nachricht an die Redaktion</label>
+					<input-type>textarea</input-type>
+					<hint>Hier haben Sie die Möglichkeit, intern spezielle Wünsche an die Redaktion zu äußern. Dieses Feld wird nicht öffentlich sichtbar.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>intern</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Anmerkungen</label>
+					<input-type>textarea</input-type>
+					<hint>Internes Feld: nur für Bearbeiter sichtbar! Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>printedThesis</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Druckexemplare</label>
+					<input-type value-pairs-name="print_existent">dropdown</input-type>
+					<hint>Internes Vermerk, ob die Druckexemplare abgegeben wurden. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+<!--
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>bill</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Rechnung</label>
+					<input-type value-pairs-name="bill">dropdown</input-type>
+					<hint>Internes Vermerk, ob die Anfertigung eines Inhaltsverzeichnisses in Rechnung gestellt werden soll. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>embargoed</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Embargo-Enddatum</label>
+					<input-type>date</input-type>
+					<hint>Datum, zu dem ein eventuelles Embargo aufgehoben wird.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+			</page>
+			
+		</form>
+
+		<form name="CeMEAS">
+		
+			<page number="1">
+			
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>author</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Autor</label>
+					<input-type>name</input-type>
+					<hint>>Nachname, Vorname Vorname2 von (geb. Mädchenname). Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte prüfen Sie den Autorennamen.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>affiliation</dc-element>
+						<dc-qualifier>dateOfBirth</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Geburtsdatum</label>
+						<input-type>date</input-type>
+						<hint>&#160;</hint>
+						<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>affiliation</dc-element>
+						<dc-qualifier>placeOfBirth</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Geburtsort</label>
+						<input-type>onebox</input-type>
+						<hint>&#160;</hint>
+						<required>Geben Sie bitte Ihren Geburtsort an.</required>
+					</field>
+					
+					<!-- <field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>address</dc-element>
+						<dc-qualifier>street</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Straße und Hausnummer</label>
+						<input-type>onebox</input-type>
+						<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
+						<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>address</dc-element>
+						<dc-qualifier>zipcode</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Postleitzahl</label>
+						<input-type>onebox</input-type>
+						<hint>&#160;</hint>
+						<required>Bitte geben Sie Ihre Postleitzahl an.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>address</dc-element>
+						<dc-qualifier>city</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Stadt</label>
+						<input-type>onebox</input-type>
+						<hint>&#160;</hint>
+						<required>Bitte geben Sie Ihre Stadt an.</required>
+					</field> -->
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>affiliation</dc-element>
+						<dc-qualifier>email</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* E-Mail</label>
+						<input-type>onebox</input-type>
+						<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+						<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
+					</field>
+					
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>language</dc-element>
+						<dc-qualifier>iso</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Sprache</label>
+						<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+						<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
+						<required>Bitte wählen Sie eine Sprache aus.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>title</dc-element>
+						<dc-qualifier></dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Originaltitel der Arbeit</label>
+						<input-type>onebox</input-type>
+						<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
+						<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
+					</field>
+					
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>title</dc-element>
+						<dc-qualifier>translated</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Titel der Arbeit auf Englisch</label>
+						<input-type>onebox</input-type>
+						<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
+						<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>title</dc-element>
+						<dc-qualifier>alternative</dc-qualifier>
+						<repeatable>true</repeatable>
+						<label>Untertitel</label>
+						<input-type>onebox</input-type>
+						<hint>&#160;</hint>
+						<required></required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>title</dc-element>
+						<dc-qualifier>alternativeTranslated</dc-qualifier>
+						<repeatable>true</repeatable>
+						<label>Untertitel auf Englisch</label>
+						<input-type>onebox</input-type>
+						<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+						<required></required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>contributor</dc-element>
+						<dc-qualifier>advisor</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Betreuer</label>
+						<input-type>name</input-type>
+						<hint>&#160;</hint>
+						<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>contributor</dc-element>
+						<dc-qualifier>referee</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Gutachter</label>
+						<input-type>name</input-type>
+						<hint>&#160;</hint>
+						<required>Geben Sie bitte de Gutachter Ihrer Arbeit an.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>contributor</dc-element>
+						<dc-qualifier>coReferee</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Zweitgutachter</label>
+						<input-type>name</input-type>
+						<hint>&#160;</hint>
+						<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>contributor</dc-element>
+						<dc-qualifier>thirdReferee</dc-qualifier>
+						<repeatable>true</repeatable>
+						<label>Weitere Gutachter</label>
+						<input-type>name</input-type>
+						<hint>&#160;</hint>
+						<required></required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>date</dc-element>
+						<dc-qualifier>examination</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Tag der mündlichen Prüfung</label>
+						<input-type>date</input-type>
+						<hint>&#160;</hint>
+						<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
+					</field>
+					
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>type</dc-element>
+						<dc-qualifier></dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Art der Arbeit</label>
+						<input-type value-pairs-name="common_types">dropdown</input-type>
+						<hint>&#160;</hint>
+						<required>Bitte wählen Sie die Art der Arbeit aus.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>subject</dc-element>
+						<dc-qualifier>ddc</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Klassifikation</label>
+						<input-type value-pairs-name="ddc_cemeas">dropdown</input-type>
+						<hint>&#160;</hint>
+						<required>Bitte wählen Sie eine Klassifizierungskategorie aus.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>description</dc-element>
+						<dc-qualifier>abstracteng</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Zusammenfassung (Abstract) auf Englisch</label>
+						<input-type>textarea</input-type>
+						<hint>&#160;</hint>
+						<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>description</dc-element>
+						<dc-qualifier>abstract</dc-qualifier>
+						<repeatable>true</repeatable>
+						<label>Zusammenfassung (Abstract) in einer anderen Sprache</label>
+						<input-type>textarea</input-type>
+						<hint>&#160;</hint>
+						<required></required>
+					</field>
+					
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>subject</dc-element>
+						<dc-qualifier>eng</dc-qualifier>
+						<repeatable>true</repeatable>
+						<label>* Schlagwörter auf Englisch</label>
+						<input-type>onebox</input-type>
+						<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+						<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>subject</dc-element>
+						<dc-qualifier>ger</dc-qualifier>
+						<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+						<repeatable>true</repeatable>
+						<label>Schlagwörter in der Sprache der Publikation</label>
+						<input-type>twobox</input-type>
+						<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+						<required></required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>notes</dc-element>
+						<dc-qualifier></dc-qualifier>
+						<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+						<repeatable>false</repeatable>
+						<label>Nachricht an die Redaktion</label>
+						<input-type>textarea</input-type>
+						<hint>Hier haben Sie die Möglichkeit, intern spezielle Wünsche an die Redaktion zu äußern. Dieses Feld wird nicht öffentlich sichtbar.</hint>
+						<required></required>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>notes</dc-element>
+						<dc-qualifier>intern</dc-qualifier>
+						<repeatable>true</repeatable>
+						<label>Anmerkungen</label>
+						<input-type>textarea</input-type>
+						<hint>Internes Feld: nur für Bearbeiter sichtbar! Nur für Redakteure sichtbar.</hint>
+						<required></required>
+						<visibility>workflow</visibility>
+					</field>
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>notes</dc-element>
+						<dc-qualifier>printedThesis</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>Druckexemplare</label>
+						<input-type value-pairs-name="print_existent">dropdown</input-type>
+						<hint>Internes Vermerk, ob die Druckexemplare abgegeben wurden. Nur für Redakteure sichtbar.</hint>
+						<required></required>
+						<visibility>workflow</visibility>
+					</field>
+
+	<!--				<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>notes</dc-element>
+						<dc-qualifier>bill</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>Rechnung</label>
+						<input-type value-pairs-name="bill">dropdown</input-type>
+						<hint>Internes Vermerk, ob die Anfertigung eines Inhaltsverzeichnisses in Rechnung gestellt werden soll.</hint>
+						<required></required>
+						<visibility>workflow</visibility>
+					</field> -->
+
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>description</dc-element>
+						<dc-qualifier>embargoed</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>Embargo-Enddatum</label>
+						<input-type>date</input-type>
+						<hint>Das Datum, wann ein eventuelles Embargo aufgehoben werden soll.</hint>
+						<required></required>
+						<visibility>workflow</visibility>
+					</field>
+
+				</page>
+				
+			</form>
+
+			<form name="DigHum">
+			
+				<page number="1">
+				
+					<field>
+						<dc-schema>dc</dc-schema>
+						<dc-element>contributor</dc-element>
+						<dc-qualifier>author</dc-qualifier>
+						<repeatable>false</repeatable>
+						<label>* Autor</label>
+						<input-type>name</input-type>
+						<hint>>Nachname, Vorname Vorname2 von (geb. Mädchenname). Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte prüfen Sie den Autorennamen.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>dateOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsdatum</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>placeOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsort</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte Ihren Geburtsort an.</required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>email</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* E-Mail</label>
+					<input-type>onebox</input-type>
+					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
+				</field>
+
+			<!-- 	<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>street</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Straße und Hausnummer</label>
+					<input-type>onebox</input-type>
+					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
+					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>zipcode</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Postleitzahl</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>city</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Stadt</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Stadt an.</required>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>language</dc-element>
+					<dc-qualifier>iso</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Sprache</label>
+					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
+					<required>Bitte wählen Sie eine Sprache aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Originaltitel der Arbeit</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
+					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>translated</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Titel der Arbeit auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternative</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternativeTranslated</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>advisor</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Betreuer</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Betreuer Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>referee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>coReferee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zweitgutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>thirdReferee</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Weitere Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>date</dc-element>
+					<dc-qualifier>examination</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Tag der mündlichen Prüfung</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>type</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Art der Arbeit</label>
+					<input-type value-pairs-name="common_types">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ddc</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Klassifikation</label>
+					<input-type value-pairs-name="ddc_dighum">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie eine Klassifizierungskategorie aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstracteng</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstract</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Zusammenfassung (Abstract) in einer anderen Sprache</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>eng</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Schlagwörter auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ger</dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>true</repeatable>
+					<label>Schlagwörter in der Sprache der Publikation</label>
+					<input-type>twobox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>false</repeatable>
+					<label>Nachricht an die Redaktion</label>
+					<input-type>textarea</input-type>
+					<hint>Hier haben Sie die Möglichkeit, intern spezielle Wünsche an die Redaktion zu äußern. Dieses Feld wird nicht öffentlich sichtbar.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>intern</dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>true</repeatable>
+					<label>Anmerkungen</label>
+					<input-type>textarea</input-type>
+					<hint>Internes Feld: nur für Bearbeiter sichtbar! Nur für Redakteure sichtbar.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>printedThesis</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Druckexemplare</label>
+					<input-type value-pairs-name="print_existent">dropdown</input-type>
+					<hint>Internes Vermerk, ob die Druckexemplare abgegeben wurden. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+<!--				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>bill</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Rechnung</label>
+					<input-type value-pairs-name="bill">dropdown</input-type>
+					<hint>Internes Vermerk, ob die Anfertigung eines Inhaltsverzeichnisses in Rechnung gestellt werden soll. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>embargoed</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Embargo-Enddatum</label>
+					<input-type>date</input-type>
+					<hint>Datum, zu dem ein eventuelles Embargo aufgehoben wird.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+			</page>
+			
+		</form>
+
+		<form name="GGNB">
+		
+			<page number="1">
+			
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>author</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Autor</label>
+					<input-type>name</input-type>
+					<hint>>Nachname, Vorname Vorname2 von (geb. Mädchenname). Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte prüfen Sie den Autorennamen.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>dateOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsdatum</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>placeOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsort</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte Ihren Geburtsort an.</required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>email</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* E-Mail</label>
+					<input-type>onebox</input-type>
+					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
+				</field>
+			
+				<!-- <field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>street</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Straße und Hausnummer</label>
+					<input-type>onebox</input-type>
+					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
+					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>zipcode</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Postleitzahl</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>city</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Stadt</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Stadt an.</required>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>language</dc-element>
+					<dc-qualifier>iso</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Sprache</label>
+					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
+					<required>Bitte wählen Sie eine Sprache aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Originaltitel der Arbeit</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
+					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>translated</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Titel der Arbeit auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternative</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternativeTranslated</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>advisor</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Betreuer</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte de Gutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>referee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>coReferee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zweitgutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>thirdReferee</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Weitere Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>date</dc-element>
+					<dc-qualifier>examination</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Tag der mündlichen Prüfung</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>type</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Art der Arbeit</label>
+					<input-type value-pairs-name="common_types">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ddc</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Klassifikation</label>
+					<input-type value-pairs-name="ddc_ggnb">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie eine Klassifizierungskategorie aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstracteng</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstract</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Zusammenfassung (Abstract) in einer anderen Sprache</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>eng</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Schlagwörter auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ger</dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>true</repeatable>
+					<label>Schlagwörter in der Sprache der Publikation</label>
+					<input-type>twobox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>false</repeatable>
+					<label>Nachricht an die Redaktion</label>
+					<input-type>textarea</input-type>
+					<hint>Hier haben Sie die Möglichkeit, intern spezielle Wünsche an die Redaktion zu äußern. Dieses Feld wird nicht öffentlich sichtbar.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>intern</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Anmerkungen</label>
+					<input-type>textarea</input-type>
+					<hint>Internes Feld: nur für Bearbeiter sichtbar! Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>printedThesis</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Druckexemplare</label>
+					<input-type value-pairs-name="print_existent">dropdown</input-type>
+					<hint>Internes Vermerk, ob die Druckexemplare abgegeben wurden. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+<!--				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>bill</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Rechnung</label>
+					<input-type value-pairs-name="bill">dropdown</input-type>
+					<hint>Internes Vermerk, ob die Anfertigung eines Inhaltsverzeichnisses in Rechnung gestellt werden soll. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>embargoed</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Embargo-Enddatum</label>
+					<input-type>date</input-type>
+					<hint>Datum, zu dem ein eventuelles Embargo aufgehoben wird.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+			</page>
+			
+		</form>
+
+		<form name="archeo">
+		
+			<page number="1">
+			
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>author</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Autor</label>
+					<input-type>name</input-type>
+					<hint>>Nachname, Vorname Vorname2 von (geb. Mädchenname). Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte prüfen Sie den Autorennamen.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>dateOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsdatum</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>placeOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsort</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte Ihren Geburtsort an.</required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>email</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* E-Mail</label>
+					<input-type>onebox</input-type>
+					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
+				</field>
+
+				<!-- <field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>street</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Straße und Hausnummer</label>
+					<input-type>onebox</input-type>
+					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
+					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>zipcode</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Postleitzahl</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>city</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Stadt</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Stadt an.</required>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>language</dc-element>
+					<dc-qualifier>iso</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Sprache</label>
+					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
+					<required>Bitte wählen Sie eine Sprache aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Originaltitel der Arbeit</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
+					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>translated</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Titel der Arbeit auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternative</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternativeTranslated</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>advisor</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Betreuer</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Betreuer Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>referee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>coReferee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zweitgutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>thirdReferee</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Weitere Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>date</dc-element>
+					<dc-qualifier>examination</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Tag der mündlichen Prüfung</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>type</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Art der Arbeit</label>
+					<input-type value-pairs-name="common_types">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ddc</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Klassifikation</label>
+					<input-type value-pairs-name="ddc_archeo">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie eine Klassifizierungskategorie aus.</required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>gokfull</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Fachbereich</label>
+					<input-type value-pairs-name="gok_archeo">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie den passenden Fachbereich aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstracteng</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstract</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Zusammenfassung (Abstract) in einer anderen Sprache</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>eng</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Schlagwörter auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ger</dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>true</repeatable>
+					<label>Schlagwörter in der Sprache der Publikation</label>
+					<input-type>twobox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>false</repeatable>
+					<label>Nachricht an die Redaktion</label>
+					<input-type>textarea</input-type>
+					<hint>Hier haben Sie die Möglichkeit, intern spezielle Wünsche an die Redaktion zu äußern. Dieses Feld wird nicht öffentlich sichtbar.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>intern</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Anmerkungen</label>
+					<input-type>textarea</input-type>
+					<hint>Internes Feld: nur für Bearbeiter sichtbar! Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>printedThesis</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Druckexemplare</label>
+					<input-type value-pairs-name="print_existent">dropdown</input-type>
+					<hint>Internes Vermerk, ob die Druckexemplare abgegeben wurden.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>embargoed</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Embargo-Enddatum</label>
+					<input-type>date</input-type>
+					<hint>Datum, zu dem ein eventuelles Embargo aufgehoben wird.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+			</page>
+			
+		</form>
+
+		<form name="med">
+		
+			<page number="1">
+			
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>author</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Autor</label>
+					<input-type>name</input-type>
+					<hint>>Nachname, Vorname Vorname2 von (geb. Mädchenname). Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte prüfen Sie den Autorennamen.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>dateOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsdatum</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>placeOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsort</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte Ihren Geburtsort an.</required>
+				</field>
+
+				<!-- <field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>street</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Straße und Hausnummer</label>
+					<input-type>onebox</input-type>
+					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
+					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>zipcode</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Postleitzahl</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>city</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Stadt</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Stadt an.</required>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>email</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* E-Mail</label>
+					<input-type>onebox</input-type>
+					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>language</dc-element>
+					<dc-qualifier>iso</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Sprache</label>
+					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
+					<required>Bitte wählen Sie eine Sprache aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Originaltitel der Arbeit</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
+					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>translated</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Titel der Arbeit auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternative</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternativeTranslated</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>advisor</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Betreuer</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Betreuer Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>referee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>coReferee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zweitgutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>thirdReferee</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Weitere Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>date</dc-element>
+					<dc-qualifier>examination</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Tag der mündlichen Prüfung</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>type</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Art der Arbeit</label>
+					<input-type value-pairs-name="common_types">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
+				</field>
+
+
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstracteng</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstract</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Zusammenfassung (Abstract) in einer anderen Sprache</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>eng</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Schlagwörter auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>gokfull</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Göttinger Online-Klassifikation (GOK)</label>
+					<input-type>onebox</input-type>
+					<hint>Bitte folgen Sie den GOK-Link unter dem Eingabefeld und wählen Sie per Klick auf die Bezeichnung eine Kategorie aus. Mehrere Kategorien geben Sie bitte in separate Felder ein.</hint>
+					<required>Bitte wählen Sie mindestens eine GOK-Kategorie aus.</required>
+					<vocabulary closed="true">med-gok</vocabulary>
+				</field> 
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ger</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Schlagwörter in der Sprache der Publikation</label>
+					<input-type>twobox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>false</repeatable>
+					<label>Nachricht an die Redaktion</label>
+					<input-type>textarea</input-type>
+					<hint>Hier haben Sie die Möglichkeit, intern spezielle Wünsche an die Redaktion zu äußern. Dieses Feld wird nicht öffentlich sichtbar.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>intern</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Anmerkungen</label>
+					<input-type>textarea</input-type>
+					<hint>Internes Feld: nur für Bearbeiter sichtbar!</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>printedThesis</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Druckexemplare</label>
+					<input-type value-pairs-name="print_existent">dropdown</input-type>
+					<hint>Internes Vermerk, ob die Druckexemplare abgegeben wurden. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>embargoed</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Embargo-Enddatum</label>
+					<input-type>date</input-type>
+					<hint>Datum, zu dem ein eventuelles Embargo aufgehoben wird.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field> 
+
+			</page>
+			
+		</form>
+		
+		<form name="bio">
+		
+			<page number="1">
+			
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>author</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Autor</label>
+					<input-type>name</input-type>
+					<hint>>Nachname, Vorname Vorname2 von (geb. Mädchenname). Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte prüfen Sie den Autorennamen.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>dateOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsdatum</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>placeOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsort</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte Ihren Geburtsort an.</required>
+				</field>
+
+				<!-- <field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>street</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Straße und Hausnummer</label>
+					<input-type>onebox</input-type>
+					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
+					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>zipcode</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Postleitzahl</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>city</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Stadt</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Stadt an.</required>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>email</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* E-Mail</label>
+					<input-type>onebox</input-type>
+					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>language</dc-element>
+					<dc-qualifier>iso</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Sprache</label>
+					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
+					<required>Bitte wählen Sie eine Sprache aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Originaltitel der Arbeit</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
+					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>translated</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Titel der Arbeit auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternative</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternativeTranslated</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>advisor</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Betreuer</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>referee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>coReferee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zweitgutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>thirdReferee</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Weitere Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>date</dc-element>
+					<dc-qualifier>examination</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Tag der mündlichen Prüfung</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>type</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Art der Arbeit</label>
+					<input-type value-pairs-name="common_types">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
+				</field>
+
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>gokfull</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Themengebiet</label>
+					<input-type value-pairs-name="gok_bio">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie passende Fachgebiet aus.</required>
+				</field>
+				
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstracteng</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstract</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Zusammenfassung (Abstract) in einer anderen Sprache</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>eng</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Schlagwörter auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und Klicken Sie dann auf „+“.</hint>
+					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ger</dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>true</repeatable>
+					<label>Schlagwörter in der Sprache der Publikation</label>
+					<input-type>twobox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>false</repeatable>
+					<label>Nachricht an die Redaktion</label>
+					<input-type>textarea</input-type>
+					<hint>Hier haben Sie die Möglichkeit, intern spezielle Wünsche an die Redaktion zu äußern. Dieses Feld wird nicht öffentlich sichtbar.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>intern</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Anmerkungen</label>
+					<input-type>textarea</input-type>
+					<hint>Internes Feld: nur für Bearbeiter sichtbar! Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>printedThesis</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Druckexemplare</label>
+					<input-type value-pairs-name="print_existent">dropdown</input-type>
+					<hint>Interner Vermerk, ob die Druckexemplare abgegeben wurden. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>embargoed</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Embargo-Enddatum</label>
+					<input-type>date</input-type>
+					<hint>Das Datum, zu dem ein eventuelles Embargo aufgehoben werden soll.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+			</page>
+		</form>
+
+
+		<form name="mathe">
+		
+			<page number="1">
+			
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>author</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Autor</label>
+					<input-type>name</input-type>
+					<hint>>Nachname, Vorname Vorname2 von (geb. Mädchenname). Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte prüfen Sie den Autorennamen.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>dateOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsdatum</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>placeOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsort</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte Ihren Geburtsort an.</required>
+				</field>
+
+				<!-- <field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>street</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Straße und Hausnummer</label>
+					<input-type>onebox</input-type>
+					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
+					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>zipcode</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Postleitzahl</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>city</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Stadt</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Stadt an.</required>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>email</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* E-Mail</label>
+					<input-type>onebox</input-type>
+					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>language</dc-element>
+					<dc-qualifier>iso</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Sprache</label>
+					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
+					<required>Bitte wählen Sie eine Sprache aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Originaltitel der Arbeit</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
+					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>translated</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Titel der Arbeit auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternative</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternativeTranslated</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>advisor</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Betreuer</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>referee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>coReferee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zweitgutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>thirdReferee</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Weitere Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>date</dc-element>
+					<dc-qualifier>examination</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Tag der mündlichen Prüfung</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>type</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Art der Arbeit</label>
+					<input-type value-pairs-name="common_types">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
+				</field>
+
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>gokfull</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Themengebiet</label>
+					<input-type value-pairs-name="gok_mathe">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie das passende Fachgebiet aus.</required>
+				</field>
+				
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstracteng</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstract</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Zusammenfassung (Abstract) in einer anderen Sprache</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>eng</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Schlagwörter auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und Klicken Sie dann auf „+“.</hint>
+					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ger</dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>true</repeatable>
+					<label>Schlagwörter in der Sprache der Publikation</label>
+					<input-type>twobox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>false</repeatable>
+					<label>Nachricht an die Redaktion</label>
+					<input-type>textarea</input-type>
+					<hint>Hier haben Sie die Möglichkeit, intern spezielle Wünsche an die Redaktion zu äußern. Dieses Feld wird nicht öffentlich sichtbar.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>intern</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Anmerkungen</label>
+					<input-type>textarea</input-type>
+					<hint>Internes Feld: nur für Bearbeiter sichtbar! Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>printedThesis</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Druckexemplare</label>
+					<input-type value-pairs-name="print_existent">dropdown</input-type>
+					<hint>Interner Vermerk, ob die Druckexemplare abgegeben wurden. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>embargoed</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Embargo-Enddatum</label>
+					<input-type>date</input-type>
+					<hint>Das Datum, zu dem ein eventuelles Embargo aufgehoben werden soll.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+			</page>
+		</form>
+		
+		<form name="geo">
+		
+			<page number="1">
+			
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>author</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Autor</label>
+					<input-type>name</input-type>
+					<hint>>Nachname, Vorname Vorname2 von (geb. Mädchenname). Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte prüfen Sie den Autorennamen.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>dateOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsdatum</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>placeOfBirth</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Geburtsort</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte Ihren Geburtsort an.</required>
+				</field>
+
+				<!-- <field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>street</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Straße und Hausnummer</label>
+					<input-type>onebox</input-type>
+					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
+					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>zipcode</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Postleitzahl</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>address</dc-element>
+					<dc-qualifier>city</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Stadt</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie Ihre Stadt an.</required>
+				</field> -->
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>affiliation</dc-element>
+					<dc-qualifier>email</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* E-Mail</label>
+					<input-type>onebox</input-type>
+					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>language</dc-element>
+					<dc-qualifier>iso</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Sprache</label>
+					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
+					<required>Bitte wählen Sie eine Sprache aus.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Originaltitel der Arbeit</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
+					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>translated</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Titel der Arbeit auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternative</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel</label>
+					<input-type>onebox</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>title</dc-element>
+					<dc-qualifier>alternativeTranslated</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Untertitel auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>advisor</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Betreuer</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>referee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>coReferee</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zweitgutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>contributor</dc-element>
+					<dc-qualifier>thirdReferee</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Weitere Gutachter</label>
+					<input-type>name</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>date</dc-element>
+					<dc-qualifier>examination</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Tag der mündlichen Prüfung</label>
+					<input-type>date</input-type>
+					<hint>&#160;</hint>
+					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>type</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Art der Arbeit</label>
+					<input-type value-pairs-name="common_types">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
+				</field>
+
+				
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>gokfull</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Themengebiet</label>
+					<input-type value-pairs-name="gok_geo">dropdown</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte wählen Sie das Fachgebiet aus.</required>
+				</field>
+				
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstracteng</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>abstract</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Zusammenfassung (Abstract) in einer anderen Sprache</label>
+					<input-type>textarea</input-type>
+					<hint>&#160;</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>eng</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>* Schlagwörter auf Englisch</label>
+					<input-type>onebox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und Klicken Sie dann auf „+“.</hint>
+					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>subject</dc-element>
+					<dc-qualifier>ger</dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>true</repeatable>
+					<label>Schlagwörter in der Sprache der Publikation</label>
+					<input-type>twobox</input-type>
+					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier></dc-qualifier>
+					<!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+					<repeatable>false</repeatable>
+					<label>Nachricht an die Redaktion</label>
+					<input-type>textarea</input-type>
+					<hint>Hier haben Sie die Möglichkeit, intern spezielle Wünsche an die Redaktion zu äußern. Dieses Feld wird nicht öffentlich sichtbar.</hint>
+					<required></required>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>intern</dc-qualifier>
+					<repeatable>true</repeatable>
+					<label>Anmerkungen</label>
+					<input-type>textarea</input-type>
+					<hint>Internes Feld: nur für Bearbeiter sichtbar! Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>notes</dc-element>
+					<dc-qualifier>printedThesis</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Druckexemplare</label>
+					<input-type value-pairs-name="print_existent">dropdown</input-type>
+					<hint>Interner Vermerk, ob die Druckexemplare abgegeben wurden. Nur für Redakteure sichtbar.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+
+				<field>
+					<dc-schema>dc</dc-schema>
+					<dc-element>description</dc-element>
+					<dc-qualifier>embargoed</dc-qualifier>
+					<repeatable>false</repeatable>
+					<label>Embargo-Enddatum</label>
+					<input-type>date</input-type>
+					<hint>Das Datum, zu dem ein eventuelles Embargo aufgehoben werden soll.</hint>
+					<required></required>
+					<visibility>workflow</visibility>
+				</field>
+
+			</page>
+		</form>
+		
+	</form-definitions>
+
+	<!-- form-value-pairs populate dropdown and qualdrop-value lists.          -->
+	<!-- The form-value-pairs element holds child elements named 'value-pairs' -->
+	<!-- A 'value-pairs' element has a value-pairs-name and a dc-term          -->
+	<!-- attribute. The dc-term attribute specifies which to which Dublin Core -->
+	<!-- Term this set of value-pairs applies.                                 -->
+	<!--     Current dc-terms are: identifier-pairs, type-pairs, and           -->
+	<!--     language_iso-pairs. The name attribute matches a name             -->
+	<!--     in the form-map, above.                                           -->
+	<!-- A value-pair contains one 'pair' for each value displayed in the list -->
+	<!-- Each pair contains a 'displayed-value' element and a 'stored-value'   -->
+	<!-- element. A UI list displays the displayed-values, but the program     -->
+	<!-- stores the associated stored-values in the database.                  -->
+
+	<form-value-pairs>
+		<value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
+			<pair>
+				<displayed-value>ISSN</displayed-value>
+				<stored-value>issn</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>andere</displayed-value>
+				<stored-value>other</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>ISMN</displayed-value>
+				<stored-value>ismn</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Gov't Doc #</displayed-value>
+				<stored-value>govdoc</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>URI</displayed-value>
+				<stored-value>uri</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>ISBN</displayed-value>
+				<stored-value>isbn</stored-value>
+			</pair>
+		</value-pairs>
+
+		<value-pairs value-pairs-name="common_types" dc-term="type">
+			<!--
+			<pair>
+				<displayed-value>auswählen</displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			-->
+			<pair>
+				<displayed-value>Dissertation</displayed-value>
+				<stored-value>doctoralThesis</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Kumulative Dissertation</displayed-value>
+				<stored-value>cummulativeThesis</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Diplomarbeit</displayed-value>
+				<stored-value>diplomaThesis</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Magisterarbeit</displayed-value>
+				<stored-value>magisterThesis</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Masterarbeit</displayed-value>
+				<stored-value>masterThesis</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Habilitationsschrift</displayed-value>
+				<stored-value>habilitation</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Andere</displayed-value>
+				<stored-value>Other</stored-value>
+			</pair>
+		</value-pairs>
+
+		<!-- default language order: (from dspace 1.2.1)
+        "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
+     -->
+		<value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
+			<pair>
+				<displayed-value>— Sprache auswählen —</displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Bulgarisch</displayed-value>
+				<stored-value>bul</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Dänisch</displayed-value>
+				<stored-value>dan</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Deutsch</displayed-value>
+				<stored-value>deu</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Englisch</displayed-value>
+				<stored-value>eng</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Finnisch</displayed-value>
+				<stored-value>fin</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Französisch</displayed-value>
+				<stored-value>fra</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Griechisch</displayed-value>
+				<stored-value>ell</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Irisch</displayed-value>
+				<stored-value>gle</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Italienisch</displayed-value>
+				<stored-value>ita</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Kroatisch</displayed-value>
+				<stored-value>hrv</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Lateinisch</displayed-value>
+				<stored-value>lat</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Niederländisch</displayed-value>
+				<stored-value>nld</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Norwegisch</displayed-value>
+				<stored-value>nor</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Polnisch</displayed-value>
+				<stored-value>pol</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Portugisisch</displayed-value>
+				<stored-value>por</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Russisch</displayed-value>
+				<stored-value>rus</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Schwedisch</displayed-value>
+				<stored-value>sve</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Serbisch</displayed-value>
+				<stored-value>srp</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Slovenisch</displayed-value>
+				<stored-value>slv</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Slowakisch</displayed-value>
+				<stored-value>slo</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Spanisch</displayed-value>
+				<stored-value>spa</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Tschechisch</displayed-value>
+				<stored-value>cze</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Türkisch</displayed-value>
+				<stored-value>tur</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Ungarisch</displayed-value>
+				<stored-value>hun</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Andere</displayed-value>
+				<stored-value>other</stored-value>
+			</pair>
+		</value-pairs>
+
+		<!-- DDC -->
+
+		<value-pairs value-pairs-name="ddc_archeo" dc-term="subject_ddc">
+			<pair>
+				<displayed-value>— Kategorie auswählen —</displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Künste</displayed-value>
+				<stored-value>700</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Bildhauerkunst, Keramik, Metallkunst</displayed-value>
+				<stored-value>730</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Zeichnung, angewandte Kunst</displayed-value>
+				<stored-value>740</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Malerei</displayed-value>
+				<stored-value>750</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Grafik</displayed-value>
+				<stored-value>760</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Geschichte</displayed-value>
+				<stored-value>900</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Biografie, Genealogie</displayed-value>
+				<stored-value>920</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Geschichte des Altertums (bis 499), Archäologie</displayed-value>
+				<stored-value>930</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Geschichte Europas</displayed-value>
+				<stored-value>940</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Geschichte Asiens</displayed-value>
+				<stored-value>950</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Geschichte Nordamerikas</displayed-value>
+				<stored-value>970</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Geschichte Südamerikas</displayed-value>
+				<stored-value>9860</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Geschichte anderer Gebiete</displayed-value>
+				<stored-value>990</stored-value>
+			</pair>
+		</value-pairs>
+
+		<value-pairs value-pairs-name="ddc_forst" dc-term="subject_ddc">
+			<pair>
+				<displayed-value>— Kategorie auswählen —</displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Biowissenschaften, Biologie</displayed-value>
+				<stored-value>570</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Landwirtschaft und verwandte Bereiche</displayed-value>
+				<stored-value>630</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Obstanlagen, Früchte, Forstwirtschaft</displayed-value>
+				<stored-value>634</stored-value>
+			</pair>
+		</value-pairs>
+
+		<value-pairs value-pairs-name="ddc_cemeas" dc-term="subject_ddc">
+			<pair>
+				<displayed-value>— Kategorie auswählen —</displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Philosophie und Psycholgie</displayed-value>
+				<stored-value>100</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Religion</displayed-value>
+				<stored-value>200</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Sozialwissenschaften</displayed-value>
+				<stored-value>300</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Sprache</displayed-value>
+				<stored-value>400</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Literatur</displayed-value>
+				<stored-value>800</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Geschichte und Geographie</displayed-value>
+				<stored-value>900</stored-value>
+			</pair>
+		</value-pairs>
+
+		<value-pairs value-pairs-name="ddc_dighum" dc-term="subject_ddc">
+			<pair>
+				<displayed-value>— Kategorie auswählen —</displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Informatik, Informationswissenschaften, allgemeine Werke</displayed-value>
+				<stored-value>000</stored-value>
+			</pair>
+
+			<pair>
+				<displayed-value>Philosophie und Psycholgie</displayed-value>
+				<stored-value>100</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Sozialwissenschaften</displayed-value>
+				<stored-value>300</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Sprache</displayed-value>
+				<stored-value>400</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Literatur</displayed-value>
+				<stored-value>800</stored-value>
+			</pair>
+		</value-pairs>
+
+		<value-pairs value-pairs-name="ddc_ggnb" dc-term="subject_ddc">
+			<pair>
+				<displayed-value>— Kategorie auswählen —</displayed-value>
+				<stored-value></stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Biowissenschaften, Biologie</displayed-value>
+				<stored-value>570</stored-value>
+			</pair>
+
+			<pair>
+				<displayed-value>Biochemie</displayed-value>
+				Nur für Redakteure sichtbar.<stored-value>572</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Medizin und Gesundheit</displayed-value>
+				<stored-value>610</stored-value>
+			</pair>
+		</value-pairs>
+
+		<value-pairs value-pairs-name="print_existent" dc-term="notes_printedThesis">
+			<pair>
+				<displayed-value>ja</displayed-value>
+				<stored-value>yes</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>nein</displayed-value>
+				<stored-value>no</stored-value>
+			</pair>
+		</value-pairs>
+
+		<!-- <value-pairs value-pairs-name="bill" dc-term="notes_bill">
+			<pair>
+				<displayed-value>einfach</displayed-value>
+				<stored-value>simple</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>mit Inhaltsverzeichnis</displayed-value>
+				<stored-value>withTOC</stored-value>
+			</pair>
+		</value-pairs> -->
+
+        <value-pairs value-pairs-name="gok_archeo" dc-term="gok">
+            <pair>
+				<displayed-value>Archäologie</displayed-value>
+				<stored-value>Archäologie (PPN621557471)</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Kunst</displayed-value>
+				<stored-value>Kunst (PPN613163508)</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Geschichte</displayed-value>
+				<stored-value>Geschichte (PPN621341789)</stored-value>
+			</pair>
+		</value-pairs>
+		
+		<value-pairs value-pairs-name="gok_bio" dc-term="gokfull">
+			<pair>
+				<displayed-value>Biologie</displayed-value>
+				<stored-value>Biologie (PPN619462639)</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Psychologie</displayed-value>
+				<stored-value>Psychologie (PPN619868627)</stored-value>
+			</pair>
+		</value-pairs>
+
+		<value-pairs value-pairs-name="gok_geo" dc-term="gokfull">
+			<pair>
+                                <displayed-value>Bergbau</displayed-value>
+                                <stored-value>Bergbau {Technik} (PPN619470550)</stored-value>
+                        </pair>
+			<pair>
+                                <displayed-value>Geodäsie</displayed-value>
+                                <stored-value>Geodäsie (PPN613612272)</stored-value>
+                        </pair>
+
+			<pair>
+				<displayed-value>Geographie</displayed-value>
+				<stored-value>Geographie (PPN621264008)</stored-value>
+			</pair>
+                        <pair>
+                                <displayed-value>Geologische Wissenschaften</displayed-value>
+                                <stored-value>Geologische Wissenschaften (PPN62504584X)</stored-value>
+                        </pair>
+
+                        <pair>
+                                <displayed-value>Geophysik</displayed-value>
+                                <stored-value>Geophysik (PPN623604493)</stored-value>
+                        </pair>
+                        <pair>
+                                <displayed-value>Hydrologie</displayed-value>
+                                <stored-value>Hydrologie (PPN613605179)</stored-value>
+                        </pair>
+			<pair>
+                                <displayed-value>Kartographie</displayed-value>
+                                <stored-value>Kartographie (PPN613619919)</stored-value>
+                        </pair>
+                        <pair>
+                                <displayed-value>Meteorologie und Klimatologie</displayed-value>
+                                <stored-value>Meteorologie und Klimatologie (PPN623607115)</stored-value>
+                        </pair>
+                        <pair>
+                                <displayed-value>Ozeanologie</displayed-value>
+                                <stored-value>Ozeanologie (PPN613610601)</stored-value>
+                        </pair>
+
+		</value-pairs>
+		
+		<value-pairs value-pairs-name="gok_mathe" dc-term="gokfull">
+			<pair>
+				<displayed-value>Mathematik</displayed-value>
+				<stored-value>Mathematics (PPN61756535X)</stored-value>
+			</pair>
+			<pair>
+				<displayed-value>Informatik</displayed-value>
+				<stored-value>Informatik (PPN619939052)</stored-value>
+			</pair>
+		</value-pairs>
+		
+	</form-value-pairs>
+
+</input-forms>
