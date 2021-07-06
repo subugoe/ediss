@@ -95,9 +95,9 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAuthor" />
-                <ref bean="searchFilterSubject" />
+								<ref bean="searchFilterConsultant" />
                 <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterType" />
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -105,10 +105,12 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle" />
+							<ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
-                <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterConsultant" />
+                <ref bean="searchFilterType" />
                 <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterSubject" />
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -126,12 +128,12 @@
             </bean>
         </property>
         <!--Any default filter queries, these filter queries will be used for all queries done by discovery for this configuration-->
-        <!--<property name="defaultFilterQueries">-->
-            <!--<list>-->
+        <property name="defaultFilterQueries">
+            <list>
                 <!--Only find items-->
-                <!--<value>search.resourcetype:2</value>-->
-            <!--</list>-->
-        <!--</property>-->
+                <value>search.resourcetype:2</value>
+            </list>
+        </property>
         <!--The configuration for the recent submissions-->
         <property name="recentSubmissionConfiguration">
             <bean class="org.dspace.discovery.configuration.DiscoveryRecentSubmissionsConfiguration">
@@ -200,9 +202,9 @@
         <!--Which sidebar facets are to be displayed (same as defaultConfiguration above)-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAuthor" />
+              <!--  <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterIssued" /> -->
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -404,6 +406,30 @@
         <property name="type" value="date"/>
         <property name="sortOrder" value="VALUE"/>
     </bean>
+
+    <bean id="searchFilterConsultant" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="person"/>
+        <property name="metadataFields">
+            <list>
+              <value>dc.contributor.advisor</value>
+              <value>dc.contributor.referee</value>
+            </list>
+        </property>
+            <property name="facetLimit" value="5"/>
+        <property name="sortOrder" value="COUNT"/>
+    </bean>
+
+    <bean id="searchFilterType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="type"/>
+        <property name="metadataFields">
+            <list>
+              <value>dc.type</value>
+            </list>
+        </property>
+            <property name="facetLimit" value="15"/>
+        <property name="sortOrder" value="COUNT"/>
+    </bean>
+
 
     <!--Sort properties-->
     <bean id="sortTitle" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
