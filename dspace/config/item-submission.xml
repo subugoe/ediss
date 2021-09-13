@@ -189,6 +189,16 @@
 	<step>
 		<processing-class>org.dspace.submit.step.SkipInitialQuestionsStep</processing-class>
 	</step>
+
+			<!-- Step 3 add DOI to item -->
+      <step>
+        <heading>submit.progressbar.doi</heading>
+        <processing-class>org.dspace.submit.step.AddDoiStep</processing-class>
+        <jspui-binding></jspui-binding>
+        <xmlui-binding>org.dspace.app.xmlui.aspect.submission.submit.AddDoiStep</xmlui-binding>
+        <workflow-editable>true</workflow-editable>
+      </step>
+
 	
           <!--Step 3 will be to Upload the item-->
       <step>
