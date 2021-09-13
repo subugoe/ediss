@@ -53,6 +53,16 @@ collections / items / and bitstreams.
                 <map:serialize type="xml"/>
             </map:match> -->
 
+	    <map:match pattern="help/**">
+                 <map:act type="DSpacePropertyFileReader">
+                      <map:parameter name="dspace.dir" value="dspace.dir" />
+                      <map:transform type="Include" src="file://{dspace.dir}/config/{../1}.xml" />
+                 </map:act>
+
+                <map:serialize type="xml"/>
+           </map:match>
+
+
             <!-- List all communities & collections in DSpace -->
             <map:match pattern="community-list">
                     <map:transform type="CommunityBrowser">

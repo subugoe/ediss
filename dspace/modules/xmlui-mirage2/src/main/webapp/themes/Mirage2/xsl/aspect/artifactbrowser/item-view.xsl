@@ -136,14 +136,44 @@
       </xsl:if>
       <span class="spacer">&#xA0;</span>
       <xsl:call-template name="itemSummaryView-DIM-file-section"/>
-      <xsl:if test="//dim:field[@element='notes'][@qualifier='embargohistory']">
+      <xsl:choose>
+      <xsl:when test="//dim:field[@element='notes'][@qualifier='embargohistory']">
         <p class="small">
           <i18n:text>xmlui.item.oldembargo</i18n:text>
           <xsl:text>: </xsl:text>
-          <xsl:value-of select="//dim:field[@element='notes'][@qualifier='embargohistory']"/>
+          <xsl:value-of select="//dim:field[@element='date'][@qualifier='embargoed']"/>
         </p>
-      </xsl:if>
-      <xsl:if test="not(//dim:field[@element='date'][@qualifier='embargoed'])">
+	</xsl:when>
+	<xsl:when test="//dim:field[@element='date'][@qualifier='embargoed']">
+        <div class="embargo-info">
+          <p>
+            <xsl:choose>
+              <xsl:when test="contains(//dim:field[@element='date'][@qualifier='embargoed'], '3000')">
+                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed-examen</i18n:text>
+              </xsl:when>
+              <xsl:when test="contains(//dim:field[@element='date'][@qualifier='embargoed'], '5000')">
+                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed-unknown</i18n:text>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:variable name="year">
+                  <xsl:value-of select="substring-before(//dim:field[@element='date'][@qualifier='embargoed'], '-')"/>
+                </xsl:variable>
+                <xsl:variable name="monthday">
+                  <xsl:value-of select="substring-after(//dim:field[@element='date'][@qualifier='embargoed'], '-')"/>
+                </xsl:variable>
+                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed1</i18n:text>
+                <xsl:value-of select="substring-after($monthday, '-')"/>
+                <xsl:text>.</xsl:text>
+                <xsl:value-of select="substring-before($monthday, '-')"/>
+                <xsl:text>.</xsl:text>
+                <xsl:value-of select="$year"/>
+                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed2</i18n:text>
+              </xsl:otherwise>
+            </xsl:choose>
+          </p>
+        </div>
+      </xsl:when>
+      <xsl:otherwise>
         <xsl:variable name="lc">
           <xsl:choose>
             <xsl:when test="contains(dim:field[@element='rights'][@qualifier='uri'], 'creativecommons')">
@@ -187,36 +217,8 @@
         </div>
         <xsl:apply-templates select="mets:fileGrp[@USE='CC-LICENSE']" mode="simple"/>
         <!-- <xsl:call-template name="itemLicense" /> -->
-      </xsl:if>
-      <xsl:if test="//dim:field[@element='date'][@qualifier='embargoed']">
-        <div class="embargo-info">
-          <p>
-            <xsl:choose>
-              <xsl:when test="contains(//dim:field[@element='date'][@qualifier='embargoed'], '3000')">
-                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed-examen</i18n:text>
-              </xsl:when>
-              <xsl:when test="contains(//dim:field[@element='date'][@qualifier='embargoed'], '5000')">
-                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed-unknown</i18n:text>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:variable name="year">
-                  <xsl:value-of select="substring-before(//dim:field[@element='date'][@qualifier='embargoed'], '-')"/>
-                </xsl:variable>
-                <xsl:variable name="monthday">
-                  <xsl:value-of select="substring-after(//dim:field[@element='date'][@qualifier='embargoed'], '-')"/>
-                </xsl:variable>
-                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed1</i18n:text>
-                <xsl:value-of select="substring-after($monthday, '-')"/>
-                <xsl:text>.</xsl:text>
-                <xsl:value-of select="substring-before($monthday, '-')"/>
-                <xsl:text>.</xsl:text>
-                <xsl:value-of select="$year"/>
-                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed2</i18n:text>
-              </xsl:otherwise>
-            </xsl:choose>
-          </p>
-        </div>
-      </xsl:if>
+</xsl:otherwise>
+</xsl:choose>
       <xsl:if test="//dim:field[@element='notes'][@qualifier='extern']">
         <xsl:call-template name="itemNotesExtern"/>
       </xsl:if>
@@ -740,7 +742,7 @@
 			 <h5>
                         <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
 		    </h5> -->
-        <div class="file-metadata">
+        <div class="files-metadata">
           <h2>
             <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-head</i18n:text>
           </h2>
@@ -796,7 +798,7 @@
                 </xsl:call-template>
               </xsl:for-each>
             </xsl:otherwise>
-          </xsl:choose>
+    </xsl:choose>
         </div>
       </xsl:when>
       <!-- Special case for handling ORE resource maps stored as DSpace bitstreams -->
@@ -804,6 +806,44 @@
         <xsl:apply-templates select="//mets:fileSec/mets:fileGrp[@USE='ORE']" mode="itemSummaryView-DIM"/>
       </xsl:when>
     </xsl:choose>
+    <xsl:if test="count(//mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file) &gt; 1">
+	    <xsl:if test="count(//mets:file/mets:FLocat[contains(@xlink:href, 'isAllowed=n')]) = 0">
+                <xsl:variable name="hdl"><xsl:value-of select="substring-after(//mets:METS/@ID, 'hdl:')"/></xsl:variable>
+                <div>
+                        <a href="{concat('/downloads/', $hdl, '.zip')}"><i18n:text>xmlui.dri2xhtml.METS-1.0.item.zipdownload</i18n:text></a>
+		</div>
+	    </xsl:if>
+        </xsl:if>
+        <!-- show embargo date if existent -->
+	<!-- <xsl:if test="//dim:field[@element='date'][@qualifier='embargoed']">
+                        <div class="embargo-info">
+                                <p>
+                                <xsl:choose>
+                                        <xsl:when test="contains(//dim:field[@element='date'][@qualifier='embargoed'], '3000')">
+                                                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed-examen</i18n:text>
+                                        </xsl:when>
+                                        <xsl:when test="contains(//dim:field[@element='date'][@qualifier='embargoed'], '5000')">
+                                                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed-unknown</i18n:text>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                                <xsl:variable name="year"><xsl:value-of select="substring-before(//dim:field[@element='date'][@qualifier='embargoed'], '-')" /></xsl:variable>
+                                                <xsl:variable name="monthday"><xsl:value-of select="substring-after(//dim:field[@element='date'][@qualifier='embargoed'], '-')" /></xsl:variable>
+
+
+                                                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed1</i18n:text>
+                                                <xsl:value-of select="substring-after($monthday, '-')" /><xsl:text>.</xsl:text><xsl:value-of select="substring-before($monthday, '-')" /><xsl:text>.</xsl:text><xsl:value-of select="$year" />
+                                                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed2</i18n:text>
+                                        </xsl:otherwise>
+                                </xsl:choose>
+                                </p>
+                        </div>
+		</xsl:if> -->
+		<xsl:if test="dim:field[@element='notes' and @qualifier='extern']">
+                        <p class="simple-item-view-other">
+                                <xsl:value-of select="dim:field[@element='notes' and @qualifier='extern']"/>
+                        </p>
+
+                </xsl:if>
   </xsl:template>
   <xsl:template name="itemSummaryView-DIM-file-section-entry">
     <xsl:param name="href"/>
@@ -813,12 +853,62 @@
     <xsl:param name="title"/>
     <xsl:param name="label"/>
     <xsl:param name="size"/>
-    <div>
-      <a>
+    <div class="file-list"> 
+	    <div class="file-wrapper clearfix">    
+		    <div class="file-metadata">
+			    <div>
+				    <span class="bold">Name:</span>
+				    <span>
+					    <xsl:choose>
+						    <xsl:when test="string-length(mets:FLocat[@LOCTYPE='URL']/@xlink:title) &gt; 54">
+							    
+							    <xsl:value-of select="concat(substring(mets:FLocat[@LOCTYPE='URL']/@xlink:title,1,44), '...', substring-after($mimetype, '/'))"/>
+						    </xsl:when>
+						    <xsl:otherwise>
+							    <xsl:value-of select="mets:FLocat[@LOCTYPE='URL']/@xlink:title"/>
+						    </xsl:otherwise>
+					    </xsl:choose>
+				    </span>
+	    </div>
+	    <div>
+		    <span class="bold">Size:</span>
+		    <span>
+			    <xsl:choose>
+          <xsl:when test="$size &lt; 1024">
+            <xsl:value-of select="$size"/>
+            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-bytes</i18n:text>
+          </xsl:when>
+          <xsl:when test="$size &lt; 1024 * 1024">
+            <xsl:value-of select="substring(string($size div 1024),1,4)"/>
+            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-kilobytes</i18n:text>
+          </xsl:when>
+          <xsl:when test="$size &lt; 1024 * 1024 * 1024">
+            <xsl:value-of select="substring(string($size div (1024 * 1024)),1,4)"/>
+            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-megabytes</i18n:text>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="substring(string($size div (1024 * 1024 * 1024)),1,4)"/>
+            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-gigabytes</i18n:text>
+          </xsl:otherwise>
+        </xsl:choose>
+		</span>
+	</div>
+	<div>
+		<span class="bold">Format:</span>
+		<span><xsl:value-of select="translate(substring-after($mimetype, '/'), 'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+		</span>
+	</div>
+	<xsl:if test="string-length($label)!=0">
+		<span class="bold">Description:</span>
+		<span><xsl:value-of select="$label"/></span>
+	</xsl:if>
+</div>
+<div class="file-link">
+	<a>
         <xsl:attribute name="href">
           <xsl:value-of select="$href"/>
         </xsl:attribute>
-        <xsl:call-template name="getFileIcon">
+	<!-- <xsl:call-template name="getFileIcon">
           <xsl:with-param name="mimetype">
             <xsl:value-of select="substring-before($mimetype,'/')"/>
             <xsl:text>/</xsl:text>
@@ -876,9 +966,12 @@
             <i18n:text>xmlui.dri2xhtml.METS-1.0.size-gigabytes</i18n:text>
           </xsl:otherwise>
         </xsl:choose>
-        <xsl:text>)</xsl:text>
-      </a>
-    </div>
+	<xsl:text>)</xsl:text> -->
+	<span class="hidden-xs visible-sm visible-md visible-lg">View<wbr/>Open</span>
+</a>
+</div>
+	</div>
+	 </div>
   </xsl:template>
   <xsl:template match="dim:dim" mode="itemDetailView-DIM">
     <xsl:call-template name="itemTitle"/>

@@ -33,7 +33,7 @@
     <script src="scripts/community-list.js">&#160;</script>
     <script src="scripts/browse.js">&#160;</script>
     <script src="scripts/choice-support.js">&#160;</script>
-    <script src="scripts/vocabulary-support.js">&#160;</script>
+    <!-- <script src="scripts/vocabulary-support.js">&#160;</script> -->
     <script src="scripts/access-form-util.js">&#160;</script>
     <script src="scripts/forms.js">&#160;</script>
     <script src="scripts/vendor-extensions.js">&#160;</script>

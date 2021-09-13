@@ -455,28 +455,9 @@
                             <span class="input-group-bnt">
                                 <button type="submit" name="submit" class="ds-button-field" id="globsearch">
                                         <span class="glyphicon glyphicon-search" aria-hidden="true"/>
-                                        <xsl:attribute name="onclick">
-                                                    <xsl:text>
-                                                        var radio = document.getElementById(&quot;ds-search-form-scope-container&quot;);
-                                                        if (radio != undefined &amp;&amp; radio.checked)
-                                                        {
-                                                        var form = document.getElementById(&quot;ds-search-form&quot;);
-                                                        form.action=
-                                                    </xsl:text>
-                                            <xsl:text>&quot;</xsl:text>
-                                            <xsl:value-of
-                                                    select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
-                                            <xsl:text>/handle/&quot; + radio.value + &quot;</xsl:text>
-                                            <xsl:value-of
-                                                    select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']"/>
-                                            <xsl:text>&quot; ; </xsl:text>
-                                                    <xsl:text>
-                                                        }
-                                                    </xsl:text>
-                                            </xsl:attribute>
                                     </button>
                                 </span>
-                                    <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">
+				<!--   <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">
                                 <br />
                                 <div class="radio line">
                                     <label>
@@ -505,7 +486,7 @@
                                         </xsl:choose>
                                 </label>
                                 </div>
-                                </xsl:if>
+				</xsl:if> -->
                         </div>
                         </fieldset>
 		</form>                                      
@@ -520,8 +501,8 @@
                                         <a id="user-dropdown-toggle" href="#" role="button" class="dropdown-toggle"
                                            data-toggle="dropdown">
                                             <span class="hidden-xs">
-                                                <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='firstName']"/>
+                                                <xsl:value-of select="concat(substring(/dri:document/dri:meta/dri:userMeta/
+                            dri:metadata[@element='identifier' and @qualifier='firstName'],1,1), '.')"/>
                                                 <xsl:text> </xsl:text>
                                                 <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
                             dri:metadata[@element='identifier' and @qualifier='lastName']"/>
@@ -589,7 +570,7 @@
 			    <span class="input-group-bnt">
 				<button type="submit" name="submit" class="ds-button-field" id="globsearch">
 					<span class="glyphicon glyphicon-search" aria-hidden="true"/> 
-                                        <xsl:attribute name="onclick">
+					<!-- <xsl:attribute name="onclick">
                                                     <xsl:text>
                                                         var radio = document.getElementById(&quot;ds-search-form-scope-container&quot;);
                                                         if (radio != undefined &amp;&amp; radio.checked)
@@ -607,10 +588,10 @@
                                                     <xsl:text>
                                                         }
                                                     </xsl:text>
-					    </xsl:attribute>
+					    </xsl:attribute> -->
 				    </button>
 				</span>
-				    <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">
+				<!--    <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">
 				<br />			    
                                 <div class="radio line">
                                     <label>
@@ -638,8 +619,8 @@
 
                                         </xsl:choose>
 				</label>
-				</div>
-				</xsl:if>
+				</div> 
+				</xsl:if> -->
 			</div>
                         </fieldset>
                     </form>
