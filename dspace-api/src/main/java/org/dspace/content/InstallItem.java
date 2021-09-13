@@ -19,6 +19,9 @@ import org.dspace.identifier.IdentifierException;
 import org.dspace.identifier.IdentifierService;
 import org.dspace.utils.DSpace;
 
+import org.dspace.core.ConfigurationManager;
+import org.dspace.handle.HandleManager;
+
 /**
  * Support to install an Item in the archive.
  * 
@@ -27,6 +30,10 @@ import org.dspace.utils.DSpace;
  */
 public class InstallItem
 {
+
+		/* For automatic URN creation - Take SUB URN prefix as default*/
+    static final String DEFAULT_UURN =  "urn:nbn:de:gbv:7-";
+
     /**
      * Take an InProgressSubmission and turn it into a fully-archived Item,
      * creating a new Handle.
@@ -213,6 +220,14 @@ public class InstallItem
 
         // Add provenance description
         item.addDC("description", "provenance", "en", provDescription);
+
+			  //Create URN and add to metadata
+				String handleKey = item.getHandle().substring(item.getHandle().indexOf('/') + 1);
+				if (item.getMetadata("dc", "identifier", "urn", Item.ANY).length == 0) {
+                String urn = getURNPrefix() + handleKey + '-';
+                item.addMetadata("dc", "identifier", "urn", null, urn + URNChecksum(urn));
+        }
+
     }
 
     /**
@@ -284,4 +299,46 @@ public class InstallItem
 
         return myMessage.toString();
     }
+
+		/**
+     * Get the configured URN prefix string, or the default SUB URNprefix
+     * @return configured prefix or "urn:nbn:de:gbv:7-"
+     */
+    public static String getURNPrefix()
+    {
+        String URNPrefix = ConfigurationManager.getProperty("urn.prefix");
+        if (URNPrefix == null)
+            URNPrefix = DEFAULT_UURN;
+
+        return URNPrefix;
+    }
+
+    /**
+     * Generate urn-checksum for the urn of an item
+     *
+     * @param uurn  (unchecked) urn i.e. urn without checksum
+     *
+     * @return urn checksum to be appended to uurn
+     */
+    private static String URNChecksum(String uurn)
+    {
+        String urn = uurn.toUpperCase();
+        int[] Nums={1,2,3,4,5,6,7,8,9,41,18,14,19,15,16,21,22,23,24,25,
+                42,26,27,13,28,29,31,12,32,33,11,34,35,36,37,38,39,17,47,43,45,49};
+
+        String Zeichen="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-:._/+";
+        int erg=0;
+        StringBuffer sb= new StringBuffer();
+
+        for(int i=0; i < urn.length(); i++)
+            sb.append(Nums[Zeichen.indexOf(urn.charAt(i))]);
+
+        for(int i=0;i<sb.length();i++)
+            erg=erg+(i+1)*(sb.charAt(i)-48);
+
+        erg=erg/(sb.charAt(sb.length()-1)-48);
+        String serg=String.valueOf(erg);
+        return serg.substring(serg.length() - 1);
+    }
+
 }
