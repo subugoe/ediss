@@ -143,7 +143,7 @@ public abstract class AbstractDoiConnector implements DOIConnector {
      * the provided {@link DSpaceObject}. This method calls the following abstract methods:
      * <ul>
      *  <li><code>sendDOIGetRequest</code><li>
-     *  <li><code>getDoiGetSuccessStatusCode</code></li>
+     *  <li><code>getDoiGetSuccessiusCode</code></li>
      *  <li><code>getDsoUrl</code></li>
      *  
      * </ul>

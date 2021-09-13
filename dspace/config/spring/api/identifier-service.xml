@@ -35,16 +35,22 @@
 
     <!-- In order to mint DOIs with DSpace, get an agreement with a DOI registration
          agency,  take a look into dspace.cfg, and uncomment this.
+
+         An optional 'filterService' property may be included with a reference to a bean name
+         as configured in item-filters.xml -->
+    <!--
     <bean id="org.dspace.identifier.DOIIdentifierProvider"
         class="org.dspace.identifier.DOIIdentifierProvider"
         scope="singleton">
+        <property name="filterService" ref="is_false_filter"/>
         <property name="configurationService"
             ref="org.dspace.services.ConfigurationService" />
         <property name="DOIConnector"
             ref="org.dspace.identifier.doi.DOIConnector" />
+
     </bean>
     -->
-    
+
     <!-- The DOIConnector will handle the API calls to your DOI registration
          agency for the DOIIdentifierProvider. If your registration agency
          tells you to use the DataCite API directly, you can use the
@@ -53,7 +59,7 @@
          e.g. EZID is part of DataCite but provides their own APIs. The following
          DataCiteConnector won't work if EZID is your registration agency.
     -->
-    <!-- Uncomment this to use the DataCite API directly as DOIConnector.
+    <!-- Uncomment this to use the DataCite API directly as DOIConnector. -->
     <bean id="org.dspace.identifier.doi.DOIConnector"
         class="org.dspace.identifier.doi.DataCiteConnector"
         scope="singleton">
@@ -63,13 +69,13 @@
         <property name='DATACITE_METADATA_PATH' value='/metadata/' />
         <property name='disseminationCrosswalkName' value="DataCite" />
     </bean>
-    -->
+
 
     <!-- Provider to mint and register DOIs using EZID as the registrar.
     -->
-    <!-- 
+    <!--
          Set generateDataciteXML to true to send metadata in DataCite xml schema for EZID DOI mint requests.
-         When generateDataciteXML is enabled, EZIDIdentifierProvider uses 
+         When generateDataciteXML is enabled, EZIDIdentifierProvider uses
          dspace.cfg:crosswalk.dissemination.DataCite.stylesheet XSL configuration for metadata mapping
     -->
     <!-- Uncomment to enable DOI using EZID
