@@ -71,6 +71,15 @@ collections / items / and bitstreams.
                     <map:serialize type="xml"/>
             </map:match>
 
+            <!-- List all communities & collections for publish now -->
+            <map:match pattern="publish-now">
+                <map:transform type="CommunityBrowser">
+                    <map:parameter name="depth" value="999"/>
+                </map:transform>
+                <map:serialize type="xml"/>
+            </map:match>
+
+
             <map:match pattern="page/*">
                 <map:transform type="StaticPage"/>
                 <map:serialize type="xml"/>

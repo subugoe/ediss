@@ -109,8 +109,15 @@ and searching the repository.
                                 </map:transform>
                                 <map:serialize type="xml"/>
                         </map:match>
-        
-                        
+
+                    <!-- List all communities & collections for publish now -->
+                    <map:match pattern="publish-now">
+                        <map:transform type="CommunityBrowser">
+                            <map:parameter name="depth" value="999"/>
+                        </map:transform>
+                        <map:serialize type="xml"/>
+                    </map:match>
+
                         <!-- Search -->
                         <map:match pattern="search">
                                 <map:transform type="SimpleSearch"/>

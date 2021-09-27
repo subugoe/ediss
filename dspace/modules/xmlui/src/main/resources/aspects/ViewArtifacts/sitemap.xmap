@@ -361,6 +361,24 @@ and searching the repository.
 				<map:transform type="Contact" />
 				<map:serialize type="xml" />
 			</map:match>
+		
+			                        <map:match pattern="impressum">
+                                <map:act type="DSpacePropertyFileReader">
+                                        <map:parameter name="dspace.dir" value="dspace.dir" />
+                                        <map:transform type="Include" src="file://{dspace.dir}/config/impressum.xml" />
+                                </map:act>
+                                <map:serialize type="xml"/>
+                        </map:match>
+
+                        <map:match pattern="dataprivacy">
+                                <map:act type="DSpacePropertyFileReader">
+                                        <map:parameter name="dspace.dir" value="dspace.dir" />
+                                        <map:transform type="Include" src="file://{dspace.dir}/config/dataprivacy.xml" />
+                                </map:act>
+
+                               <!-- <map:transform type="Contact"/> -->
+                                <map:serialize type="xml"/>
+                        </map:match>
 
 
 			<!-- Not a URL we care about, so just pass it on. -->
