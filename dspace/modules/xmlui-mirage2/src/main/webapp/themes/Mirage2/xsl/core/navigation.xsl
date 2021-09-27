@@ -120,18 +120,12 @@
 		    </form> 
                 </div>
 	  </xsl:if> -->
-          <div class="publish">
+					<xsl:if test="not(contains(//dri:metadata[@element='request'][@qualifier='URI'], 'submit'))">
+	          <div class="publish">
                                 <a>
-                                <xsl:choose>
-                                        <xsl:when test="contains(//dri:metadata[@element='request'][@qualifier='URI'], 'submit')">
-                                                <xsl:attribute name="href"><xsl:text>#</xsl:text></xsl:attribute>
-
-                                                        <i18n:text>xmlui.general.publish_now</i18n:text>
-
-                                        </xsl:when>
-                                        <xsl:otherwise>
+					
                                                 <xsl:choose>
-							<xsl:when test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">	
+							<xsl:when test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='containerType'] = 'type:collection'">	
                                                                 <xsl:variable name="container">
                                                                         <xsl:value-of select="concat('handle/', substring-after(//dri:metadata[@element='focus'][@qualifier='container'], 'hdl:'))"/>
 
@@ -141,15 +135,14 @@
                                                                         <i18n:text>xmlui.general.publish_here</i18n:text>
                                                         </xsl:when>
                                                         <xsl:otherwise>
-                                                        <xsl:attribute name="href"><xsl:value-of select="concat($context-path, '/submit')" /></xsl:attribute>
+								<xsl:attribute name="href"><xsl:text>/publish-now</xsl:text></xsl:attribute>
                                                                 <i18n:text>xmlui.general.publish_now</i18n:text>
 
                                                 </xsl:otherwise>
                                                 </xsl:choose>
-                                        </xsl:otherwise>
-                                </xsl:choose>
                                 </a>
-                        </div>
+                </div>
+					</xsl:if>
 	    <!-- <xsl:apply-templates/> -->
 	    <xsl:if test="//dri:userMeta/@authenticated='yes'">
 		    <xsl:apply-templates select="dri:list[@n='account']"/>
@@ -308,3 +301,4 @@
     <xsl:template match="dri:list[count(child::*)=0]"/>
 
 </xsl:stylesheet>
+
