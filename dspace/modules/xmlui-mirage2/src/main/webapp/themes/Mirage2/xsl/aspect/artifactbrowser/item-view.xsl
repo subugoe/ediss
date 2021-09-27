@@ -222,6 +222,20 @@
       <xsl:if test="//dim:field[@element='notes'][@qualifier='extern']">
         <xsl:call-template name="itemNotesExtern"/>
       </xsl:if>
+		  <xsl:if test="dim:field[@element='notes' and @qualifier='externeng']">
+                    <xsl:if test="$ui-lang = 'en'">
+                        <div class="notes">
+                         <p><xsl:value-of select="dim:field[@element='notes' and @qualifier='externeng']"/></p>
+                        </div>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:if test="dim:field[@element='notes' and @qualifier='externger']">
+                    <xsl:if test="$ui-lang = 'de'">
+                        <div class="notes">
+                         <p><xsl:value-of select="dim:field[@element='notes' and @qualifier='externger']"/></p>
+                        </div>
+                    </xsl:if>
+                </xsl:if>
       <hr/>
       <h2>
         <i18n:text>xmlui.dri2xhtml.METS-1.0.item-abstract</i18n:text>
