@@ -1033,7 +1033,6 @@
         </xsl:if>
 
 	<xsl:call-template name="addJavascript-google-analytics" />
-	<script src="/static/js/referee-autocomplete.js">&#160;</script>
     </xsl:template>
 
     <xsl:template name="addJavascript-google-analytics">
