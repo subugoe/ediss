@@ -256,7 +256,7 @@
     	</table>
     </xsl:template>
     <xsl:template match="dri:cell[@rend='catalogue-message-key']">
-    	<td style="width: 40%; word-break: break-word;">
+    	<td style="width: 35%; word-break: break-word;">
     		<xsl:apply-templates />
     	</td>
     </xsl:template>
