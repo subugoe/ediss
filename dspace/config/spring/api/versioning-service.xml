@@ -35,8 +35,19 @@
            <bean class="org.dspace.versioning.DefaultItemVersionProvider">
                <property name="ignoredMetadataFields">
                    <set>
-                       <value>dc.date.accessioned</value>
+											<value>dc.date.accessioned</value>
                        <value>dc.description.provenance</value>
+                       <value>dc.identifier.uri</value>
+                       <value>dc.identifier.urn</value>
+                       <value>dc.notes</value> <!-- message to the redakteurs -->
+                       <value>dc.notes.intern</value>
+                       <value>dc.notes.extern</value>
+                       <value>dc.notes.externeng</value>
+                       <value>dc.notes.externger</value>
+											 <value>dc.date.embargoed</value>
+											 <value>dc.description.embargoed</value>
+                       <value>dc.date.embargoEnd</value>
+                       <value>dc.notes.embargohistory</value>
                    </set>
                </property>
                
