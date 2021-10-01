@@ -19,6 +19,7 @@
 -->
 <xsl:stylesheet xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:dri="http://di.tamu.edu/DRI/1.0/" xmlns:mets="http://www.loc.gov/METS/" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns="http://www.w3.org/1999/xhtml" xmlns:xalan="http://xml.apache.org/xalan" xmlns:encoder="xalan://java.net.URLEncoder" xmlns:util="org.dspace.app.xmlui.utils.XSLUtils" xmlns:jstring="java.lang.String" xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" xmlns:confman="org.dspace.core.ConfigurationManager" version="1.0" exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util jstring rights confman">
   <xsl:output indent="yes"/>
+  <xsl:variable name="ui-lang"><xsl:value-of select="//dri:metadata[@element='locale']"/></xsl:variable>
   <xsl:template name="itemSummaryView-DIM">
     <!-- Generate the info about the item from the metadata section -->
     <xsl:apply-templates select="./mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']/mets:xmlData/dim:dim" mode="itemSummaryView-DIM"/>
