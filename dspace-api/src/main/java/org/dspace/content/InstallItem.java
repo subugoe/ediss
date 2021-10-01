@@ -216,6 +216,10 @@ public class InstallItem
                 provDescription = provDescription + "  Previous issue date: "
                         + d.toString();
             }
+        } else
+        {
+            DCDate issued = new DCDate(now.getYear(),now.getMonth(),now.getDay(),-1,-1,-1);
+            item.addDC("date", "issued", null, issued.toString());
         }
 
         // Add provenance description
