@@ -1390,19 +1390,19 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.Submission.submit.LicenseStep.head">Vertragsbedingungen für die Veröffentlichung auf dem Dissertationsserver der Georg-August-Universität Göttingen</message>
 
-	<message key="xmlui.Submission.submit.LicenseStep.info1">&#160;</message>
+	<message key="xmlui.Submission.submit.LicenseStep.info1">Dieser Vertrag regelt die Rechte der Servicebetreibers an Ihrem Dokument und die Zugriffsrechte unserer Nutzer auf Ihre Publikation - falls Sie keine CC-Lizenz Ihrer Publikation hinzugefügt haben.</message>
 
-	<message key="xmlui.Submission.submit.LicenseStep.info2">&#160;</message>
+	<message key="xmlui.Submission.submit.LicenseStep.info2"></message>
 
 	<message key="xmlui.Submission.submit.LicenseStep.info3">&#160;</message>
 
-	<message key="xmlui.Submission.submit.LicenseStep.decision_label">Lizenzbestimmung</message>
+	<message key="xmlui.Submission.submit.LicenseStep.decision_label">Vertragsbestimmung</message>
 
 	<!--<message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">Ich akzeptiere die Lizenzbestimmungen, werde die Kosten für die Online-Bereitstellung übernehmen und willige ein, dass mir eine Rechnung an meine Postadresse zugeschickt wird.</message>-->
 
-	<message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">Ich akzeptiere die Lizenzbestimmungen</message>
+	<message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">Ich akzeptiere die Vertragsbestimmungen</message>
 
-	<message key="xmlui.Submission.submit.LicenseStep.decision_error">Sie müssen die Lizenzbestimmung akzeptieren, um Ihre Veröffentlichung abzuschließen. Wenn Sie dies zum jetzigen Zeitpunkt nicht tun können, haben Sie die Möglichkeit Ihre Veröffentlichung zwischenzuspeichern, um sie später zu vollenden oder zu löschen, indem Sie auf „Speichern und später fortsetzen“ klicken.</message>
+	<message key="xmlui.Submission.submit.LicenseStep.decision_error">Sie müssen die Vertragsbestimmung akzeptieren, um Ihre Veröffentlichung abzuschließen. Wenn Sie dies zum jetzigen Zeitpunkt nicht tun können, haben Sie die Möglichkeit Ihre Veröffentlichung zwischenzuspeichern, um sie später zu vollenden oder zu löschen, indem Sie auf „Speichern und später fortsetzen“ klicken.</message>
 
 
 
@@ -2345,6 +2345,14 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 	<message key="xmlui.administrative.authorization.EditPolicyForm.submit_search_groups">Suche</message>
 
 	<message key="xmlui.administrative.authorization.EditPolicyForm.label_action">Aktion wählen</message>
+<message key="xmlui.administrative.authorization.EditPolicyForm.label_name">Name</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.label_description">Beschreibung</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.label_start_date">Startdatum</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.label_end_date">Enddatum</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.error_date_format">Ungültiges Datum</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.error_duplicated_policy">Für diese Gruppe existiert schon eine identische Rechteregelung.</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.error_start_date_greater_than_end_date">Startdatum ist später als Enddatum!</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.label_date_help">Gültiges Format: yyyy, yyyy-mm, yyyy-mm-dd</message>
 
 
 
@@ -4221,7 +4229,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.date.issued">Erscheinungsdatum</message>
 
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dateIssued">Erscheinungsdatum</message>
-
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_person">Autor &amp; Gutachter</message>
 
 
 	<message key="xmlui.administrative.Navigation.context_print_bill">Rechnung drucken</message>
@@ -5474,7 +5482,7 @@ Alternativ können Sie bei der Zusendung der Druckexemplare der Dissertation an 
 
 
 
-				abschließen, in dem die Rechte des Serverbetreibers und die Zugriffsrechte unserer Nutzer auf Ihre Publikation
+				abschließen, in dem die Rechte des Serverbetreibers und die Zugriffsrechte unserer Nutzer auf Ihre Publikation - falls keine CC-Lizenz zur Publikation hinzugefügt wurde -
 
 
 
@@ -6846,7 +6854,7 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 				Der Universität Göttingen wird das nicht-ausschließliche (einfache) Recht zur freien elektronischen Publikation im Internet und zur Archivierung auf ihrem Dokumentenserver eingeräumt. Im Rahmen der einfachen Nutzung ist es der Universität erlaubt, durch die SUB ergänzend eine kostendeckende Print-on-Demand Möglichkeit anzubieten, soweit diese nicht mit den Verwertungsrechten Dritter am Werk des Autors kollidiert. Alle weiteren Rechte für die Verwertung der Arbeit verbleiben beim Autor. Mit der Anmeldung ist kein rechtlich verbindlicher Anspruch auf die Online-Bereitstellung eines Dokumentes verbunden. <br />
 
-				Im Rahmen der öffentlichen Bereitstellung sind Nutzer berechtigt, Dokumente zum privaten und sonstigen eigenen Gebrauch herunterzuladen, zu speichern oder in kleiner Anzahl zu drucken (<a target="_blank" href="http://www.bundesrecht.juris.de/urhg">§ 53 UrhG</a>).<br />
+				Falls Sie Ihrer Publikation keine CC-Lizenz hinzufügen gelten die folgenden Regelungen: im Rahmen der öffentlichen Bereitstellung sind Nutzer berechtigt, Dokumente zum privaten und sonstigen eigenen Gebrauch herunterzuladen, zu speichern oder in kleiner Anzahl zu drucken (<a target="_blank" href="http://www.bundesrecht.juris.de/urhg">§ 53 UrhG</a>).
 
 				Gleichzeitig gestattet der Veröffentlichende die Lizenzierung seines Werks unter einer <a target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0">Creative-Commons-Lizenz 4.0</a> (Namensnennung - Keine kommerzielle Nutzung - Keine Bearbeitung), die den Nutzern erlaubt, das Werk in unveränderter Form zu vervielfältigen, zu verbreiten und öffentlich zugänglich zu machen, insofern er als Autor genannt wird. 
 
@@ -8712,6 +8720,303 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 	<message key="xmlui.item-view.authorbirthname">Geburtsname des Autors</message>
 	<message key="xmlui.item-view.birthname">geb. </message>
 
+        <message key="xmlui.error.contact_msg">Please contact the site administrator if you wish to report this error. If possible, please  provide details about what you were doing at the time this error occurred.</message>
+        <message key="xmlui.error.contact">Contact site administrator</message>
+        <message key="xmlui.error.show_stack">Show underlying error stack</message>
+	<message key="xmlui.Administrative.WithdrawnItems.title.item.title">Withdrawn Items by Title</message>
+	<message key="xmlui.Administrative.WithdrawnItems.trail.item.title">Withdrawn Items by Title</message>
+	<message key="xmlui.Administrative.WithdrawnItems.title.item.dateissued">Withdrawn Items by Issue Date</message>
+	<message key="xmlui.Administrative.WithdrawnItems.trail.item.dateissued">Withdrawn Items by Issue Date</message>
+	<message key="xmlui.Administrative.WithdrawnItems.title.item.dateaccessioned">Withdrawn Items by Submit Date</message>
+	<message key="xmlui.Administrative.WithdrawnItems.trail.item.dateaccessioned">Withdrawn Items by Submit Date</message>
+	<message key="xmlui.Administrative.PrivateItems.title.item.title">Private Items by Title</message>
+	<message key="xmlui.Administrative.PrivateItems.trail.item.title">Private Items by Title</message>
+	<message key="xmlui.Administrative.PrivateItems.title.item.dateissued">Private Items by Issue Date</message>
+	<message key="xmlui.Administrative.PrivateItems.trail.item.dateissued">Private Items by Issue Date</message>
+	<message key="xmlui.Administrative.PrivateItems.title.item.dateaccessioned">Private Items by Submit Date</message>
+	<message key="xmlui.Administrative.PrivateItems.trail.item.dateaccessioned">Private Items by Submit Date</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.title">Request a copy of the document</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.trail">Request a copy of the document</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.head">Request a copy of the document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.login_para">Users of this system, can login to view this document.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.login">Login</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.para1">Enter the following information to request a copy of the document from the responsible person.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail">Your e-mail address</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail_help">This email address is used for sending the document.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail.error">E-mail is mandatory</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.message">Message</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.message.error">Message is mandatory</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.files">Files</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.allFiles">All files (of this document) in restricted access.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.notAllFiles">Only The requested file.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterName">Name</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterName.error">Name is required</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestForm.submit">Request copy</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestSent.title">Your request has been sent.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestSent.trail">Your request has been sent.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestSent.head">Your request has been sent.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestSent.para1">Your request has been sent to the author or responsible person.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.title">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.trail">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.head">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para1">IF YOU ARE THE AUTHOR (OR AN AUTHOR) OF DOCUMENT "{0}" use the buttons to answer the user's request.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para2">This repository will propose an appropriate model reply, which you may edit.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactRequester">Initial reply to requester</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactAuthor"> Author permission request</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.send">Send copy</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.dontSend">Don't send copy</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.title">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.trail">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.head">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.para1">This is the text to be sent to the applicant.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.message">Message</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.subject">Subject</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.mail">Send</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.back">Back</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.title">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.trail">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.head">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.para1">This is the text to be sent to the applicant (together with the document).</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.message">Message</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.subject">Subject</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.mail">Send</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.back">Back</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.title">Change permissions request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.trail">Change permissions request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.head">Change permissions request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.para1">You may use this occasion to reconsider the access restrictions on the document (to avoid having to respond to these requests), if there is no reason to keep it restricted. To do so, after inserting your name and e-mail (for authentication), click the button "Change to Open Access".</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.name">Name</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.email">E-mail</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.name.error">The name is required</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.email.error">The e-mail address is required</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.changeToOpen">Change to open access</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.title">Request sent</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.trail">Request sent</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.head">Your request to change permissions has been sent</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.para1">Your request has been sent to the administrator</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.para2">Thanks</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.title">Document copy request</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.trail">Document copy request</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.head">Document copy request</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.para1">Initial communication with the requester, to let them know their request is being processed.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.toEmail">To</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.subject">Subject</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.message">Message</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.mail">Send</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.back">Back</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.title">Document copy request</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.trail">Document copy request</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.head">Document copy request</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.para1">This is the text to be sent to the applicant (together with the document).</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.toEmail">To</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.subject">Subject</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.message">Message</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.mail">Send</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.back">Back</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.title">Your response has been sent.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.trail">Your response has been sent.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.head">Your response has been sent.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.para1">Your response has been sent.</message>
+    <message key="xmlui.Submission.submit.EditPolicyStep.head">Edit Policy</message>
+    <message key="xmlui.Submission.submit.EditBitstreamPolicies.head">Bitstream Access</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.head_name">Name</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.head_start_date">Start Date</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.head_end_date">End Date</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.label_date_help">Accepted format: yyyy, yyyy-mm, yyyy-mm-dd</message>
+    <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.actions_name">Name</message>
+    <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.actions_description">Description</message>
+    <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.actions_start_date">Start Date</message>
+    <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.actions_end_date">End Date</message>
+    <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_date_format">Invalid date</message>
+    <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_start_date_greater_than_end_date">Start date is greater than end date</message>
+    <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_groupIds">Select at least a group</message>
+    <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_collectionIds">Select at least a collection</message>
+    <message key="xmlui.administrative.batchimport.general.select_collection">Select a collection</message>
+    <message key="xmlui.administrative.batchimport.general.collection">Collection</message>
+    <message key="xmlui.administrative.batchimport.general.collection_help">Select the collection you wish to submit an item to.</message>
+    <message key="xmlui.administrative.batchimport.general.collection_default">Select a collection...</message>
+    <message key="xmlui.administrative.batchimport.general.title">Import Batch Load (ZIP)</message>
+    <message key="xmlui.administrative.batchimport.general.head1">Import Batch Load (ZIP)</message>
+    <message key="xmlui.administrative.batchimport.general.trail">Import Batch Load (ZIP)</message>
+    <message key="xmlui.administrative.batchimport.general.changes">changes</message>
+    <message key="xmlui.administrative.batchimport.general.no_changes">No changes were detected</message>
+    <message key="xmlui.administrative.batchimport.general.new_item">New item</message>
+    <message key="xmlui.administrative.batchimport.flow.upload_successful">Upload successful</message>
+    <message key="xmlui.administrative.batchimport.flow.upload_failed">Upload failed or no file selected</message>
+    <message key="xmlui.administrative.batchimport.flow.upload_badschema">Unknown metadata schema in heading</message>
+    <message key="xmlui.administrative.batchimport.flow.upload_badelement">Unknown metadata element in heading</message>
+    <message key="xmlui.administrative.batchimport.flow.import_successful">Import successful</message>
+    <message key="xmlui.administrative.batchimport.flow.import_failed">Import failed</message>
+    <message key="xmlui.administrative.batchimport.flow.failed_no_collection">No Destination Collection Specified</message>
+    <message key="xmlui.administrative.batchimport.BatchmportMain.submit_upload">Upload SimpleArchiveFormat ZIP</message>
+    <message key="xmlui.administrative.batchimport.BatchImportConfirm.success">Successfully processed</message>
+    <message key="xmlui.administrative.batchimport.BatchImportConfirm.changes_committed">Changes applied to item</message>
+    <message key="xmlui.administrative.batchimport.BatchImportConfirm.item_added">Added: </message>
+    <message key="xmlui.administrative.batchimport.BatchImportConfirm.item_removed">Removed: </message>
+    <message key="xmlui.administrative.batchimport.BatchImportUpload.item_add">Add: </message>
+    <message key="xmlui.administrative.batchimport.BatchImportUpload.item_remove">Remove: </message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.submit_private">Make it Private</message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.submit_public">Make it Public</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_private">Make item private</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_public">Make item public</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.submit_private">Make it private...</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.submit_public">Make it public...</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.repository_role"><br/>(Repository level group, system administrators only)</message>
+    <message key="xmlui.statistics.search.title">Search Statistics</message>
+    <message key="xmlui.statistics.search.head">Search Statistics</message>
+    <message key="xmlui.statistics.search.head-dso">Search Statistics for {0}</message>
+    <message key="xmlui.statistics.search.error">There was an error while generating the search statistics, please try again later.</message>
+    <message key="xmlui.statistics.search.no-results">No search statistics available for the selected period.</message>
+    <message key="xmlui.statistics.workflow.title">Workflow Statistics</message>
+    <message key="xmlui.statistics.Navigation.usage.view">View Usage Statistics</message>
+    <message key="xmlui.statistics.Navigation.usage-Elasticsearch.view">View Usage Statistics</message>
+    <message key="xmlui.statistics.Navigation.search.view">View Search Statistics</message>
+    <message key="xmlui.statistics.Navigation.workflow.view">View Workflow Statistics</message>
+    <message key="xmlui.statistics.trail-search">Search Statistics</message>
+    <message key="xmlui.statistics.trail-workflow">Workflow Statistics</message>
+    <message key="xmlui.statistics.workflow.no-results">No workflow statistics available for the selected period.</message>
+    <message key="xmlui.statistics.workflow.error">There was an error while generating the workflow statistics, please try again later.</message>
+    <message key="xmlui.statistics.workflow.head">Workflow Statistics</message>
+    <message key="xmlui.statistics.workflow.head-dso">Workflow Statistics for {0}</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.search-terms.head">Top Search Terms</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.search-total.head">Total</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.last-month">Previous month</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.last-6-months">Previous 6 months</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.last-year">Previous year</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.overall">Overall</message>
+    <message key="xmlui.statistics.display.table.column-label.search-terms">Search Term</message>
+    <message key="xmlui.statistics.display.table.column-label.searches">Searches</message>
+    <message key="xmlui.statistics.display.table.column-label.percent-total">% of Total</message>
+    <message key="xmlui.statistics.display.table.column-label.views-search">Pageviews / Search</message>
+    <message key="xmlui.statistics.display.table.column-label.step">Step</message>
+    <message key="xmlui.statistics.display.table.column-label.performed">Performed</message>
+    <message key="xmlui.statistics.display.table.column-label.average">Average</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP1POOL">Accept/Reject Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP1">Accept/Reject Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP2POOL">Accept/Reject/Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP2">Accept/Reject/Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP3POOL">Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP3">Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.reviewstep.claimaction">Accept/Reject Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.reviewstep.reviewaction">Accept/Reject Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.editstep.claimaction">Accept/Reject/Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.editstep.editaction">Accept/Reject/Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.finaleditstep.claimaction">Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.finaleditstep.finaleditaction">Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.scoreReviewStep.claimaction">Score Review Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.scoreReviewStep.scorereviewaction">Score Review</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.evaluationStep.evaluationaction">Score Review Evaluation</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.evaluationStep.noUserSelectionAction">Score Review Evaluation Configuration</message>
+    <message key="xmlui.statistics.display.table.workflow.step.selectSingleReviewer.selectReviewerStep.claimaction">Single User Review Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.selectSingleReviewer.singleUserReviewStep.autoassignAction">Single User Auto Assign Action</message>
+    <message key="xmlui.statistics.display.table.workflow.step.selectSingleReviewer.singleUserReviewStep.singleuserreviewaction">Single User Review Action</message>
+    <message key="xmlui.statisticsGoogleAnalytics.Navigation.title">Statistics</message>
+    <message key="xmlui.statisticsGoogleAnalytics.Navigation.usage.view">View Google Analytics Statistics</message>
+    <message key="xmlui.statisticsGoogleAnalytics.trail">Statistics</message>
+    <message key="xmlui.statisticsGoogleAnalytics.title">Google Analytics Statistics</message>
+    <message key="xmlui.statisticsGoogleAnalytics.dates.startDate">Start date</message>
+    <message key="xmlui.statisticsGoogleAnalytics.dates.endDate">End date</message>
+    <message key="xmlui.statisticsGoogleAnalytics.dates.refresh">Refresh</message>
+    <message key="xmlui.statisticsGoogleAnalytics.pageViews.title">Page Views</message>
+    <message key="xmlui.statisticsGoogleAnalytics.downloads.title">File Downloads</message>
+        <message key="xmlui.dri2xhtml.METS-1.0.blocked">Blocked</message>
+  <message key="xmlui.ChoiceLookupTransformer.lookup">Lookup</message>
+  <message key="xmlui.mobile.home_mobile">DSpace Mobile</message>
+  <message key="xmlui.mobile.search_all">Search ALL</message>
+  <message key="xmlui.mobile.browse_all">Browse ALL by</message>
+  <message key="xmlui.mobile.browse_date">Date</message>
+  <message key="xmlui.mobile.browse_author">Author</message>
+  <message key="xmlui.mobile.browse_title">Title</message>
+  <message key="xmlui.mobile.browse_subject">Subject</message>
+  <message key="xmlui.mobile.related_google_scholar">Related</message>
+  <message key="xmlui.mobile.items_in_google_scholar">Items in Google Scholar</message>
+  <message key="xmlui.mobile.download">Download</message>
+    <message key="xmlui.aspect.versioning.VersioningNavigation.context_create_version">Create version of this item</message>
+    <message key="xmlui.aspect.versioning.VersioningNavigation.context_show_version_history">Show version history</message>
+    <message key="xmlui.aspect.versioning.VersionItemForm.title">Create Version</message>
+    <message key="xmlui.aspect.versioning.VersionItemForm.trail">Version</message>
+    <message key="xmlui.aspect.versioning.VersionItemForm.head1">Create new version of item: {0}</message>
+    <message key="xmlui.aspect.versioning.VersionItemForm.submit_version">Version</message>
+    <message key="xmlui.aspect.versioning.VersionItemForm.submit_update_version">Update Version</message>
+    <message key="xmlui.aspect.versioning.VersionItemForm.summary">Reason for creating new version</message>
+    <message key="xmlui.aspect.versioning.VersionUpdateForm.title">Update Version</message>
+    <message key="xmlui.aspect.versioning.VersionUpdateForm.trail">Version</message>
+    <message key="xmlui.aspect.versioning.VersionUpdateForm.head1">Update version of item: {0}</message>
+    <message key="xmlui.aspect.versioning.VersionUpdateForm.submit_version">Version</message>
+    <message key="xmlui.aspect.versioning.VersionUpdateForm.submit_update_version">Update Version</message>
+    <message key="xmlui.aspect.versioning.VersionUpdateForm.summary">Summary</message>
+    <message key="xmlui.aspect.versioning.DeleteVersionsConfirm.title">Confirm Deletion</message>
+    <message key="xmlui.aspect.versioning.DeleteVersionsConfirm.trail">Confirm deletion</message>
+    <message key="xmlui.aspect.versioning.DeleteVersionsConfirm.head1">Confirm Deletion(s)</message>
+    <message key="xmlui.aspect.versioning.DeleteVersionsConfirm.para1">Are you sure you want to delete these versions. </message>
+    <message key="xmlui.aspect.versioning.DeleteVersionsConfirm.para2">PLEASE NOTE: That by deleting these versions, the associated items will no longer be accessible.</message>
+    <message key="xmlui.aspect.versioning.DeleteVersionsConfirm.column1">Version</message>
+    <message key="xmlui.aspect.versioning.DeleteVersionsConfirm.column2">Item</message>
+    <message key="xmlui.aspect.versioning.DeleteVersionsConfirm.column3">Editor</message>
+    <message key="xmlui.aspect.versioning.DeleteVersionsConfirm.column4">Date</message>
+    <message key="xmlui.aspect.versioning.DeleteVersionsConfirm.column5">Summary</message>
+    <message key="xmlui.aspect.versioning.RestoreVersionForm.title">Restore Version</message>
+    <message key="xmlui.aspect.versioning.RestoreVersionForm.trail">Restore Version</message>
+    <message key="xmlui.aspect.versioning.RestoreVersionForm.head1">Restore Version</message>
+    <message key="xmlui.aspect.versioning.RestoreVersionForm.para1">Are you sure you want to restore this version:</message>
+    <message key="xmlui.aspect.versioning.RestoreVersionForm.column1">Version</message>
+    <message key="xmlui.aspect.versioning.RestoreVersionForm.column2">Editor</message>
+    <message key="xmlui.aspect.versioning.RestoreVersionForm.column3">Date</message>
+    <message key="xmlui.aspect.versioning.RestoreVersionForm.column4">Summary</message>
+    <message key="xmlui.aspect.versioning.RestoreVersionForm.restore">Restore</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.head2">Version History</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.column1">Version</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.column2">Item</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.column3">Editor</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.column4">Date</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.column5">Summary</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.column6">Actions</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.restore">Restore</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.update">Update</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.legend">*Selected version</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.delete">Delete Versions</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.return">Return</message>
+    <message key="xmlui.aspect.versioning.VersionHistoryForm.collection_admins_only">(collection administrators only)</message>
+    <message key="xmlui.aspect.versioning.VersionNoticeTransformer.notice.new_version_head">Notice</message>
+    <message key="xmlui.aspect.versioning.VersionNoticeTransformer.notice.new_version_help">This is not the latest version of this item. The latest version can be found at: </message>
+    <message key="xmlui.aspect.versioning.VersionNoticeTransformer.notice.workflow_version_head">Notice</message>
+    <message key="xmlui.aspect.versioning.VersionNoticeTransformer.notice.workflow_version_help">A more recent version of this item is in the Workflow.</message>
+    <message key="xmlui.aspect.sherpa.submission.consult">To check the copyright and self-archiving policies per journal or publisher, please consult <a href="http://www.sherpa.ac.uk/">SHERPA/RoMEO</a>.</message>
+    <message key="xmlui.aspect.sherpa.submission.title">Publisher information</message>
+    <message key="xmlui.aspect.sherpa.submission.journal">Journal: </message>
+    <message key="xmlui.aspect.sherpa.submission.publisher">Publisher information: </message>
+    <message key="xmlui.aspect.sherpa.submission.colour">RoMEO Colour: </message>
+    <message key="xmlui.aspect.sherpa.submission.more">(More info)</message>
+    <message key="xmlui.aspect.sherpa.submission.green">green</message>
+    <message key="xmlui.aspect.sherpa.submission.blue">blue</message>
+    <message key="xmlui.aspect.sherpa.submission.white">white</message>
+    <message key="xmlui.aspect.sherpa.submission.yellow">yellow</message>
+    <message key="xmlui.aspect.sherpa.submission.gray">gray</message>
+    <message key="xmlui.mirage2.itemSummaryView.MetaData">Metadata</message>
+    <message key="xmlui.mirage2.itemSummaryView.Collections">Collections</message>
+    <message key="xmlui.mirage2.discovery.reset">Reset</message>
+    <message key="xmlui.mirage2.discovery.newFilter">Add New Filter</message>
+    <message key="xmlui.mirage2.discovery.showAdvancedFilters">Show Advanced Filters</message>
+    <message key="xmlui.mirage2.discovery.hideAdvancedFilters">Hide Advanced Filters</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.add">Add</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">Remove</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
+    <message key="xmlui.mirage2.forms.nonInstancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">Add</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">Remove</message>
+    <message key="xmlui.mirage2.page-structure.aboutThisRepository">About This Repository</message>
+    <message key="xmlui.mirage2.page-structure.toggleNavigation">Toggle navigation</message>
+    <message key="xmlui.mirage2.page-structure.heroUnit.title">About This Repository</message>
+    <message key="xmlui.mirage2.page-structure.heroUnit.content">To add your own content to this page, edit webapps/xmlui/themes/Mirage2/lib/xsl/core/page-structure.xsl and add your own content to the title, trail, and body. If you wish to add additional pages, you will need to create an additional xsl:when block and match the request-uri to whatever page you are adding. Currently, static pages created through altering XSL are only available under the URI prefix of page/.</message>
+    <message key="xmlui.mirage2.navigation.rss.feed">feed</message>
+    <message key="xmlui.mirage2.choice-authority-control.loading">Loading...</message>
+    <message key="xmlui.mirage2.item-list.thumbnail">Thumbnail</message>
+
+
+
+
+<!-- Messsage Catalogues keys -->
+
 <message key="xmlui.administrative.Navigation.administrative_message_catalogues">Message Catalogues</message>
 
 	<message key="xmlui.administrative.catalogue.title">Message Catalogue</message>
@@ -8748,11 +9053,73 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 	<message key="xmlui.administrative.select.catalogue.head">Select Message Catalogue</message>
 	<message key="xmlui.administrative.select.catalogue.list.prefix">Catalogue: </message>
 
-###
-# Additions for DOI filter
-###
-jsp.tools.edit-item-form.form.button.register-doi = Register DOI
-jsp.tools.edit-item-form.doi-registered-note = A DOI has been registered for this item
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                     Statistics Aspect
+
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <message key="xmlui.statistics.title">Statistics</message>
+    <message key="xmlui.statistics.search.title">Search Statistics</message>
+    <message key="xmlui.statistics.search.head">Search Statistics</message>
+    <message key="xmlui.statistics.search.head-dso">Search Statistics for {0}</message>
+    <message key="xmlui.statistics.search.error">There was an error while generating the search statistics, please try again later.</message>
+    <message key="xmlui.statistics.search.no-results">No search statistics available for the selected period.</message>
+    <message key="xmlui.statistics.workflow.title">Workflow Statistics</message>
+    <message key="xmlui.statistics.visits.total">Total Visits</message>
+    <message key="xmlui.statistics.visits.month">Total Visits Per Month</message>
+    <message key="xmlui.statistics.visits.views">Views</message>
+    <message key="xmlui.statistics.visits.countries">Top country views</message>
+    <message key="xmlui.statistics.visits.cities">Top cities views</message>
+    <message key="xmlui.statistics.visits.bitstreams">File Visits</message>
+    <message key="xmlui.statistics.Navigation.title">Statistics</message>
+    <message key="xmlui.statistics.Navigation.usage.view">View Usage Statistics</message>
+    <message key="xmlui.statistics.Navigation.usage-Elasticsearch.view">View Usage Statistics</message>
+    <message key="xmlui.statistics.Navigation.search.view">View Search Statistics</message>
+    <message key="xmlui.statistics.Navigation.workflow.view">View Workflow Statistics</message>
+    <message key="xmlui.statistics.trail">Statistics</message>
+    <message key="xmlui.statistics.trail-search">Search Statistics</message>
+    <message key="xmlui.statistics.trail-workflow">Workflow Statistics</message>
+    <message key="xmlui.statistics.workflow.no-results">No workflow statistics available for the selected period.</message>
+    <message key="xmlui.statistics.workflow.error">There was an error while generating the workflow statistics, please try again later.</message>
+    <message key="xmlui.statistics.workflow.head">Workflow Statistics</message>
+    <message key="xmlui.statistics.workflow.head-dso">Workflow Statistics for {0}</message>
+
+
+    <message key="xmlui.statistics.StatisticsSearchTransformer.search-terms.head">Top Search Terms</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.search-total.head">Total</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.last-month">Previous month</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.last-6-months">Previous 6 months</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.last-year">Previous year</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.overall">Overall</message>
+
+    <message key="xmlui.statistics.display.table.column-label.search-terms">Search Term</message>
+    <message key="xmlui.statistics.display.table.column-label.searches">Searches</message>
+    <message key="xmlui.statistics.display.table.column-label.percent-total">% of Total</message>
+    <message key="xmlui.statistics.display.table.column-label.views-search">Pageviews / Search</message>
+    <message key="xmlui.statistics.display.table.column-label.step">Step</message>
+    <message key="xmlui.statistics.display.table.column-label.performed">Performed</message>
+    <message key="xmlui.statistics.display.table.column-label.average">Average</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP1POOL">Accept/Reject Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP1">Accept/Reject Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP2POOL">Accept/Reject/Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP2">Accept/Reject/Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP3POOL">Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP3">Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.reviewstep.claimaction">Accept/Reject Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.reviewstep.reviewaction">Accept/Reject Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.editstep.claimaction">Accept/Reject/Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.editstep.editaction">Accept/Reject/Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.finaleditstep.claimaction">Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.finaleditstep.finaleditaction">Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.scoreReviewStep.claimaction">Score Review Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.scoreReviewStep.scorereviewaction">Score Review</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.evaluationStep.evaluationaction">Score Review Evaluation</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.evaluationStep.noUserSelectionAction">Score Review Evaluation Configuration</message>
+    <message key="xmlui.statistics.display.table.workflow.step.selectSingleReviewer.selectReviewerStep.claimaction">Single User Review Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.selectSingleReviewer.singleUserReviewStep.autoassignAction">Single User Auto Assign Action</message>
+    <message key="xmlui.statistics.display.table.workflow.step.selectSingleReviewer.singleUserReviewStep.singleuserreviewaction">Single User Review Action</message>
+
+
 
     <!-- Versioning -->
     <message key="xmlui.aspect.versioning.VersioningNavigation.context_create_version">Create version of this item</message>
@@ -8861,15 +9228,15 @@ jsp.tools.edit-item-form.doi-registered-note = A DOI has been registered for thi
     <message key="xmlui.mirage2.item-list.thumbnail">Thumbnail</message>
 <!-- submission progress bar messages -->
 	<message key="xmlui.Submission.submit.progressbar.initial-questions">Initial Questions</message>
-	<message key="xmlui.Submission.submit.progressbar.describe">Describe</message>
-    <message key="xmlui.Submission.submit.progressbar.access">Access</message>
+	<message key="xmlui.Submission.submit.progressbar.describe">Beschreiben</message>
+    <message key="xmlui.Submission.submit.progressbar.access">Zugriff</message>
 	<message key="xmlui.Submission.submit.progressbar.doi">DOI</message>
-    <message key="xmlui.Submission.submit.progressbar.upload">Upload</message>
-	<message key="xmlui.Submission.submit.progressbar.verify">Review</message>
+    <message key="xmlui.Submission.submit.progressbar.upload">Datei Hochladen</message>
+	<message key="xmlui.Submission.submit.progressbar.verify">Daten prüfen</message>
 	<message key="xmlui.Submission.submit.progressbar.creative-commons">Creative Commons</message>
-	<message key="xmlui.Submission.submit.progressbar.CClicense">CC License</message>
-    <message key="xmlui.Submission.submit.progressbar.license">License</message>
-	<message key="xmlui.Submission.submit.progressbar.complete">Complete</message>
+	<message key="xmlui.Submission.submit.progressbar.CClicense">CC Lizenz</message>
+    <message key="xmlui.Submission.submit.progressbar.license">eDiss-Vertrag</message>
+	<message key="xmlui.Submission.submit.progressbar.complete">Fertig</message>
 
 
 <!-- org.dspace.app.xmlui.Submission.submit.AddDoiStep -->
@@ -8964,15 +9331,15 @@ jsp.tools.edit-item-form.doi-registered-note = A DOI has been registered for thi
 
 
 <!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
-        <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">An error occurred ... {0}</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.head">License Your Work</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.info1">If you wish, you may add a <a href="http://creativecommons.org/">Creative Commons</a> License to your item. <strong>Creative Commons licenses govern what people who read your work may then do with it.</strong></message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Choose a license</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Proceed to Creative Commons website to select a license</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.license">License Type</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.select_change">Select or modify your license ...</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.no_license">No Creative Commons License</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.save_changes">You must click Next to save your changes.</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">Ein Proble ist aufgetreten ... {0}</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.head">Fügen Sie Ihrer Arbeit eine Lizenz zu</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.info1">Sie können Ihre Arbiet unter einer <a href="http://creativecommons.org/">Creative Commons</a> Lizenz stellen. <strong>Creative Commons Lizenzen regeln, was Leute, die Ihre Arbeit herunterladen, mit dem Text machen dürfen.</strong></message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Lizenz wählen</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Eine Creative Commons Lizenz wählen</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.license">Lizenztyp</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.select_change">Wähle oder ändere das CC-Lizenz</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.no_license">Keine Lizenz hinzufügen</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.save_changes">Klicken Sie auf "weiter", um die Änderungen zu speichern.</message>
 
 <!-- Site administrator options -->
 	<message key="xmlui.administrative.Navigation.administrative_head">Administrative</message>
@@ -8992,7 +9359,8 @@ jsp.tools.edit-item-form.doi-registered-note = A DOI has been registered for thi
     <message key="xmlui.administrative.Navigation.administrative_batch_import">Batch Import (ZIP)</message>
         <message key="xmlui.administrative.Navigation.administrative_import_metadata">Import Metadata</message>
         <message key="xmlui.administrative.Navigation.administrative_curation">Curation Tasks</message>
-
+	<message key="xmlui.statistic.link">Statistik</message>
 </catalogue>
+
 
 

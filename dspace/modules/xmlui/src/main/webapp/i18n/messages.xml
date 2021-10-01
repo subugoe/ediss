@@ -1390,19 +1390,19 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.Submission.submit.LicenseStep.head">Vertragsbedingungen für die Veröffentlichung auf dem Dissertationsserver der Georg-August-Universität Göttingen</message>
 
-	<message key="xmlui.Submission.submit.LicenseStep.info1">&#160;</message>
+	<message key="xmlui.Submission.submit.LicenseStep.info1">Dieser Vertrag regelt die Rechte der Servicebetreibers an Ihrem Dokument und die Zugriffsrechte unserer Nutzer auf Ihre Publikation - falls Sie keine CC-Lizenz Ihrer Publikation hinzugefügt haben.</message>
 
-	<message key="xmlui.Submission.submit.LicenseStep.info2">&#160;</message>
+	<message key="xmlui.Submission.submit.LicenseStep.info2"></message>
 
 	<message key="xmlui.Submission.submit.LicenseStep.info3">&#160;</message>
 
-	<message key="xmlui.Submission.submit.LicenseStep.decision_label">Lizenzbestimmung</message>
+	<message key="xmlui.Submission.submit.LicenseStep.decision_label">Vertragsbestimmung</message>
 
 	<!--<message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">Ich akzeptiere die Lizenzbestimmungen, werde die Kosten für die Online-Bereitstellung übernehmen und willige ein, dass mir eine Rechnung an meine Postadresse zugeschickt wird.</message>-->
 
-	<message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">Ich akzeptiere die Lizenzbestimmungen</message>
+	<message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">Ich akzeptiere die Vertragsbestimmungen</message>
 
-	<message key="xmlui.Submission.submit.LicenseStep.decision_error">Sie müssen die Lizenzbestimmung akzeptieren, um Ihre Veröffentlichung abzuschließen. Wenn Sie dies zum jetzigen Zeitpunkt nicht tun können, haben Sie die Möglichkeit Ihre Veröffentlichung zwischenzuspeichern, um sie später zu vollenden oder zu löschen, indem Sie auf „Speichern und später fortsetzen“ klicken.</message>
+	<message key="xmlui.Submission.submit.LicenseStep.decision_error">Sie müssen die Vertragsbestimmung akzeptieren, um Ihre Veröffentlichung abzuschließen. Wenn Sie dies zum jetzigen Zeitpunkt nicht tun können, haben Sie die Möglichkeit Ihre Veröffentlichung zwischenzuspeichern, um sie später zu vollenden oder zu löschen, indem Sie auf „Speichern und später fortsetzen“ klicken.</message>
 
 
 
@@ -2345,6 +2345,14 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 	<message key="xmlui.administrative.authorization.EditPolicyForm.submit_search_groups">Suche</message>
 
 	<message key="xmlui.administrative.authorization.EditPolicyForm.label_action">Aktion wählen</message>
+<message key="xmlui.administrative.authorization.EditPolicyForm.label_name">Name</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.label_description">Beschreibung</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.label_start_date">Startdatum</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.label_end_date">Enddatum</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.error_date_format">Ungültiges Datum</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.error_duplicated_policy">Für diese Gruppe existiert schon eine identische Rechteregelung.</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.error_start_date_greater_than_end_date">Startdatum ist später als Enddatum!</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.label_date_help">Gültiges Format: yyyy, yyyy-mm, yyyy-mm-dd</message>
 
 
 
@@ -4221,7 +4229,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.date.issued">Erscheinungsdatum</message>
 
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dateIssued">Erscheinungsdatum</message>
-
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_person">Autor &amp; Gutachter</message>
 
 
 	<message key="xmlui.administrative.Navigation.context_print_bill">Rechnung drucken</message>
@@ -5474,7 +5482,7 @@ Alternativ können Sie bei der Zusendung der Druckexemplare der Dissertation an 
 
 
 
-				abschließen, in dem die Rechte des Serverbetreibers und die Zugriffsrechte unserer Nutzer auf Ihre Publikation
+				abschließen, in dem die Rechte des Serverbetreibers und die Zugriffsrechte unserer Nutzer auf Ihre Publikation - falls keine CC-Lizenz zur Publikation hinzugefügt wurde -
 
 
 
@@ -6846,7 +6854,7 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 				Der Universität Göttingen wird das nicht-ausschließliche (einfache) Recht zur freien elektronischen Publikation im Internet und zur Archivierung auf ihrem Dokumentenserver eingeräumt. Im Rahmen der einfachen Nutzung ist es der Universität erlaubt, durch die SUB ergänzend eine kostendeckende Print-on-Demand Möglichkeit anzubieten, soweit diese nicht mit den Verwertungsrechten Dritter am Werk des Autors kollidiert. Alle weiteren Rechte für die Verwertung der Arbeit verbleiben beim Autor. Mit der Anmeldung ist kein rechtlich verbindlicher Anspruch auf die Online-Bereitstellung eines Dokumentes verbunden. <br />
 
-				Im Rahmen der öffentlichen Bereitstellung sind Nutzer berechtigt, Dokumente zum privaten und sonstigen eigenen Gebrauch herunterzuladen, zu speichern oder in kleiner Anzahl zu drucken (<a target="_blank" href="http://www.bundesrecht.juris.de/urhg">§ 53 UrhG</a>).<br />
+				Falls Sie Ihrer Publikation keine CC-Lizenz hinzufügen gelten die folgenden Regelungen: im Rahmen der öffentlichen Bereitstellung sind Nutzer berechtigt, Dokumente zum privaten und sonstigen eigenen Gebrauch herunterzuladen, zu speichern oder in kleiner Anzahl zu drucken (<a target="_blank" href="http://www.bundesrecht.juris.de/urhg">§ 53 UrhG</a>).
 
 				Gleichzeitig gestattet der Veröffentlichende die Lizenzierung seines Werks unter einer <a target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0">Creative-Commons-Lizenz 4.0</a> (Namensnennung - Keine kommerzielle Nutzung - Keine Bearbeitung), die den Nutzern erlaubt, das Werk in unveränderter Form zu vervielfältigen, zu verbreiten und öffentlich zugänglich zu machen, insofern er als Autor genannt wird. 
 
@@ -8748,11 +8756,73 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 	<message key="xmlui.administrative.select.catalogue.head">Select Message Catalogue</message>
 	<message key="xmlui.administrative.select.catalogue.list.prefix">Catalogue: </message>
 
-###
-# Additions for DOI filter
-###
-jsp.tools.edit-item-form.form.button.register-doi = Register DOI
-jsp.tools.edit-item-form.doi-registered-note = A DOI has been registered for this item
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                     Statistics Aspect
+
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <message key="xmlui.statistics.title">Statistics</message>
+    <message key="xmlui.statistics.search.title">Search Statistics</message>
+    <message key="xmlui.statistics.search.head">Search Statistics</message>
+    <message key="xmlui.statistics.search.head-dso">Search Statistics for {0}</message>
+    <message key="xmlui.statistics.search.error">There was an error while generating the search statistics, please try again later.</message>
+    <message key="xmlui.statistics.search.no-results">No search statistics available for the selected period.</message>
+    <message key="xmlui.statistics.workflow.title">Workflow Statistics</message>
+    <message key="xmlui.statistics.visits.total">Total Visits</message>
+    <message key="xmlui.statistics.visits.month">Total Visits Per Month</message>
+    <message key="xmlui.statistics.visits.views">Views</message>
+    <message key="xmlui.statistics.visits.countries">Top country views</message>
+    <message key="xmlui.statistics.visits.cities">Top cities views</message>
+    <message key="xmlui.statistics.visits.bitstreams">File Visits</message>
+    <message key="xmlui.statistics.Navigation.title">Statistics</message>
+    <message key="xmlui.statistics.Navigation.usage.view">View Usage Statistics</message>
+    <message key="xmlui.statistics.Navigation.usage-Elasticsearch.view">View Usage Statistics</message>
+    <message key="xmlui.statistics.Navigation.search.view">View Search Statistics</message>
+    <message key="xmlui.statistics.Navigation.workflow.view">View Workflow Statistics</message>
+    <message key="xmlui.statistics.trail">Statistics</message>
+    <message key="xmlui.statistics.trail-search">Search Statistics</message>
+    <message key="xmlui.statistics.trail-workflow">Workflow Statistics</message>
+    <message key="xmlui.statistics.workflow.no-results">No workflow statistics available for the selected period.</message>
+    <message key="xmlui.statistics.workflow.error">There was an error while generating the workflow statistics, please try again later.</message>
+    <message key="xmlui.statistics.workflow.head">Workflow Statistics</message>
+    <message key="xmlui.statistics.workflow.head-dso">Workflow Statistics for {0}</message>
+
+
+    <message key="xmlui.statistics.StatisticsSearchTransformer.search-terms.head">Top Search Terms</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.search-total.head">Total</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.last-month">Previous month</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.last-6-months">Previous 6 months</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.last-year">Previous year</message>
+    <message key="xmlui.statistics.StatisticsSearchTransformer.time-filter.overall">Overall</message>
+
+    <message key="xmlui.statistics.display.table.column-label.search-terms">Search Term</message>
+    <message key="xmlui.statistics.display.table.column-label.searches">Searches</message>
+    <message key="xmlui.statistics.display.table.column-label.percent-total">% of Total</message>
+    <message key="xmlui.statistics.display.table.column-label.views-search">Pageviews / Search</message>
+    <message key="xmlui.statistics.display.table.column-label.step">Step</message>
+    <message key="xmlui.statistics.display.table.column-label.performed">Performed</message>
+    <message key="xmlui.statistics.display.table.column-label.average">Average</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP1POOL">Accept/Reject Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP1">Accept/Reject Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP2POOL">Accept/Reject/Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP2">Accept/Reject/Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP3POOL">Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.STEP3">Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.reviewstep.claimaction">Accept/Reject Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.reviewstep.reviewaction">Accept/Reject Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.editstep.claimaction">Accept/Reject/Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.editstep.editaction">Accept/Reject/Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.finaleditstep.claimaction">Edit Metadata Step Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.default.finaleditstep.finaleditaction">Edit Metadata Step</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.scoreReviewStep.claimaction">Score Review Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.scoreReviewStep.scorereviewaction">Score Review</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.evaluationStep.evaluationaction">Score Review Evaluation</message>
+    <message key="xmlui.statistics.display.table.workflow.step.scoreReview.evaluationStep.noUserSelectionAction">Score Review Evaluation Configuration</message>
+    <message key="xmlui.statistics.display.table.workflow.step.selectSingleReviewer.selectReviewerStep.claimaction">Single User Review Pool</message>
+    <message key="xmlui.statistics.display.table.workflow.step.selectSingleReviewer.singleUserReviewStep.autoassignAction">Single User Auto Assign Action</message>
+    <message key="xmlui.statistics.display.table.workflow.step.selectSingleReviewer.singleUserReviewStep.singleuserreviewaction">Single User Review Action</message>
+
+
 
     <!-- Versioning -->
     <message key="xmlui.aspect.versioning.VersioningNavigation.context_create_version">Create version of this item</message>
@@ -8861,15 +8931,15 @@ jsp.tools.edit-item-form.doi-registered-note = A DOI has been registered for thi
     <message key="xmlui.mirage2.item-list.thumbnail">Thumbnail</message>
 <!-- submission progress bar messages -->
 	<message key="xmlui.Submission.submit.progressbar.initial-questions">Initial Questions</message>
-	<message key="xmlui.Submission.submit.progressbar.describe">Describe</message>
-    <message key="xmlui.Submission.submit.progressbar.access">Access</message>
+	<message key="xmlui.Submission.submit.progressbar.describe">Beschreiben</message>
+    <message key="xmlui.Submission.submit.progressbar.access">Zugriff</message>
 	<message key="xmlui.Submission.submit.progressbar.doi">DOI</message>
-    <message key="xmlui.Submission.submit.progressbar.upload">Upload</message>
-	<message key="xmlui.Submission.submit.progressbar.verify">Review</message>
+    <message key="xmlui.Submission.submit.progressbar.upload">Datei Hochladen</message>
+	<message key="xmlui.Submission.submit.progressbar.verify">Daten prüfen</message>
 	<message key="xmlui.Submission.submit.progressbar.creative-commons">Creative Commons</message>
-	<message key="xmlui.Submission.submit.progressbar.CClicense">CC License</message>
-    <message key="xmlui.Submission.submit.progressbar.license">License</message>
-	<message key="xmlui.Submission.submit.progressbar.complete">Complete</message>
+	<message key="xmlui.Submission.submit.progressbar.CClicense">CC Lizenz</message>
+    <message key="xmlui.Submission.submit.progressbar.license">eDiss-Vertrag</message>
+	<message key="xmlui.Submission.submit.progressbar.complete">Fertig</message>
 
 
 <!-- org.dspace.app.xmlui.Submission.submit.AddDoiStep -->
@@ -8964,15 +9034,15 @@ jsp.tools.edit-item-form.doi-registered-note = A DOI has been registered for thi
 
 
 <!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
-        <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">An error occurred ... {0}</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.head">License Your Work</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.info1">If you wish, you may add a <a href="http://creativecommons.org/">Creative Commons</a> License to your item. <strong>Creative Commons licenses govern what people who read your work may then do with it.</strong></message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Choose a license</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Proceed to Creative Commons website to select a license</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.license">License Type</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.select_change">Select or modify your license ...</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.no_license">No Creative Commons License</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.save_changes">You must click Next to save your changes.</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">Ein Proble ist aufgetreten ... {0}</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.head">Fügen Sie Ihrer Arbeit eine Lizenz zu</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.info1">Sie können Ihre Arbiet unter einer <a href="http://creativecommons.org/">Creative Commons</a> Lizenz stellen. <strong>Creative Commons Lizenzen regeln, was Leute, die Ihre Arbeit herunterladen, mit dem Text machen dürfen.</strong></message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Lizenz wählen</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Eine Creative Commons Lizenz wählen</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.license">Lizenztyp</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.select_change">Wähle oder ändere das CC-Lizenz</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.no_license">Keine Lizenz hinzufügen</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.save_changes">Klicken Sie auf "weiter", um die Änderungen zu speichern.</message>
 
 <!-- Site administrator options -->
 	<message key="xmlui.administrative.Navigation.administrative_head">Administrative</message>
@@ -8992,7 +9062,8 @@ jsp.tools.edit-item-form.doi-registered-note = A DOI has been registered for thi
     <message key="xmlui.administrative.Navigation.administrative_batch_import">Batch Import (ZIP)</message>
         <message key="xmlui.administrative.Navigation.administrative_import_metadata">Import Metadata</message>
         <message key="xmlui.administrative.Navigation.administrative_curation">Curation Tasks</message>
-
+	<message key="xmlui.statistic.link">Statistik</message>
 </catalogue>
+
 
 
