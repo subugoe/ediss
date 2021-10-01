@@ -59,9 +59,9 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Autor</label>
+					<label>VerfasserIn</label>
 					<input-type>name</input-type>
-					<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 				</field>
 
@@ -82,9 +82,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsdatum</label>
+					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -93,9 +93,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsort</label>
+					<label>Geburtsort</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 					<required>Geben Sie bitte Ihren Geburtsort an.</required>
 				</field>
 
@@ -104,7 +104,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Straße und Hausnummer</label>
+					<label>Straße und Hausnummer</label>
 					<input-type>onebox</input-type>
 					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -115,7 +115,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postleitzahl</label>
+					<label>Postleitzahl</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -126,7 +126,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Stadt</label>
+					<label>Stadt</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -137,9 +137,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-Mail</label>
+					<label>E-Mail</label>
 					<input-type>onebox</input-type>
-					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
 					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 				</field>
 
@@ -148,7 +148,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Sprache</label>
+					<label>Sprache</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 					<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -159,7 +159,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Originaltitel der Arbeit</label>
+					<label>Originaltitel der Arbeit</label>
 					<input-type>onebox</input-type>
 					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -170,10 +170,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Titel der Arbeit auf Englisch</label>
+					<label>Titel der Arbeit auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -194,7 +194,7 @@
 					<repeatable>true</repeatable>
 					<label>Untertitel auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 					<required></required>
 				</field>
 
@@ -203,10 +203,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Betreuer</label>
+					<label>BetreuerIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+					<required>Bitte geben Sie den BetreuerIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -214,10 +214,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Gutachter</label>
+					<label>GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -225,10 +225,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zweitgutachter</label>
+					<label>ZweitgutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -236,7 +236,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>thirdReferee</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>Weitere Gutachter</label>
+					<label>Weitere GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required></required>
@@ -247,8 +247,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Tag der mündlichen Prüfung</label>
-					<input-type>date</input-type>
+					<label>Tag der mündlichen Prüfung</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 				</field>
@@ -258,7 +258,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Art der Arbeit</label>
+					<label>Art der Arbeit</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -270,7 +270,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Göttinger Online-Klassifikation (GOK)</label>
+					<label>Göttinger Online-Klassifikation (GOK)</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie mindestens eine GOK-Kategorie aus.</required>
@@ -283,7 +283,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<label>Zusammenfassung (Abstract) auf Englisch</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -316,7 +316,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Schlagwörter auf Englisch</label>
+					<label>Schlagwörter auf Englisch</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und Klicken Sie dann auf „+“.</hint>
 					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -394,9 +394,9 @@
                                         <dc-element>contributor</dc-element>
                                         <dc-qualifier>author</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Autor</label>
+                                        <label>VerfasserIn</label>
                                         <input-type>name</input-type>
-                                        <hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+                                        <hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
                                         <required>Bitte prüfen Sie den Autorennamen.</required>
                                 </field>
 
@@ -405,9 +405,9 @@
                                         <dc-element>affiliation</dc-element>
                                         <dc-qualifier>dateOfBirth</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Geburtsdatum</label>
+                                        <label>Geburtsdatum</label>
                                         <input-type>date</input-type>
-                                        <hint>&#160;</hint>
+                                        <hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
                                         <required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
                                 </field>
 
@@ -416,9 +416,9 @@
                                         <dc-element>affiliation</dc-element>
                                         <dc-qualifier>placeOfBirth</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Geburtsort</label>
+                                        <label>Geburtsort</label>
                                         <input-type>onebox</input-type>
-                                        <hint>&#160;</hint>
+                                        <hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
                                         <required>Geben Sie bitte Ihren Geburtsort an.</required>
                                 </field>
                                 <field>
@@ -426,9 +426,9 @@
                                         <dc-element>affiliation</dc-element>
                                         <dc-qualifier>email</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* E-Mail</label>
+                                        <label>E-Mail</label>
                                         <input-type>onebox</input-type>
-                                        <hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+                                        <hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
                                         <required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
                                 </field>
 
@@ -437,7 +437,7 @@
                                         <dc-element>language</dc-element>
                                         <dc-qualifier>iso</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Sprache</label>
+                                        <label>Sprache</label>
                                         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                                         <hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
                                         <required>Bitte wählen Sie eine Sprache aus.</required>
@@ -448,7 +448,7 @@
                                         <dc-element>title</dc-element>
                                         <dc-qualifier></dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Originaltitel der Arbeit</label>
+                                        <label>Originaltitel der Arbeit</label>
                                         <input-type>onebox</input-type>
                                         <hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
                                         <required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -459,10 +459,10 @@
                                         <dc-element>title</dc-element>
                                         <dc-qualifier>translated</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Titel der Arbeit auf Englisch</label>
+                                        <label>Titel der Arbeit auf Englisch</label>
                                         <input-type>onebox</input-type>
-                                        <hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-                                        <required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+                                        <hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+                                        <required></required>
                                 </field>
 
 
@@ -484,7 +484,7 @@
                                         <repeatable>true</repeatable>
                                         <label>Untertitel auf Englisch</label>
                                         <input-type>onebox</input-type>
-                                        <hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+                                        <hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
                                         <required></required>
                                 </field>
                                 <field>
@@ -492,10 +492,10 @@
                                         <dc-element>contributor</dc-element>
                                         <dc-qualifier>advisor</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Betreuer</label>
+                                        <label>BetreuerIn</label>
                                         <input-type>name</input-type>
                                         <hint>&#160;</hint>
-                                        <required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+                                        <required>Bitte geben Sie den BetreuerIn Ihrer Arbeit an.</required>
                                 </field>
 
                                 <field>
@@ -503,10 +503,10 @@
                                         <dc-element>contributor</dc-element>
                                         <dc-qualifier>referee</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Gutachter</label>
+                                        <label>GutachterIn</label>
                                         <input-type>name</input-type>
                                         <hint>&#160;</hint>
-                                        <required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+                                        <required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
                                 </field>
 
                                 <field>
@@ -514,10 +514,10 @@
                                         <dc-element>contributor</dc-element>
                                         <dc-qualifier>coReferee</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Zweitgutachter</label>
+                                        <label>ZweitgutachterIn</label>
                                         <input-type>name</input-type>
                                         <hint>&#160;</hint>
-                                        <required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+                                        <required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
                                 </field>
 
                                 <field>
@@ -525,7 +525,7 @@
                                         <dc-element>contributor</dc-element>
                                         <dc-qualifier>thirdReferee</dc-qualifier>
                                         <repeatable>true</repeatable>
-                                        <label>Weitere Gutachter</label>
+                                        <label>Weitere GutachterIn</label>
                                         <input-type>name</input-type>
                                         <hint>&#160;</hint>
                                         <required></required>
@@ -535,8 +535,8 @@
                                         <dc-element>date</dc-element>
                                         <dc-qualifier>examination</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Tag der mündlichen Prüfung</label>
-                                        <input-type>date</input-type>
+                                        <label>Tag der mündlichen Prüfung</label>
+                                        <input-type>onebox</input-type>
                                         <hint>&#160;</hint>
                                         <required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
                                 </field>
@@ -546,7 +546,7 @@
                                         <dc-element>type</dc-element>
                                         <dc-qualifier></dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Art der Arbeit</label>
+                                        <label>Art der Arbeit</label>
                                         <input-type value-pairs-name="common_types">dropdown</input-type>
                                         <hint>&#160;</hint>
                                         <required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -558,7 +558,7 @@
                                         <dc-element>description</dc-element>
                                         <dc-qualifier>abstracteng</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Zusammenfassung (Abstract) auf Englisch</label>
+                                        <label>Zusammenfassung (Abstract) auf Englisch</label>
                                         <input-type>textarea</input-type>
                                         <hint>&#160;</hint>
                                         <required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -591,7 +591,7 @@
                                         <dc-element>subject</dc-element>
                                         <dc-qualifier>eng</dc-qualifier>
                                         <repeatable>true</repeatable>
-                                        <label>* Schlagwörter auf Englisch</label>
+                                        <label>Schlagwörter auf Englisch</label>
                                         <input-type>onebox</input-type>
                                         <hint>Bitte geben Sie pro Feld ein Schlagwort ein und Klicken Sie dann auf „+“.</hint>
                                         <required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -680,9 +680,9 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Autor</label>
+					<label>VerfasserIn</label>
 					<input-type>name</input-type>
-					<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 				</field>
 
@@ -702,9 +702,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsdatum</label>
+					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -713,9 +713,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsort</label>
+					<label>Geburtsort</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 					<required>Geben Sie bitte Ihren Geburtsort an.</required>
 				</field>
 
@@ -724,7 +724,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Straße und Hausnummer</label>
+					<label>Straße und Hausnummer</label>
 					<input-type>onebox</input-type>
 					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -735,7 +735,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postleitzahl</label>
+					<label>Postleitzahl</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -746,7 +746,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Stadt</label>
+					<label>Stadt</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -757,9 +757,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-Mail</label>
+					<label>E-Mail</label>
 					<input-type>onebox</input-type>
-					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
 					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 				</field>
 
@@ -768,7 +768,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Sprache</label>
+					<label>Sprache</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 					<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -779,7 +779,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Originaltitel der Arbeit</label>
+					<label>Originaltitel der Arbeit</label>
 					<input-type>onebox</input-type>
 					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -790,10 +790,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Titel der Arbeit auf Englisch</label>
+					<label>Titel der Arbeit auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -814,7 +814,7 @@
 					<repeatable>true</repeatable>
 					<label>Untertitel auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 					<required></required>
 				</field>
 
@@ -823,10 +823,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Betreuer</label>
+					<label>BetreuerIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+					<required>Bitte geben Sie den BetreuerIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -834,10 +834,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Gutachter</label>
+					<label>GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -845,10 +845,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zweitgutachter</label>
+					<label>ZweitgutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -856,7 +856,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>thirdReferee</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>Weitere Gutachter</label>
+					<label>Weitere GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required></required>
@@ -867,8 +867,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Tag der mündlichen Prüfung</label>
-					<input-type>date</input-type>
+					<label>Tag der mündlichen Prüfung</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 				</field>
@@ -878,7 +878,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Art der Arbeit</label>
+					<label>Art der Arbeit</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -890,7 +890,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Göttinger Online-Klassifikation (GOK)</label>
+					<label>Göttinger Online-Klassifikation (GOK)</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie mindestens eine GOK-Kategorie aus.</required>
@@ -903,7 +903,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<label>Zusammenfassung (Abstract) auf Englisch</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -936,7 +936,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Klassifikation</label>
+					<label>Klassifikation</label>
 					<input-type value-pairs-name="ddc_wiwi">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie mindestens eine Kategorie aus.</required>
@@ -947,7 +947,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Schlagwörter auf Englisch</label>
+					<label>Schlagwörter auf Englisch</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und Klicken Sie dann auf „+“.</hint>
 					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -1025,9 +1025,9 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Autor</label>
+					<label>VerfasserIn</label>
 					<input-type>name</input-type>
-					<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 				</field>
 
@@ -1047,9 +1047,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsdatum</label>
+					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -1058,9 +1058,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsort</label>
+					<label>Geburtsort</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 					<required>Geben Sie bitte Ihren Geburtsort an.</required>
 				</field>
 
@@ -1069,7 +1069,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Straße und Hausnummer</label>
+					<label>Straße und Hausnummer</label>
 					<input-type>onebox</input-type>
 					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -1080,7 +1080,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postleitzahl</label>
+					<label>Postleitzahl</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -1091,7 +1091,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Stadt</label>
+					<label>Stadt</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -1102,9 +1102,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-Mail</label>
+					<label>E-Mail</label>
 					<input-type>onebox</input-type>
-					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
 					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 				</field>
 
@@ -1113,7 +1113,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Sprache</label>
+					<label>Sprache</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 					<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -1124,7 +1124,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Originaltitel der Arbeit</label>
+					<label>Originaltitel der Arbeit</label>
 					<input-type>onebox</input-type>
 					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -1135,10 +1135,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Titel der Arbeit auf Englisch</label>
+					<label>Titel der Arbeit auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -1159,7 +1159,7 @@
 					<repeatable>true</repeatable>
 					<label>Untertitel auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 					<required></required>
 				</field>
 
@@ -1168,10 +1168,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Betreuer</label>
+					<label>BetreuerIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+					<required>Bitte geben Sie den BetreuerIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -1179,10 +1179,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Gutachter</label>
+					<label>GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -1190,10 +1190,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zweitutachter</label>
+					<label>Zweitutachter</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -1201,7 +1201,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>thirdReferee</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>Weitere Gutachter</label>
+					<label>Weitere GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required></required>
@@ -1212,8 +1212,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Tag der mündlichen Prüfung</label>
-					<input-type>date</input-type>
+					<label>Tag der mündlichen Prüfung</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 				</field>
@@ -1224,7 +1224,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Göttinger Online-Klassifikation (GOK)</label>
+					<label>Göttinger Online-Klassifikation (GOK)</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie mindestens eine GOK-Kategorie aus.</required>
@@ -1237,7 +1237,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<label>Zusammenfassung (Abstract) auf Englisch</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -1270,7 +1270,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Art der Arbeit</label>
+					<label>Art der Arbeit</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -1281,7 +1281,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Klassifikation</label>
+					<label>Klassifikation</label>
 					<input-type value-pairs-name="ddc_forst">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie mindestens eineKategorie aus.</required>
@@ -1292,7 +1292,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Schlagwörter auf Englisch</label>
+					<label>Schlagwörter auf Englisch</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
 					<required>Geben Sie bitte mindestens ein Schlagwort englisch an.</required>
@@ -1383,9 +1383,9 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Autor</label>
+					<label>VerfasserIn</label>
 					<input-type>name</input-type>
-					<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 					</field>
 
@@ -1406,9 +1406,9 @@
 						<dc-element>affiliation</dc-element>
 						<dc-qualifier>dateOfBirth</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Geburtsdatum</label>
+						<label>Geburtsdatum</label>
 						<input-type>date</input-type>
-						<hint>&#160;</hint>
+						<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
 						<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 					</field>
 
@@ -1417,9 +1417,9 @@
 						<dc-element>affiliation</dc-element>
 						<dc-qualifier>placeOfBirth</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Geburtsort</label>
+						<label>Geburtsort</label>
 						<input-type>onebox</input-type>
-						<hint>&#160;</hint>
+						<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 						<required>Geben Sie bitte Ihren Geburtsort an.</required>
 					</field>
 					
@@ -1428,7 +1428,7 @@
 						<dc-element>address</dc-element>
 						<dc-qualifier>street</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Straße und Hausnummer</label>
+						<label>Straße und Hausnummer</label>
 						<input-type>onebox</input-type>
 						<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 						<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -1439,7 +1439,7 @@
 						<dc-element>address</dc-element>
 						<dc-qualifier>zipcode</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Postleitzahl</label>
+						<label>Postleitzahl</label>
 						<input-type>onebox</input-type>
 						<hint>&#160;</hint>
 						<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -1450,7 +1450,7 @@
 						<dc-element>address</dc-element>
 						<dc-qualifier>city</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Stadt</label>
+						<label>Stadt</label>
 						<input-type>onebox</input-type>
 						<hint>&#160;</hint>
 						<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -1461,9 +1461,9 @@
 						<dc-element>affiliation</dc-element>
 						<dc-qualifier>email</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* E-Mail</label>
+						<label>E-Mail</label>
 						<input-type>onebox</input-type>
-						<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+						<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
 						<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 					</field>
 					
@@ -1472,7 +1472,7 @@
 						<dc-element>language</dc-element>
 						<dc-qualifier>iso</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Sprache</label>
+						<label>Sprache</label>
 						<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 						<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 						<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -1483,7 +1483,7 @@
 						<dc-element>title</dc-element>
 						<dc-qualifier></dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Originaltitel der Arbeit</label>
+						<label>Originaltitel der Arbeit</label>
 						<input-type>onebox</input-type>
 						<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 						<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -1494,10 +1494,10 @@
 						<dc-element>title</dc-element>
 						<dc-qualifier>translated</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Titel der Arbeit auf Englisch</label>
+						<label>Titel der Arbeit auf Englisch</label>
 						<input-type>onebox</input-type>
-						<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-						<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+						<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+						<required></required>
 					</field>
 
 					<field>
@@ -1518,7 +1518,7 @@
 						<repeatable>true</repeatable>
 						<label>Untertitel auf Englisch</label>
 						<input-type>onebox</input-type>
-						<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+						<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 						<required></required>
 					</field>
 
@@ -1527,10 +1527,10 @@
 						<dc-element>contributor</dc-element>
 						<dc-qualifier>advisor</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Betreuer</label>
+						<label>BetreuerIn</label>
 						<input-type>name</input-type>
 						<hint>&#160;</hint>
-						<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+						<required>Bitte geben Sie den BetreuerIn Ihrer Arbeit an.</required>
 					</field>
 
 					<field>
@@ -1538,10 +1538,10 @@
 						<dc-element>contributor</dc-element>
 						<dc-qualifier>referee</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Gutachter</label>
+						<label>GutachterIn</label>
 						<input-type>name</input-type>
 						<hint>&#160;</hint>
-						<required>Geben Sie bitte de Gutachter Ihrer Arbeit an.</required>
+						<required>Geben Sie bitte de GutachterIn Ihrer Arbeit an.</required>
 					</field>
 
 					<field>
@@ -1549,10 +1549,10 @@
 						<dc-element>contributor</dc-element>
 						<dc-qualifier>coReferee</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Zweitgutachter</label>
+						<label>ZweitgutachterIn</label>
 						<input-type>name</input-type>
 						<hint>&#160;</hint>
-						<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+						<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 					</field>
 
 					<field>
@@ -1560,7 +1560,7 @@
 						<dc-element>contributor</dc-element>
 						<dc-qualifier>thirdReferee</dc-qualifier>
 						<repeatable>true</repeatable>
-						<label>Weitere Gutachter</label>
+						<label>Weitere GutachterIn</label>
 						<input-type>name</input-type>
 						<hint>&#160;</hint>
 						<required></required>
@@ -1571,8 +1571,8 @@
 						<dc-element>date</dc-element>
 						<dc-qualifier>examination</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Tag der mündlichen Prüfung</label>
-						<input-type>date</input-type>
+						<label>Tag der mündlichen Prüfung</label>
+						<input-type>onebox</input-type>
 						<hint>&#160;</hint>
 						<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 					</field>
@@ -1582,7 +1582,7 @@
 						<dc-element>type</dc-element>
 						<dc-qualifier></dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Art der Arbeit</label>
+						<label>Art der Arbeit</label>
 						<input-type value-pairs-name="common_types">dropdown</input-type>
 						<hint>&#160;</hint>
 						<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -1593,7 +1593,7 @@
 						<dc-element>subject</dc-element>
 						<dc-qualifier>ddc</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Klassifikation</label>
+						<label>Klassifikation</label>
 						<input-type value-pairs-name="ddc_cemeas">dropdown</input-type>
 						<hint>&#160;</hint>
 						<required>Bitte wählen Sie eine Kategorie aus.</required>
@@ -1604,7 +1604,7 @@
 						<dc-element>description</dc-element>
 						<dc-qualifier>abstracteng</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Zusammenfassung (Abstract) auf Englisch</label>
+						<label>Zusammenfassung (Abstract) auf Englisch</label>
 						<input-type>textarea</input-type>
 						<hint>&#160;</hint>
 						<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -1637,7 +1637,7 @@
 						<dc-element>subject</dc-element>
 						<dc-qualifier>eng</dc-qualifier>
 						<repeatable>true</repeatable>
-						<label>* Schlagwörter auf Englisch</label>
+						<label>Schlagwörter auf Englisch</label>
 						<input-type>onebox</input-type>
 						<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
 						<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -1728,9 +1728,9 @@
 						<dc-element>contributor</dc-element>
 						<dc-qualifier>author</dc-qualifier>
 						<repeatable>false</repeatable>
-						<label>* Autor</label>
+						<label>VerfasserIn</label>
 						<input-type>name</input-type>
-						<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+						<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 				</field>
 
@@ -1750,9 +1750,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsdatum</label>
+					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -1761,9 +1761,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsort</label>
+					<label>Geburtsort</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 					<required>Geben Sie bitte Ihren Geburtsort an.</required>
 				</field>
 				
@@ -1772,9 +1772,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-Mail</label>
+					<label>E-Mail</label>
 					<input-type>onebox</input-type>
-					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
 					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 				</field>
 
@@ -1783,7 +1783,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Straße und Hausnummer</label>
+					<label>Straße und Hausnummer</label>
 					<input-type>onebox</input-type>
 					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -1794,7 +1794,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postleitzahl</label>
+					<label>Postleitzahl</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -1805,7 +1805,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Stadt</label>
+					<label>Stadt</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -1816,7 +1816,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Sprache</label>
+					<label>Sprache</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 					<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -1827,7 +1827,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Originaltitel der Arbeit</label>
+					<label>Originaltitel der Arbeit</label>
 					<input-type>onebox</input-type>
 					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -1838,10 +1838,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Titel der Arbeit auf Englisch</label>
+					<label>Titel der Arbeit auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -1862,7 +1862,7 @@
 					<repeatable>true</repeatable>
 					<label>Untertitel auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 					<required></required>
 				</field>
 
@@ -1871,10 +1871,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Betreuer</label>
+					<label>BetreuerIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Betreuer Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den BetreuerIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -1882,10 +1882,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Gutachter</label>
+					<label>GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -1893,10 +1893,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zweitgutachter</label>
+					<label>ZweitgutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -1904,7 +1904,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>thirdReferee</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>Weitere Gutachter</label>
+					<label>Weitere GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required></required>
@@ -1915,8 +1915,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Tag der mündlichen Prüfung</label>
-					<input-type>date</input-type>
+					<label>Tag der mündlichen Prüfung</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 				</field>
@@ -1926,7 +1926,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Art der Arbeit</label>
+					<label>Art der Arbeit</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -1937,7 +1937,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Klassifikation</label>
+					<label>Klassifikation</label>
 					<input-type value-pairs-name="ddc_dighum">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie eine Kategorie aus.</required>
@@ -1948,7 +1948,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<label>Zusammenfassung (Abstract) auf Englisch</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -1981,7 +1981,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Schlagwörter auf Englisch</label>
+					<label>Schlagwörter auf Englisch</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
 					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -2072,9 +2072,9 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Autor</label>
+					<label>VerfasserIn</label>
 					<input-type>name</input-type>
-					<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 				</field>
 
@@ -2094,9 +2094,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsdatum</label>
+					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -2105,9 +2105,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsort</label>
+					<label>Geburtsort</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 					<required>Geben Sie bitte Ihren Geburtsort an.</required>
 				</field>
 				
@@ -2116,9 +2116,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-Mail</label>
+					<label>E-Mail</label>
 					<input-type>onebox</input-type>
-					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
 					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 				</field>
 			
@@ -2127,7 +2127,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Straße und Hausnummer</label>
+					<label>Straße und Hausnummer</label>
 					<input-type>onebox</input-type>
 					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -2138,7 +2138,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postleitzahl</label>
+					<label>Postleitzahl</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -2149,7 +2149,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Stadt</label>
+					<label>Stadt</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -2160,7 +2160,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Sprache</label>
+					<label>Sprache</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 					<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -2171,7 +2171,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Originaltitel der Arbeit</label>
+					<label>Originaltitel der Arbeit</label>
 					<input-type>onebox</input-type>
 					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -2182,10 +2182,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Titel der Arbeit auf Englisch</label>
+					<label>Titel der Arbeit auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -2206,7 +2206,7 @@
 					<repeatable>true</repeatable>
 					<label>Untertitel auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 					<required></required>
 				</field>
 
@@ -2215,10 +2215,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Betreuer</label>
+					<label>BetreuerIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte de Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte de GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -2226,10 +2226,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Gutachter</label>
+					<label>GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -2237,10 +2237,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zweitgutachter</label>
+					<label>ZweitgutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -2248,7 +2248,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>thirdReferee</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>Weitere Gutachter</label>
+					<label>Weitere GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required></required>
@@ -2259,8 +2259,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Tag der mündlichen Prüfung</label>
-					<input-type>date</input-type>
+					<label>Tag der mündlichen Prüfung</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 				</field>
@@ -2270,7 +2270,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Art der Arbeit</label>
+					<label>Art der Arbeit</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -2281,7 +2281,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Klassifikation</label>
+					<label>Klassifikation</label>
 					<input-type value-pairs-name="ddc_ggnb">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie eine Kategorie aus.</required>
@@ -2292,7 +2292,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<label>Zusammenfassung (Abstract) auf Englisch</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -2325,7 +2325,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Schlagwörter auf Englisch</label>
+					<label>Schlagwörter auf Englisch</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
 					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -2416,9 +2416,9 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Autor</label>
+					<label>VerfasserIn</label>
 					<input-type>name</input-type>
-					<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 				</field>
 
@@ -2438,9 +2438,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsdatum</label>
+					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -2449,9 +2449,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsort</label>
+					<label>Geburtsort</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 					<required>Geben Sie bitte Ihren Geburtsort an.</required>
 				</field>
 				
@@ -2460,9 +2460,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-Mail</label>
+					<label>E-Mail</label>
 					<input-type>onebox</input-type>
-					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
 					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 				</field>
 
@@ -2471,7 +2471,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Straße und Hausnummer</label>
+					<label>Straße und Hausnummer</label>
 					<input-type>onebox</input-type>
 					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -2482,7 +2482,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postleitzahl</label>
+					<label>Postleitzahl</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -2493,7 +2493,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Stadt</label>
+					<label>Stadt</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -2504,7 +2504,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Sprache</label>
+					<label>Sprache</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 					<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -2515,7 +2515,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Originaltitel der Arbeit</label>
+					<label>Originaltitel der Arbeit</label>
 					<input-type>onebox</input-type>
 					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -2526,10 +2526,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Titel der Arbeit auf Englisch</label>
+					<label>Titel der Arbeit auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -2550,7 +2550,7 @@
 					<repeatable>true</repeatable>
 					<label>Untertitel auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 					<required></required>
 				</field>
 
@@ -2559,10 +2559,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Betreuer</label>
+					<label>BetreuerIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Betreuer Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den BetreuerIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -2570,10 +2570,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Gutachter</label>
+					<label>GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -2581,10 +2581,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zweitgutachter</label>
+					<label>ZweitgutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -2592,7 +2592,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>thirdReferee</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>Weitere Gutachter</label>
+					<label>Weitere GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required></required>
@@ -2603,8 +2603,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Tag der mündlichen Prüfung</label>
-					<input-type>date</input-type>
+					<label>Tag der mündlichen Prüfung</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 				</field>
@@ -2614,7 +2614,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Art der Arbeit</label>
+					<label>Art der Arbeit</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -2625,7 +2625,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Klassifikation</label>
+					<label>Klassifikation</label>
 					<input-type value-pairs-name="ddc_archeo">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie eine Kategorie aus.</required>
@@ -2636,7 +2636,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Fachbereich</label>
+					<label>Fachbereich</label>
 					<input-type value-pairs-name="gok_archeo">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie den passenden Fachbereich aus.</required>
@@ -2647,7 +2647,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<label>Zusammenfassung (Abstract) auf Englisch</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -2680,7 +2680,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Schlagwörter auf Englisch</label>
+					<label>Schlagwörter auf Englisch</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
 					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -2760,9 +2760,9 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Autor</label>
+					<label>VerfasserIn</label>
 					<input-type>name</input-type>
-					<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 				</field>
 
@@ -2782,9 +2782,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsdatum</label>
+					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -2793,9 +2793,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsort</label>
+					<label>Geburtsort</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 					<required>Geben Sie bitte Ihren Geburtsort an.</required>
 				</field>
 
@@ -2804,7 +2804,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Straße und Hausnummer</label>
+					<label>Straße und Hausnummer</label>
 					<input-type>onebox</input-type>
 					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -2815,7 +2815,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postleitzahl</label>
+					<label>Postleitzahl</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -2826,7 +2826,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Stadt</label>
+					<label>Stadt</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -2837,9 +2837,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-Mail</label>
+					<label>E-Mail</label>
 					<input-type>onebox</input-type>
-					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
 					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 				</field>
 
@@ -2848,7 +2848,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Sprache</label>
+					<label>Sprache</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 					<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -2859,7 +2859,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Originaltitel der Arbeit</label>
+					<label>Originaltitel der Arbeit</label>
 					<input-type>onebox</input-type>
 					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -2870,10 +2870,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Titel der Arbeit auf Englisch</label>
+					<label>Titel der Arbeit auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -2894,7 +2894,7 @@
 					<repeatable>true</repeatable>
 					<label>Untertitel auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 					<required></required>
 				</field>
 
@@ -2903,10 +2903,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Betreuer</label>
+					<label>BetreuerIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Betreuer Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den BetreuerIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -2914,10 +2914,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Gutachter</label>
+					<label>GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -2925,10 +2925,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zweitgutachter</label>
+					<label>ZweitgutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -2936,7 +2936,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>thirdReferee</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>Weitere Gutachter</label>
+					<label>Weitere GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required></required>
@@ -2947,8 +2947,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Tag der mündlichen Prüfung</label>
-					<input-type>date</input-type>
+					<label>Tag der mündlichen Prüfung</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 				</field>
@@ -2958,7 +2958,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Art der Arbeit</label>
+					<label>Art der Arbeit</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -2971,7 +2971,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<label>Zusammenfassung (Abstract) auf Englisch</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -3004,7 +3004,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Schlagwörter auf Englisch</label>
+					<label>Schlagwörter auf Englisch</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und klicken Sie dann auf „+“.</hint>
 					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -3015,7 +3015,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Göttinger Online-Klassifikation (GOK)</label>
+					<label>Göttinger Online-Klassifikation (GOK)</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte folgen Sie den GOK-Link unter dem Eingabefeld und wählen Sie per Klick auf die Bezeichnung eine Kategorie aus. Mehrere Kategorien geben Sie bitte in separate Felder ein.</hint>
 					<required>Bitte wählen Sie mindestens eine GOK-Kategorie aus.</required>
@@ -3094,9 +3094,9 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Autor</label>
+					<label>VerfasserIn</label>
 					<input-type>name</input-type>
-					<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 				</field>
 
@@ -3116,9 +3116,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsdatum</label>
+					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -3127,9 +3127,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsort</label>
+					<label>Geburtsort</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 					<required>Geben Sie bitte Ihren Geburtsort an.</required>
 				</field>
 
@@ -3138,7 +3138,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Straße und Hausnummer</label>
+					<label>Straße und Hausnummer</label>
 					<input-type>onebox</input-type>
 					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -3149,7 +3149,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postleitzahl</label>
+					<label>Postleitzahl</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -3160,7 +3160,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Stadt</label>
+					<label>Stadt</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -3171,9 +3171,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-Mail</label>
+					<label>E-Mail</label>
 					<input-type>onebox</input-type>
-					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
 					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 				</field>
 
@@ -3182,7 +3182,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Sprache</label>
+					<label>Sprache</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 					<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -3193,7 +3193,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Originaltitel der Arbeit</label>
+					<label>Originaltitel der Arbeit</label>
 					<input-type>onebox</input-type>
 					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -3204,10 +3204,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Titel der Arbeit auf Englisch</label>
+					<label>Titel der Arbeit auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -3228,7 +3228,7 @@
 					<repeatable>true</repeatable>
 					<label>Untertitel auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 					<required></required>
 				</field>
 
@@ -3237,10 +3237,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Betreuer</label>
+					<label>BetreuerIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+					<required>Bitte geben Sie den BetreuerIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -3248,10 +3248,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Gutachter</label>
+					<label>GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -3259,10 +3259,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zweitgutachter</label>
+					<label>ZweitgutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -3270,7 +3270,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>thirdReferee</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>Weitere Gutachter</label>
+					<label>Weitere GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required></required>
@@ -3281,8 +3281,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Tag der mündlichen Prüfung</label>
-					<input-type>date</input-type>
+					<label>Tag der mündlichen Prüfung</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 				</field>
@@ -3292,7 +3292,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Art der Arbeit</label>
+					<label>Art der Arbeit</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -3304,7 +3304,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Themengebiet</label>
+					<label>Themengebiet</label>
 					<input-type value-pairs-name="gok_bio">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie passende Fachgebiet aus.</required>
@@ -3315,7 +3315,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Klassifikation</label>
+					<label>Klassifikation</label>
 					<input-type value-pairs-name="ddc_bio">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie eine Kategorie aus.</required>
@@ -3327,7 +3327,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<label>Zusammenfassung (Abstract) auf Englisch</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -3360,7 +3360,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Schlagwörter auf Englisch</label>
+					<label>Schlagwörter auf Englisch</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und Klicken Sie dann auf „+“.</hint>
 					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -3451,9 +3451,9 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Autor</label>
+					<label>VerfasserIn</label>
 					<input-type>name</input-type>
-					<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 				</field>
 
@@ -3473,9 +3473,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsdatum</label>
+					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -3484,9 +3484,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsort</label>
+					<label>Geburtsort</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 					<required>Geben Sie bitte Ihren Geburtsort an.</required>
 				</field>
 
@@ -3495,7 +3495,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Straße und Hausnummer</label>
+					<label>Straße und Hausnummer</label>
 					<input-type>onebox</input-type>
 					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -3506,7 +3506,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postleitzahl</label>
+					<label>Postleitzahl</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -3517,7 +3517,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Stadt</label>
+					<label>Stadt</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -3528,9 +3528,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-Mail</label>
+					<label>E-Mail</label>
 					<input-type>onebox</input-type>
-					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. Ihre Angabe wird nicht öffentlich sichtbar.</hint>
 					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 				</field>
 
@@ -3539,7 +3539,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Sprache</label>
+					<label>Sprache</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 					<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -3550,7 +3550,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Originaltitel der Arbeit</label>
+					<label>Originaltitel der Arbeit</label>
 					<input-type>onebox</input-type>
 					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -3561,10 +3561,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Titel der Arbeit auf Englisch</label>
+					<label>Titel der Arbeit auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -3585,7 +3585,7 @@
 					<repeatable>true</repeatable>
 					<label>Untertitel auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 					<required></required>
 				</field>
 
@@ -3594,10 +3594,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Betreuer</label>
+					<label>BetreuerIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+					<required>Bitte geben Sie den BetreuerIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -3605,10 +3605,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Gutachter</label>
+					<label>GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -3616,10 +3616,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zweitgutachter</label>
+					<label>ZweitgutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -3627,7 +3627,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>thirdReferee</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>Weitere Gutachter</label>
+					<label>Weitere GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required></required>
@@ -3638,8 +3638,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Tag der mündlichen Prüfung</label>
-					<input-type>date</input-type>
+					<label>Tag der mündlichen Prüfung</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 				</field>
@@ -3649,7 +3649,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Art der Arbeit</label>
+					<label>Art der Arbeit</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -3661,7 +3661,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Themengebiet</label>
+					<label>Themengebiet</label>
 					<input-type value-pairs-name="gok_mathe">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie das passende Fachgebiet aus.</required>
@@ -3673,7 +3673,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<label>Zusammenfassung (Abstract) auf Englisch</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -3706,7 +3706,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Schlagwörter auf Englisch</label>
+					<label>Schlagwörter auf Englisch</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und Klicken Sie dann auf „+“.</hint>
 					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -3797,22 +3797,11 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Autor</label>
+					<label>VerfasserIn</label>
 					<input-type>name</input-type>
-					<hint>Nachname, Vorname Vorname2 von. Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Der Name wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
 					<required>Bitte prüfen Sie den Autorennamen.</required>
 				</field>
-
-                                <field>
-                                        <dc-schema>dc</dc-schema>
-                                        <dc-element>creator</dc-element>
-                                        <dc-qualifier>birthname</dc-qualifier>
-                                        <repeatable>false</repeatable>
-                                        <label>Geburtsname</label>
-                                        <input-type>onebox</input-type>
-                                        <hint>Falls abweichend vom Autorennamen</hint>
-                                        <required></required>
-                                </field>
 
                                 <field>
                                         <dc-schema>dc</dc-schema>
@@ -3831,9 +3820,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsdatum</label>
+					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.ffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -3842,9 +3831,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Geburtsort</label>
+					<label>Geburtsort</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsort wird öffentlich nich sichtbar.</hint>
 					<required>Geben Sie bitte Ihren Geburtsort an.</required>
 				</field>
 
@@ -3853,7 +3842,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Straße und Hausnummer</label>
+					<label>Straße und Hausnummer</label>
 					<input-type>onebox</input-type>
 					<hint>An diese Adresse schicken wir Ihnen die Rechnung für die Publikationskosten.</hint>
 					<required>Bitte geben Sie Ihre Adresse vollständig an.</required>
@@ -3864,7 +3853,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postleitzahl</label>
+					<label>Postleitzahl</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Postleitzahl an.</required>
@@ -3875,7 +3864,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Stadt</label>
+					<label>Stadt</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie Ihre Stadt an.</required>
@@ -3886,9 +3875,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-Mail</label>
+					<label>E-Mail</label>
 					<input-type>onebox</input-type>
-					<hint>Die E-Mail-Adresse wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern.</hint>
+					<hint>Wir brauchen Ihre E-Mail-Adresse für evtl. Rückfragen. Sie wurde aus Ihrem Benutzerprofil übernommen, bitte gegebenenfalls ändern. </hint>
 					<required>Bitte geben Sie eine gültige E-Mail-Adresse an.</required>
 				</field>
 
@@ -3897,7 +3886,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Sprache</label>
+					<label>Sprache</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>Die Sprache, in der Ihre Arbeit geschrieben ist.</hint>
 					<required>Bitte wählen Sie eine Sprache aus.</required>
@@ -3908,7 +3897,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Originaltitel der Arbeit</label>
+					<label>Originaltitel der Arbeit</label>
 					<input-type>onebox</input-type>
 					<hint>Der Titel Ihrer Arbeit in der Sprache, in der sie geschrieben ist. BITTE NICHT ALLES IN GROSSBUCHSTABEN ANGEBEN!</hint>
 					<required>Geben Sie bitte den Originaltitel Ihrer Arbeit an.</required>
@@ -3919,10 +3908,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Titel der Arbeit auf Englisch</label>
+					<label>Titel der Arbeit auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Titel Ihrer Arbeit in englischer Übersetzung.</hint>
-					<required>Bitte geben Sie den Titel Ihrer Arbeit in englischer Übersetzung an.</required>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Titel auch englisch anzugeben.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -3943,7 +3932,7 @@
 					<repeatable>true</repeatable>
 					<label>Untertitel auf Englisch</label>
 					<input-type>onebox</input-type>
-					<hint>Der Untertitel Ihrer Arbeit in englischer Übersetzung.</hint>
+					<hint>Falls Ihre Arbeit nicht in englischer Sprache geschrieben ist, empfehlen wir Ihnen wegen der internationalen Sichtbarkeit Ihrer Publikation, den Untertitel zu übersetzen.</hint>
 					<required></required>
 				</field>
 
@@ -3952,10 +3941,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Betreuer</label>
+					<label>BetreuerIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Bitte geben Sie den Betreuer Ihrer Arbeit an.</required>
+					<required>Bitte geben Sie den BetreuerIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -3963,10 +3952,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Gutachter</label>
+					<label>GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Gutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den GutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -3974,10 +3963,10 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zweitgutachter</label>
+					<label>ZweitgutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
-					<required>Geben Sie bitte den Zweitgutachter Ihrer Arbeit an.</required>
+					<required>Geben Sie bitte den ZweitgutachterIn Ihrer Arbeit an.</required>
 				</field>
 
 				<field>
@@ -3985,7 +3974,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>thirdReferee</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>Weitere Gutachter</label>
+					<label>Weitere GutachterIn</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required></required>
@@ -3996,8 +3985,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Tag der mündlichen Prüfung</label>
-					<input-type>date</input-type>
+					<label>Tag der mündlichen Prüfung</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Geben Sie bitte den Tag der mündlichen Prüfung an.</required>
 				</field>
@@ -4007,7 +3996,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Art der Arbeit</label>
+					<label>Art der Arbeit</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie die Art der Arbeit aus.</required>
@@ -4019,7 +4008,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Themengebiet</label>
+					<label>Themengebiet</label>
 					<input-type value-pairs-name="gok_geo">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte wählen Sie das Fachgebiet aus.</required>
@@ -4031,7 +4020,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Zusammenfassung (Abstract) auf Englisch</label>
+					<label>Zusammenfassung (Abstract) auf Englisch</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Bitte geben Sie die Zusammenfassung Ihrer Arbeit auf Englisch an.</required>
@@ -4064,7 +4053,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Schlagwörter auf Englisch</label>
+					<label>Schlagwörter auf Englisch</label>
 					<input-type>onebox</input-type>
 					<hint>Bitte geben Sie pro Feld ein Schlagwort ein und Klicken Sie dann auf „+“.</hint>
 					<required>Geben Sie bitte mindestens ein englisches Schlagwort an.</required>
@@ -4137,7 +4126,7 @@
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Das Datum, zu dem ein eventuelles Embargo aufgehoben werden soll.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -4651,3 +4640,4 @@
 	</form-value-pairs>
 
 </input-forms>
+

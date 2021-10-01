@@ -59,7 +59,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>This is the name as set in your user profile, please change if required.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -81,9 +81,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of birth</label>
+					<label>Date of birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -92,9 +92,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -103,7 +103,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -114,7 +114,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -125,7 +125,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -136,9 +136,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -147,7 +147,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -158,7 +158,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -169,10 +169,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Title in English (translated)</label>
+					<label>Title in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -193,7 +193,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -202,7 +202,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -213,7 +213,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -224,7 +224,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -246,8 +246,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -257,7 +257,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -269,7 +269,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Göttingen Online Classification (GOK)</label>
+					<label>Göttingen Online Classification (GOK)</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please select at least one GOK category.</required>
@@ -282,7 +282,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in english</label>
+					<label>Abstract in english</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -315,7 +315,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>onebox</input-type>
 					<hint>Please enter only one keyword per field, then click on “+”.</hint>
 					<required>Keywords in English are missing.</required>
@@ -372,11 +372,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date on which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -394,7 +394,7 @@
                                         <dc-element>contributor</dc-element>
                                         <dc-qualifier>author</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Author</label>
+                                        <label>Author</label>
                                         <input-type>name</input-type>
                                         <hint>This is the name as set in your user profile, please change if required.</hint>
                                         <required>The author's name is incomplete or missing.</required>
@@ -415,9 +415,9 @@
                                         <dc-element>affiliation</dc-element>
                                         <dc-qualifier>dateOfBirth</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Date of birth</label>
+                                        <label>Date of birth</label>
                                         <input-type>date</input-type>
-                                        <hint>&#160;</hint>
+                                        <hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
                                         <required>The date of birth is incorrect or missing.</required>
                                 </field>
 
@@ -426,9 +426,9 @@
                                         <dc-element>affiliation</dc-element>
                                         <dc-qualifier>placeOfBirth</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Place of birth</label>
+                                        <label>Place of birth</label>
                                         <input-type>onebox</input-type>
-                                        <hint>&#160;</hint>
+                                        <hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
                                         <required>Please fill in the place of birth.</required>
                                 </field>
 
@@ -437,9 +437,9 @@
                                         <dc-element>affiliation</dc-element>
                                         <dc-qualifier>email</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* E-mail</label>
+                                        <label>E-mail</label>
                                         <input-type>onebox</input-type>
-                                        <hint>Please change if you want to use another e-mail address..</hint>
+                                        <hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
                                         <required>The e-mail address ist not correct or missing.</required>
                                 </field>
 
@@ -448,7 +448,7 @@
                                         <dc-element>language</dc-element>
                                         <dc-qualifier>iso</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Language</label>
+                                        <label>Language</label>
                                         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                                         <hint>The language of your work</hint>
                                         <required>Please select the language of your work</required>
@@ -459,7 +459,7 @@
                                         <dc-element>title</dc-element>
                                         <dc-qualifier></dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Original title</label>
+                                        <label>Original title</label>
                                         <input-type>onebox</input-type>
                                         <hint>The title of your work in the original language.</hint>
                                         <required>Please fill in the title of your work.</required>
@@ -470,10 +470,10 @@
                                         <dc-element>title</dc-element>
                                         <dc-qualifier>translated</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Title in English (translated)</label>
+                                        <label>Title in English (translated)</label>
                                         <input-type>onebox</input-type>
-                                        <hint>Only if your work is not written in English.</hint>
-                                        <required>The English translation of the title is missing.</required>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
                                 </field>
 
                                 <field>
@@ -494,7 +494,7 @@
                                         <repeatable>true</repeatable>
                                         <label>Title alternative in English (translated)</label>
                                         <input-type>onebox</input-type>
-                                        <hint>Only if your work is not written in English.</hint>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
                                         <required></required>
                                 </field>
 
@@ -503,7 +503,7 @@
                                         <dc-element>contributor</dc-element>
                                         <dc-qualifier>advisor</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Advisor</label>
+                                        <label>Advisor</label>
                                         <input-type>name</input-type>
                                         <hint>&#160;</hint>
                                         <required>Please name your work's advisor.</required>
@@ -514,7 +514,7 @@
                                         <dc-element>contributor</dc-element>
                                         <dc-qualifier>referee</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Referee</label>
+                                        <label>Referee</label>
                                         <input-type>name</input-type>
                                         <hint>&#160;</hint>
                                         <required>Please name your work's referee.</required>
@@ -525,7 +525,7 @@
                                         <dc-element>contributor</dc-element>
                                         <dc-qualifier>coReferee</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Co-referee</label>
+                                        <label>Co-referee</label>
                                         <input-type>name</input-type>
                                         <hint>&#160;</hint>
                                         <required>Please name your work's co-referee.</required>
@@ -547,8 +547,8 @@
                                         <dc-element>date</dc-element>
                                         <dc-qualifier>examination</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Date of oral examination</label>
-                                        <input-type>date</input-type>
+                                        <label>Date of oral examination</label>
+                                        <input-type>onebox</input-type>
                                         <hint>&#160;</hint>
                                         <required>Please enter the date of your oral examination.</required>
                                 </field>
@@ -558,7 +558,7 @@
                                         <dc-element>type</dc-element>
                                         <dc-qualifier></dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Type of work</label>
+                                        <label>Type of work</label>
                                         <input-type value-pairs-name="common_types">dropdown</input-type>
                                         <hint>&#160;</hint>
                                         <required>Please select the type of your work.</required>
@@ -569,7 +569,7 @@
                                         <dc-element>description</dc-element>
                                         <dc-qualifier>abstracteng</dc-qualifier>
                                         <repeatable>false</repeatable>
-                                        <label>* Abstract in English</label>
+                                        <label>Abstract in English</label>
                                         <input-type>textarea</input-type>
                                         <hint>&#160;</hint>
                                         <required>Please write an abstract in English.</required>
@@ -602,7 +602,7 @@
                                         <dc-element>subject</dc-element>
                                         <dc-qualifier>eng</dc-qualifier>
                                         <repeatable>true</repeatable>
-                                        <label>* Keywords in English</label>
+                                        <label>Keywords in English</label>
                                         <input-type>onebox</input-type>
                                         <hint>Please enter only one keyword per field, then click on “+”.</hint>
                                         <required>Keywords in English are missing.</required>
@@ -670,11 +670,11 @@
 
                                 <field>
                                         <dc-schema>dc</dc-schema>
-                                        <dc-element>description</dc-element>
+                                        <dc-element>date</dc-element>
                                         <dc-qualifier>embargoed</dc-qualifier>
                                         <repeatable>false</repeatable>
                                         <label>Expiring date of embargo</label>
-                                        <input-type>date</input-type>
+                                        <input-type>onebox</input-type>
                                         <hint>Date on which an embargo (optional) will be lifted.</hint>
                                         <required></required>
                                         <visibility>workflow</visibility>
@@ -691,7 +691,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>This is the name as set in your user profile, please change if required.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -712,9 +712,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of birth</label>
+					<label>Date of birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -723,9 +723,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -734,7 +734,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -745,7 +745,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -756,7 +756,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -767,9 +767,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -778,7 +778,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -789,7 +789,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -800,10 +800,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Title in English (translated)</label>
+					<label>Title in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -824,7 +824,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -833,7 +833,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -844,7 +844,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -855,7 +855,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -877,8 +877,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -888,7 +888,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -899,7 +899,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Classification</label>
+					<label>Classification</label>
 					<input-type value-pairs-name="ddc_wiwi">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please choose a classification category for your work.</required>
@@ -910,7 +910,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Göttingen Online Classification (GOK)</label>
+					<label>Göttingen Online Classification (GOK)</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please select at least one GOK category.</required>
@@ -923,7 +923,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>Abstract in English</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -956,7 +956,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>onebox</input-type>
 					<hint>Please enter only one keyword per field, then click on “+”.</hint>
 					<required>Keywords in English are missing.</required>
@@ -1013,11 +1013,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date on which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -1035,7 +1035,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>If it is not your dissertation please correct the author name.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -1056,9 +1056,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of Birth</label>
+					<label>Date of Birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -1067,9 +1067,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -1078,7 +1078,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -1089,7 +1089,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -1100,7 +1100,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -1111,9 +1111,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -1122,7 +1122,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -1133,7 +1133,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -1144,10 +1144,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* English title (translated)</label>
+					<label>English title (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -1168,7 +1168,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -1177,7 +1177,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -1188,7 +1188,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -1199,7 +1199,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -1221,8 +1221,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -1232,7 +1232,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>Abstract in English</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -1265,7 +1265,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -1276,7 +1276,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Classification</label>
+					<label>Classification</label>
 					<input-type value-pairs-name="ddc_forst">dropdown</input-type>
 					<hint></hint>
 					<required>Please choose a classification category for your work.</required>
@@ -1287,7 +1287,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>twobox</input-type>
 					<hint>Please enter only one keyword per field, then click on “+”.</hint>
 					<required>Keywords in English are missing.</required>
@@ -1344,11 +1344,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date on which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -1367,7 +1367,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>If it is not your dissertation please correct the author name.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -1388,9 +1388,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of Birth</label>
+					<label>Date of Birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -1399,9 +1399,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -1410,7 +1410,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -1421,7 +1421,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -1432,7 +1432,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -1443,9 +1443,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -1454,7 +1454,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -1465,7 +1465,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -1476,10 +1476,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Title in English (translated)</label>
+					<label>Title in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -1500,7 +1500,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -1509,7 +1509,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -1520,7 +1520,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -1531,7 +1531,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -1554,8 +1554,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -1565,7 +1565,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -1576,7 +1576,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Classification</label>
+					<label>Classification</label>
 					<input-type value-pairs-name="ddc_cemeas">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please choose a classification category for your work.</required>
@@ -1587,7 +1587,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>Abstract in English</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -1619,7 +1619,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>onebox</input-type>
 					<hint>Please enter only one keyword per field, then click on “+”.</hint>
 					<required>Keywords in English are missing.</required>
@@ -1676,11 +1676,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date on which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -1699,7 +1699,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>If it is not your dissertation please correct the author name.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -1720,9 +1720,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of Birth</label>
+					<label>Date of Birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -1731,9 +1731,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -1742,9 +1742,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -1753,7 +1753,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -1764,7 +1764,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -1775,7 +1775,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -1786,7 +1786,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -1797,7 +1797,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -1808,10 +1808,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Title in English (translated)</label>
+					<label>Title in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -1832,7 +1832,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -1841,7 +1841,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -1852,7 +1852,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -1863,7 +1863,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -1885,8 +1885,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -1896,7 +1896,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -1907,7 +1907,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Classification</label>
+					<label>Classification</label>
 					<input-type value-pairs-name="ddc_dighum">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please choose a classification category for your work.</required>
@@ -1918,7 +1918,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>Abstract in English</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -1950,7 +1950,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>onebox</input-type>
 					<hint>Please enter only one keyword per field, then click on “+”.</hint>
 					<required>Keywords in English are missing.</required>
@@ -2019,11 +2019,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date on which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -2042,7 +2042,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>If it is not your dissertation please correct the author name.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -2063,9 +2063,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of Birth</label>
+					<label>Date of Birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -2074,9 +2074,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -2085,9 +2085,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -2096,7 +2096,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -2107,7 +2107,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -2118,7 +2118,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -2129,7 +2129,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -2140,7 +2140,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -2151,10 +2151,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Title in English (translated)</label>
+					<label>Title in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -2175,7 +2175,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -2184,7 +2184,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -2195,7 +2195,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -2206,7 +2206,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -2228,8 +2228,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -2239,7 +2239,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -2250,7 +2250,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Classification</label>
+					<label>Classification</label>
 					<input-type value-pairs-name="ddc_ggnb">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please choose a classification category for your work.</required>
@@ -2261,7 +2261,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>Abstract in English</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -2294,7 +2294,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>twobox</input-type>
 					<hint>Please enter only one keyword per field, then click on “+”.</hint>
 					<required>Keywords in English are missing.</required>
@@ -2351,11 +2351,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date at which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -2374,7 +2374,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>If it is not your dissertation please correct the author name.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -2395,9 +2395,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of Birth</label>
+					<label>Date of Birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -2406,9 +2406,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -2417,9 +2417,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -2428,7 +2428,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -2439,7 +2439,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -2450,7 +2450,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -2461,7 +2461,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -2472,7 +2472,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -2483,10 +2483,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Title in English (translated)</label>
+					<label>Title in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -2507,7 +2507,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -2516,7 +2516,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -2527,7 +2527,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -2538,7 +2538,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -2560,8 +2560,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -2571,7 +2571,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -2582,7 +2582,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Classification</label>
+					<label>Classification</label>
 					<input-type value-pairs-name="ddc_archeo">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please choose a classification category for your work.</required>
@@ -2593,7 +2593,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Topic</label>
+					<label>Topic</label>
 					<input-type value-pairs-name="gok_archeo">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the topic of your work.</required>
@@ -2604,7 +2604,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>Abstract in English</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -2637,7 +2637,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>twobox</input-type>
 					<hint>Please enter only one keyword per field, then click on “+”.</hint>
 					<required>Keywords in English are missing.</required>
@@ -2693,11 +2693,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date at which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -2716,7 +2716,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>This is the name as set in your user profile, please change if required.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -2737,9 +2737,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of birth</label>
+					<label>Date of birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -2748,9 +2748,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -2759,7 +2759,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -2770,7 +2770,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -2781,7 +2781,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -2792,9 +2792,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -2803,7 +2803,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -2814,7 +2814,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -2825,10 +2825,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* English title (translated)</label>
+					<label>English title (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -2849,7 +2849,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -2858,7 +2858,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -2869,7 +2869,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -2880,7 +2880,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -2902,8 +2902,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -2913,7 +2913,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -2924,7 +2924,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>Abstract in English</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -2957,7 +2957,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>twobox</input-type>
 					<hint>Please enter only one keyword per field, then click on “+”.</hint>
 					<required>Keywords in English are missing.</required>
@@ -2968,7 +2968,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Göttingen Online Classification (GOK)</label>
+					<label>Göttingen Online Classification (GOK)</label>
 					<input-type>onebox</input-type>
 					<hint>Please follow the GOK-Link below and select a category from the GOK tree.</hint>
 
@@ -3024,11 +3024,11 @@
 				
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date at which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -3047,7 +3047,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>This is the name as set in your user profile, please change if required.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -3068,9 +3068,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of birth</label>
+					<label>Date of birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -3079,9 +3079,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -3090,7 +3090,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -3101,7 +3101,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -3112,7 +3112,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -3123,9 +3123,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -3134,7 +3134,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -3145,7 +3145,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -3156,10 +3156,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Title in English (translated)</label>
+					<label>Title in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -3180,7 +3180,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -3189,7 +3189,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -3200,7 +3200,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -3211,7 +3211,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -3233,8 +3233,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -3244,7 +3244,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -3256,7 +3256,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Topic</label>
+					<label>Topic</label>
 					<input-type value-pairs-name="gok_bio">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the topic of your work.</required>
@@ -3266,7 +3266,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>ddc</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Classification</label>
+					<label>Classification</label>
 					<input-type value-pairs-name="ddc_bio">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please choose a classification category for your work.</required>
@@ -3277,7 +3277,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>Abstract in English</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -3309,7 +3309,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>onebox</input-type>
 					<hint>Please </hint>
 					<required>Keywords in English are missing.</required>
@@ -3377,11 +3377,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date on which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -3399,7 +3399,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>This is the name as set in your user profile, please change if required.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -3420,9 +3420,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of birth</label>
+					<label>Date of birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -3431,9 +3431,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -3442,7 +3442,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -3453,7 +3453,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -3464,7 +3464,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -3475,9 +3475,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -3486,7 +3486,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -3497,7 +3497,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -3508,10 +3508,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Title in English (translated)</label>
+					<label>Title in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -3532,7 +3532,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -3541,7 +3541,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -3552,7 +3552,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -3563,7 +3563,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -3585,8 +3585,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -3596,7 +3596,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -3608,7 +3608,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Topic</label>
+					<label>Topic</label>
 					<input-type value-pairs-name="gok_geo">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the topic of your work.</required>
@@ -3620,7 +3620,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>Abstract in English</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -3653,7 +3653,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>onebox</input-type>
 					<hint>Please enter only one keyword per field, then click on “+”.</hint>
 					<required>Keywords in English are missing.</required>
@@ -3721,11 +3721,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date on which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -3743,7 +3743,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>author</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Author</label>
+					<label>Author</label>
 					<input-type>name</input-type>
 					<hint>This is the name as set in your user profile, please change if required.</hint>
 					<required>The author's name is incomplete or missing.</required>
@@ -3764,9 +3764,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>dateOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of birth</label>
+					<label>Date of birth</label>
 					<input-type>date</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your date of birth will not be publicly visible.</hint>
 					<required>The date of birth is incorrect or missing.</required>
 				</field>
 
@@ -3775,9 +3775,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>placeOfBirth</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Place of birth</label>
+					<label>Place of birth</label>
 					<input-type>onebox</input-type>
-					<hint>&#160;</hint>
+					<hint>Necessary to uniquely identify you in case of a possible match with the examination office. Your place of birth will not be publicly visible.</hint>
 					<required>Please fill in the place of birth.</required>
 				</field>
 
@@ -3786,7 +3786,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>street</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Street and number</label>
+					<label>Street and number</label>
 					<input-type>onebox</input-type>
 					<hint>The invoice for the publication fee will be sent to this address.</hint>
 					<required>Please fill your complete address.</required>
@@ -3797,7 +3797,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>zipcode</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Postal code</label>
+					<label>Postal code</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your postal code.</required>
@@ -3808,7 +3808,7 @@
 					<dc-element>address</dc-element>
 					<dc-qualifier>city</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* City</label>
+					<label>City</label>
 					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter your city.</required>
@@ -3819,9 +3819,9 @@
 					<dc-element>affiliation</dc-element>
 					<dc-qualifier>email</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* E-mail</label>
+					<label>E-mail</label>
 					<input-type>onebox</input-type>
-					<hint>Please change if you want to use another e-mail address..</hint>
+					<hint>We need your e-mail address for possilble queries. It was taken from your user profile, please change it if you want to use another one. Your information will not be visible to the public.</hint>
 					<required>The e-mail address ist not correct or missing.</required>
 				</field>
 
@@ -3830,7 +3830,7 @@
 					<dc-element>language</dc-element>
 					<dc-qualifier>iso</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Language</label>
+					<label>Language</label>
 					<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
 					<hint>The language of your work</hint>
 					<required>Please select the language of your work</required>
@@ -3841,7 +3841,7 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Original title</label>
+					<label>Original title</label>
 					<input-type>onebox</input-type>
 					<hint>The title of your work in the original language.</hint>
 					<required>Please fill in the title of your work.</required>
@@ -3852,10 +3852,10 @@
 					<dc-element>title</dc-element>
 					<dc-qualifier>translated</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Title in English (translated)</label>
+					<label>Title in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
-					<required>The English translation of the title is missing.</required>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+					<required></required>
 				</field>
 
 				<field>
@@ -3876,7 +3876,7 @@
 					<repeatable>true</repeatable>
 					<label>Title alternative in English (translated)</label>
 					<input-type>onebox</input-type>
-					<hint>Only if your work is not written in English.</hint>
+					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
 					<required></required>
 				</field>
 
@@ -3885,7 +3885,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>advisor</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Advisor</label>
+					<label>Advisor</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's advisor.</required>
@@ -3896,7 +3896,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>referee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Referee</label>
+					<label>Referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's referee.</required>
@@ -3907,7 +3907,7 @@
 					<dc-element>contributor</dc-element>
 					<dc-qualifier>coReferee</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Co-referee</label>
+					<label>Co-referee</label>
 					<input-type>name</input-type>
 					<hint>&#160;</hint>
 					<required>Please name your work's co-referee.</required>
@@ -3929,8 +3929,8 @@
 					<dc-element>date</dc-element>
 					<dc-qualifier>examination</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Date of oral examination</label>
-					<input-type>date</input-type>
+					<label>Date of oral examination</label>
+					<input-type>onebox</input-type>
 					<hint>&#160;</hint>
 					<required>Please enter the date of your oral examination.</required>
 				</field>
@@ -3940,7 +3940,7 @@
 					<dc-element>type</dc-element>
 					<dc-qualifier></dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Type of work</label>
+					<label>Type of work</label>
 					<input-type value-pairs-name="common_types">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the type of your work.</required>
@@ -3952,7 +3952,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>gokfull</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Topic</label>
+					<label>Topic</label>
 					<input-type value-pairs-name="gok_mathe">dropdown</input-type>
 					<hint>&#160;</hint>
 					<required>Please select the topic of your work.</required>
@@ -3964,7 +3964,7 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>Abstract in English</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
@@ -3997,7 +3997,7 @@
 					<dc-element>subject</dc-element>
 					<dc-qualifier>eng</dc-qualifier>
 					<repeatable>true</repeatable>
-					<label>* Keywords in English</label>
+					<label>Keywords in English</label>
 					<input-type>onebox</input-type>
 					<hint>Please enter only one keyword per field, then click on “+”.</hint>
 					<required>Keywords in English are missing.</required>
@@ -4064,11 +4064,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Date on which an embargo (optional) will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -4594,3 +4594,4 @@
 	</form-value-pairs>
 
 </input-forms>
+
