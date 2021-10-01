@@ -189,26 +189,26 @@
 	<step>
 		<processing-class>org.dspace.submit.step.SkipInitialQuestionsStep</processing-class>
 	</step>
-
-			<!-- Step 3 add DOI to item -->
-      <step>
-        <heading>submit.progressbar.doi</heading>
-        <processing-class>org.dspace.submit.step.AddDoiStep</processing-class>
-        <jspui-binding></jspui-binding>
-        <xmlui-binding>org.dspace.app.xmlui.aspect.submission.submit.AddDoiStep</xmlui-binding>
-        <workflow-editable>true</workflow-editable>
-      </step>
-
 	
           <!--Step 3 will be to Upload the item-->
-      <step>
+	<step>
         <heading>submit.progressbar.upload</heading>
         <processing-class>org.dspace.submit.step.UploadStep</processing-class>
         <jspui-binding>org.dspace.app.webui.submit.step.JSPUploadStep</jspui-binding>
                 <xmlui-binding>org.dspace.app.xmlui.aspect.submission.submit.UploadStep</xmlui-binding>
         <workflow-editable>true</workflow-editable>
-      </step>
+      	</step> 
   
+   <!-- Step 3 Upload Item with Embargo Features
+  to enable this step, please make sure to comment-out the previous step "UploadStep"-->
+  <!-- <step>
+  <heading>submit.progressbar.upload</heading>
+  <processing-class>org.dspace.submit.step.UploadWithEmbargoStep</processing-class>
+  <jspui-binding>org.dspace.app.webui.submit.step.JSPUploadWithEmbargoStep</jspui-binding>
+  <xmlui-binding>org.dspace.app.xmlui.aspect.submission.submit.UploadWithEmbargoStep</xmlui-binding>
+  <workflow-editable>true</workflow-editable>
+  </step> -->
+
       
       <!--Step 2 will be to Describe the item.-->
       <step>
@@ -231,13 +231,13 @@
       <!--Step 5 will be to select a Creative Commons License-->
       <!-- Uncomment this step to allow the user to select a Creative Commons license -->
        
-      <!-- <step>
+      <step>
         <heading>submit.progressbar.CClicense</heading>
         <processing-class>org.dspace.submit.step.CCLicenseStep</processing-class>
         <jspui-binding>org.dspace.app.webui.submit.step.JSPCCLicenseStep</jspui-binding>
 		<xmlui-binding>org.dspace.app.xmlui.aspect.submission.submit.CCLicenseStep</xmlui-binding>
 		<workflow-editable>false</workflow-editable>
-      </step> -->
+      </step> 
       
 
       <!--Step 6 will be to Sign off on the License-->
@@ -256,3 +256,4 @@
  </submission-definitions>
 
 </item-submission>
+
