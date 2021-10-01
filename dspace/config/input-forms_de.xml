@@ -84,7 +84,7 @@
 					<repeatable>false</repeatable>
 					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -372,11 +372,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Das Datum, zu dem ein eventuelles Embargo aufgehoben werden soll.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -407,7 +407,7 @@
                                         <repeatable>false</repeatable>
                                         <label>Geburtsdatum</label>
                                         <input-type>date</input-type>
-                                        <hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+                                        <hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
                                         <required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
                                 </field>
 
@@ -658,11 +658,11 @@
 
                                 <field>
                                         <dc-schema>dc</dc-schema>
-                                        <dc-element>description</dc-element>
+                                        <dc-element>date</dc-element>
                                         <dc-qualifier>embargoed</dc-qualifier>
                                         <repeatable>false</repeatable>
                                         <label>Embargo-Enddatum</label>
-                                        <input-type>date</input-type>
+                                        <input-type>onebox</input-type>
                                         <hint>Das Datum, zu dem ein eventuelles Embargo aufgehoben werden soll.</hint>
                                         <required></required>
                                         <visibility>workflow</visibility>
@@ -704,7 +704,7 @@
 					<repeatable>false</repeatable>
 					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -1003,11 +1003,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Das Datum, zu dem ein eventuelles Embargo aufgehoben werden soll.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -1049,7 +1049,7 @@
 					<repeatable>false</repeatable>
 					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -1360,11 +1360,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Datum, zu dem ein eventuelles Embargo aufgehoben wird.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -1408,7 +1408,7 @@
 						<repeatable>false</repeatable>
 						<label>Geburtsdatum</label>
 						<input-type>date</input-type>
-						<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+						<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
 						<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 					</field>
 
@@ -1705,11 +1705,11 @@
 
 					<field>
 						<dc-schema>dc</dc-schema>
-						<dc-element>description</dc-element>
+						<dc-element>date</dc-element>
 						<dc-qualifier>embargoed</dc-qualifier>
 						<repeatable>false</repeatable>
 						<label>Embargo-Enddatum</label>
-						<input-type>date</input-type>
+						<input-type>onebox</input-type>
 						<hint>Das Datum, wann ein eventuelles Embargo aufgehoben werden soll.</hint>
 						<required></required>
 						<visibility>workflow</visibility>
@@ -1752,7 +1752,7 @@
 					<repeatable>false</repeatable>
 					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -2049,11 +2049,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Datum, zu dem ein eventuelles Embargo aufgehoben wird.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -2096,7 +2096,7 @@
 					<repeatable>false</repeatable>
 					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -2393,11 +2393,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Datum, zu dem ein eventuelles Embargo aufgehoben wird.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -2440,7 +2440,7 @@
 					<repeatable>false</repeatable>
 					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -2737,11 +2737,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Datum, zu dem ein eventuelles Embargo aufgehoben wird.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -2784,7 +2784,7 @@
 					<repeatable>false</repeatable>
 					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -3071,11 +3071,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Datum, zu dem ein eventuelles Embargo aufgehoben wird.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -3118,7 +3118,7 @@
 					<repeatable>false</repeatable>
 					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -3428,11 +3428,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Das Datum, zu dem ein eventuelles Embargo aufgehoben werden soll.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -3475,7 +3475,7 @@
 					<repeatable>false</repeatable>
 					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -3775,11 +3775,11 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>
-					<input-type>date</input-type>
+					<input-type>onebox</input-type>
 					<hint>Das Datum, zu dem ein eventuelles Embargo aufgehoben werden soll.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
@@ -3822,7 +3822,7 @@
 					<repeatable>false</repeatable>
 					<label>Geburtsdatum</label>
 					<input-type>date</input-type>
-					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtdatum wird öffentlich nich sichtbar.ffentlich nich sichtbar.</hint>
+					<hint>Dies brauchen wir für die eindeutige Identifikation Ihrer Person bei einer evtl. Abgleich mit dem Prüfungsamt. Ihr Geburtsdatum wird öffentlich nich sichtbar.ffentlich nich sichtbar.</hint>
 					<required>Bitte geben Sie ein gültiges Geburtsdatum an.</required>
 				</field>
 
@@ -4122,7 +4122,7 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>description</dc-element>
+					<dc-element>date</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Embargo-Enddatum</label>

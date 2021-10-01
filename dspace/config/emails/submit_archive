@@ -6,16 +6,39 @@
 #
 Subject: DSpace: Submission Approved and Archived 
 
-You submitted: {0}
+Titel der Veröffentlichung: {0}
+
+Sammlung: {1}
+
+Ihre Veröffentlichung bei eDiss wurde akzeptiert und die Einstiegsseite wurde freigeschaltet.
+Die vollständige Veröffentlichung (PDF etc.) wird in einer Woche unter der folgenden Adresse dauerhaft erreichbar sein:
+{2}
+
+Bitte benutzen Sie diesen Link zum Zitieren, Weiterempfehlen oder Bookmarken Ihrer Publikation!
+
+Falls Sie uns die gedruckten Exemplare Ihrer Arbeit per Post zugeschickt haben, leiten wir die Bestätigung über die erfolgte Publikation direkt an das zuständige Prüfungsamt/Dekanat weiter.
+Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um die Ausstellung Ihrer Urkunde beim Prüfungsamt/Dekanat beantragen zu können.
+
+Vielen Dank!
+
+eDiss Team
+
+---------------------------------
+
+Titel of your submission: {0}
 
 To collection: {1}
 
-Your submission has been accepted and archived in DSpace,
-and it has been assigned the following identifier:
+Your submission to eDiss has been accepted and the landing page has been activated.
+The complete publication (PDF) will be available one week from today and it has been assigned the following identifier:
 {2}
 
-Please use this identifier when citing your submission.
+Please use this identifier when citing, sharing or bookmarking your publication.
+
+If you have sent us the printed copies of your work via regular mail, we forward the confirmation of the successful publication directly to the responsible examination office.
+You need this along with your revision ticket in order to be able to apply for issuing of your diploma at the examination office/deanery
 
 Many thanks!
 
-DSpace
+eDiss Team
+
