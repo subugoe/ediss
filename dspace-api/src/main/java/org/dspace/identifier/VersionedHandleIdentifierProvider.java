@@ -77,45 +77,50 @@ public class VersionedHandleIdentifierProvider extends IdentifierProvider {
 
     public String register(Context context, DSpaceObject dso)
     {
-        try
-        {
-            String id = mint(context, dso);
+        String id = mint(context, dso);
 
-            // move canonical to point the latest version
-            if(dso != null && dso.getType() == Constants.ITEM)
+            if (dso.getType() == Constants.ITEM)
             {
-                Item item = (Item)dso;
-                VersionHistory history = retrieveVersionHistory(context, (Item)dso);
-                if(history!=null)
+                try
                 {
-                    String canonical = getCanonical(item);
-                    // Modify Canonical: 12345/100 will point to the new item
-                    TableRow canonicalRecord = findHandleInternal(context, canonical);
-                    modifyHandleRecord(context, dso, canonicalRecord, canonical);
+                Item item = (Item)dso;
+                // move canonical to point the latest version
+				/*if(dso != null && dso.getType() == Constants.ITEM)
+				{
+					Item item = (Item)dso;
+					VersionHistory history = retrieveVersionHistory(context, (Item)dso);
+					if(history!=null)
+					{
+						String canonical = getCanonical(item);
+						// Modify Canonical: 12345/100 will point to the new item
+						TableRow canonicalRecord = findHandleInternal(context, canonical);
+						modifyHandleRecord(context, dso, canonicalRecord, canonical);
 
-                    // in case of first version we have to modify the previous metadata to be xxxx.1
-                    Version version = history.getVersion(item);
-                    Version previous = history.getPrevious(version);
-                    if (history.isFirstVersion(previous))
-                    {
-                        modifyHandleMetadata(previous.getItem(), (canonical + DOT + 1));
-                    }
-                    // Check if our previous item hasn't got a handle anymore.
-                    // This only occurs when a switch has been made from the standard handle identifier provider
-                    // to the versioned one, in this case no "versioned handle" is reserved so we need to create one
-                    if(previous != null && getHandleInternal(context, Constants.ITEM, previous.getItemID()) == null){
-                        makeIdentifierBasedOnHistory(context, previous.getItem(), canonical, history);
+						// in case of first version we have to modify the previous metadata to be xxxx.1
+						Version version = history.getVersion(item);
+						Version previous = history.getPrevious(version);
+						if (history.isFirstVersion(previous))
+						{
+							modifyHandleMetadata(previous.getItem(), (canonical + DOT + 1));
+						}
+						// Check if our previous item hasn't got a handle anymore.
+						// This only occurs when a switch has been made from the standard handle identifier provider
+						// to the versioned one, in this case no "versioned handle" is reserved so we need to create one
+						if(previous != null && getHandleInternal(context, Constants.ITEM, previous.getItemID()) == null){
+							makeIdentifierBasedOnHistory(context, previous.getItem(), canonical, history);
 
-                    }
-                }
+						}
+					}*/
                 populateHandleMetadata(item);
+
+                }catch (Exception e){
+                log.error(LogManager.getHeader(context, "Error while attempting to create handle", "Item id: " + (dso != null ? dso.getID() : "")), e);
+                throw new RuntimeException("Error while attempting to create identifier for Item id: " + (dso != null ? dso.getID() : ""));
             }
 
-            return id;
-        }catch (Exception e){
-            log.error(LogManager.getHeader(context, "Error while attempting to create handle", "Item id: " + (dso != null ? dso.getID() : "")), e);
-            throw new RuntimeException("Error while attempting to create identifier for Item id: " + (dso != null ? dso.getID() : ""));
         }
+        return id;
+
     }
 
     public void register(Context context, DSpaceObject dso, String identifier)
@@ -494,13 +499,13 @@ public class VersionedHandleIdentifierProvider extends IdentifierProvider {
     {
         Item item = (Item)dso;
 
-        // FIRST time a VERSION is created 2 identifiers will be minted  and the canonical will be updated to point to the newer URL:
+        // FIRST time a VERSION is created 2 identifiers will be minted
         //  - id.1-->old URL
         //  - id.2-->new URL
         Version version = history.getVersion(item);
         Version previous = history.getPrevious(version);
         String canonical = getCanonical(previous.getItem());
-        if (history.isFirstVersion(previous))
+        /*if (history.isFirstVersion(previous))
         {
             // add a new Identifier for previous item: 12345/100.1
             String identifierPreviousItem=canonical + DOT + 1;
@@ -511,7 +516,7 @@ public class VersionedHandleIdentifierProvider extends IdentifierProvider {
                 modifyHandleRecord(context, previous.getItem(), handle, identifierPreviousItem);
             }
         }
-
+        */
 
         // add a new Identifier for this item: 12345/100.x
         String idNew = canonical + DOT + version.getVersionNumber();
