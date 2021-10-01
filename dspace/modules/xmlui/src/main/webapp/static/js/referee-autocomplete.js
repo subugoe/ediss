@@ -1724,5 +1724,12 @@ $(function () {
 		});
 	});
 	
+	          $( function() {
+            $( "#aspect_submission_StepTransformer_field_dc_description_embargoed,#aspect_submission_StepTransformer_field_dc_date_examination" ).datepicker();
+          } );
+          $( "#aspect_submission_StepTransformer_field_dc_description_embargoed,#aspect_submission_StepTransformer_field_dc_date_examination" ).datepicker({
+                    dateFormat: "yy-mm-dd"
+          });
+
 });
 
