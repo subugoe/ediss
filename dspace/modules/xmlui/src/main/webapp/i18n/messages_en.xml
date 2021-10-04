@@ -4994,7 +4994,8 @@ All personal data will only be stored as long as necessary for the respective pu
 	<message key="xmlui.Submission.submit.AddDoiStep.section_head">Create DOI for Item</message>
 	<message key="xmlui.Submission.submit.itemDOI.no_doi">There will be no DOI created for this item.</message>
 	<message key="xmlui.Submission.submit.itemDOI.note">Note that this item might get a DOI by default if there is a filter set that evaluates a later state of this item.</message>
-
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_doi">DOI</message>
+  <message key="xmlui.administrative.item.EditItemStatusForm.submit_register_doi">Register DOI</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_person">Advisor &amp; Referee</message>
 </catalogue>
 

@@ -8950,7 +8950,8 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
   <message key="xmlui.Submission.submit.AddDoiStep.section_head">Create DOI for Item</message>
   <message key="xmlui.Submission.submit.itemDOI.no_doi">There will be no DOI created for this item.</message>
   <message key="xmlui.Submission.submit.itemDOI.note">Note that this item might get a DOI by default if there is a filter set that evaluates a later state of this item.</message>
-
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_doi">DOI</message>
+  <message key="xmlui.administrative.item.EditItemStatusForm.submit_register_doi">Register DOI</message>
 
     <!-- Embargo Step -->
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.head">Upload File(s)</message>
