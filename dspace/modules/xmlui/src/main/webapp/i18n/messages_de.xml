@@ -62,13 +62,13 @@
 
 	<message key="xmlui.general.cancel">Abbrechen</message>
 
-	<message key="xmlui.general.return">← Zurück</message>
+	<message key="xmlui.general.return">Zurück</message>
 
 	<message key="xmlui.general.update">Aktualisieren</message>
 
 	<message key="xmlui.general.delete">Löschen</message>
 
-	<message key="xmlui.general.next">Weiter →</message>
+	<message key="xmlui.general.next">Weiter</message>
 
 	<message key="xmlui.general.untitled">Ohne Titel</message>
 
@@ -992,9 +992,9 @@
 
 	<message key="xmlui.Submission.general.submission.head">Dokument veröffentlichen</message>	
 
-	<message key="xmlui.Submission.general.submission.next">Weiter →</message>
+	<message key="xmlui.Submission.general.submission.next">Weiter</message>
 
-	<message key="xmlui.Submission.general.submission.previous">← Zurück</message>
+	<message key="xmlui.Submission.general.submission.previous">Zurück</message>
 
 	<message key="xmlui.Submission.general.submission.save">Speichern und später fortsetzen</message>
 

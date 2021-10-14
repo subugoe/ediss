@@ -629,6 +629,13 @@ Common usage:
 
         <antcall target="copy_webapps" />
 
+        <delete includeemptydirs="true">
+                <fileset dir="${dspace.dir}/webapps/xmlui/i18n/" includes="**">
+                        <exclude name="messages.xml" />
+                        <exclude name="messages_de.xml" />
+                        <exclude name="messages_en.xml" />
+                </fileset>
+        </delete>
         <echo>
 ====================================================================
  Updated DSpace Web application directories are in the

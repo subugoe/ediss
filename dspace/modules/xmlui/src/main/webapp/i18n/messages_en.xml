@@ -30,7 +30,7 @@
 	<message key="xmlui.general.go_home">Go to home</message>
 	<message key="xmlui.general.save">Save</message>
 	<message key="xmlui.general.cancel">Cancel</message>
-	<message key="xmlui.general.return">← Return</message>
+	<message key="xmlui.general.return">Return</message>
 	<message key="xmlui.general.update">Update</message>
 	<message key="xmlui.general.delete">Delete</message>
 	<message key="xmlui.general.next">Next</message>
@@ -499,8 +499,8 @@
 	<message key="xmlui.Submission.general.showsimple">Show simple item record</message>
 	<message key="xmlui.Submission.general.submission.complete">Complete submission</message>
 	<message key="xmlui.Submission.general.submission.head">Item submission</message>
-	<message key="xmlui.Submission.general.submission.next">Next &gt;</message>
-	<message key="xmlui.Submission.general.submission.previous">&lt; Previous</message>
+	<message key="xmlui.Submission.general.submission.next">Next</message>
+	<message key="xmlui.Submission.general.submission.previous">Previous</message>
 	<message key="xmlui.Submission.general.submission.save">Save &amp; Exit</message>
 	<message key="xmlui.Submission.general.submission.title">Item submission</message>
 	<message key="xmlui.Submission.general.submission.trail">Item submission</message>
