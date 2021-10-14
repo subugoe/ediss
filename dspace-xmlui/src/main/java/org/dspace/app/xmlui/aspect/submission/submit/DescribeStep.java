@@ -48,9 +48,11 @@ import org.dspace.content.authority.ChoiceAuthorityManager;
 import org.dspace.content.authority.Choice;
 import org.dspace.content.authority.Choices;
 
+import org.dspace.core.I18nUtil;
 import org.dspace.utils.DSpace;
 import org.xml.sax.SAXException;
 
+import org.dspace.app.xmlui.utils.ContextUtil;
 /**
  * This is a step of the item submission processes. The describe step queries
  * the user for various metadata items about the item. For the most part all the
@@ -169,7 +171,8 @@ public class DescribeStep extends AbstractSubmissionStep
                 DCInput[] inputs;
                 try
                 {
-                        inputSet = getInputsReader().getInputs(submission.getCollection().getHandle());
+                        //Do not use initialized DCInputReader because we need a localized one
+                        inputSet = new DCInputsReader(I18nUtil.getInputFormsFileName(context.getCurrentLocale())).getInputs(submission.getCollection().getHandle());
                         inputs = inputSet.getPageRows(getPage()-1, submission.hasMultipleTitles(), submission.isPublishedBefore());
                 }
                 catch (DCInputsReaderException se)
