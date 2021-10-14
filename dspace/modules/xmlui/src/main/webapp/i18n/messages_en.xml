@@ -4921,12 +4921,12 @@ All personal data will only be stored as long as necessary for the respective pu
     <message key="xmlui.mirage2.discovery.newFilter">Add New Filter</message>
     <message key="xmlui.mirage2.discovery.showAdvancedFilters">Show Advanced Filters</message>
     <message key="xmlui.mirage2.discovery.hideAdvancedFilters">Hide Advanced Filters</message>
-    <message key="xmlui.mirage2.forms.instancedCompositeFields.add">Add</message>
-    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">Remove</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.add">+</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">&#128465;</message>
     <message key="xmlui.mirage2.forms.instancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
     <message key="xmlui.mirage2.forms.nonInstancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
-    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">Add</message>
-    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">Remove</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">+</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">&#128465;</message>
     <message key="xmlui.mirage2.page-structure.aboutThisRepository">About This Repository</message>
     <message key="xmlui.mirage2.page-structure.toggleNavigation">Toggle navigation</message>
     <message key="xmlui.mirage2.page-structure.heroUnit.title">About This Repository</message>

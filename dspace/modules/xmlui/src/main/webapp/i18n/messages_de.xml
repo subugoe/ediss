@@ -1240,9 +1240,9 @@
 
 	<message key="xmlui.Submission.submit.DescribeStep.required_field">Dieses Feld ist obligatorisch</message>
 
-	<message key="xmlui.Submission.submit.DescribeStep.last_name_help">Nachname, z. B.<em> Watson</em></message>
+	<message key="xmlui.Submission.submit.DescribeStep.last_name_help">Nachname, z. B.<em> Müller</em></message>
 
-	<message key="xmlui.Submission.submit.DescribeStep.first_name_help">Vorname(n) und Titel, z. B. <em>John H. Dr.</em></message>
+	<message key="xmlui.Submission.submit.DescribeStep.first_name_help">Vorname(n) und Titel, z. B. <em>Eva H. von Dr.</em></message>
 
 	<message key="xmlui.Submission.submit.DescribeStep.year">Jahr</message>
 
@@ -8722,10 +8722,10 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
 <message key="xmlui.administrative.Navigation.administrative_message_catalogues">Message Catalogues</message>
 
-	<message key="xmlui.administrative.catalogue.title">Message Catalogue</message>
-	<message key="xmlui.administrative.catalogue.trail">Message Catalogue</message>
-	<message key="xmlui.administrative.catalogue.head">Message Catalogue</message>
-	<message key="xmlui.administrative.catalogue.none.provided">Please select a message catalogue.</message>
+	<message key="xmlui.administrative.catalogue.title">Sprachkatalog</message>
+	<message key="xmlui.administrative.catalogue.trail">Sprachkatalog</message>
+	<message key="xmlui.administrative.catalogue.head">Sprachkatalog</message>
+	<message key="xmlui.administrative.catalogue.none.provided">Wählen Sie einen Sprachkatalog</message>
 	<message key="xmlui.administrative.catalogue.does.not.exist">The selected catalogue does not exist.</message>
 	<message key="xmlui.administrative.catalogue.not.valid">The selected catalogue is not a valid catalogue file.</message>
 	<message key="xmlui.administrative.catalogue.message.not.loading">Message catalogue could not be loaded.</message>
@@ -8907,16 +8907,16 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.mirage2.discovery.hideAdvancedFilters">Hide Advanced Filters</message>
 
 
-    <message key="xmlui.mirage2.forms.instancedCompositeFields.add">Add</message>
-    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">Remove</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.add">+</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">&#128465;</message>
     <message key="xmlui.mirage2.forms.instancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
     <message key="xmlui.mirage2.forms.nonInstancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
-    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">Add</message>
-    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">Remove</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">+</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">&#128465;</message>
     <message key="xmlui.mirage2.forms.instancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
     <message key="xmlui.mirage2.forms.nonInstancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
-    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">Add</message>
-    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">Remove</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">+</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">&#128465;</message>
 
     <message key="xmlui.mirage2.page-structure.aboutThisRepository">About This Repository</message>
     <message key="xmlui.mirage2.page-structure.toggleNavigation">Toggle navigation</message>
