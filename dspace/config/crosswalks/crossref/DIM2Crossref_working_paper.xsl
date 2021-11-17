@@ -38,7 +38,7 @@
                       <xsl:apply-templates select="//dspace:field[@mdschema='dc' and @element='contributor'  and (@qualifier='author' or @qualifier='editor')]" />
                     </xsl:when>
                     <xsl:otherwise>
-                      <anonymous contributor_role="author" />
+                      <anonymous contributor_role="author" sequence="first" />
                     </xsl:otherwise>
                 </xsl:choose>
 
@@ -84,7 +84,9 @@
                 </year>
               </posted_date>
 
-              <xsl:apply-templates select="dspace:field[@mdschema='dc' and @element='identifier' and starts-with(., 'http://dx.doi.org/')]" />
+              <doi_data>
+                  <!-- This section will be filled programmitcally. Do not remove! -->
+              </doi_data>
           </posted_content>
         </body>
       </doi_batch>
@@ -104,18 +106,6 @@
               </title>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:template>
-
-    <!-- template to create DOI -->
-    <xsl:template match="dspace:field[@mdschema='dc' and @element='identifier' and starts-with(., 'http://dx.doi.org/')]">
-        <doi_data>
-          <doi>
-            <xsl:value-of select="substring(., 19)"/>
-          </doi>
-          <resource>
-            <xsl:value-of select="//dspace:field[@mdschema='dc' and @element='identifier' and @qualifier='uri' and not(starts-with(., 'http://dx.doi.org/'))]"/>
-          </resource>
-        </doi_data>
     </xsl:template>
 
     <!-- template to create first author -->

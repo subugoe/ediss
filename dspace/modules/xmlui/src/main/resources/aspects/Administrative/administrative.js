@@ -34,12 +34,9 @@ importClass(Packages.org.dspace.app.xmlui.aspect.administrative.FlowContainerUti
 importClass(Packages.org.dspace.app.xmlui.aspect.administrative.FlowCurationUtils);
 importClass(Packages.org.dspace.app.xmlui.aspect.administrative.FlowMetadataImportUtils);
 importClass(Packages.org.dspace.app.xmlui.aspect.administrative.FlowBatchImportUtils);
+importClass(Packages.org.dspace.app.xmlui.aspect.administrative.FlowDoiUtils);
 importClass(Packages.java.lang.System);
 importClass(Packages.org.dspace.core.ConfigurationManager);
-
-importClass(Packages.org.dspace.app.xmlui.FlowCatalogueUtils);
-
-
 
 /**
  * Simple access method to access the current cocoon object model.
@@ -232,7 +229,7 @@ function assertAuthorized(objectType, objectID, action) {
 function canEditItem(itemID)
 {
 	var item = Item.find(getDSContext(),itemID);
-	
+
 	return item.canEdit();
 }
 
@@ -254,7 +251,7 @@ function assertEditItem(itemID) {
 function canEditCollection(collectionID)
 {
 	var collection = Collection.find(getDSContext(),collectionID);
-	
+
 	if (collection == null) {
 		return isAdministrator();
 	}
@@ -280,7 +277,7 @@ function assertEditCollection(collectionID) {
 function canAdminCollection(collectionID)
 {
 	var collection = Collection.find(getDSContext(),collectionID);
-	
+
 	if (collection == null) {
 		return isAdministrator();
 	}
@@ -308,9 +305,9 @@ function canEditCommunity(communityID)
 	if (communityID == -1) {
 		return isAdministrator();
 	}
-	
+
 	var community = Community.find(getDSContext(),communityID);
-	
+
 	if (community == null) {
 		return isAdministrator();
 	}
@@ -817,7 +814,7 @@ function doEditEPerson(epersonID)
         		// the user is loged in as another user, we can't let them continue on
         		// using this flow because they might not have permissions. So forward
         		// them to the homepage.
-			var siteRoot = cocoon.request.getContextPath();	
+			var siteRoot = cocoon.request.getContextPath();
 			if (siteRoot == "")
 			{
 				siteRoot = "/";
@@ -934,9 +931,9 @@ function doEditGroup(groupID)
     var groupName        = FlowGroupUtils.getName(getDSContext(),groupID);
     var memberEPeopleIDs = FlowGroupUtils.getEPeopleMembers(getDSContext(),groupID);
     var memberGroupIDs   = FlowGroupUtils.getGroupMembers(getDSContext(),groupID);
-    
+
     assertEditGroup(groupID);
-    
+
     var highlightEPersonID;
     var highlightGroupID;
     var type = "";
@@ -1528,6 +1525,9 @@ function doEditItemStatus(itemID)
 
 			doAuthorizeItem(itemID);
 		}
+		else if (cocoon.request.get("submit-create-doi")) {
+				return FlowDoiUtils.addDoi(getDSContext(),itemID);
+		}
 
 	} while (true)
 }
@@ -1617,7 +1617,7 @@ function doEditItemMetadata(itemID, templateCollectionID)
  * Curate an Item
  * Can only be performed by someone who is able to edit that Item.
  */
-function doCurateItem(itemID, task) 
+function doCurateItem(itemID, task)
 {
     var result;
 
@@ -2386,7 +2386,7 @@ function doEditPolicy(objectType,objectID,policyID)
         	description = cocoon.request.get("description");
         	startDate = cocoon.request.get("start_date");
         	endDate = cocoon.request.get("end_date");
-			
+
         }
         else if (cocoon.request.get("submit_save"))
         {
@@ -2709,7 +2709,7 @@ function doCurateCollection(collectionID, task) {
                       sendPageAndWait("admin/collection/curateCollection",{"collectionID":collectionID,"select_curate_group":select_curate_group}, result);
                    } else {
                       sendPageAndWait("admin/collection/curateCollection",{"collectionID":collectionID}, result);
-                   } 
+                   }
 		   assertEditCollection(collectionID);
 		   result = null;
 		   if (cocoon.request.get("submit_return") || cocoon.request.get("submit_metadata") ||
@@ -3180,15 +3180,15 @@ function doDeleteCommunityRole(communityID,role)
  * Curate a DSpace Object, from site-wide Administrator tools
  * (Can only be performed by a DSpace Administrator)
  */
-function doCurate() 
+function doCurate()
 {
     var result;
-    
+
     assertAdministrator();
 
     var identifier;
     var curateTask;
-    do 
+    do
     {
         if (cocoon.request.get("select_curate_group"))
         {
@@ -3198,9 +3198,9 @@ function doCurate()
         }
         else
         {
-             sendPageAndWait("admin/curate/main",{"identifier":identifier,"curate_task":curateTask},result);	   
-        } 
-       	   
+             sendPageAndWait("admin/curate/main",{"identifier":identifier,"curate_task":curateTask},result);
+        }
+
         if (cocoon.request.get("submit_curate_task"))
         {
             result = FlowCurationUtils.processCurateObject(getDSContext(), cocoon.request);
@@ -3209,7 +3209,7 @@ function doCurate()
         {
             result = FlowCurationUtils.processQueueObject(getDSContext(), cocoon.request);
         }
-        
+
         //if 'identifier' parameter was set in result, pass it back to sendPageAndWait call (so it is prepopulated in Admin UI)
         if (result != null && result.getParameter("identifier")) {
             identifier = result.getParameter("identifier");
@@ -3217,54 +3217,14 @@ function doCurate()
         else if (!cocoon.request.get("select_curate_group")) {
              identifier = null;
         }
-       
+
         //if 'curate_task' parameter was set in result, pass it back to sendPageAndWait call (so it is prepopulated in Admin UI)
         if (result != null && result.getParameter("curate_task")) {
             curateTask = result.getParameter("curate_task");
         }
         else if (!cocoon.request.get("select_curate_group")) {
             curateTask = null;
-        }  
+        }
     }
     while (true);
-}
-
-function startSaveMessage() {
-		assertAdministrator();
-		var result = FlowCatalogueUtils.saveMessage(cocoon.request);
-
-		var data = {
-			'message-catalogue': cocoon.request.get("message-catalogue"),
-			'message-key': cocoon.request.get("message-key"),
-			'result': result.getParameter('result'),
-			'action': "save"
-		}
-		cocoon.sendPage("admin/catalogue/messages/update/result",data);
-		cocoon.exit();
-}
-
-function startAddMessage() {
-	assertAdministrator();
-	var result = FlowCatalogueUtils.addMessage(cocoon.request);
-	var data = {
-		'message-catalogue': cocoon.request.get("message-catalogue"),
-		'message-key': cocoon.request.get("message-key"),
-		'result': result.getParameter('result'),
-		'action': "add"
-	}
-	cocoon.sendPage("admin/catalogue/messages/update/result",data);
-	cocoon.exit();
-}
-
-function startRemoveMessage() {
-	assertAdministrator();
-	var result = FlowCatalogueUtils.deleteMessage(cocoon.request);
-	var data = {
-		'message-catalogue': cocoon.request.get("message-catalogue"),
-		'message-key': cocoon.request.get("message-key"),
-		'result': result.getParameter('result'),
-		'action': "delete"
-	}
-	cocoon.sendPage("admin/catalogue/messages/update/result",data);
-	cocoon.exit();
 }

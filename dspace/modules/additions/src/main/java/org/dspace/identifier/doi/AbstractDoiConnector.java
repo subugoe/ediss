@@ -7,20 +7,18 @@
  */
 package org.dspace.identifier.doi;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.sql.SQLException;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
-import org.apache.http.client.methods.HttpEntityEnclosingRequestBase;
 import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.dspace.content.DSpaceObject;
 import org.dspace.core.Context;
+import org.dspace.handle.HandleManager;
 import org.dspace.services.ConfigurationService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -143,7 +141,7 @@ public abstract class AbstractDoiConnector implements DOIConnector {
      * the provided {@link DSpaceObject}. This method calls the following abstract methods:
      * <ul>
      *  <li><code>sendDOIGetRequest</code><li>
-     *  <li><code>getDoiGetSuccessiusCode</code></li>
+     *  <li><code>getDoiGetSuccessStatusCode</code></li>
      *  <li><code>getDsoUrl</code></li>
      *  
      * </ul>
@@ -152,6 +150,13 @@ public abstract class AbstractDoiConnector implements DOIConnector {
     public boolean isDOIRegistered(Context context, DSpaceObject dso, String doi) throws DOIIdentifierException
     {
         DoiResponse response = sendDOIGetRequest(doi);
+
+        if (response != null) {
+            log.debug("Check reg'd DOI response: " + response);
+        } else {
+            log.error("Null or invalid response when checking for an existing / registered DOI " + doi);
+            throw new DOIIdentifierException(DOIIdentifierException.BAD_ANSWER);
+        }
         
         if (response.getStatusCode() == getDoiGetSuccessStatusCode()) {
             // Do we check if doi is reserved generally or for a specified dso?
@@ -164,7 +169,7 @@ public abstract class AbstractDoiConnector implements DOIConnector {
             // To ensure that the DOI is registered for a specified dso it
             // should be sufficient to compare the URL DataCite returns with
             // the URL of the dso.
-            String doiUrl = response.getHandle();
+            String doiUrl = response.getUrl();
             if (null == doiUrl)
             {
                 log.error("Received a status code 200 without a response content. DOI: {}.", doi);
@@ -220,7 +225,16 @@ public abstract class AbstractDoiConnector implements DOIConnector {
      * @param context The context for this object.
      * @return The URL of the provided DSpaceObject.
      */
-    protected abstract String getDsoUrl(DSpaceObject dso, Context context);
+    protected String getDsoUrl(DSpaceObject dso, Context context) {
+        try
+        {
+            return HandleManager.resolveToURL(context, dso.getHandle());
+        } catch (SQLException e)
+        {
+            log.error("Error in database connection: " + e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
     
     
     /**
@@ -294,7 +308,7 @@ public abstract class AbstractDoiConnector implements DOIConnector {
             handleErrorCodes(statusCode, doi, content);
             
             DoiResponse doiResponse = new DoiResponse(statusCode, content);
-            extractHandleFromResponse(doiResponse, response);
+            extractUrlFromResponse(doiResponse, response);
             return doiResponse;
         } catch (IOException e)
         {
@@ -356,20 +370,20 @@ public abstract class AbstractDoiConnector implements DOIConnector {
     protected abstract int getDoiGetSuccessStatusCode();
     
     /** 
-     * This method should extract the handle for an object from the response of the DOI
+     * This method should extract the url a DOI points to from the response of the DOI
      * registry. This method is called in the <code>sendHttpRequest</code> method. Different
-     * registries will return the registred handle differently, hence this abstract method.
+     * registries will return the url differently, hence this abstract method.
      * 
      * @param doiResponse The object that encapsulates the response from the DOI registry.
      * @param response The {@link HttpResponse} object from the registry.
      */
-    protected abstract void extractHandleFromResponse( DoiResponse doiResponse, HttpResponse response);
+    protected abstract void extractUrlFromResponse( DoiResponse doiResponse, HttpResponse response);
 
     
-    protected class DoiResponse {
-        private int statusCode;
-        private String content;
-        private String handle;
+    protected static class DoiResponse {
+        private final int statusCode;
+        private final String content;
+        private String url;
 
         public DoiResponse(int statusCode, String content)
         {
@@ -387,13 +401,20 @@ public abstract class AbstractDoiConnector implements DOIConnector {
             return this.content;
         }
 
-        public String getHandle()
+        public String getUrl()
         {
-            return this.handle;
+            return this.url;
         }
-        public void setHandle(String handle)
+        
+        public void setUrl(String url)
         {
-            this.handle = handle;
+            this.url = url;
+        }
+
+        public String toString() {
+            return "status=" + statusCode + ", handle=" +
+                    (url == null ? "null" : url) + ", content=" + content;
         }
     }
+
 }

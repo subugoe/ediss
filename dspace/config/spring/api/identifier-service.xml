@@ -54,10 +54,10 @@
     <!-- The DOIConnector will handle the API calls to your DOI registration
          agency for the DOIIdentifierProvider. If your registration agency
          tells you to use the DataCite API directly, you can use the
-         DataCiteConnector. If your registration agency is not part of DataCite
-         or provides their own API, you have to implement a DOIConnector.
-         e.g. EZID is part of DataCite but provides their own APIs. The following
-         DataCiteConnector won't work if EZID is your registration agency.
+         DataCiteConnector. If you register DOIs with CrossRef use the
+         CrossRefConnector. If you use another registration agency or your
+         registration agency provides their own API, you have to implement a
+         DOIConnector.
     -->
     <!-- Uncomment this to use the DataCite API directly as DOIConnector. -->
     <bean id="org.dspace.identifier.doi.DOIConnector"
@@ -70,6 +70,20 @@
         <property name='disseminationCrosswalkName' value="DataCite" />
     </bean>
 
+
+    <!-- Uncomment this to register your DOIs with CrossRef.
+    <bean id="org.dspace.identifier.doi.DOIConnector"
+        class="org.dspace.identifier.doi.CrossRefDoiConnector"
+        scope="singleton">
+        <property name='CROSSREF_SCHEME' value='https'/>
+        <property name='CROSSREF_HOST' value='api.crossref.org'/>
+        <property name='CROSSREF_DEPOSIT_PATH' value='/v2/deposits' />
+        <property name='CROSSREF_TIMEOUT' value="5000"/>
+        <property name='disseminationCrosswalkName' value="Crossref" />
+        <property name="parentIssnField" value="dc.identifier.issn" />
+        <property name="parentDoiField" value="local.identifier.doi" />
+    </bean>
+    -->
 
     <!-- Provider to mint and register DOIs using EZID as the registrar.
     -->
