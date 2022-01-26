@@ -34,10 +34,9 @@ importClass(Packages.org.dspace.app.xmlui.aspect.administrative.FlowContainerUti
 importClass(Packages.org.dspace.app.xmlui.aspect.administrative.FlowCurationUtils);
 importClass(Packages.org.dspace.app.xmlui.aspect.administrative.FlowMetadataImportUtils);
 importClass(Packages.org.dspace.app.xmlui.aspect.administrative.FlowBatchImportUtils);
+importClass(Packages.org.dspace.app.xmlui.aspect.administrative.FlowDoiUtils);
 importClass(Packages.java.lang.System);
 importClass(Packages.org.dspace.core.ConfigurationManager);
-
-importClass(Packages.org.dspace.app.xmlui.FlowCatalogueUtils);
 
 /**
  * Simple access method to access the current cocoon object model.
@@ -1525,6 +1524,9 @@ function doEditItemStatus(itemID)
 			// assertAdministrator();
 
 			doAuthorizeItem(itemID);
+		}
+		else if (cocoon.request.get("submit-create-doi")) {
+				return FlowDoiUtils.addDoi(getDSContext(),itemID);
 		}
 
 	} while (true)
@@ -3226,44 +3228,3 @@ function doCurate()
     }
     while (true);
 }
-
-function startSaveMessage() {
-		assertAdministrator();
-		var result = FlowCatalogueUtils.saveMessage(cocoon.request);
-
-		var data = {
-			'message-catalogue': cocoon.request.get("message-catalogue"),
-			'message-key': cocoon.request.get("message-key"),
-			'result': result.getParameter('result'),
-			'action': "save"
-		}
-		cocoon.sendPage("admin/catalogue/messages/update/result",data);
-		cocoon.exit();
-}
-
-function startAddMessage() {
-	assertAdministrator();
-	var result = FlowCatalogueUtils.addMessage(cocoon.request);
-	var data = {
-		'message-catalogue': cocoon.request.get("message-catalogue"),
-		'message-key': cocoon.request.get("message-key"),
-		'result': result.getParameter('result'),
-		'action': "add"
-	}
-	cocoon.sendPage("admin/catalogue/messages/update/result",data);
-	cocoon.exit();
-}
-
-function startRemoveMessage() {
-	assertAdministrator();
-	var result = FlowCatalogueUtils.deleteMessage(cocoon.request);
-	var data = {
-		'message-catalogue': cocoon.request.get("message-catalogue"),
-		'message-key': cocoon.request.get("message-key"),
-		'result': result.getParameter('result'),
-		'action': "delete"
-	}
-	cocoon.sendPage("admin/catalogue/messages/update/result",data);
-	cocoon.exit();
-}
-

@@ -141,7 +141,7 @@
 
     <!-- Select box case: use the selected options contained in the instance to create the hidden fields -->
     <xsl:template match="dri:field[@type='select']/dri:instance" mode="hiddenInterpreter">
-        <xsl:variable name="position" select="position()"/>
+	    <xsl:variable name="position" select="position()"/>
         <xsl:for-each select="dri:value[@type='option']">
             <input type="hidden">
                 <xsl:attribute name="name">
@@ -839,7 +839,7 @@
                       </xsl:choose>
                   </xsl:attribute>
 
-                    <xsl:if test="dri:field/dri:label">
+		  <xsl:if test="dri:field/dri:label">
                         <label>
                             <xsl:attribute name="class">
                                 <xsl:text>control-label</xsl:text>
@@ -1275,7 +1275,48 @@
     <xsl:template name="pick-label">
         <xsl:choose>
             <xsl:when test="dri:field/dri:label">
-                <!--<label class="control-label col-sm-2">-->
+		    <!--<label class="control-label col-sm-2">-->
+			    <!-- show selected license before dropdown -->
+			    <xsl:if test="../@n = 'licenseclasslist'" >
+				    <xsl:if test="//dri:list[@id='aspect.submission.StepTransformer.list.statusList']/dri:item/dri:xref" >
+					    <i18n:text>xmlui.submit.cc-license.show.selected</i18n:text>
+				    </xsl:if>
+				    <xsl:for-each select="//dri:list[@id='aspect.submission.StepTransformer.list.statusList']/dri:item/dri:xref">
+					    <xsl:variable name="lt">
+						    <xsl:value-of select="concat('xmlui.submit.cc-license.show.by', substring-before(substring-after(./@target, '/by'), '/'))"/></xsl:variable>
+					    <div class="selected-cc">
+						    <a class="scc">
+							    <xsl:attribute name="href">
+								    <xsl:value-of select="./@target"/>
+							    </xsl:attribute>
+							    <i18n:text><xsl:value-of select="$lt"/></i18n:text>
+						    </a>
+						    <!--
+		    <xsl:variable name="lt"><xsl:value-of select="./dri:item/dri:xref/@target"/></xsl:variable>
+                    <xsl:choose>
+                            <xsl:when test="contains($lt,'/by/')">
+                                    <i18n:text>xmlui.submit.cc-license.show.by</i18n:text>
+                            </xsl:when>
+                            <xsl:when test="contains($lt,'/by-sa/')">
+                                    <i18n:text>xmlui.submit.cc-license.show.by-sa</i18n:text>
+                            </xsl:when>
+                            <xsl:when test="contains($lt,'/by-nc/')">
+                                    <i18n:text>xmlui.submit.cc-license.show.by-nc</i18n:text>
+                            </xsl:when>
+                            <xsl:when test="contains($lt,'/by-nc-sa/')">
+                                    <i18n:text>xmlui.submit.cc-license.show.by-nc-sa</i18n:text>
+                            </xsl:when>
+                            <xsl:when test="contains($lt,'/by-nd/')">
+                                    <i18n:text>xmlui.submit.cc-license.show.by-nd</i18n:text>
+                            </xsl:when>
+                            <xsl:when test="contains($lt,'/by-nc-nd/')">
+                                    <i18n:text>xmlui.submit.cc-license.show.by-nc-nd</i18n:text>
+                            </xsl:when>
+		    </xsl:choose> 
+-->
+            </div>
+				    </xsl:for-each> 
+		    </xsl:if>
                 <label>
                     <xsl:attribute name="class">
                         <xsl:text>control-label</xsl:text>

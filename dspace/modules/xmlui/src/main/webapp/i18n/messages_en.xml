@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
 	The contents of this file are subject to the license and copyright
@@ -7,8 +7,7 @@
 
 	http://www.dspace.org/license/
 
--->
-<catalogue xml:lang="en" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+--><catalogue xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xml:lang="en">
 
 	<!--
 		The format used by all keys is as follows
@@ -158,8 +157,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.asc">ascending</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.desc">descending</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading"></message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading" />
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading" />
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.personftadvisor">Browsing {0} by Advisor {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.personftadvisor">Browsing {0} by Advisor {1}</message>
@@ -180,7 +179,7 @@
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Search Scope</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">All of eDiss</message>
-	<message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Search within this collection:</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Search within this faculty / program</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.head_browse">Browse by</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_titles">Titles</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_authors">Authors</message>
@@ -191,8 +190,8 @@
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
 	<message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Community List</message>
 	<message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Community List</message>
-	<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Communities in eDiss</message>
-	<message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Select a community to browse its collections.</message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Faculties &amp; Programs in eDiss</message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Select a faculty or program to browse in it</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Search Scope</message>
@@ -203,8 +202,8 @@
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_authors">Author</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_dates">Dates</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.advanced_search_link">Advanced Search</message>
-	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities"></message>
-	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections"></message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities" />
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections" />
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_recent_submissions">Recent Submissions</message>
 
 
@@ -309,7 +308,7 @@
 
 	<!-- Authentication messages used for bitstream authentication -->
 	<message key="xmlui.BitstreamReader.auth_header">The file is restricted to the eDiss Team</message>
-	<message key="xmlui.BitstreamReader.auth_message">&#160;</message>
+	<message key="xmlui.BitstreamReader.auth_message"> </message>
 
 	<!-- Export Archive download messages -->
 	<message key="xmlui.ItemExportDownloadReader.auth_header">This export archive is restricted.</message>
@@ -354,7 +353,7 @@
 	<message key="xmlui.EPerson.EditProfile.error_required">This field is required</message>
 	<message key="xmlui.EPerson.EditProfile.error_invalid_password">Choose a password at least 6 characters long</message>
 	<message key="xmlui.EPerson.EditProfile.error_unconfirmed_password">Please retype your password to confirm</message>
-	<message key="xmlui.EPerson.EditProfile.head_auth">&#160;</message>
+	<message key="xmlui.EPerson.EditProfile.head_auth"> </message>
 	<message key="xmlui.EPerson.EditProfile.head_identify">Identify</message>
 	<message key="xmlui.EPerson.EditProfile.head_security">Security</message>
 
@@ -509,7 +508,7 @@
 	<message key="xmlui.Submission.general.workflow.trail">Item submission</message>
 
 	<!-- org.dspace.app.xmlui.submission.CollectiovViewer -->
-	<message key="xmlui.Submission.CollectionViewer.link1">Submit a new item here </message>
+	<message key="xmlui.Submission.CollectionViewer.link1">Publish here </message>
 
 	<!-- org.dspace.app.xmlui.submission.Navigation -->
 	<message key="xmlui.Submission.Navigation.submissions">Submissions</message>
@@ -524,7 +523,7 @@
 	<message key="xmlui.Submission.Submissions.workflow_head1">Workflow tasks</message>
 	<message key="xmlui.Submission.Submissions.workflow_info1">These tasks are items that are awaiting approval before they are added to the repository. There are two task queues, one for tasks which you have chosen to accept and another for tasks which have not been taken by anyone yet.</message>
 	<message key="xmlui.Submission.Submissions.workflow_head2">Tasks you own</message>
-	<message key="xmlui.Submission.Submissions.workflow_column1">&#160;</message>
+	<message key="xmlui.Submission.Submissions.workflow_column1"> </message>
 	<message key="xmlui.Submission.Submissions.workflow_column2">Task</message>
 	<message key="xmlui.Submission.Submissions.workflow_column3">Item</message>
 	<message key="xmlui.Submission.Submissions.workflow_column4">Collection</message>
@@ -543,7 +542,7 @@
 	<message key="xmlui.Submission.Submissions.submit_info2a">These are incomplete item submissions. You may also </message>
 	<message key="xmlui.Submission.Submissions.submit_info2b">start another submission</message>
 	<message key="xmlui.Submission.Submissions.submit_info2c">.</message>
-	<message key="xmlui.Submission.Submissions.submit_column1">&#160;</message>
+	<message key="xmlui.Submission.Submissions.submit_column1"> </message>
 	<message key="xmlui.Submission.Submissions.submit_column2">Title</message>
 	<message key="xmlui.Submission.Submissions.submit_column3">Collection</message>
 	<message key="xmlui.Submission.Submissions.submit_column4">Submitter</message>
@@ -638,14 +637,14 @@
    Please click “Browse...", select the file for upload from your computer, then click “Upload file".
 		<div class="alert alert-danger">
 			<p>
-			Your file must not have any security restrictions. <a href="/help/pdf-howto">Click here for information on how to create a suitable PDF.</a>
+				Your file must not have <strong>any security restrictions</strong>. <a href="/help/pdf-howto">Click here for information on how to create a suitable PDF.</a>
 		  </p>
 			<p>
-      If you want to upload more than one file, your dissertation has to be the first file.
+				If you want to upload <strong>more than one file</strong>, your dissertation has to be the first file.
       </p>
 
 			<p>
-			Please note: To protect your personal data, please remove the CV from the electronic version of your paper and please include only an unsigned "affidavit".
+				Please note: To protect your <strong>personal data</strong>, please remove the CV from the electronic version of your paper and please include only an unsigned "affidavit".
 			</p>
 		</div>
 		<span class="browse-text hidden">Browse</span>
@@ -660,12 +659,12 @@
 	<message key="xmlui.Submission.submit.UploadStep.submit_upload">Upload file</message>
 	<message key="xmlui.Submission.submit.UploadStep.head2">Files Uploaded</message>
 	<message key="xmlui.Submission.submit.UploadStep.column0">Primary</message>
-	<message key="xmlui.Submission.submit.UploadStep.column1">&#160;</message>
+	<message key="xmlui.Submission.submit.UploadStep.column1"> </message>
 	<message key="xmlui.Submission.submit.UploadStep.column2">File</message>
 	<message key="xmlui.Submission.submit.UploadStep.column3">Size</message>
 	<message key="xmlui.Submission.submit.UploadStep.column4">Description</message>
 	<message key="xmlui.Submission.submit.UploadStep.column5">Format</message>
-	<message key="xmlui.Submission.submit.UploadStep.column6">&#160;</message>
+	<message key="xmlui.Submission.submit.UploadStep.column6"> </message>
 	<message key="xmlui.Submission.submit.UploadStep.unknown_name">Unknown</message>
 	<message key="xmlui.Submission.submit.UploadStep.unknown_format">unknown format</message>
 	<message key="xmlui.Submission.submit.UploadStep.supported">(Supported)</message>
@@ -706,9 +705,9 @@
 
 	<!-- org.dspace.app.xmlui.Submission.submit.LicenseStep -->
 	<message key="xmlui.Submission.submit.LicenseStep.head">Distribution License</message>
-	<message key="xmlui.Submission.submit.LicenseStep.info1">&#160;</message>
-	<message key="xmlui.Submission.submit.LicenseStep.info2">&#160;</message>
-	<message key="xmlui.Submission.submit.LicenseStep.info3">&#160;</message>
+	<message key="xmlui.Submission.submit.LicenseStep.info1"> </message>
+	<message key="xmlui.Submission.submit.LicenseStep.info2"> </message>
+	<message key="xmlui.Submission.submit.LicenseStep.info3"> </message>
 	<message key="xmlui.Submission.submit.LicenseStep.decision_label">Distribution license</message>
 	<!--<message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">I accept the license terms and the costs of making my work available onlinethe online delivery and I consent to an invoice being sent to my postal address.</message>-->
 	<message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">I accept the license terms.</message>
@@ -861,7 +860,7 @@
 	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_help">E-People are searched by any partial match on email or name</message>
 	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_para1">Below is the list of E-People that matched your search query. Select the E-People you want to delete and click the delete button to continue or click on an E-Person's email or name to edit them.</message>
 	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_head">Search results</message>
-	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column1">&#160;</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column1"> </message>
 	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column2">ID</message>
 	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column3">Name</message>
 	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column4">Email</message>
@@ -932,7 +931,7 @@
 	<message key="xmlui.administrative.group.ManageGroupsMain.actions_search">Search for groups</message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.search_help">Groups are searched by any partial match on their name</message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.search_head">Search results</message>
-	<message key="xmlui.administrative.group.ManageGroupsMain.search_column1">&#160;</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.search_column1"> </message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.search_column2">ID</message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.search_column3">Name</message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.search_column4">Members</message>
@@ -964,18 +963,18 @@
 	<message key="xmlui.administrative.group.EditGroupForm.epeople_column1">ID</message>
 	<message key="xmlui.administrative.group.EditGroupForm.epeople_column2">Name</message>
 	<message key="xmlui.administrative.group.EditGroupForm.epeople_column3">Email</message>
-	<message key="xmlui.administrative.group.EditGroupForm.epeople_column4">&#160;</message>
+	<message key="xmlui.administrative.group.EditGroupForm.epeople_column4"> </message>
 	<message key="xmlui.administrative.group.EditGroupForm.groups_column1">ID</message>
 	<message key="xmlui.administrative.group.EditGroupForm.groups_column2">Name</message>
 	<message key="xmlui.administrative.group.EditGroupForm.groups_column3">Members</message>
 	<message key="xmlui.administrative.group.EditGroupForm.groups_column4">Collection</message>
-	<message key="xmlui.administrative.group.EditGroupForm.groups_column5">&#160;</message>
+	<message key="xmlui.administrative.group.EditGroupForm.groups_column5"> </message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.groups_collection_link">view</message>
 	<message key="xmlui.administrative.group.EditGroupForm.members_head">Members</message>
 	<message key="xmlui.administrative.group.EditGroupForm.members_column1">ID</message>
 	<message key="xmlui.administrative.group.EditGroupForm.members_column2">Name</message>
 	<message key="xmlui.administrative.group.EditGroupForm.members_column3">Email</message>
-	<message key="xmlui.administrative.group.EditGroupForm.members_column4">&#160;</message>
+	<message key="xmlui.administrative.group.EditGroupForm.members_column4"> </message>
 	<message key="xmlui.administrative.group.EditGroupForm.members_group_name">group: {0}</message>
 	<message key="xmlui.administrative.group.EditGroupForm.members_none">This group has no members.</message>
 	<message key="xmlui.administrative.group.EditGroupForm.members_pending">[pending]</message>
@@ -1055,7 +1054,7 @@
 	<message key="xmlui.administrative.registries.EditMetadataSchema.head1">Metadata Schema: "{0}"</message>
 	<message key="xmlui.administrative.registries.EditMetadataSchema.para1">This is the metadata schema for "{0}". You may add new or update existing metadata fields to this schema. Fields may also be selected for deletion or be moved to another schema. </message>
 	<message key="xmlui.administrative.registries.EditMetadataSchema.head2">Schema metadata fields</message>
-	<message key="xmlui.administrative.registries.EditMetadataSchema.column1">&#160;</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.column1"> </message>
 	<message key="xmlui.administrative.registries.EditMetadataSchema.column2">ID</message>
 	<message key="xmlui.administrative.registries.EditMetadataSchema.column3">Field</message>
 	<message key="xmlui.administrative.registries.EditMetadataSchema.column4">Scope Note</message>
@@ -1082,7 +1081,7 @@
 	<message key="xmlui.administrative.registries.FormatRegistryMain.head">Bitstream format registry</message>
 	<message key="xmlui.administrative.registries.FormatRegistryMain.para1">This list of bitstream formats provides information about known formats and their support level. You can edit or add new bitstream formats with this tool. Formats marked as 'internal' are hidden from the user, and are used for administrative purposes.</message>
 	<message key="xmlui.administrative.registries.FormatRegistryMain.new_link">Add a new bitstream format</message>
-	<message key="xmlui.administrative.registries.FormatRegistryMain.column1">&#160;</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.column1"> </message>
 	<message key="xmlui.administrative.registries.FormatRegistryMain.column2">ID</message>
 	<message key="xmlui.administrative.registries.FormatRegistryMain.column3">Name</message>
 	<message key="xmlui.administrative.registries.FormatRegistryMain.column4">MIME Type</message>
@@ -1097,7 +1096,7 @@
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.title">Metadata Registry</message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.head1">Metadata registry</message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.para1">The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas.	However, eDiss requires the qualified Dublin Core schema. You may extend the Dublin Core schema with additional fields or add new schemas to the registry.</message>
-	<message key="xmlui.administrative.registries.MetadataRegistryMain.column1">&#160;</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.column1"> </message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.column2">ID</message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.column3">Namespace</message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.column4">Name</message>
@@ -1173,7 +1172,7 @@
 	<message key="xmlui.administrative.authorization.EditPolicyForm.main_head_edit">Edit policy {0} for {1} {2}</message>
 	<message key="xmlui.administrative.authorization.EditPolicyForm.error_no_group">No group selected</message>
 	<message key="xmlui.administrative.authorization.EditPolicyForm.error_no_action">No action selected</message>
-	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column4">&#160;</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column4"> </message>
 	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column1">ID</message>
 	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column2">Name</message>
 	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column3">Actions for this resource</message>
@@ -1306,7 +1305,7 @@
 	<message key="xmlui.administrative.item.EditItemBitstreamsForm.title">Item Bitstreams</message>
 	<message key="xmlui.administrative.item.EditItemBitstreamsForm.trail">Item bitstreams</message>
 	<message key="xmlui.administrative.item.EditItemBitstreamsForm.head1">Bitstreams</message>
-	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column1">&#160;</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column1"> </message>
 	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column2">Name</message>
 	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column3">Description</message>
 	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column4">Format</message>
@@ -1443,7 +1442,7 @@
 	<message key="xmlui.administrative.mapper.SearchItemForm.trail">Search items</message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.head1">Search items matching: "{0}"</message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.submit_map">Map selected items</message>
-	<message key="xmlui.administrative.mapper.SearchItemForm.column1">&#160;</message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.column1"> </message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.column2">Collection</message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.column3">Author &amp; Referee</message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.column4">Title</message>
@@ -1453,7 +1452,7 @@
 	<message key="xmlui.administrative.mapper.BrowseItemForm.trail">Browse mapped items</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.head1">Browsing mapped items</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.submit_unmap">Unmap selected items</message>
-	<message key="xmlui.administrative.mapper.BrowseItemForm.column1">&#160;</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.column1"> </message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.column2">Collection</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.column3">Author &amp; Referee</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.column4">Title</message>
@@ -1611,7 +1610,7 @@
 	<message key="xmlui.administrative.ControlPanel.harvest_head_harvester_settings">Harvester Settings</message>
 
 	<!-- General tags for community management -->
-	<message key="xmlui.administrative.community.general.community_trail">Communities</message>
+	<message key="xmlui.administrative.community.general.community_trail">Faculties &amp; Programs</message>
 	<message key="xmlui.administrative.community.general.options_metadata">Edit Metadata</message>
 	<message key="xmlui.administrative.community.general.options_roles">Assign Roles</message>
 	<message key="xmlui.administrative.community.general.options_curate">Curate</message>
@@ -1803,7 +1802,7 @@
 	<!-- structural.xsl -->
 	<message key="xmlui.dri2xhtml.structural.footer-promotional">
 		<a target="_blank" href="http://di.tamu.edu" id="ds-logo-link">
-			<span id="ds-footer-logo">&#160;</span>
+			<span id="ds-footer-logo"> </span>
 		</a>
 		<p>
 			This website is using Manakin, a new front end for eDiss created by Texas A&amp;M University
@@ -1872,7 +1871,7 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-format">Format</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-view">View</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Description</message>
-	<message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View/<wbr/>Open</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View/<wbr />Open</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-no-files">There are no files associated with this item.</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.size-bytes">bytes</message>
@@ -2077,11 +2076,11 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.institute">Documents {0} by institute {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.subjecteng">Documents {0} by subject {1} (english)</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftadvisor.column_heading"></message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.advisor.column_heading"></message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading"></message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftreferee.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftadvisor.column_heading" />
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.advisor.column_heading" />
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading" />
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading" />
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftreferee.column_heading" />
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.gok.column_heading">GOK</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.bk.column_heading">BK</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.dnb.column_heading">DNB Class</message>
@@ -2106,8 +2105,8 @@
 	<message key="xmlui.general.publish_now">Publish now</message>
 	<message key="xmlui.general.publish_here">Publish here</message>
 
-	<message key="xmlui.EPerson.PasswordLogin.head2">&#160;</message>
-	<message key="xmlui.EPerson.PasswordLogin.para1">&#160;</message>
+	<message key="xmlui.EPerson.PasswordLogin.head2"> </message>
+	<message key="xmlui.EPerson.PasswordLogin.para1"> </message>
 	<message key="xmlui.EPerson.PasswordLogin.register_link">New at eDiss? Click here to register!</message>
 
 	<message key="xmlui.navigation.help.header">Help &amp; Info</message>
@@ -2170,15 +2169,15 @@
 	<message key="xmlui.Discovery.AbstractSearch.type_subject">Filter by subject</message>
 
 	<message key="xmlui.Discovery.SimpleSearch.filter_add">Add filter</message>
-	<message key="xmlui.Discovery.SimpleSearch.filter_head">&#160;</message>
-	<message key="xmlui.Discovery.SimpleSearch.filter_help">&#160;</message>
+	<message key="xmlui.Discovery.SimpleSearch.filter_head"> </message>
+	<message key="xmlui.Discovery.SimpleSearch.filter_help"> </message>
 	<message key="xmlui.Discovery.SimpleSearch.sort_apply">Apply</message>
 	<message key="xmlui.Discovery.SimpleSearch.sort_head">Sort by</message>
 
 	<message key="xmlui.discovery.AbstractFiltersTransformer.filters.head">Filter</message>
 	<message key="xmlui.discovery.AbstractFiltersTransformer.filters.view-more">... more</message>
 	<message key="xmlui.discovery.SearchFacetFilter.no-results">No filter values found</message>
-	<message key="xmlui.discovery.SimpleSearch.search_label">&#160;</message>
+	<message key="xmlui.discovery.SimpleSearch.search_label"> </message>
 	<message key="xmlui.dri2xhtml.structural.pagination-info.nototal">Show {0}-{1}</message>
 
 	<!-- static pages trails and navigations -->
@@ -2186,7 +2185,7 @@
 	<message key="xmlui.deposit-license.head">Terms of Contract</message>
 	<message key="xmlui.deposit-license.trail">Help &amp; Info: Terms of Contract</message>
 	<message key="xmlui.deposit.license.title">Terms of Contract</message>
-	<message key="xmlui.dri2xhtml.default.textarea.value">&#160;</message>	
+	<message key="xmlui.dri2xhtml.default.textarea.value"> </message>	
 	<message key="xmlui.dri2xhtml.structural.impressum-link">Impressum</message>
 	<message key="xmlui.help.cumulative.diss.head">Cumulative Dissertations</message>
 	<message key="xmlui.help.cumulative.diss.trail">Help &amp; Info: Cumulative Dissertations</message>
@@ -2259,7 +2258,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.referee">Browsing by Advisor</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.referee">Browsing by Advisor</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_referee">Advisor</message>	
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.referee.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.referee.column_heading" />
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ft.label">Browse by: </message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.person">Advisor &amp; Referee</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_personftadvisor">Advisor</message>
@@ -2267,8 +2266,8 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_person">Advisor &amp; Referee</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.ftadvisor">Browsing {0} by Advisor {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Browsing {0} by  Author {1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ftadvisor.column_heading"></message>        
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ftadvisor.column_heading" />        
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading" />
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.personftadvisor">Browsing {0} by Advisor {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.person">Browsing {0} by Advisor &amp; Referee {1}</message>
 
@@ -2277,8 +2276,7 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item.zipdownload">Download all files as zip-Archive</message>
 
 	<!-- static page: home -->
-	<message key="xmlui.static.home">
-		<div>
+	<message key="xmlui.static.home"><div>
 			<p>
 				<strong>Publish your digital doctoral thesis Open Access at the Göttingen State and University Library (SUB Göttingen).</strong>
 			</p>
@@ -2314,10 +2312,10 @@
 			Please find the opening hours here: <a href ="https://www.sub.uni-goettingen.de/en/locations-facilities/locations-and-opening-hours/"> Changed opening hours over the Christmas and New Year period</a>.
  			</p> -->
 			
-			<!-- <p class="highlight news">
+			 <p class="highlight news">
 				Dear customers,<br />
 				on August 26. 2021 between 6:20 and 8 pm for reasons of maintanence at the eDiss-server it is possible that there might occur difficulties while publishing your thesis. Please upload your work another time if possible.<br />
-Thank you for your understanding!</p> -->
+Thank you for your understanding!</p> 
 			
 			
 			
@@ -2350,14 +2348,14 @@ Finally, you must agree to our <a href="help/deposit-license">deposit license</a
 					<span class="help" id="step4">
 						<span class="icon">4</span>
 						<a href="/help/fullpublication#print">Deliver two printed copies of your work at the SUB.</a>
-						<span>Please send us the two printed copies of your dissertation via mail or deposit them in the mail box at the staff entrance (at the back of the central library) or hand them in at the reception desk of the central library. <br/> Doctoral candidates of medicine must add a copy of their invitation to the oral examination to the print copies.</span>
+						<span>Please send us the two printed copies of your dissertation via mail or deposit them in the mail box at the staff entrance (at the back of the central library) or hand them in at the reception desk of the central library. <br /> Doctoral candidates of medicine must add a copy of their invitation to the oral examination to the print copies.</span>
 					</span>
 				</li>
 				<li>
 					<span class="help" id="step5">
 						<span class="icon">5</span>
 						<a href="/help/fullpublication#finished">Done.</a>
-						<span>Your publication will be enabled by our editors.<br/> You will be notified via e-mail upon the release of your dissertation.</span>
+						<span>Your publication will be enabled by our editors.<br /> You will be notified via e-mail upon the release of your dissertation.</span>
 					</span>
 				</li>
 			</ol>
@@ -2377,11 +2375,11 @@ Finally, you must agree to our <a href="help/deposit-license">deposit license</a
 					Immediate availability by telephone for the entire duration of the specified office hours cannot be guaranteed due to the particular situation.
 					</p>
 					<p>
-						Mo - Fr 10:00 – 12:00 h<br/>
+						Mo - Fr 10:00 – 12:00 h<br />
 						
 						<!-- and on appointment<br/> -->
-						Tel.: +49 (0)551 39-27809<br/>
-						Tel.: +49 (0)551 39-28655<br/>
+						Tel.: +49 (0)551 39-27809<br />
+						Tel.: +49 (0)551 39-28655<br />
 						<a href="mailto:ediss@sub.uni-goettingen.de">ediss@sub.uni-goettingen.de</a>
 					</p>
 					<!-- <p>
@@ -2396,29 +2394,28 @@ Finally, you must agree to our <a href="help/deposit-license">deposit license</a
 				<div class="col">
 					<em>Doctoral candidates of medicine only</em>
 					<h3>Medical Library</h3>
-					<p>Robert-Koch-Str. 40<br/>
-						<strong>Information desk</strong><br/>
-						Mon – Fri 8:00 – 24:00 h<br/>
-						Sat - Sun 8:00 – 22:00 h<br/>
-						Holidays 10:00 – 20:00 h<br/>
-						Tel.: +49 551 39-8395<br/>
+					<p>Robert-Koch-Str. 40<br />
+						<strong>Information desk</strong><br />
+						Mon – Fri 8:00 – 24:00 h<br />
+						Sat - Sun 8:00 – 22:00 h<br />
+						Holidays 10:00 – 20:00 h<br />
+						Tel.: +49 551 39-8395<br />
 						<a href="mailto:bbmed@sub.uni-goettingen.de">bbmed@sub.uni-goettingen.de</a>
 					</p>
 				</div>
 			</div>
 
-			<hr/>
+			<hr />
 
 			<h3>Postal address</h3>
 			<p>
 				SUB Göttingen-Zentralbibliothek<br />
 				eDiss<br />
-				Platz der Göttinger Sieben 1<br/>
-				37073 Göttingen<br/>
+				Platz der Göttinger Sieben 1<br />
+				37073 Göttingen<br />
 			</p>
 
-		</div>
-	</message>
+		</div></message>
 
 	<!-- static page: publishing on eDiss -->
 	<message key="xmlui.static.help.publishing">
@@ -2941,7 +2938,7 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 
 			<h2 id="break" class="ds-div-head">Interrupting the online publication process</h2>
 
-			<p  lass="ds-paragraph">
+			<p lass="ds-paragraph">
 
 				You can interrupt the online publication process at any time with the button “Save and continue later".
 
@@ -2993,7 +2990,7 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 
 				</ol>
 
-				<p>If corrections on your PDF document are required, please carry these out first.  Then you can resume and finish the online publication process with the corrected document. If the publication was rejected on the basis of descriptive data, you can <a href = "#resume" >immediately turn back to the publishing process</a> again and correct this information. This is identical to the procedure used to resume an interrupted publication.</p>
+				<p>If corrections on your PDF document are required, please carry these out first.  Then you can resume and finish the online publication process with the corrected document. If the publication was rejected on the basis of descriptive data, you can <a href="#resume">immediately turn back to the publishing process</a> again and correct this information. This is identical to the procedure used to resume an interrupted publication.</p>
 
 				<p>
 
@@ -3496,10 +3493,8 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 	</message>
 
 	<!-- static page: deposit license -->
-	<message key="xmlui.static.help.deposit-license">
-		
-		<div id="file_deposit-licence_pdf" class="ds-static-div download">
-			<a href="/static/terms_of_contract_eDiss_201611.pdf">PDF</a><br/><strong>Please note that only the German version of this contract is legally binding.</strong>
+	<message key="xmlui.static.help.deposit-license"><div id="file_deposit-licence_pdf" class="ds-static-div download">
+			<a title="Download as PDF" class="pull-right" href="/static/terms_of_contract_eDiss_201611.pdf">PDF</a><br /><strong>Please note that only the German version of this contract is legally binding.</strong>
 		</div>
 		<div class="ds-static-div">
 			<p>
@@ -3553,8 +3548,7 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 			<p> 	
 				If I have not yet completed my State exam, I agree to promptly inform eDiss staff, as soon as I have taken and passed the exam.
 			</p>
-		</div>
-	</message>
+		</div></message>
 
 	<!-- static page: faq -->
 	<message key="xmlui.static.help.faq">
@@ -3842,11 +3836,11 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 				</p>
 
 				<p>
-				If a <strong>correction of the metadata</strong> is necessary please contact <a href="/contact">our editors</a>. Only they are authorized to make changes to the dissertation information.<br/>
+				If a <strong>correction of the metadata</strong> is necessary please contact <a href="/contact">our editors</a>. Only they are authorized to make changes to the dissertation information.<br />
 
-					If content errors are noticed only after the publication in the PDF, for which a correction is mandatory (there is danger to life or environment), please contact <a href="/contact">our editors</a>. Then a republication (version) of your dissertation is required, which must also be approved by your examination office.<br/>
+					If content errors are noticed only after the publication in the PDF, for which a correction is mandatory (there is danger to life or environment), please contact <a href="/contact">our editors</a>. Then a republication (version) of your dissertation is required, which must also be approved by your examination office.<br />
 
-					The <strong>withdrawal</strong> of an already published document is only possible if there are license or patent law problems or if the author's opinion on his topic has fundamentally changed (§42 UrhG). The withdrawal is documented in the system. In addition, an information page with the note "This document has been retracted" is created and displayed via the permanent URL.<br/>
+					The <strong>withdrawal</strong> of an already published document is only possible if there are license or patent law problems or if the author's opinion on his topic has fundamentally changed (§42 UrhG). The withdrawal is documented in the system. In addition, an information page with the note "This document has been retracted" is created and displayed via the permanent URL.<br />
 
 					In case of insignificant errors (spelling mistakes, changes in formatting, omissions, etc.) you are free to upload a corrected version of your dissertation to an appropriate (subject) repository. You are then welcome to provide us with the link, which we will include in your metadata.
 				</p>
@@ -4048,7 +4042,7 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 
 					<p>
 
-					Yes, it is possible to use mathematical formula in TeX/LaTeX for your abstract within your "item submission" form. However, only those commands may be used which are valid in the TeX/LaTex math mode. They will only be recognized and displayed correctly if used with $...$ or /(.../). Please do not use LaTeX commands from text mode. Those will not be interpreted.<br/>
+					Yes, it is possible to use mathematical formula in TeX/LaTeX for your abstract within your "item submission" form. However, only those commands may be used which are valid in the TeX/LaTex math mode. They will only be recognized and displayed correctly if used with $...$ or /(.../). Please do not use LaTeX commands from text mode. Those will not be interpreted.<br />
 					We would like to point out that our data from eDiss is used by other institutions (e.g. German National Library (DNB), Gemeinsamer Verbundkatalog (GVK), etc.). We have no influence on the presentation of our data on the respective websites.
 
 					</p>
@@ -4538,14 +4532,14 @@ All personal data will only be stored as long as necessary for the respective pu
 			Please click “Browse...", select the file for upload from your computer, then click “Upload file".
 		    <div class="alert alert-danger">
       <p>
-      Your file must not have any security restrictions. <a href="/help/pdf-howto">Click here for information on how to create a suitable PDF.</a>
+	      Your file must not have <strong>any security restrictions</strong>. <a href="/help/pdf-howto">Click here for information on how to create a suitable PDF.</a>
       </p>
 			<p>
-      If you want to upload more than one file, your dissertation has to be the first file.
+				If you want to upload <strong>more than one file</strong>, your dissertation has to be the first file.
       </p>
 
       <p>
-      Please note: To protect your personal data, please remove the CV from the electronic version of your paper and please include only an unsigned "affidavit".
+	      Please note: To protect your <strong>personal data</strong>, please remove the CV from the electronic version of your paper and please include only an unsigned "affidavit".
       </p>
     </div>
     <span class="browse-text hidden">Browse</span>
@@ -4566,7 +4560,7 @@ All personal data will only be stored as long as necessary for the respective pu
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column3">Size</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column4">Description</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column5">Format</message>
-    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column6"></message>
+    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column6" />
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.unknown_name">Unknown</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.unknown_format">unknown format</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.supported">(Supported)</message>
@@ -4580,13 +4574,14 @@ All personal data will only be stored as long as necessary for the respective pu
 <!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
         <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">An error occurred ... {0}</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.head">License Your Work</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.info1">If you wish, you may add a <a href="http://creativecommons.org/">Creative Commons</a> License to your item. <strong>Creative Commons licenses govern what people who read your work may then do with it.</strong></message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.info1"><p>Every publication on eDiss is always provided with a <a href="http://creativecommons.org/">Creative Commons license</a>. Creative Commons licenses govern what people who read your work may then do with it. By default, <img class="cc" src="/themes/Mirage2/images/cc-by.png" /> CC BY 4.0 (Creative Commons Attribution 4.0 International) is assigned. </p>
+		<p>However, you can of course assign a different license. To do so, please make your selection in the menu below.</p></message>
         <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Choose a license</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Proceed to Creative Commons website to select a license</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.license">License Type</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.license">License options</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.select_change">Select or modify your license ...</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.no_license">No Creative Commons License</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.save_changes">You must click Next to save your changes.</message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.no_license">CC BY 4.0 (default)</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.save_changes">Please click Next to save your changes.</message>
 
 <!-- Site administrator options -->
   <message key="xmlui.administrative.Navigation.administrative_head">Administrative</message>
@@ -4784,7 +4779,7 @@ All personal data will only be stored as long as necessary for the respective pu
     <message key="xmlui.administrative.item.EditItemStatusForm.label_public">Make item public</message>
     <message key="xmlui.administrative.item.EditItemStatusForm.submit_private">Make it private...</message>
     <message key="xmlui.administrative.item.EditItemStatusForm.submit_public">Make it public...</message>
-	<message key="xmlui.administrative.collection.AssignCollectionRoles.repository_role"><br/>(Repository level group, system administrators only)</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.repository_role"><br />(Repository level group, system administrators only)</message>
     <message key="xmlui.statistics.search.title">Search Statistics</message>
     <message key="xmlui.statistics.search.head">Search Statistics</message>
     <message key="xmlui.statistics.search.head-dso">Search Statistics for {0}</message>
@@ -4922,11 +4917,11 @@ All personal data will only be stored as long as necessary for the respective pu
     <message key="xmlui.mirage2.discovery.showAdvancedFilters">Show Advanced Filters</message>
     <message key="xmlui.mirage2.discovery.hideAdvancedFilters">Hide Advanced Filters</message>
     <message key="xmlui.mirage2.forms.instancedCompositeFields.add">+</message>
-    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">&#128465;</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">🗑</message>
     <message key="xmlui.mirage2.forms.instancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
     <message key="xmlui.mirage2.forms.nonInstancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
     <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">+</message>
-    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">&#128465;</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">🗑</message>
     <message key="xmlui.mirage2.page-structure.aboutThisRepository">About This Repository</message>
     <message key="xmlui.mirage2.page-structure.toggleNavigation">Toggle navigation</message>
     <message key="xmlui.mirage2.page-structure.heroUnit.title">About This Repository</message>
@@ -4974,7 +4969,7 @@ All personal data will only be stored as long as necessary for the respective pu
 	<message key="xmlui.administrative.select.catalogue.head">Select Message Catalogue</message>
 	<message key="xmlui.administrative.select.catalogue.list.prefix">Catalogue: </message>
 
-!-- submission progress bar messages -->
+!-- submission progress bar messages --&gt;
 	<message key="xmlui.Submission.submit.progressbar.initial-questions">Initial Questions</message>
 	<message key="xmlui.Submission.submit.progressbar.describe">Describe</message>
     <message key="xmlui.Submission.submit.progressbar.access">Access</message>
@@ -4989,13 +4984,43 @@ All personal data will only be stored as long as necessary for the respective pu
 <!-- org.dspace.app.xmlui.Submission.submit.AddDoiStep -->
 	<message key="xmlui.Submission.submit.AddDoiStep.btn">Add DOI to item</message>
 	<message key="xmlui.Submission.submit.AddDoiStep.done.btn">DOI created</message>
-	<message key="xmlui.Submission.submit.itemDOI.created">This item will get the DOI {0}.</message>
-	<message key="xmlui.Submission.submit.AddDoiStep.head">DOI</message>
-	<message key="xmlui.Submission.submit.AddDoiStep.section_head">Create DOI for Item</message>
+	<message key="xmlui.Submission.submit.itemDOI.created">This publication was assigned the DOI {0}.</message>
+	<message key="xmlui.Submission.submit.AddDoiStep.head">DOI Assignment</message>
+	<!-- <message key="xmlui.Submission.submit.AddDoiStep.section_head">Create DOI for Item</message> -->
+	<message key="xmlui.Submission.submit.AddDoiStep.section_head"></message>
 	<message key="xmlui.Submission.submit.itemDOI.no_doi">There will be no DOI created for this item.</message>
-	<message key="xmlui.Submission.submit.itemDOI.note">Note that this item might get a DOI by default if there is a filter set that evaluates a later state of this item.</message>
+	<!-- <message key="xmlui.Submission.submit.itemDOI.note">Note that this item might get a DOI by default if there is a filter set that evaluates a later state of this item.</message> -->
+	<message key="xmlui.Submission.submit.itemDOI.note">If you want to write the DOI in your document....</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_doi">DOI</message>
   <message key="xmlui.administrative.item.EditItemStatusForm.submit_register_doi">Register DOI</message>
-	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_person">Advisor &amp; Referee</message>
-</catalogue>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_person">Advisor &amp; Referee</message>
 
+  <!-- org.dspace.app.xmlui.Submission.submit.ShowDoiStep -->
+    <message key="xmlui.Submission.submit.ShowDoiStep.head">DOI</message>
+  <message key="xmlui.Submission.submit.ShowDoiStep.section_head">Your publication will be assigned the DOI {0}.</message>
+  <message key="xmlui.Submission.submit.showitemDOI.infotext">If you want to write the DOI in your document, ... save all ... Otherwise go to the next step.</message>
+  <message key="xmlui.submit.cc-license.show.selected"><strong>Selected License: </strong></message>
+          <message key="xmlui.submit.cc-license.show.by"><img src="/themes/Mirage2/images/cc-by.png"></img> Creative Commons Attribution 4.0 International</message>
+        <message key="xmlui.submit.cc-license.show.by-nc"><img src="/themes/Mirage2/images/cc-by-nc.png"></img> Creative Commons Attribution-NonCommercial 4.0 International</message>
+        <message key="xmlui.submit.cc-license.show.by-sa"><img src="/themes/Mirage2/images/cc-by-nc.png"></img> Creative Commons Attribution-ShareAlike 4.0 International</message>
+        <message key="xmlui.submit.cc-license.show.by-nc-sa"><img src="/themes/Mirage2/images/cc-by-nc-sa.png"></img> Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</message>
+        <message key="xmlui.submit.cc-license.show.by-nd"><img src="/themes/Mirage2/images/cc-by-nd.png"></img> Creative Commons Attribution-NoDerivatives 4.0 International</message>
+	<message key="xmlui.submit.cc-license.show.by-nc-nd"><img src="/themes/Mirage2/images/cc-by-nc-nd.png"></img> Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</message>
+
+	        <!-- From old live ediss -->
+        <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_ftauthor">Author only</message>
+        <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_ftauthor">Author</message>
+        <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections"></message>
+        <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities"></message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.advisor.column_heading"></message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading"></message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading"></message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ftadvisor.column_heading"></message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftadvisor.column_heading"></message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftreferee.column_heading"></message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.referee.column_heading"></message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading"></message>
+        <message key="xmlui.item.published.parts">Individual articles / chapters of this work have also been published separately:</message>
+</catalogue>

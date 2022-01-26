@@ -25,7 +25,7 @@
     <xsl:apply-templates select="./mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']/mets:xmlData/dim:dim" mode="itemSummaryView-DIM"/>
     <xsl:copy-of select="$SFXLink"/>
     <!-- Generate the Creative Commons license information from the file section (DSpace deposit license hidden by default)-->
-    <xsl:if test="./mets:fileSec/mets:fileGrp[@USE='CC-LICENSE' or @USE='LICENSE']">
+    <!-- <xsl:if test="./mets:fileSec/mets:fileGrp[@USE='CC-LICENSE' or @USE='LICENSE']">
       <div class="license-info table">
         <p>
           <i18n:text>xmlui.dri2xhtml.METS-1.0.license-text</i18n:text>
@@ -34,7 +34,7 @@
           <xsl:apply-templates select="./mets:fileSec/mets:fileGrp[@USE='CC-LICENSE' or @USE='LICENSE']" mode="simple"/>
         </ul>
       </div>
-    </xsl:if>
+    </xsl:if> -->
   </xsl:template>
   <!-- An item rendered in the detailView pattern, the "full item record" view of a DSpace item in Manakin. -->
   <xsl:template name="itemDetailView-DIM">
@@ -146,14 +146,14 @@
         </p>
 	</xsl:when>
 	<xsl:when test="//dim:field[@element='date'][@qualifier='embargoed']">
-        <div class="embargo-info">
+        <div class="alert alert-info">
           <p>
             <xsl:choose>
-              <xsl:when test="contains(//dim:field[@element='date'][@qualifier='embargoed'], '3000')">
-                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed-examen</i18n:text>
-              </xsl:when>
-              <xsl:when test="contains(//dim:field[@element='date'][@qualifier='embargoed'], '5000')">
+              <xsl:when test="//dim:field[@element='description'][@qualifier='embargoed'] = 'forever'">
                 <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed-unknown</i18n:text>
+              </xsl:when>
+              <xsl:when test="//dim:field[@element='description'][@qualifier='embargoed'] = 'unknown'">
+                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-embargoed-examen</i18n:text>
               </xsl:when>
               <xsl:otherwise>
                 <xsl:variable name="year">
@@ -582,12 +582,7 @@
     <div class="simple-item-view-authors item-page-field-wrapper table">
       <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
         <xsl:call-template name="itemSummaryView-DIM-authors-entry"/>
-      </xsl:for-each>
-      <xsl:if test="dim:field[@element='creator' and @qualifier='birthname']">
-        <br/>
-        <i18n:text>xmlui.item-view.birthname</i18n:text>
-        <xsl:value-of select="dim:field[@element='creator' and @qualifier='birthname']"/>
-      </xsl:if>
+    </xsl:for-each>
     </div>
   </xsl:template>
   <xsl:template name="itemSummaryView-DIM-authors-entry">
@@ -598,6 +593,12 @@
         </xsl:attribute>
       </xsl:if>
       <xsl:copy-of select="node()"/>
+      <xsl:if test="../dim:field[@element='creator' and @qualifier='birthname']">
+              <xsl:text> (</xsl:text>
+	      <i18n:text>xmlui.item-view.birthname</i18n:text>
+	      <xsl:value-of select="../dim:field[@element='creator' and @qualifier='birthname']"/>
+	      <xsl:text>) </xsl:text>
+        </xsl:if>
     </div>
   </xsl:template>
   <xsl:template name="itemURI">
@@ -918,9 +919,10 @@
 		<span><xsl:value-of select="$label"/></span>
 	</xsl:if>
 </div>
-<div class="file-link">
-	<a>
-        <xsl:attribute name="href">
+<xsl:if test="contains($href, 'Allowed=y')">
+	<div class="file-link">
+		<a>
+	 <xsl:attribute name="href">
           <xsl:value-of select="$href"/>
         </xsl:attribute>
 	<!-- <xsl:call-template name="getFileIcon">
@@ -985,6 +987,7 @@
 	<span class="hidden-xs visible-sm visible-md visible-lg">View<wbr/>Open</span>
 </a>
 </div>
+</xsl:if>
 	</div>
 	 </div>
   </xsl:template>

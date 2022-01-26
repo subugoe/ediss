@@ -704,3 +704,4 @@ public class VersionedHandleIdentifierProvider extends IdentifierProvider {
         this.versionHistoryDAO = versionHistoryDAO;
     }
 }
+

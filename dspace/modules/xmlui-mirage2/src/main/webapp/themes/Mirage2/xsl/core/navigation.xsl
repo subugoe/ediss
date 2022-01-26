@@ -246,9 +246,10 @@
             </xsl:choose>
 
         </a>
-	<xsl:if test="contains(dri:xref/@target, '/csv/handle')">
+	<xsl:if test="//dri:metadata[@qualifier='containerType'] = 'type:item'">
 		<xsl:if test="string-length(//dri:list[@n='administrative']) != 0">
-			<xsl:variable name="handle"><xsl:value-of select="substring-after(dri:xref/@target, '/csv/')"/></xsl:variable>
+			<xsl:if test="starts-with(dri:xref/@target, '/csv/handle/')">
+				<xsl:variable name="handle"><xsl:value-of select="substring-after(dri:xref/@target, '/csv/')"/></xsl:variable> 
 			<!-- append links to bill and confirmation forms for admin
 			<a class="list-group-item ds-option">
 				<xsl:attribute name="href"><xsl:value-of select="concat('/bill/', $handle)"/></xsl:attribute>
@@ -273,7 +274,8 @@
 			<a class="list-group-item ds-option">
                                 <xsl:attribute name="href"><xsl:value-of select="concat('/confirm-abstract-ggnb/', $handle)"/></xsl:attribute>
                                 <i18n:text>xmlui.navigation.confirm.abstract-ggnb</i18n:text>
-                        </a>
+			</a>
+		   </xsl:if>
 		</xsl:if>
 	</xsl:if>
     </xsl:template>

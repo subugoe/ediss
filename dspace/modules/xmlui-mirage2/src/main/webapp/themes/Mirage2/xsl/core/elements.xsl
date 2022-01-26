@@ -195,10 +195,19 @@
         and the item element under list are also rich text containers.
     -->
     <xsl:template match="dri:p">
-        <p>
-            <xsl:call-template name="standardAttributes">
-                <xsl:with-param name="class">ds-paragraph</xsl:with-param>
-            </xsl:call-template>
+	    <p>
+	    <xsl:choose>
+		    <xsl:when test="contains(./dri:xref/@target, '/submit')">
+			    <xsl:call-template name="standardAttributes">
+                                        <xsl:with-param name="class">submit</xsl:with-param>
+                                    </xsl:call-template>
+		    </xsl:when>
+			    <xsl:otherwise>
+				    <xsl:call-template name="standardAttributes">
+                			<xsl:with-param name="class">ds-paragraph</xsl:with-param>
+			            </xsl:call-template>
+		    </xsl:otherwise>
+	    </xsl:choose>
             <xsl:choose>
                 <!--  does this element have any children -->
                 <xsl:when test="child::node()">

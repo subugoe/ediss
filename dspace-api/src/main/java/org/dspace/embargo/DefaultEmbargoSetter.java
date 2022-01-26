@@ -21,6 +21,7 @@ import org.dspace.core.Constants;
 import org.dspace.eperson.Group;
 import org.dspace.license.CreativeCommons;
 
+import org.apache.log4j.Logger;
 /**
  * Default plugin implementation of the embargo setting function.
  * The parseTerms() provides only very rudimentary terms logic - entry
@@ -33,6 +34,8 @@ import org.dspace.license.CreativeCommons;
  */
 public class DefaultEmbargoSetter implements EmbargoSetter
 {
+    private static Logger log = Logger.getLogger(DefaultEmbargoSetter.class);
+
     protected String termsOpen = null;
 	
     public DefaultEmbargoSetter()
@@ -86,6 +89,8 @@ public class DefaultEmbargoSetter implements EmbargoSetter
             if (!(bnn.equals(Constants.LICENSE_BUNDLE_NAME) || bnn.equals(Constants.METADATA_BUNDLE_NAME) || bnn.equals(CreativeCommons.CC_BUNDLE_NAME)))
             {
                 //AuthorizeManager.removePoliciesActionFilter(context, bn, Constants.READ);
+		log.info("LiftDate: " + liftDate.toDate() + " bn: " + bn + " OwningColl: "  + item.getOwningCollection());
+		log.info("context: " + context.getExtraLogInfo());
                 generatePolicies(context, liftDate.toDate(), null, bn, item.getOwningCollection());
                 for (Bitstream bs : bn.getBitstreams())
                 {
@@ -99,6 +104,7 @@ public class DefaultEmbargoSetter implements EmbargoSetter
     protected void generatePolicies(Context context, Date embargoDate,
                                         String reason, DSpaceObject dso, Collection owningCollection) throws SQLException, AuthorizeException {
 
+	    log.info("Generating Policy.....");
         // add only embargo policy
         if(embargoDate!=null){
 

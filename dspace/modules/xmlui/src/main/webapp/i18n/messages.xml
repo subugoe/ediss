@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
 
@@ -16,9 +15,7 @@
 
 
 
--->
-
-<catalogue xml:lang="de" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+--><catalogue xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xml:lang="de">
 
 
 
@@ -318,9 +315,9 @@
 
 
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading" />
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading" />
 
 
 
@@ -390,7 +387,7 @@
 
 	<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Wählen Sie eine Fakultät oder ein Programm</message>
 
-	<message key="xmlui.ArtifactBrowser.CommunityBrowser.select"></message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.select" />
 
 
 
@@ -412,9 +409,9 @@
 
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.advanced_search_link">Erweiterte Suche</message>
 
-	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities"></message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities" />
 
-	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections"></message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections" />
 
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_recent_submissions">Neueste Zugänge</message>
 
@@ -448,7 +445,7 @@
 
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.head">Haben Sie Fragen oder Anregungen?</message>
 
-	<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">&#160;</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.para1"> </message>
 
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.email">Ihre E-Mail-Adresse</message>
 
@@ -612,7 +609,7 @@
 
 	<message key="xmlui.BitstreamReader.auth_header">Diese Datei ist nur für das eDiss Team zugänglich</message>	
 
-	<message key="xmlui.BitstreamReader.auth_message">&#160;</message>
+	<message key="xmlui.BitstreamReader.auth_message"> </message>
 
 
 
@@ -702,7 +699,7 @@
 
 	<message key="xmlui.EPerson.EditProfile.error_unconfirmed_password">Bitte geben Sie Ihr Passwort noch einmal ein, um es zu bestätigen.</message>
 
-	<message key="xmlui.EPerson.EditProfile.head_auth">&#160;</message>
+	<message key="xmlui.EPerson.EditProfile.head_auth"> </message>
 
 	<message key="xmlui.EPerson.EditProfile.head_identify">Identifikation</message>
 
@@ -1012,7 +1009,7 @@
 
 	<!-- org.dspace.app.xmlui.submission.CollectiovViewer -->
 
-	<message key="xmlui.Submission.CollectionViewer.link1">Ein Dokument in dieser Sammlung veröffentlichen</message>
+	<message key="xmlui.Submission.CollectionViewer.link1">Hier veröffentlichen</message>
 
 
 
@@ -1042,7 +1039,7 @@
 
 	<message key="xmlui.Submission.Submissions.workflow_head2">Ihre eigenen Aufgaben</message>
 
-	<message key="xmlui.Submission.Submissions.workflow_column1">&#160;</message>
+	<message key="xmlui.Submission.Submissions.workflow_column1"> </message>
 
 	<message key="xmlui.Submission.Submissions.workflow_column2">Aufgabe</message>
 
@@ -1078,9 +1075,9 @@
 
 	<message key="xmlui.Submission.Submissions.submit_info2b">eine neue Veröffentlichung beginnen.</message>
 
-	<message key="xmlui.Submission.Submissions.submit_info2c">&#160;</message>
+	<message key="xmlui.Submission.Submissions.submit_info2c"> </message>
 
-	<message key="xmlui.Submission.Submissions.submit_column1">&#160;</message>
+	<message key="xmlui.Submission.Submissions.submit_column1"> </message>
 
 	<message key="xmlui.Submission.Submissions.submit_column2">Titel</message>
 
@@ -1264,16 +1261,17 @@
 
 	<message key="xmlui.Submission.submit.UploadStep.file_help">
 Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei aus, die Sie hochladen wollen. Klicken Sie dann auf „Datei hochladen“.
-    <div class="alert alert-danger">
-      <p>
-      Ihre Arbeit darf keine Sicherheitseinschränkungen haben. <a href="/help/pdf-howto">Hier finden Sie eine Anleitung zur PDF-Erstellung.</a>
+	<div class="alert alert-danger">
+	 <p>
+              Ihre Arbeit darf <strong>keine Sicherheitseinschränkungen</strong> haben. <a href="/help/pdf-howto">Hier finden Sie eine Anleitung zur PDF-Erstellung.</a>
       </p>
       <p>
-      Sollten sie mehr als eine Datei hochladen wollen, muss Ihre Dissertation die erste Datei sein.
+              Sollten sie <strong>mehr als eine Datei</strong> hochladen wollen, muss Ihre Dissertation die erste Datei sein.
       </p>
       <p>
-      Hinweis: Zum Schutz Ihrer personenbezogenen Daten entfernen Sie bitte den Lebenslauf aus der elektronischen Version Ihrer Dissertation und achten Sie darauf, dass auf der Seite des "affidavit" keine Unterschrift enthalten ist.
+              Hinweis: Zum Schutz Ihrer <strong>personenbezogenen Daten</strong> entfernen Sie bitte den Lebenslauf aus der elektronischen Version Ihrer Dissertation und achten Sie darauf, dass auf der Seite des "affidavit" keine Unterschrift enthalten ist.
       </p>
+
     </div>
     <span class="browse-text hidden">Durchsuchen</span>
                 <span class="none-selected-text hidden">Keine Datei ausgewählt</span>
@@ -1298,7 +1296,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.Submission.submit.UploadStep.column0">Primäre Datei</message>
 
-	<message key="xmlui.Submission.submit.UploadStep.column1">&#160;</message>
+	<message key="xmlui.Submission.submit.UploadStep.column1"> </message>
 
 	<message key="xmlui.Submission.submit.UploadStep.column2">Datei</message>
 
@@ -1308,7 +1306,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.Submission.submit.UploadStep.column5">Format</message>
 
-	<message key="xmlui.Submission.submit.UploadStep.column6">&#160;</message>
+	<message key="xmlui.Submission.submit.UploadStep.column6"> </message>
 
 	<message key="xmlui.Submission.submit.UploadStep.unknown_name">Unbekannt</message>
 
@@ -1392,9 +1390,9 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.Submission.submit.LicenseStep.info1">Dieser Vertrag regelt die Rechte der Servicebetreibers an Ihrem Dokument und die Zugriffsrechte unserer Nutzer auf Ihre Publikation - falls Sie keine CC-Lizenz Ihrer Publikation hinzugefügt haben.</message>
 
-	<message key="xmlui.Submission.submit.LicenseStep.info2"></message>
+	<message key="xmlui.Submission.submit.LicenseStep.info2" />
 
-	<message key="xmlui.Submission.submit.LicenseStep.info3">&#160;</message>
+	<message key="xmlui.Submission.submit.LicenseStep.info3"> </message>
 
 	<message key="xmlui.Submission.submit.LicenseStep.decision_label">Vertragsbestimmung</message>
 
@@ -1700,7 +1698,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_head">Suchergebnisse</message>
 
-	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column1">&#160;</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column1"> </message>
 
 	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column2">ID</message>
 
@@ -1842,7 +1840,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.group.ManageGroupsMain.search_head">Suchergebnisse</message>
 
-	<message key="xmlui.administrative.group.ManageGroupsMain.search_column1">&#160;</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.search_column1"> </message>
 
 	<message key="xmlui.administrative.group.ManageGroupsMain.search_column2">ID</message>
 
@@ -1906,7 +1904,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.group.EditGroupForm.epeople_column3">E-Mail</message>
 
-	<message key="xmlui.administrative.group.EditGroupForm.epeople_column4">&#160;</message>
+	<message key="xmlui.administrative.group.EditGroupForm.epeople_column4"> </message>
 
 	<message key="xmlui.administrative.group.EditGroupForm.groups_column1">ID</message>
 
@@ -1916,7 +1914,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.group.EditGroupForm.groups_column4">Sammlung</message>
 
-	<message key="xmlui.administrative.group.EditGroupForm.groups_column5">&#160;</message>
+	<message key="xmlui.administrative.group.EditGroupForm.groups_column5"> </message>
 
 	<message key="xmlui.administrative.group.ManageGroupsMain.groups_collection_link">anzeigen</message>
 
@@ -1928,7 +1926,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.group.EditGroupForm.members_column3">E-Mail</message>
 
-	<message key="xmlui.administrative.group.EditGroupForm.members_column4">&#160;</message>
+	<message key="xmlui.administrative.group.EditGroupForm.members_column4"> </message>
 
 	<message key="xmlui.administrative.group.EditGroupForm.members_group_name">Gruppe: {0}</message>	
 
@@ -2088,7 +2086,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.registries.EditMetadataSchema.head2">Felder des Metadatenschemas</message>
 
-	<message key="xmlui.administrative.registries.EditMetadataSchema.column1">&#160;</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.column1"> </message>
 
 	<message key="xmlui.administrative.registries.EditMetadataSchema.column2">ID</message>
 
@@ -2142,7 +2140,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.registries.FormatRegistryMain.new_link">Dateiformat hinzufügen</message>
 
-	<message key="xmlui.administrative.registries.FormatRegistryMain.column1">&#160;</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.column1"> </message>
 
 	<message key="xmlui.administrative.registries.FormatRegistryMain.column2">ID</message>
 
@@ -2172,7 +2170,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.para1">Die Metadatenreferenzliste enthält alle Metadatenfelder dieses Repositoriums. Die Metadatenfelder können auf mehrere Schema aufgeteilt werden. eDiss benötigt als Basis qualifiziertes Dublin Core. Sie können das Dublin Core Schema erweitern oder neue Schemata anlegen.</message>
 
-	<message key="xmlui.administrative.registries.MetadataRegistryMain.column1">&#160;</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.column1"> </message>
 
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.column2">ID</message>
 
@@ -2324,7 +2322,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.authorization.EditPolicyForm.error_no_action">Keine Aktion ausgewählt</message>
 
-	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column4">&#160;</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column4"> </message>
 
 	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column1">ID</message>
 
@@ -2580,7 +2578,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.item.EditItemBitstreamsForm.head1">Dateien</message>
 
-	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column1">&#160;</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column1"> </message>
 
 	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column2">Name</message>
 
@@ -2854,7 +2852,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.mapper.SearchItemForm.submit_map">Ausgewählte Dokumente spiegeln</message>
 
-	<message key="xmlui.administrative.mapper.SearchItemForm.column1">&#160;</message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.column1"> </message>
 
 	<message key="xmlui.administrative.mapper.SearchItemForm.column2">Sammlung</message>
 
@@ -2874,7 +2872,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.administrative.mapper.BrowseItemForm.submit_unmap">Spiegelungen löschen</message>
 
-	<message key="xmlui.administrative.mapper.BrowseItemForm.column1">&#160;</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.column1"> </message>
 
 	<message key="xmlui.administrative.mapper.BrowseItemForm.column2">Sammlung</message>
 
@@ -3574,7 +3572,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 		<a target="_blank" href="http://di.tamu.edu" id="ds-logo-link">
 
-			<span id="ds-footer-logo">&#160;</span>
+			<span id="ds-footer-logo"> </span>
 
 		</a>
 
@@ -4126,15 +4124,15 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftadvisor.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftadvisor.column_heading" />
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.advisor.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.advisor.column_heading" />
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading" />
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading" />
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftreferee.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftreferee.column_heading" />
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.gok.column_heading">GOK</message>
 
@@ -4184,9 +4182,9 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 
 
-	<message key="xmlui.EPerson.PasswordLogin.head2">&#160;</message>
+	<message key="xmlui.EPerson.PasswordLogin.head2"> </message>
 
-	<message key="xmlui.EPerson.PasswordLogin.para1">&#160;</message>
+	<message key="xmlui.EPerson.PasswordLogin.para1"> </message>
 
 	<message key="xmlui.EPerson.PasswordLogin.register_link">Sind Sie neu bei eDiss? Klicken Sie hier um sich zu registrieren!</message>
 
@@ -4312,9 +4310,9 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.Discovery.SimpleSearch.filter_add">Filter hinzufügen</message>
 
-	<message key="xmlui.Discovery.SimpleSearch.filter_head">&#160;</message>
+	<message key="xmlui.Discovery.SimpleSearch.filter_head"> </message>
 
-	<message key="xmlui.Discovery.SimpleSearch.filter_help">&#160;</message>
+	<message key="xmlui.Discovery.SimpleSearch.filter_help"> </message>
 
 	<message key="xmlui.Discovery.SimpleSearch.sort_apply">Anwenden</message>
 
@@ -4328,7 +4326,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.discovery.SearchFacetFilter.no-results">Keine Ergebnisse gefunden</message>
 
-	<message key="xmlui.discovery.SimpleSearch.search_label">&#160;</message>
+	<message key="xmlui.discovery.SimpleSearch.search_label"> </message>
 
 	<message key="xmlui.dri2xhtml.structural.pagination-info.nototal">Anzeige {0}-{1}</message>
 
@@ -4344,7 +4342,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.deposit.license.title">Vertragsbedingungen</message>
 
-	<message key="xmlui.dri2xhtml.default.textarea.value">&#160;</message>	
+	<message key="xmlui.dri2xhtml.default.textarea.value"> </message>	
 
 	<message key="xmlui.dri2xhtml.structural.impressum-link">Impressum</message>
 
@@ -4483,7 +4481,7 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_referee">Gutachter</message>	
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.referee.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.referee.column_heading" />
 
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_ft.label">Blättern nach: </message>
 
@@ -4507,9 +4505,9 @@ Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei au
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Blättern nach Autor</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ftadvisor.column_heading"></message>        
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ftadvisor.column_heading" />        
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading" />
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.personftadvisor">Blättern {0} nach {1} Betreuer</message>
 
@@ -4668,7 +4666,7 @@ Im letzten Schritt müssen Sie <a href="help/deposit-license">unseren Vertragsbe
 
 						<a href="/help/fullpublication#print">Liefern Sie zwei gedruckte Exemplare Ihrer Arbeit ab.</a>
 
-						<span>Bitte senden Sie uns Ihre zwei Druckexemplare entweder per Post zu oder reichen Sie sie in der Zentralbibliothek an der <a href="javascript:showMap()">Empfangstheke im Eingangsbereich</a> ein oder legen Sie sie in den Briefkasten am Personaleingang der Zentralbibliothek (Rückseite des Gebäudes).<br/>Mediziner legen bitte eine Kopie Ihrer Einladung zur mündlichen Prüfung bei.</span>
+						<span>Bitte senden Sie uns Ihre zwei Druckexemplare entweder per Post zu oder reichen Sie sie in der Zentralbibliothek an der <a href="javascript:showMap()">Empfangstheke im Eingangsbereich</a> ein oder legen Sie sie in den Briefkasten am Personaleingang der Zentralbibliothek (Rückseite des Gebäudes).<br />Mediziner legen bitte eine Kopie Ihrer Einladung zur mündlichen Prüfung bei.</span>
 					</span>
 
 				</li>
@@ -4681,7 +4679,7 @@ Im letzten Schritt müssen Sie <a href="help/deposit-license">unseren Vertragsbe
 
 						<a href="/help/fullpublication#finished">Fertig!</a>
 
-						<span>Ihre Publikation wird von unseren Redakteuren freigeschaltet.<br/>Über die Veröffentlichung Ihrer Arbeit werden Sie per E-Mail benachrichtigt.</span>
+						<span>Ihre Publikation wird von unseren Redakteuren freigeschaltet.<br />Über die Veröffentlichung Ihrer Arbeit werden Sie per E-Mail benachrichtigt.</span>
 
 					</span>
 
@@ -4709,10 +4707,10 @@ Im letzten Schritt müssen Sie <a href="help/deposit-license">unseren Vertragsbe
 						Eine sofortige telefonische Erreichbarkeit für die gesamte Dauer der angegebenen Sprechzeiten ist aufgrund der besondern Situation nicht zu gewährleisten.
 						</p>
 						<p>
-						Mo - Fr	10:00 – 12:00 Uhr <br/>
+						Mo - Fr	10:00 – 12:00 Uhr <br />
 						<!-- und nach Vereinbarung<br/> -->
-						Tel.: +49 (0)551 39-27809<br/>
-						Tel.: +49 (0)551 39-28655<br/>
+						Tel.: +49 (0)551 39-27809<br />
+						Tel.: +49 (0)551 39-28655<br />
 						<a href="mailto:ediss@sub.uni-goettingen.de">ediss@sub.uni-goettingen.de</a>
 
 						</p>
@@ -4721,17 +4719,17 @@ Im letzten Schritt müssen Sie <a href="help/deposit-license">unseren Vertragsbe
 
 				<div class="col">
 
-					<em>Nur für Promovierende der Medizinischen Fakultät:</em><br/>
+					<em>Nur für Promovierende der Medizinischen Fakultät:</em><br />
 
-					<h3>Bereichsbibliothek Medizin<br/></h3>				
+					<h3>Bereichsbibliothek Medizin<br /></h3>				
 
 					<p>Robert-Koch-Str. 40</p>
 					<p>
-						<strong>Ausleihtheke</strong><br/>
-						Mo – Fr 8:00 – 24:00 Uhr<br/>
-						Sa – So 8:00 – 22:00 Uhr<br/>
-						Feiertags 10 - 20 Uhr<br/>
-						Tel.: +49 551 39-8395<br/>
+						<strong>Ausleihtheke</strong><br />
+						Mo – Fr 8:00 – 24:00 Uhr<br />
+						Sa – So 8:00 – 22:00 Uhr<br />
+						Feiertags 10 - 20 Uhr<br />
+						Tel.: +49 551 39-8395<br />
 						<a href="mailto:bbmed@sub.uni-goettingen.de">bbmed@sub.uni-goettingen.de</a>
 					</p>
 
@@ -4739,7 +4737,7 @@ Im letzten Schritt müssen Sie <a href="help/deposit-license">unseren Vertragsbe
 
 			</div>
 
-			<hr/>
+			<hr />
 
 			<strong>Postanschrift:</strong><br />
 
@@ -5740,7 +5738,7 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 
 
-				In einzelnen Fällen (z.&#160;B. die Beschreibung des Dokumentes enthält fehlerhafte Angaben) kann es vorkommen, dass die Redaktion eine Publikation ablehnt. In diesem Fall erhalten Sie eine E-Mail mit der Begründung der Ablehnung.
+				In einzelnen Fällen (z. B. die Beschreibung des Dokumentes enthält fehlerhafte Angaben) kann es vorkommen, dass die Redaktion eine Publikation ablehnt. In diesem Fall erhalten Sie eine E-Mail mit der Begründung der Ablehnung.
 
 
 
@@ -6421,7 +6419,7 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 
 
-						<li>Rufen Sie in der oberen Menüleiste unter „Datei“ den Punkt „Eigenschaften...“ auf. Der Reiter „Beschreibung“ bietet Ihnen die Möglichkeit, Titel, Verfasser, Stichwörter etc. für Ihr Dokument anzugeben. Diese Daten werden u.&#160;a. in der Trefferanzeige einer Google-Suche angezeigt.</li>
+						<li>Rufen Sie in der oberen Menüleiste unter „Datei“ den Punkt „Eigenschaften...“ auf. Der Reiter „Beschreibung“ bietet Ihnen die Möglichkeit, Titel, Verfasser, Stichwörter etc. für Ihr Dokument anzugeben. Diese Daten werden u. a. in der Trefferanzeige einer Google-Suche angezeigt.</li>
 
 
 
@@ -6822,18 +6820,14 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 	<!-- static page: deposit license -->
 
-	<message key="xmlui.static.help.deposit-license">
+	<message key="xmlui.static.help.deposit-license"><div id="file_deposit-licence_pdf" class="ds-static-div download">
 
-		<h2>Vertragsbedingungen für die Nutzung des Dokumentenservers der Georg-August-Universität Göttingen</h2>
-
-		<div id="file_deposit-licence_pdf" class="ds-static-div download">
-
-			<a href="/static/Vertragsbedingungen_eDiss_201611.pdf">PDF</a>
+			<a class="pull-right" title="Als PDF herunterladen" href="/static/Vertragsbedingungen_eDiss_201611.pdf">PDF</a>
 
 		</div>
 
-		<div class="ds-static-div">
-
+		<div class="ds-static-div clear">
+<h2>Vertragsbedingungen für die Nutzung des Dokumentenservers der Georg-August-Universität Göttingen</h2>
 			<p>
 
 				Hiermit gestatte ich der Georg-August-Universität, vertreten durch die Niedersächsische Staats- und
@@ -6934,9 +6928,7 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 			</p>
 
-		</div>
-
-	</message>
+		</div></message>
 
 
 
@@ -7499,11 +7491,11 @@ Alternativ können Sie bei der Zusendung der Druckexemplare der Dissertation an 
 
 				<p>
 
-					Ist eine <strong>Korrektur der Metadaten</strong> notwendig wenden Sie sich bitte an <a href="/contact">unsere Redakteure</a>. Nur sie sind berechtigt, Änderungen an den Angaben zur Dissertation vorzunehmen.<br/>
+					Ist eine <strong>Korrektur der Metadaten</strong> notwendig wenden Sie sich bitte an <a href="/contact">unsere Redakteure</a>. Nur sie sind berechtigt, Änderungen an den Angaben zur Dissertation vorzunehmen.<br />
 
-					Falls erst im Nachhinein im PDF inhaltliche Fehler bemerkt werden, für die eine Korrektur zwingend erforderlich ist (es besteht Gefahr für Leben oder Umwelt), wenden Sie sich bitte an <a href="/contact">unsere Redakteure</a>. Dann ist eine Neupublikation (Version) Ihrer Dissertation erforderlich, die auch von Ihrem Prüfungsamt genehmigt sein muß.<br/>
+					Falls erst im Nachhinein im PDF inhaltliche Fehler bemerkt werden, für die eine Korrektur zwingend erforderlich ist (es besteht Gefahr für Leben oder Umwelt), wenden Sie sich bitte an <a href="/contact">unsere Redakteure</a>. Dann ist eine Neupublikation (Version) Ihrer Dissertation erforderlich, die auch von Ihrem Prüfungsamt genehmigt sein muß.<br />
 
-					Das <strong>Zurückziehen</strong> eines bereits publizierten Dokumentes ist nur möglich, wenn es lizenz- bzw. patentrechtliche Probleme gibt oder falls sich die Auffassung des Urhebers zu seinem Thema grundlegend geändert hat (§42 UrhG). Das Zurückziehen wird im System dokumentiert. Zusätzlich wird eine Informationsseite mit dem Hinweis „Dieses Dokument wurde zurückgezogen“ erstellt und über die permanente URL angezeigt.<br/>
+					Das <strong>Zurückziehen</strong> eines bereits publizierten Dokumentes ist nur möglich, wenn es lizenz- bzw. patentrechtliche Probleme gibt oder falls sich die Auffassung des Urhebers zu seinem Thema grundlegend geändert hat (§42 UrhG). Das Zurückziehen wird im System dokumentiert. Zusätzlich wird eine Informationsseite mit dem Hinweis „Dieses Dokument wurde zurückgezogen“ erstellt und über die permanente URL angezeigt.<br />
 
 					Bei unwesentlichen Fehlern (Schreibfehler, Änderung der Formatierung, Auslassungen etc.) steht es Ihnen frei, eine korrigierte Version Ihrer Dissertation auf einem entsprechenden (Fach-)Repositorium hochzuladen. Sie können uns dann gerne den Link mitteilen, den wir in Ihre Metadaten einpflegen.
 				</p>
@@ -8720,41 +8712,41 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 	<message key="xmlui.item-view.authorbirthname">Geburtsname des Autors</message>
 	<message key="xmlui.item-view.birthname">geb. </message>
 
-<message key="xmlui.administrative.Navigation.administrative_message_catalogues">Message Catalogues</message>
+<message key="xmlui.administrative.Navigation.administrative_message_catalogues">Sprachkataloge</message>
 
-	<message key="xmlui.administrative.catalogue.title">Sprachkatalog</message>
-	<message key="xmlui.administrative.catalogue.trail">Sprachkatalog</message>
+	<message key="xmlui.administrative.catalogue.title">Sprachkataloge</message>
+	<message key="xmlui.administrative.catalogue.trail">Sprachkataloge</message>
 	<message key="xmlui.administrative.catalogue.head">Sprachkatalog</message>
 	<message key="xmlui.administrative.catalogue.none.provided">Wählen Sie einen Sprachkatalog</message>
-	<message key="xmlui.administrative.catalogue.does.not.exist">The selected catalogue does not exist.</message>
-	<message key="xmlui.administrative.catalogue.not.valid">The selected catalogue is not a valid catalogue file.</message>
-	<message key="xmlui.administrative.catalogue.message.not.loading">Message catalogue could not be loaded.</message>
-	<message key="xmlui.administrative.catalogue.message.update.success">The message was successfullly updated.</message>
-	<message key="xmlui.administrative.catalogue.message.update.failure">The message could not be updated.</message>
-	<message key="xmlui.administrative.catalogue.message.add">Add new message</message>
-	<message key="xmlui.administrative.catalogue.message.delete.modal.message">Are you sure you want to delete the following key:</message>
-	<message key="xmlui.administrative.catalogue.message.delete.modal.header">Delete Message</message>
-	<message key="xmlui.administrative.catalogue.message.delete.modal.ok">Delete</message>
-	<message key="xmlui.administrative.catalogue.message.delete.modal.cancel">Cancel</message>
+	<message key="xmlui.administrative.catalogue.does.not.exist">Den ausgewählten Katalog gibt es nicht.</message>
+	<message key="xmlui.administrative.catalogue.not.valid">Der ausgewählte Katalog ist kein valides Dokument.</message>
+	<message key="xmlui.administrative.catalogue.message.not.loading">Der Katalog konnte nicht geladen werden.</message>
+	<message key="xmlui.administrative.catalogue.message.update.success">Der Text wurde Erfolgreich aktualisiert.</message>
+	<message key="xmlui.administrative.catalogue.message.update.failure">Der Text konnte nicht aktualisiert werden.</message>
+	<message key="xmlui.administrative.catalogue.message.add">Neuen Text hinzufügen</message>
+	<message key="xmlui.administrative.catalogue.message.delete.modal.message">Wollen Sie diesen Text wirklich löschen?</message>
+	<message key="xmlui.administrative.catalogue.message.delete.modal.header">Text löschen</message>
+	<message key="xmlui.administrative.catalogue.message.delete.modal.ok">Löschen</message>
+	<message key="xmlui.administrative.catalogue.message.delete.modal.cancel">abbrechen</message>
 
-	<message key="xmlui.administrative.catalogue.message.description">Click the buttons next to an input field to edit or delete a message, or click “Add” to add a new message. Your changes will be made immediately. Please wait for the page to finish processing before starting another change.</message>
-	<message key="xmlui.administrative.catalogue.message.loading">Loading, please wait...</message>
-	<message key="xmlui.administrative.catalogue.message.add.modal.message.key">Key:</message>
-	<message key="xmlui.administrative.catalogue.message.add.modal.message.key.missing">Please provide a message key.</message>
+	<message key="xmlui.administrative.catalogue.message.description">Klicken Sie auf das input-Feld neben dem Text, um eine Text zu bearbeiten oder löschen. Um einen neuen Text einzufügen, klicken Sie oben auf der Seite auf "Neuer Text". Ihre Änderunge werden sofort übernommen. Bitte warten Sie bis die Seite neu geladen wurde bevor Sie eine neue Bearbeitung anfangen.</message>
+	<message key="xmlui.administrative.catalogue.message.loading">Seite wird geladen, bitte warten...</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.message.key">Schlüssel:</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.message.key.missing">Bitte vergeben Sie einen Schlüssel.</message>
 	<message key="xmlui.administrative.catalogue.message.add.modal.message.value">Text:</message>
-	<message key="xmlui.administrative.catalogue.message.add.modal.header">Add Message</message>
-	<message key="xmlui.administrative.catalogue.message.add.modal.ok">Add</message>
-	<message key="xmlui.administrative.catalogue.message.add.modal.cancel">Cancel</message>
-	<message key="xmlui.administrative.catalogue.message.server.error.add">A server error occurred and the message could not be added. Please contact a system administrator and try again later.</message>
-	<message key="xmlui.administrative.catalogue.message.server.error.delete">A server error occurred and the message could not be deleted. Please contact a system administrator and try again later.</message>
-	<message key="xmlui.administrative.catalogue.message.server.success.add">Message was successfully added.</message>
-	<message key="xmlui.administrative.catalogue.message.server.success.delete">Message was successfully deleted.</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.header">Text hinzufügen</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.ok">Neuer Text</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.cancel">Abbrechen</message>
+	<message key="xmlui.administrative.catalogue.message.server.error.add">Ein Server-Fehler ist aufgetreten, der Text konnte nicht hinzugefügt werden. Bitte kontaktieren Sie den Systemadministrator und versuchen es später wieder.</message>
+	<message key="xmlui.administrative.catalogue.message.server.error.delete">Ein Server-Fehler ist aufgetreten, der Text konnte nicht gelöscht werden. Bitte kontaktieren Sie den Systemadministrator und versuchen es später wieder.</message>
+	<message key="xmlui.administrative.catalogue.message.server.success.add">Der Text wurde erfolgreich eingefügt.</message>
+	<message key="xmlui.administrative.catalogue.message.server.success.delete">Der Text wurde erfolgreich gelöscht.</message>
 
 
-	<message key="xmlui.administrative.select.catalogue.title">Select Message Catalogue</message>
-	<message key="xmlui.administrative.select.catalogue.trail">Select Message Catalogue</message>
-	<message key="xmlui.administrative.select.catalogue.head">Select Message Catalogue</message>
-	<message key="xmlui.administrative.select.catalogue.list.prefix">Catalogue: </message>
+	<message key="xmlui.administrative.select.catalogue.title">Sprachkatalog wählen</message>
+	<message key="xmlui.administrative.select.catalogue.trail">Katalog wählen</message>
+	<message key="xmlui.administrative.select.catalogue.head">Sprachkatalog wählen</message>
+	<message key="xmlui.administrative.select.catalogue.list.prefix">Kataloge: </message>
 
     <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -8908,15 +8900,15 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
 
     <message key="xmlui.mirage2.forms.instancedCompositeFields.add">+</message>
-    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">&#128465;</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">🗑</message>
     <message key="xmlui.mirage2.forms.instancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
     <message key="xmlui.mirage2.forms.nonInstancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
     <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">+</message>
-    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">&#128465;</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">🗑</message>
     <message key="xmlui.mirage2.forms.instancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
     <message key="xmlui.mirage2.forms.nonInstancedCompositeFields.noSuggestionError">ERROR: Input field with "suggest" (autocomplete) choice behavior is not implemented for Composite (e.g. "name") fields.</message>
     <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">+</message>
-    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">&#128465;</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">🗑</message>
 
     <message key="xmlui.mirage2.page-structure.aboutThisRepository">About This Repository</message>
     <message key="xmlui.mirage2.page-structure.toggleNavigation">Toggle navigation</message>
@@ -8943,15 +8935,21 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
 
 <!-- org.dspace.app.xmlui.Submission.submit.AddDoiStep -->
-  <message key="xmlui.Submission.submit.AddDoiStep.btn">Add DOI to item</message>
-  <message key="xmlui.Submission.submit.AddDoiStep.done.btn">DOI created</message>
-  <message key="xmlui.Submission.submit.itemDOI.created">This item will get the DOI {0}.</message>
+  <message key="xmlui.Submission.submit.AddDoiStep.btn">DOI Zuordnen</message>
+  <message key="xmlui.Submission.submit.AddDoiStep.done.btn">DOI erstellt</message>
+  <message key="xmlui.Submission.submit.itemDOI.created">Dieser Publikation wurde die DOI {0} zugeordnet.</message>
   <message key="xmlui.Submission.submit.AddDoiStep.head">DOI</message>
-  <message key="xmlui.Submission.submit.AddDoiStep.section_head">Create DOI for Item</message>
-  <message key="xmlui.Submission.submit.itemDOI.no_doi">There will be no DOI created for this item.</message>
-  <message key="xmlui.Submission.submit.itemDOI.note">Note that this item might get a DOI by default if there is a filter set that evaluates a later state of this item.</message>
+  <message key="xmlui.Submission.submit.AddDoiStep.section_head">Erstelle DOI für die Publikation</message>
+  <message key="xmlui.Submission.submit.itemDOI.no_doi">Diese Publikation bekommt keine DOI.</message>
+  <message key="xmlui.Submission.submit.itemDOI.note">Wenn sie die DOI Ihrer Publikation ins Dokument schreiben wollen, ....</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_doi">DOI</message>
-  <message key="xmlui.administrative.item.EditItemStatusForm.submit_register_doi">Register DOI</message>
+  <message key="xmlui.administrative.item.EditItemStatusForm.submit_register_doi">DOI registrieren</message>
+
+<!-- org.dspace.app.xmlui.Submission.submit.ShowDoiStep -->
+  <message key="xmlui.Submission.submit.ShowDoiStep.head">DOI</message>
+  <message key="xmlui.Submission.submit.ShowDoiStep.section_head">Ihrer Publikation wird die DOI {0} zugeordnet.</message>
+  <message key="xmlui.Submission.submit.showitemDOI.infotext">Sie können den DOI (digital object identifier) gern in ihr PDF bzw. in Ihre Druckexemplare einfügen, bevor Sie mit dem Publikationsvorgang hier auf eDiss fortfahren. Dazu übernehmen Sie bitte den an dieser Stelle angezeigten DOI und klicken zunächst auf "Speichern und später fortsetzen". Damit ist ihr Publikationsprozeß für Ihre eDiss unterbrochen und Sie können ihn zu einem späteren Zeitpunkt an dieser Stelle wieder aufnehmen.
+Wenn Sie den DOI nicht weiterverwenden wollen, dann fahren Sie einfach mit dem Publikationsprozeß fort, indem Sie auf "Weiter" klicken.</message>
 
     <!-- Embargo Step -->
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.head">Upload File(s)</message>
@@ -8960,13 +8958,13 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 		Klicken Sie auf „Durchsuchen“ und wählen Sie auf Ihrem Rechner die Datei aus, die Sie hochladen wollen. Klicken Sie dann auf „Datei hochladen“.
     <div class="alert alert-danger">
       <p>
-      Ihre Arbeit darf keine Sicherheitseinschränkungen haben. <a href="/help/pdf-howto">Hier finden Sie eine Anleitung zur PDF-Erstellung.</a>
+	      Ihre Arbeit darf <strong>keine Sicherheitseinschränkungen</strong> haben. <a href="/help/pdf-howto">Hier finden Sie eine Anleitung zur PDF-Erstellung.</a>
       </p>
       <p>
-      Sollten sie mehr als eine Datei hochladen wollen, muss Ihre Dissertation die erste Datei sein.
+	      Sollten sie <strong>mehr als eine Datei</strong> hochladen wollen, muss Ihre Dissertation die erste Datei sein.
       </p>
       <p>
-      Hinweis: Zum Schutz Ihrer personenbezogenen Daten entfernen Sie bitte den Lebenslauf aus der elektronischen Version Ihrer Dissertation und achten Sie darauf, dass auf der Seite des "affidavit" keine Unterschrift enthalten ist.
+	      Hinweis: Zum Schutz Ihrer <strong>personenbezogenen Daten</strong> entfernen Sie bitte den Lebenslauf aus der elektronischen Version Ihrer Dissertation und achten Sie darauf, dass auf der Seite des "affidavit" keine Unterschrift enthalten ist.
       </p>
     </div>
     <span class="browse-text hidden">Durchsuchen</span>
@@ -8987,7 +8985,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column3">Size</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column4">Description</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column5">Format</message>
-    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column6"></message>
+    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column6" />
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.unknown_name">Unknown</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.unknown_format">unknown format</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.supported">(Supported)</message>
@@ -9035,14 +9033,14 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
 
 <!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
-        <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">Ein Proble ist aufgetreten ... {0}</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">Ein Problem ist aufgetreten ... {0}</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.head">Fügen Sie Ihrer Arbeit eine Lizenz zu</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.info1">Sie können Ihre Arbiet unter einer <a href="http://creativecommons.org/">Creative Commons</a> Lizenz stellen. <strong>Creative Commons Lizenzen regeln, was Leute, die Ihre Arbeit herunterladen, mit dem Text machen dürfen.</strong></message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.info1"><p>Grundsätzlich wird jede Veröfentlichung auf eDiss mit einer <a href="http://creativecommons.org/">Creative Commons Lizenz</a> versehen. CC Lizenzen regeln, was Leute, die Ihre Arbeit herunterladen, mit dem Text machen dürfen. Standardmäßig erfolgt die Vergabe von <img class="cc" src="/themes/Mirage2/images/cc-by.png" /> CC BY Namensnennung 4.0.</p> <p>Sie können selbstverständlich eine andere Lizenz vergeben. Dazu treffen Sie bitte im unten stehenden Menü Ihre Auswahl.</p></message>
         <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Lizenz wählen</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Eine Creative Commons Lizenz wählen</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.license">Lizenztyp</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.license">Lizenzauswahl</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.select_change">Wähle oder ändere das CC-Lizenz</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.no_license">Keine Lizenz hinzufügen</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.no_license">CC BY 4.0 (Standard)</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.save_changes">Klicken Sie auf "weiter", um die Änderungen zu speichern.</message>
 
 <!-- Site administrator options -->
@@ -9064,7 +9062,33 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
         <message key="xmlui.administrative.Navigation.administrative_import_metadata">Import Metadata</message>
         <message key="xmlui.administrative.Navigation.administrative_curation">Curation Tasks</message>
 	<message key="xmlui.statistic.link">Statistik</message>
+	<message key="xmlui.submit.cc-license.show.selected"><strong>Ausgewählte Lizenz: </strong></message>
+	          <message key="xmlui.submit.cc-license.show.by"><img src="/themes/Mirage2/images/cc-by.png" /> Creative Commons Namensnennung 4.0</message>
+        <message key="xmlui.submit.cc-license.show.by-nc"><img src="/themes/Mirage2/images/cc-by-nc.png" /> Creative Commons Namensnennung, nicht kommerziell 4.0</message>
+        <message key="xmlui.submit.cc-license.show.by-sa"><img src="/themes/Mirage2/images/cc-by-nc.png" /> Creative Commons Namensnennung, Weitergabe unter gleichen Bedingungen 4.0</message>
+        <message key="xmlui.submit.cc-license.show.by-nc-sa"><img src="/themes/Mirage2/images/cc-by-nc-sa.png" /> Creative Commons Namensnennung, nicht kommerziell. Weitergabe unter gleichen Bedingungen 4.0</message>
+        <message key="xmlui.submit.cc-license.show.by-nd"><img src="/themes/Mirage2/images/cc-by-nd.png" /> Creative Commons Namensnennung, keine Bearbeitung 4.0</message>
+	<message key="xmlui.submit.cc-license.show.by-nc-nd"><img src="/themes/Mirage2/images/cc-by-nc-nd.png" /> Creative Commons Namensnennung 4.0 nicht kommerziell, keine Bearbeitung.</message>
+
+	        <!-- from old lifxmlui.ArtifactBrowser.CommunityBrowser.select -->
+		 <!-- <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections">Sammlungen in diesem Bereich</message> -->
+		 <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections"></message>
+		 <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities"></message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.advisor.column_heading"></message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading"></message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ftadvisor.column_heading"></message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftadvisor.column_heading"></message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftreferee.column_heading"></message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.referee.column_heading"></message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading"></message>
+		 <message key="xmlui.item.published.parts">Einzelne Artikel / Kapitel dieser Arbeit wurden auch separat publiziert:</message>
+		 <message key="xmlui.Submission.submit.LicenseStep.info2"></message>
+		 <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_authors">Autoren</message>
+		 <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_authors">Autoren</message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.advisor">Blättern {0} nach Betreuer {1}</message>
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.advisor">Publikationen nach Betreuer</message>
+		 <message key="xmlui.ArtifactBrowser.Navigation.browse_advisor">Betreuer</message>
+		 <message key="xmlui.ArtifactBrowser.RestrictedItem.head_iteme messages">Diese Publikation ist nur eingeschränkt zugänglich</message>
 </catalogue>
-
-
-
