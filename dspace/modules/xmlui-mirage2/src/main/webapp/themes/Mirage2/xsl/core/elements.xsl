@@ -689,12 +689,11 @@
             </xsl:call-template>
 	    <xsl:apply-templates />
 	    <xsl:if test="contains(../@n, 'recent-submission')">
-            <span class="icon-rss-1">
                     <a>
-			    <xsl:attribute name="href"><xsl:value-of select="//dri:metadata[qualifier='rss+xml'][2]"/></xsl:attribute>
-                            RSS
+			    <xsl:attribute name="href"><xsl:value-of select="//dri:metadata[@qualifier='rss+xml'][1]"/></xsl:attribute>
+			    <span class="icon-rss-1">
+			    </span>
                     </a>
-            </span>
     </xsl:if>
     </xsl:element>
     </xsl:template>

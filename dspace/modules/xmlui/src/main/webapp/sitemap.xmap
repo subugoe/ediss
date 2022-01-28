@@ -688,6 +688,9 @@
                             <map:read type="ConcatenationReader" src="static/{1}.json">
                                 <map:parameter name="requestQueryString" value="{request:queryString}"/>
                             </map:read>
+		    </map:match>
+		    <map:match pattern="static/**.pdf">
+			    <map:read type="ConcatenationReader" src="static/{1}.pdf"/>
                     </map:match>
 
                     <!-- Redirect / block for DS-3094 (security issue) for custom themes -->

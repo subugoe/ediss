@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
+
+<body>
+<div id="file.help" n="help" rend="primary">
+	<head><i18n:text>xmlui.help.cumulative.diss.head</i18n:text></head>
+
+		<div>
+		<p><i18n:text>xmlui.help.cumulative.diss1</i18n:text></p>
+		<p><i18n:text>xmlui.help.cumulative.diss2</i18n:text></p>
+		<p><i18n:text>xmlui.help.cumulative.diss3</i18n:text></p>
+	 	</div>	
+
+		<div>
+		<head><i18n:text>xmlui.help.cumulative.diss.requirements</i18n:text></head>
+		<p><i18n:text>xmlui.help.cumulative.diss.requirements1</i18n:text></p>
+		<list type="bulleted" n="bulleted">
+			<head><i18n:text>xmlui.help.cumulative.diss.requirements1.list</i18n:text></head>
+                        <item><i18n:text>xmlui.help.cumulative.diss.requirements1.list1</i18n:text></item>
+                        <item><i18n:text>xmlui.help.cumulative.diss.requirements1.list2</i18n:text></item>
+			<item><i18n:text>xmlui.help.cumulative.diss.requirements1.list3</i18n:text></item>	
+			<item><i18n:text>xmlui.help.cumulative.diss.requirements1.list4</i18n:text></item>
+                </list>
+		<p><i18n:text>xmlui.help.cumulative.diss.requirements2</i18n:text></p>
+		<p><i18n:text>xmlui.help.cumulative.diss.requirements3</i18n:text></p>
+		<list type="bulleted" n="bulleted">
+                        <head><i18n:text>xmlui.help.cumulative.diss.requirements3.list</i18n:text></head>
+                        <item><i18n:text>xmlui.help.cumulative.diss.requirements1.list1</i18n:text></item>
+                        <item><i18n:text>xmlui.help.cumulative.diss.requirements1.list2</i18n:text></item>
+                        <item><i18n:text>xmlui.help.cumulative.diss.requirements1.list3</i18n:text></item>
+                        <item><i18n:text>xmlui.help.cumulative.diss.requirements1.list4</i18n:text></item>
+                </list>
+		<p><i18n:text>xmlui.help.cumulative.diss.requirements4</i18n:text></p>
+		<p><i18n:text>xmlui.help.cumulative.diss.requirements5</i18n:text></p>
+		<p><i18n:text>xmlui.help.cumulative.diss.requirements6</i18n:text></p>
+		<p><i18n:text>xmlui.help.cumulative.diss.requirements7</i18n:text></p>
+		<p><i18n:text>xmlui.notify</i18n:text><i18n:text>xmlui.help.cumulative.diss.requirements8</i18n:text></p>
+                </div>
+	
+
+</div>
+</body>
+
+<options/>
+
+<meta>
+<userMeta/>
+<pageMeta>
+	<trail target="/ediss/"><i18n:text>xmlui.general.dspace_home</i18n:text></trail>
+	<trail><i18n:text>xmlui.help.cumulative.diss.trail</i18n:text></trail>
+</pageMeta>
+<repositoryMeta/>
+</meta>
+</document>

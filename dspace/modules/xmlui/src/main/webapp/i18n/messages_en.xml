@@ -87,7 +87,7 @@
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.head2">Communities or Collections matching your query</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.head3">Items matching your query</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">Search produced no results.</message>
-	<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">Whole repository</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">All</message>
 
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.title">Title</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateissued">Issue date</message>
@@ -2193,7 +2193,7 @@
 	<message key="xmlui.help.goodtoknow.trail">Help &amp; Info: Frequently Asked Questions</message>
 	<message key="xmlui.help.pdf-creation.trail">Help &amp; Info: How to create a PDF</message>
 	<message key="xmlui.help.publication.fullprocess.trail">Help &amp; Info: Publish on eDiss</message>
-	<message key="xmlui.help.publication.process.head">Publish on eDiss</message>
+	<message key="xmlui.help.publication.process.head">Publishing on eDiss</message>
 	<message key="xmlui.impressum.head">Impressum</message>
 	<message key="xmlui.navigation.cumulative.dissertations">Cumulative Dissertations</message>
 	<message key="xmlui.navigation.help.contract">Terms of contract</message>
@@ -2418,9 +2418,7 @@ Finally, you must agree to our <a href="help/deposit-license">deposit license</a
 		</div></message>
 
 	<!-- static page: publishing on eDiss -->
-	<message key="xmlui.static.help.publishing">
-
-		<div>
+	<message key="xmlui.static.help.publishing"><div>
 
 			<h2 class="ds-head">Contents</h2>
 
@@ -2435,21 +2433,20 @@ Finally, you must agree to our <a href="help/deposit-license">deposit license</a
 				<li>
 
 					<a href="#requirements">Requirements</a>
+				
+					<ul>
+
+						<li><a href="#cumulative">Cumulative Theses</a></li>
+
+						<li><a href="#embargo">Embargo/Blocking note in case of secondary publication or patent application</a></li>
+
+					</ul>
+
+
 
 				</li>
 				
-				<li>
 				
-					<a href="#cumulative">Cumulative Theses</a>
-					
-				</li>
-
-				<li>
-
-					<a href="#embargo">Embargo/Blocking note in case of secondary publication or patent application</a>
-
-				</li>
-
 
 
 				<li>
@@ -2478,25 +2475,37 @@ Finally, you must agree to our <a href="help/deposit-license">deposit license</a
 
 								<li>
 
-									<a href="#upload">1. Document upload</a>
+									<a href="#describe">1. Describe your document</a>
 
 								</li>
 
 								<li>
 
-									<a href="#describe">2. Describe your document</a>
+									<a href="#doiAttribution">2. DOI assignment</a>
 
 								</li>
 
 								<li>
 
-									<a href="#proof">3. Check the document description</a>
+									<a href="#upload">3. Document upload</a>
 
 								</li>
 
 								<li>
 
-									<a href="#depositLicense">4. Accept the publication contract</a>
+									<a href="#proof">4. Check the document description</a>
+
+								</li>
+
+								<li>
+
+									<a href="#ccLicense">5. Select CC License</a>
+
+								</li>
+
+								<li>
+
+									<a href="#depositLicense">6. Accept the publication contract</a>
 
 								</li>
 
@@ -2622,13 +2631,14 @@ Once again we would like to emphasize that <strong>each doctoral candidate himse
 				<li>All published articles / articles that have been handed in.</li>
 			</ul>
 
-			<ul class="ds-simple-list">
-
-				<li>The printed copies will include all published, submitted or other related articles. Already published articles should please be included as an imprint of the publisher's PDF file. It is important that each article has an accurate source attribution.<br />An overview of all included, possibly already published articles, is also required.</li>
 			
-				<li>In the PDF file please add permanent and unique URLs to all the articles already published. These could consist, for example, of the Digital Object Identifier (DOI) for your article.</li>
+			<p>
+				The printed copies will include all published, submitted or other related articles. Already published articles should please be included as an imprint of the publisher's PDF file. It is important that each article has an accurate source attribution.<br />An overview of all included, possibly already published articles, is also required.
+			
+				In the PDF file please add permanent and unique URLs to all the articles already published. These could consist, for example, of the Digital Object Identifier (DOI) for your article.
 
-			</ul>
+			
+			</p>
 
 
 			<h3 id="embargo" class="ds-head">Embargo/Blocking note in case of secondary publication or patent application</h3>
@@ -2697,65 +2707,25 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 
 			<h3 id="workflow">Start the online publication process</h3>
 
-			<p>There are two options for starting this process on eDiss:</p>
-
-			<ol class="ds-ordered-list">
-
-				<li>
-
-					Click “Publish Now" in the main menu at the top left. You will see a drop down menu with
-
-					the list of all eDiss collections. Please select the one in which you want to publish
-
-					your work.
-
-				</li>
-
-				<li>
-
-					Alternatively, you can first select a collection in the menu on the left by clicking
-
-					“Communities &amp; Collections". Then click on “Publish here" and you will start directly with the
-
-					first step in the upload.
-
-				</li>
-
-			</ol>
-
 			<p>
-
-				<strong>PLEASE NOTE: </strong>With two exceptions, the collections correspond to the faculties of the University of Göttingen. The Philosophical and Social Science faculties are so large and heterogeneous that we had to split them into additional collections. If you start a publication in one of these areas, please look first at these collections to determine in which collection your work belongs.</p>
-
-			<p>
-
-				<strong>PLEASE NOTE: </strong>As long as the publication process is not completed, you can return at any time to a previous step and change both the input data and your documents. <strong>After completing the process no further changes are possible</strong> to your publication!<br /> In exceptional cases, you may <a href="contact">contact</a> us with reasonable requests for changes to an already published dissertation.
-
-			</p>
-
-			<h3 id="upload">1. Document upload</h3>
-
-			<p>To upload your document a form is displayed. Here you can use the “Browse" button to choose your document on your computer and click on “Upload File" to upload the file.<br />
-
-				<br />You can upload multiple documents (in any format) one after the other. This is useful for example if you want to complete your dissertation with additional charts, tables, survey results, laboratory data, etc., based on your work. Publishing your work in various formats, for example additionally as an ebook, is conceivable as well.</p>
-
-			<p>
-
-				<strong>PLEASE NOTE: </strong>The <strong>first</strong> uploaded file has to be your thesis as PDF. Only then will eDiss accept files in other formats.</p>
-
-			<!-- <p>The first PDF file uploaded will be automatically checked to ensure the document meets our requirements. This process can take some time to complete depending on file size. Please do not interrupt this process.<br />
-
-				<br />Following this the results of the assessment are shown. If one of the requirements has not been met, your document will be <strong>rejected</strong>. In this case  please interrupt the publication process by clicking on "Save and continue later", correct your PDF file and then <a href="#resume">return to the publication process</a>.<br />
-
-				Once your PDF document is accepted, you can upload additional files or go to the next step with the "Next"-button.<br /> -->
-			<p>
-				<br />When uploading your first PDF file, some metadata such as title, author and keywords saved with the file will also be displayed. These data are used for example by Google to help calculate the rank of your document in a web search. Since this data is not used by eDiss, you are free to decide whether to apply corrections here. To change your data, first interrupt the publication process and save your data. Then delete the uploaded document by clicking the check mark next to the file name and clicking the "Remove Selected" button. Now you can correct the metadata in your document and resume the publication process.
+					Click “Publish Now" in the main menu at the top right. Please select the faculty or program in which you want to publish your work.
 
 			</p>
 
 
 
-			<h3 id="describe" class="ds-head">2. Describe your document</h3>
+			<!-- <p>
+
+				<strong>PLEASE NOTE: </strong>With two exceptions, the collections correspond to the faculties of the University of Göttingen. The Philosophical and Social Science faculties are so large and heterogeneous that we had to split them into additional collections. If you start a publication in one of these areas, please look first at these collections to determine in which collection your work belongs.
+
+			</p> -->
+
+			<p>	
+			<strong>PLEASE NOTE: </strong>As long as the publication process is not completed, you can return at any time to a previous step and change both the input data and your documents. <strong>After completing the process no further changes are possible</strong> to your publication!<br /> In exceptional cases, you may <a href="contact">contact</a> us with reasonable requests for changes to an already published dissertation.
+
+			</p>
+
+			<h3 id="describe">1. Describe your document</h3>
 
 			<p>
 
@@ -2764,7 +2734,7 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 				All personal information, along with your email address will be treated <strong>confidentially</strong> and will not be visible to other eDiss users.
 
 			</p>
-
+			
 			<p id="special">Additional fields on the form are used to describe your work. Please enter the required data (title, subtitle, summary, etc.). Title, keywords and abstract must be available in English. If your thesis is written in a different language, you will be asked to provide English translations for these particulars.<br />
 
 				<br />
@@ -2773,39 +2743,91 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 
 				<br />
 
-				Mandatory fields are marked with "*". You can only turn to the next step once all the mandatory fields are filled in.
+				Mandatory fields are printed in red and marked with "*". You can only proceed to the next step once all the mandatory fields are filled in.
 
-			</p>
+			</p>			
+
+			
+
+			
 
 
 
-			<h3 id="proof" class="ds-head">3. Check the Document description</h3>
-
-			<p>Here you will see all the information collected in the previous steps together with a possibility for making corrections. Please read over the data you entered carefully and any necessary corrections.</p>
-
-			<h3 id="depositLicense" class="ds-head">4. Accept the publication contract</h3>
+			<h3 id="doiAttribution" class="ds-head">2. DOI assignment</h3>
 
 			<p>
+			At this point, your electronic dissertation is automatically assigned a DOI (Digital Object Identifier). It represents the unique reference tool for your eDiss and should be used from now on to cite your work in the scientific context. To enable you to include the DOI already in your PDF or print copies, you can also interrupt the publication process at this point. Please copy the DOI, paste it in the desired places in your document and then continue with the publication process.
+			</p>
 
-				To publish your thesis on eDiss, you must accept the terms of our contract.
 
-				In this contract you agree, among other terms of use that eDiss users are allowed to download, save, and print
+			
 
-				your document. The full agreement can be viewed
 
-				<a href="/help/deposit-license">here</a>.
+
+			<h3 id="upload" class="ds-head">3. Document upload</h3>
+
+			<p>
+			To upload your document a form is displayed. Here you can use the “Browse" button to choose your document on your computer and click on “Upload File" to upload the file.
+			</p>
+			
+			<p>
+			<strong>PLEASE NOTE: </strong>The <strong>first</strong> uploaded file should be your thesis as PDF. 
+			</p>
+			
+			<p>
+			You may then upload many more documents in any format (e.g. "embargo"). This is useful for example if you want to complete your dissertation with additional charts, tables, survey results, laboratory data, etc., based on your work. Publishing your work in various formats, for example additionally as an ebook, is conceivable as well.
+			</p>
+			
+
+			
+
+			<!-- <p>The first PDF file uploaded will be automatically checked to ensure the document meets our requirements. This process can take some time to complete depending on file size. Please do not interrupt this process.<br />
+
+				<br />Following this the results of the assessment are shown. If one of the requirements has not been met, your document will be <strong>rejected</strong>. In this case  please interrupt the publication process by clicking on "Save and continue later", correct your PDF file and then <a href="#resume">return to the publication process</a>.<br />
+
+				Once your PDF document is accepted, you can upload additional files or go to the next step with the "Next"-button.<br />
+			
+				<br />When uploading your first PDF file, some metadata such as title, author and keywords saved with the file will also be displayed. These data are used for example by Google to help calculate the rank of your document in a web search. Since this data is not used by eDiss, you are free to decide whether to apply corrections here. To change your data, first interrupt the publication process and save your data. Then delete the uploaded document by clicking the check mark next to the file name and clicking the "Remove Selected" button. Now you can correct the metadata in your document and resume the publication process.
+
+			</p> -->
+
+
+
+
+
+
+
+
+
+			<h3 id="proof" class="ds-head">4. Check the document description</h3>
+
+			<p>Here you will see all the information collected in the previous steps together with a possibility for making corrections. Please read over the data you entered carefully and make any necessary corrections.</p>			
+
+
+
+			<h3 id="ccLicense" class="ds-head">5. Select CC License</h3>
+
+			<p>Basically, every publication on eDiss comes with a <a target="_blank" href="http://creativecommons.org/licenses/by/4.0">Creative Commons 4.0 (Attribution)</a> license. CC licenses govern what readers who download your work can do with the text. By default, the license assigned is CC BY (Attribution) 4.0.</p>
+			<p>You have the option to assign a license of your choice if there are good reasons not to use the default license we recommend. Please use the drop-down menu</p>
+
+
+
+			<h3 id="depositLicense" class="ds-head">6. Accept the publication contract</h3>
+				<p>
+
+				In order to publish your dissertation on eDiss, you must conclude a contract with us in which the rights of the server operator (deposit license) and the access rights of the users (CC usage license) to your publication (see above) are precisely defined. The contract is considered concluded when you give your consent to the contract by ticking the checkbox below the contract text and click on "Conclude publication".
 
 				<br />
-
-				<a href="/static/terms_of_contract_eDiss_201611.pdf">Download contract as PDF</a>
+				
+				<a href="/static/terms_of_contract_eDiss_202202.pdf">Contract as PDF document</a>
 
 			</p>
 
-			<p><strong>PLEASE NOTE:</strong> We would like to point out once again that <strong>no changes</strong> to your publication are possible upon completion of the online publication process.</p>
+			<p><strong>PLEASE NOTE:</strong> We would like to point out once again that <strong>no changes</strong> to your publication are possible <b>upon completion</b> of the online publication process.</p>
 
 
 
-			<h3 id="print" class="ds-head">5. Deliver two printed copies of your work to the SUB Göttingen</h3>
+			<h3 id="print" class="ds-head">Deliver two printed copies of your work to the SUB Göttingen</h3>
 
 			<p>
 
@@ -2817,23 +2839,24 @@ In the electronic version of your dissertation, please do not include a signatur
 
 These are the only permissable differences between the printed and the electronic version.
 
-No changes are possible after publication.
+<b>No changes</b> are possible <b>after publication</b>.
 
 </p> 
 			<p><strong>PLEASE NOTE: </strong>Doctoral candidates of medicine provide us with a copy of the invitation to the oral examination together with the printed versions of the dissertation.</p>
 
 			<p>Please send us the two printed copies of your dissertation via mail or deposit them in the mail box at the staff entrance (at the back of the central library) or hand them in at the reception desk of the central library.</p>
 
-			<p>Postal address:</p>
+			<p><strong>Postal address:</strong><br />
 
-			<ul class="ds-simple-list">
+				SUB Göttingen-Zentralbibliothek<br />
 
-				<li>SUB Göttingen-Zentralbibliothek</li>
-				<li>eDiss</li>
-				<li>Platz der Göttinger Sieben 1</li>
-				<li>37073 Göttingen</li>
+				eDiss<br />
 
-			</ul>
+				Platz der Göttinger Sieben 1<br />
+
+				37073 Göttingen<br />
+
+			</p>
 			
 			<!-- <p>
 			If you have any questions, please contact us via email.
@@ -3057,29 +3080,42 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 
 							<a href="#workflow">Start the online publication process</a>
 
+							
 							<ul class="ds-simple-list">
 
 								<li>
 
-									<a href="#upload">1. Document upload</a>
+									<a href="#describe">1. Describe your document</a>
 
 								</li>
 
 								<li>
 
-									<a href="#describe">2. Describe your Document</a>
+									<a href="#doiAttribution">2. DOI assignment</a>
 
 								</li>
 
 								<li>
 
-									<a href="#proof">3. Check the Document description</a>
+									<a href="#upload">3. Document upload</a>
 
 								</li>
 
 								<li>
 
-									<a href="#depositLicense">4. Accept the publication contract</a>
+									<a href="#proof">4. Check the document description</a>
+
+								</li>
+
+								<li>
+
+									<a href="#ccLicense">5. Select CC License</a>
+
+								</li>
+
+								<li>
+
+									<a href="#depositLicense">6. Accept the publication contract</a>
 
 								</li>
 
@@ -3129,9 +3165,7 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 
 			</ul>
 
-		</div>
-
-	</message>
+		</div></message>
 
 	<!-- static page: PDF Guide -->
 <message key="xmlui.static.help.pdf-guide">
@@ -3494,7 +3528,7 @@ Alternatively, you may include a copy of the approved proposal when sending prin
 
 	<!-- static page: deposit license -->
 	<message key="xmlui.static.help.deposit-license"><div id="file_deposit-licence_pdf" class="ds-static-div download">
-			<a title="Download as PDF" class="pull-right" href="/static/terms_of_contract_eDiss_201611.pdf">PDF</a><br /><strong>Please note that only the German version of this contract is legally binding.</strong>
+			<a title="Download as PDF" class="pull-right" href="/static/terms_of_contract_eDiss_202202.pdf">PDF</a><br /><strong>Please note that only the German version of this contract is legally binding.</strong>
 		</div>
 		<div class="ds-static-div">
 			<p>
@@ -4572,16 +4606,17 @@ All personal data will only be stored as long as necessary for the respective pu
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.submit_policy">Policies</message>
 
 <!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
-        <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">An error occurred ... {0}</message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.ccws_error"><spa class="alert alert-warning">An error occurred ... {0} Please check if you have answered both questions. If so, go back one step in the prograssbar and try it again.</span></message>
         <message key="xmlui.Submission.submit.CCLicenseStep.head">License Your Work</message>
 	<message key="xmlui.Submission.submit.CCLicenseStep.info1"><p>Every publication on eDiss is always provided with a <a href="http://creativecommons.org/">Creative Commons license</a>. Creative Commons licenses govern what people who read your work may then do with it. By default, <img class="cc" src="/themes/Mirage2/images/cc-by.png" /> CC BY 4.0 (Creative Commons Attribution 4.0 International) is assigned. </p>
 		<p>However, you can of course assign a different license. To do so, please make your selection in the menu below.</p></message>
         <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Choose a license</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Proceed to Creative Commons website to select a license</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.license">License options</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.select_change">Select or modify your license ...</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.select_change">Modify your license ...</message>
 	<message key="xmlui.Submission.submit.CCLicenseStep.no_license">CC BY 4.0 (default)</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.save_changes">Please click Next to save your changes.</message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.selected.license" />
 
 <!-- Site administrator options -->
   <message key="xmlui.administrative.Navigation.administrative_head">Administrative</message>
@@ -4978,49 +5013,59 @@ All personal data will only be stored as long as necessary for the respective pu
 	<message key="xmlui.Submission.submit.progressbar.verify">Review</message>
 	<message key="xmlui.Submission.submit.progressbar.creative-commons">Creative Commons</message>
 	<message key="xmlui.Submission.submit.progressbar.CClicense">CC License</message>
-    <message key="xmlui.Submission.submit.progressbar.license">License</message>
+    <message key="xmlui.Submission.submit.progressbar.license">eDiss Contract</message>
 	<message key="xmlui.Submission.submit.progressbar.complete">Complete</message>
 
 <!-- org.dspace.app.xmlui.Submission.submit.AddDoiStep -->
 	<message key="xmlui.Submission.submit.AddDoiStep.btn">Add DOI to item</message>
 	<message key="xmlui.Submission.submit.AddDoiStep.done.btn">DOI created</message>
-	<message key="xmlui.Submission.submit.itemDOI.created">This publication was assigned the DOI {0}.</message>
+	<message key="xmlui.Submission.submit.itemDOI.created"><h3>This publication was assigned the DOI <span class="imp">{0}</span>.</h3>
+		<p>You are welcome to insert the DOI (Digital Object Identifier) into your PDF respectively your print copies before you continue with the publication process here on eDiss. To do this, please copy the DOI displayed above and click on "Save &amp; Exit". This will interrupt your eDiss publication process and you can resume at this point any time later.</p>
+<p>If you do not want to use the DOI at this point, proceed with the publication process by clicking on "Next".</p>
+	</message>
 	<message key="xmlui.Submission.submit.AddDoiStep.head">DOI Assignment</message>
 	<!-- <message key="xmlui.Submission.submit.AddDoiStep.section_head">Create DOI for Item</message> -->
-	<message key="xmlui.Submission.submit.AddDoiStep.section_head"></message>
+	<message key="xmlui.Submission.submit.AddDoiStep.section_head" />
 	<message key="xmlui.Submission.submit.itemDOI.no_doi">There will be no DOI created for this item.</message>
 	<!-- <message key="xmlui.Submission.submit.itemDOI.note">Note that this item might get a DOI by default if there is a filter set that evaluates a later state of this item.</message> -->
-	<message key="xmlui.Submission.submit.itemDOI.note">If you want to write the DOI in your document....</message>
+	<message key="xmlui.Submission.submit.itemDOI.note">
+		<p>You are welcome to insert the DOI (Digital Object Identifier) into your PDF respectively your print copies before you continue with the publication process here on eDiss. To do this, please copy the DOI displayed above and click on "Save &amp; Exit". This will interrupt your eDiss publication process and you can resume at this point any time later.</p>
+<p>If you do not want to use the DOI at this point, proceed with the publication process by clicking on "Next".</p>
+	</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_doi">DOI</message>
   <message key="xmlui.administrative.item.EditItemStatusForm.submit_register_doi">Register DOI</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_person">Advisor &amp; Referee</message>
 
   <!-- org.dspace.app.xmlui.Submission.submit.ShowDoiStep -->
     <message key="xmlui.Submission.submit.ShowDoiStep.head">DOI</message>
-  <message key="xmlui.Submission.submit.ShowDoiStep.section_head">Your publication will be assigned the DOI {0}.</message>
-  <message key="xmlui.Submission.submit.showitemDOI.infotext">If you want to write the DOI in your document, ... save all ... Otherwise go to the next step.</message>
+    <message key="xmlui.Submission.submit.ShowDoiStep.section_head">Your publication will be assigned the DOI <span class="imp">{0}</span>.</message>
+  <message key="xmlui.Submission.submit.showitemDOI.infotext">
+	  <p>You are welcome to insert the DOI (Digital Object Identifier) into your PDF respectively your print copies before you continue with the publication process here on eDiss. To do this, please copy the DOI displayed above and click on "Save &amp; Exit". This will interrupt your eDiss publication process and you can resume at this point any time later.</p>
+<p>If you do not want to use the DOI at this point, proceed with the publication process by clicking on "Next".</p>
+  </message>
   <message key="xmlui.submit.cc-license.show.selected"><strong>Selected License: </strong></message>
-          <message key="xmlui.submit.cc-license.show.by"><img src="/themes/Mirage2/images/cc-by.png"></img> Creative Commons Attribution 4.0 International</message>
-        <message key="xmlui.submit.cc-license.show.by-nc"><img src="/themes/Mirage2/images/cc-by-nc.png"></img> Creative Commons Attribution-NonCommercial 4.0 International</message>
-        <message key="xmlui.submit.cc-license.show.by-sa"><img src="/themes/Mirage2/images/cc-by-nc.png"></img> Creative Commons Attribution-ShareAlike 4.0 International</message>
-        <message key="xmlui.submit.cc-license.show.by-nc-sa"><img src="/themes/Mirage2/images/cc-by-nc-sa.png"></img> Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</message>
-        <message key="xmlui.submit.cc-license.show.by-nd"><img src="/themes/Mirage2/images/cc-by-nd.png"></img> Creative Commons Attribution-NoDerivatives 4.0 International</message>
-	<message key="xmlui.submit.cc-license.show.by-nc-nd"><img src="/themes/Mirage2/images/cc-by-nc-nd.png"></img> Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</message>
+          <message key="xmlui.submit.cc-license.show.by"><img src="/themes/Mirage2/images/cc-by.png" /> Creative Commons Attribution 4.0 International</message>
+        <message key="xmlui.submit.cc-license.show.by-nc"><img src="/themes/Mirage2/images/cc-by-nc.png" /> Creative Commons Attribution-NonCommercial 4.0 International</message>
+        <message key="xmlui.submit.cc-license.show.by-sa"><img src="/themes/Mirage2/images/cc-by-nc.png" /> Creative Commons Attribution-ShareAlike 4.0 International</message>
+        <message key="xmlui.submit.cc-license.show.by-nc-sa"><img src="/themes/Mirage2/images/cc-by-nc-sa.png" /> Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</message>
+        <message key="xmlui.submit.cc-license.show.by-nd"><img src="/themes/Mirage2/images/cc-by-nd.png" /> Creative Commons Attribution-NoDerivatives 4.0 International</message>
+	<message key="xmlui.submit.cc-license.show.by-nc-nd"><img src="/themes/Mirage2/images/cc-by-nc-nd.png" /> Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</message>
 
 	        <!-- From old live ediss -->
         <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_ftauthor">Author only</message>
         <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_ftauthor">Author</message>
-        <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections"></message>
-        <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities"></message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.advisor.column_heading"></message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading"></message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading"></message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ftadvisor.column_heading"></message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftadvisor.column_heading"></message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftreferee.column_heading"></message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.referee.column_heading"></message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading"></message>
-        <message key="xmlui.item.published.parts">Individual articles / chapters of this work have also been published separately:</message>
+        <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections" />
+        <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities" />
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.advisor.column_heading" />
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading" />
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading" />
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ftadvisor.column_heading" />
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading" />
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading" />
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftadvisor.column_heading" />
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftreferee.column_heading" />
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.referee.column_heading" />
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading" />
+	<message key="xmlui.item.published.parts">Individual articles / chapters of this work have also been published separately:</message>
+
 </catalogue>

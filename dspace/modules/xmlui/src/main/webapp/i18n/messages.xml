@@ -1159,7 +1159,7 @@
 <message key="xmlui.Submission.submit.progressbar.CClicense">CC License</message>
 	<message key="xmlui.Submission.submit.progressbar.license">eDiss-Lizenz</message>
 
-	<message key="xmlui.Submission.submit.progressbar.complete">Fertig</message>
+	<message key="xmlui.Submission.submit.progressbar.complete">Abgeschlossen</message>
 
 
 
@@ -4755,11 +4755,7 @@ Im letzten Schritt müssen Sie <a href="help/deposit-license">unseren Vertragsbe
 
 	<!-- static page: publishing on eDiss -->
 
-	<message key="xmlui.static.help.publishing">
-
-
-
-		<div>
+	<message key="xmlui.static.help.publishing"><div>
 
 
 
@@ -4865,7 +4861,7 @@ Im letzten Schritt müssen Sie <a href="help/deposit-license">unseren Vertragsbe
 
 
 
-									<a href="#upload">1. Dokument hochladen</a>
+									<a href="#describe">1. Dokument beschreiben (Metadaten eintragen)</a>
 
 
 
@@ -4877,7 +4873,7 @@ Im letzten Schritt müssen Sie <a href="help/deposit-license">unseren Vertragsbe
 
 
 
-									<a href="#describe">2. Dokument beschreiben</a>
+									<a href="#doiAttribution">2. DOI Zuordnung</a>
 
 
 
@@ -4889,7 +4885,7 @@ Im letzten Schritt müssen Sie <a href="help/deposit-license">unseren Vertragsbe
 
 
 
-									<a href="#proof">3. Eingaben überprüfen</a>
+									<a href="#upload">3. Datei(en) hochladen</a>
 
 
 
@@ -4901,12 +4897,33 @@ Im letzten Schritt müssen Sie <a href="help/deposit-license">unseren Vertragsbe
 
 
 
-									<a href="#depositLicense">4. Dem eDiss-Vertrag zustimmen</a>
+									<a href="#proof">4. Veröffentlichung überprüfen</a>
 
 
 
 								</li>
 
+
+								<li>
+
+
+
+									<a href="#ccLicense">5. Nutzungsrechte vergeben (CC Lizenz)</a>
+
+
+
+								</li>
+
+
+								<li>
+
+
+
+									<a href="#depositLicense">6. eDiss-Vertrag zustimmen</a>
+
+
+
+								</li>
 
 
 							</ul>
@@ -5288,95 +5305,84 @@ Alternativ können Sie bei der Zusendung der Druckexemplare der Dissertation an 
 
 
 
-			<p>Den Online-Publikationsprozess können Sie auf zwei Arten starten:</p>
+			
+
+
+				<p>
+
+					Klicken Sie auf „Jetzt veröffentlichen“ im Menü auf der rechten Seite oben. Dort müssen Sie zunächst die Fakultät bzw. das Programm auswählen, bei der / in dem Sie Ihre Arbeit veröffentlichen wollen.
+
+				</p>
 
 
 
-			<ol class="ds-ordered-list">
 
-
-
-				<li>
-
-
-
-					Sie klicken auf „Jetzt publizieren“ im Menü links oben. In diesem Falle müssen Sie vor dem 1. Schritt
-
-
-
-					(Dokument hochladen) zunächst die Sammlung (=Fachgebiet) auswählen, in der Sie Ihre Arbeit veröffentlichen wollen.
-
-
-
-					Dazu werden Ihnen in einem Aufklappmenü alle Sammlungen aufgelistet.
-
-
-
-				</li>
-
-
-
-				<li>
-
-
-
-					Sie navigieren zuerst über den Punkt „Bereiche &amp; Sammlungen“ im Menü links zu der Sammlung (=Fachgebiet), in der Sie
-
-
-
-					publizieren wollen. Dann klicken Sie auf den Button „Hier veröffentlichen“ im linken Hauptmenü oben.
-
-
-
-					Sie starten dann direkt beim Schritt „Dokument hochladen“.
-
-
-
-				</li>
-
-
-
-			</ol>
-
+			<!-- <p><strong>BITTE BEACHTEN SIE: </strong>Die Sammlungen entsprechen mit zwei Ausnahmen den Fakultäten der Universität Göttingen. Die Philosophische und die Sozialwissenschaftliche Fakultäten sind so umfangreich und heterogen, dass wir Sie in weitere Sammlungen untergliedert haben. Falls Sie den Online Publikationsprozess auf dem 1. Weg starten und Sie in einem dieser Bereiche promovieren, schauen Sie bitte zuerst diese Sammlungen an, um vorweg festzulegen, in welche Ihre Arbeit gehört! </p> -->
 
 
 			<p>
-
-
-
-				<strong>BITTE BEACHTEN SIE: </strong>Die Sammlungen entsprechen mit zwei Ausnahmen den Fakultäten der Universität Göttingen. Die Philosophische und die Sozialwissenschaftliche Fakultäten sind so umfangreich und heterogen, dass wir Sie in weitere Sammlungen untergliedert haben. Falls Sie den Online Publikationsprozess auf dem 1. Weg starten und Sie in einem dieser Bereiche promovieren, schauen Sie bitte zuerst diese Sammlungen an, um vorweg festzulegen, in welche Ihre Arbeit gehört! </p>
-
-
-
-			<p>
-
-
-
-				<strong>BITTE BEACHTEN SIE: </strong>Solange der Publikationsprozess nicht abgeschlossen ist, können Sie jeder Zeit zu einem früheren Schritt zurückkehren und sowohl die eingegeben Daten ändern als auch Ihre Dokumente austauschen. Nach Abschluss des Prozesses sind <b>keine Änderungen</b> mehr an Ihrer Publikation möglich!<br />Nur in besonderen Ausnahmefällen können Sie uns <a href="contact">kontaktieren</a> und begründete Änderungswünsche mitteilen.
-
-
+				<strong>HINWEIS: </strong>Solange der Publikationsprozess nicht abgeschlossen ist, können Sie jeder Zeit zu einem früheren Schritt zurückkehren und sowohl die eingegeben Daten ändern als auch Ihre Dokumente austauschen. <b>Nach Abschluss</b> des Prozesses sind <b>keine Änderungen</b> mehr an Ihrer Publikation möglich!<br />Nur in besonderen Ausnahmefällen können Sie uns <a href="contact">kontaktieren</a> und begründete Änderungswünsche mitteilen.
 
 			</p>
 
 
 
-			<h3 class="ds-head" id="upload">1. Dokument hochladen</h3>
+			<h3 class="ds-head" id="describe">1. Dokument beschreiben (Metadaten eintragen)</h3>
+
+			<p>
+
+				In diesem Schritt werden in einem Formular zunächst Ihre persönlichen Daten (Geburtsdatum, Geburtsdatum, Mailadresse) abgefragt. Geburtsdatum und Geburtsort sind zur Authentifizierung Ihrer Person beim Prüfungsamt notwendig. <br />
+
+				Alle persönlichen Angaben, sowie Ihre E-Mail-Adresse werden <strong>vertraulich</strong> behandelt und sind für die Besucher des eDiss-Servers nicht sichtbar!
+				
+			</p>
 
 
 
-			<p>Zum Hochladen Ihres Dokumentes wird Ihnen ein Formular angezeigt. Hier können Sie über den Button "Durchsuchen" Ihr Dokument auf Ihrem Rechner aussuchen und mit einem Klick auf "Datei hochladen und/oder noch eine hinzufügen" auf eDiss hochladen. <br />
+			<p id="special">Weitere Felder des Formulars dienen dazu, Ihre Arbeit zu beschreiben. Geben Sie hier bitte die erforderlichen Informationen (Originaltitel, Untertitel, Zusammenfassung etc.) an. Titel, Schlüsselwörter und Zusammenfassung müssen in jedem Fall auf Englisch vorhanden sein. Falls Ihre Arbeit in einer anderen Sprache als Englisch verfasst ist, möchten wir Sie bitten, englische Übersetzungen zu diesen Angaben zu liefern, um die internationale Sichtbarkeit Ihrer Arbeit zu erhöhen.<br />
+
+				<br />
+
+				Das letzte Formularfeld, "Nachricht für die Redakteure" ist optional und gibt Ihnen die Möglichkeit, eine Nachricht für die Redakteure zu hinterlassen. Der Inhalt dieses Feldes wird von unserem eDiss-Team ausgewertet und ist nicht öffentlich sichtbar.
+
+				<br />
+
+				Pflichtfelder sind im Formular rot hervorgehoben und mit "*" gekennzeichnet. Sie können erst dann zum nächsten Schritt übergehen, wenn alle Pflichtfelder ausgefüllt sind.
+
+			</p>
+
+
+			
+
+
+
+
+
+
+			<h3 id="doiAttribution" class="ds-head">2. DOI Zuordnung</h3>
+
+			<p>
+			Bereits an dieser Stelle wird Ihrer elektronischen Dissertation automatisch ein DOI (Digital Object Identifier) zugewiesen. Er stellt das eindeutige Referenzwerkzeug zu Ihrer eDiss dar und sollte fortan zum Zitieren Ihrer Arbeit im wissenschaftlichen Kontext verwendet werden. Um Ihnen zu ermöglichen, den DOI bereits in ihr PDF bzw. in Ihre Druckexemplare mit einzufügen, können Sie den Publikationsprozeß auch an dieser Stelle unterbrechen. Bitte kopieren Sie den DOI, fügen ihn an den gewünschten Stellen in Ihrem Dokument ein und fahren Sie dann mit dem Publikationsprozeß fort.
+			</p>
+
+			
+
+
+
+
+
+
+			<h3 id="upload" class="ds-head">3. Datei(en) hochladen</h3>
+
+<p>Zum Hochladen Ihres Dokumentes wird Ihnen ein Formular angezeigt. Hier können Sie über den Button "Durchsuchen" Ihr Dokument auf Ihrem Rechner aussuchen und mit einem Klick auf "Datei hochladen und/oder noch eine hinzufügen" auf eDiss hochladen. <br />
 
 
 
 				<br /> Sie können mehrere Dokumente (in beliebigen Formaten) nacheinander hochladen. Dies ist z.B. sinnvoll, wenn Sie Ihre Dissertation durch zusätzliche Graphiken, Tabellen, Umfrageergebnisse, Labordaten etc. ergänzen wollen. Auch die Veröffentlichung Ihrer Arbeit in verschiedenen Formaten, z.B. zusätzlich für eBookReader wäre denkbar. In diesen Fällen geben Sie bitte zu den jeweiligen Dateien eine kurze Beschreibung im entsprechenden Formularfeld mit.</p>
 
-
-
 			<p>
 
-
-
-				<strong>BITTE BEACHTEN SIE: </strong>Als erstes muss immer Ihre Dissertation als PDF-Datei hochgeladen werden. Erst dann akzeptiert eDiss weitere Dateien in anderen Formaten.
+				<strong>BITTE BEACHTEN SIE: </strong>Als erstes sollte immer Ihre Dissertation als PDF-Datei hochgeladen werden.
 
 			</p>
 
@@ -5385,118 +5391,46 @@ Alternativ können Sie bei der Zusendung der Druckexemplare der Dissertation an 
 			<!-- Beim Hochladen der ersten PDF-Datei wird automatisch geprüft, ob sie unseren Vorschriften genügt. Dieser Prozess kann, je nach Dateigröße, einige Zeit in Anspruch nehmen. Bitte unterbrechen Sie diesen Prozess nicht! <br />
 
 
-
 				Anschließend wird das Ergebnis der Prüfung angezeigt. Falls eine der Anforderungen nicht erfüllt ist, wird Ihr Dokument <b>abgelehnt</b>. 
 
 				Bitte unterbrechen Sie den Publikationsprozess in diesem Fall mit einem Klick auf "Speichern und später fortsetzen", korrigieren Sie Ihr PDF Dokument und nehmen Sie dann wieder den Publikationsprozess auf. <br /> -->
+			
+
+				Ist das PDF Dokument hochgeladen, können Sie mit dem Hochladen weiterer Dokumente (z.B. "Sperrvermerk") ebenso fortfahren oder mit Klick auf "Weiter" zum nächsten Schritt übergehen.<br />
 
 
+				<!-- Beim Hochladen der ersten PDF Datei werden zusätzlich die Metadaten Titel, Autor und Schlagwörter angezeigt, die Sie Ihrer PDF-Datei unter "Dokumenteigenschaften" beigefügt haben. Genau diese Daten werden durch die Indexierung bei Google verarbeitet und ermöglichen somit eine Trefferanzeige.<br /> -->
 
-				
-
-				Ist Ihr PDF Dokument angenommen, können Sie mit dem Hochladen weiterer Dokumente ebenso fortfahren oder mit Klick auf "Weiter" zum nächsten Schritt übergehen.<br />
-
-
-
-				<br />Beim Hochladen der ersten PDF Datei werden zusätzlich die Metadaten Titel, Autor und Schlagwörter angezeigt, die die Datei enthält. Falls Ihr Dokument später bei einer Google-Suche gefunden wird, werden von Google diese Daten ausgelesen und beim Treffer angezeigt. Wollen Sie die Daten ändern, löschen Sie bitte ihr hochgeladenes Dokument, indem Sie das Häkchen neben dem Dateinamen setzen und auf "Ausgewählte entfernen" klicken. Unterbrechen Sie zunächst den Prozess und speichern Sie die Daten.  Dann korrigieren Sie die Metadaten in Ihrem Dokument, nehmen Sie den online Publikationsprozess wieder auf und laden Sie die korrigierte Datei noch einmal hoch.<br />Da eDiss diese Daten nicht nutzt, sind Sie bei der Entscheidung ganz frei, ob sie hier Korrekturen vornehmen.
-
-
+				<!-- Wollen Sie die Daten ändern, löschen Sie bitte ihr hochgeladenes Dokument, indem Sie das Häkchen neben dem Dateinamen setzen und auf "Ausgewählte entfernen" klicken. Unterbrechen Sie zunächst den Prozess und speichern Sie die Daten.  Dann korrigieren Sie die Metadaten in Ihrem Dokument, nehmen Sie den online Publikationsprozess wieder auf und laden Sie die korrigierte Datei noch einmal hoch. -->
+				<!-- Da eDiss diese Daten nicht nutzt, sind Sie bei der Entscheidung ganz frei, ob sie hier Korrekturen vornehmen. -->
 
 			</p>
 
 
-
-
-
-
-
-			<h3 id="describe" class="ds-head">2. Dokument beschreiben</h3>
-
-
-
-			<p>
-
-
-
-				In diesem Schritt werden in einem Formular zunächst Ihre persönlichen Daten (Geburtsdatum, Adresse) abgefragt. Das Geburtsdatum ist zur Identifikation Ihrer Person notwendig. <br />
-
-
-
-				Die persönlichen Angaben, zusammen mit Ihrer E-Mail-Adresse werden <strong>vertraulich</strong> behandelt und sind für die Besucher des eDiss-Servers nicht sichtbar!
-
-				
-
-
-
-			</p>
-
-
-
-			<p id="special">Weitere Felder des Formulars dienen dazu, Ihre Arbeit zu beschreiben. Geben Sie hier bitte die erforderlichen Informationen (Originaltitel, Untertitel, Zusammenfassung etc.) an. Titel, Schlüsselwörter und Zusammenfassung müssen in jedem Fall auf Englisch vorhanden sein. Falls Ihre Arbeit in einer anderen Sprache verfasst ist, werden Sie aufgefordert, englische Übersetzungen zu diesen Angaben zu liefern.<br />
-
-
-
-				<br />
-
-
-
-				Das letzte Formularfeld, "Nachricht für die Redakteure" ist optional und gibt Ihnen die Möglichkeit, eine Nachricht für die Redakteure zu hinterlassen. Der Inhalt dieses Feldes wird von unserem eDiss-Team ausgewertet und ist nicht öffentlich sichtbar.
-
-
-
-				<br />
-
-
-
-				Pflichtfelder sind im Formular mit "*" gekennzeichnet. Sie können erst dann zum nächsten Schritt übergehen, wenn alle Pflichtfelder ausgefüllt sind.
-
-
-
-			</p>
-
-
-
-
-
-
-
-			<h3 id="proof" class="ds-head">3. Eingaben überprüfen</h3>
-
-
+			<h3 id="proof" class="ds-head">4. Veröffentlichung überprüfen</h3>
 
 			<p>Hier werden Ihnen alle im vorherigen Schritt erfassten Angaben mit der Möglichkeit zur Korrektur angezeigt. Bitte gehen Sie die Daten sorgfältig durch und korrigieren Sie sie, falls nötig.</p>
 
 
 
-			<h3 id="depositLicense" class="ds-head">4. Dem eDiss-Vertrag zustimmen</h3>
+			<h3 id="ccLicense" class="ds-head">5. Nutzungsrechte vergeben (CC Lizenz)</h3>
 
+			<p>Grundsätzlich wird jede Veröffentlichung auf eDiss mit einer <a target="_blank" href="http://creativecommons.org/licenses/by/4.0">Creative-Commons-Lizenz 4.0 (Namensnennung)</a> versehen. CC Lizenzen regeln, was Leser, die Ihre Arbeit herunterladen, mit dem Text machen dürfen. Standardmäßig erfolgt die Vergabe der Lizenz CC BY (Namensnennung) 4.0.</p>
+			<p>Sie haben über ein drop-down Menü die Möglichkeit, eine Lizenz Ihrer Wahl zu vergeben, wenn gute Gründe dafür sprechen, nicht die von uns empfohlene Standardlizenz zu verwenden.</p>
+			
+			
+			
 
-
+			<h3 id="depositLicense" class="ds-head">6. eDiss-Vertrag zustimmen</h3>
 			<p>
 
 
 
-				Um Ihre Dissertation auf eDiss zu veröffentlichen, müssen Sie einen Vertrag mit uns
-
-
-
-				abschließen, in dem die Rechte des Serverbetreibers und die Zugriffsrechte unserer Nutzer auf Ihre Publikation - falls keine CC-Lizenz zur Publikation hinzugefügt wurde -
-
-
-
-				genau festgelegt sind. Der Vertrag gilt als abgeschlossen, wenn Sie durch Anhaken der Checkbox unter dem
-
-
-
-				Vertragstext Ihre Zustimmung zum Vertrag geben und auf „Veröffentlichung abschließen“ klicken.
-
-
+				Um Ihre Dissertation auf eDiss zu veröffentlichen, müssen Sie einen Vertrag mit uns abschließen, in dem die Rechte des Serverbetreibers (Deposit-Lizenz) und die Zugriffsrechte der Nutzer (CC Nutzungs-Lizenz) auf Ihre Publikation (s.o.) genau festgelegt sind. Der Vertrag gilt als abgeschlossen, wenn Sie durch Anhaken der Checkbox unter dem Vertragstext Ihre Zustimmung zum Vertrag geben und auf „Veröffentlichung abschließen“ klicken.
 
 				<br />
 
-
-
-				<a href="/static/Vertragsbedingungen_eDiss_201611.pdf">Vertrag als PDF Dokument herunterladen</a>
+				<a href="/static/Vertragsbedingungen_eDiss_202202.pdf">Vertrag als PDF Dokument herunterladen</a>
 
 
 
@@ -5504,7 +5438,7 @@ Alternativ können Sie bei der Zusendung der Druckexemplare der Dissertation an 
 
 
 
-			<p><strong>BITTE BEACHTEN SIE: </strong>Wir machen Sie an dieser Stelle noch einmal darauf aufmerksam, dass nach Abschluss des Online-Publikationsprozesses <b>keine Änderungen</b> mehr an Ihrer Publikation möglich sind.</p>
+			<p><strong>BITTE BEACHTEN SIE: </strong>Wir machen Sie an dieser Stelle noch einmal darauf aufmerksam, dass <b>nach Abschluss</b> des Online-Publikationsprozesses <b>keine Änderungen</b> mehr an Ihrer Publikation möglich sind.</p>
 
 
 
@@ -6007,23 +5941,11 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 
 
-								<li>
+																<li>
 
 
 
-									<a href="#upload">1. Dokument hochladen</a>
-
-
-
-								</li>
-
-
-
-								<li>
-
-
-
-									<a href="#describe">2. Dokument beschreiben</a>
+									<a href="#describe">1. Dokument beschreiben (Metadaten eintragen)</a>
 
 
 
@@ -6035,7 +5957,7 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 
 
-									<a href="#proof">3. Eingaben überprüfen</a>
+									<a href="#doiAttribution">2. DOI Zuordnung</a>
 
 
 
@@ -6047,12 +5969,45 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 
 
-									<a href="#depositLicense">4. Dem eDiss-Vertrag zustimmen</a>
+									<a href="#upload">3. Datei(en) hochladen</a>
 
 
 
 								</li>
 
+
+
+								<li>
+
+
+
+									<a href="#proof">4. Veröffentlichung überprüfen</a>
+
+
+
+								</li>
+
+
+								<li>
+
+
+
+									<a href="#ccLicense">5. Nutzungsrechte vergeben (CC Lizenz)</a>
+
+
+
+								</li>
+
+
+								<li>
+
+
+
+									<a href="#depositLicense">6. eDiss-Vertrag zustimmen</a>
+
+
+
+								</li>
 
 
 							</ul>
@@ -6147,11 +6102,7 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 
 
-		</div>
-
-
-
-	</message>
+		</div></message>
 
 
 
@@ -6822,7 +6773,7 @@ Diese benötigen Sie zusammen mit Ihrem Revisionsschein, um bei Ihrem zuständig
 
 	<message key="xmlui.static.help.deposit-license"><div id="file_deposit-licence_pdf" class="ds-static-div download">
 
-			<a class="pull-right" title="Als PDF herunterladen" href="/static/Vertragsbedingungen_eDiss_201611.pdf">PDF</a>
+			<a class="pull-right" title="Als PDF herunterladen" href="/static/Vertragsbedingungen_eDiss_202202.pdf">PDF</a>
 
 		</div>
 
@@ -8937,19 +8888,29 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 <!-- org.dspace.app.xmlui.Submission.submit.AddDoiStep -->
   <message key="xmlui.Submission.submit.AddDoiStep.btn">DOI Zuordnen</message>
   <message key="xmlui.Submission.submit.AddDoiStep.done.btn">DOI erstellt</message>
-  <message key="xmlui.Submission.submit.itemDOI.created">Dieser Publikation wurde die DOI {0} zugeordnet.</message>
+  <message key="xmlui.Submission.submit.itemDOI.created"><h3>Dieser Publikation wurde die DOI <span class="imp">{0}</span> zugeordnet.</h3>
+	  <p> Sie können den DOI (Digital Object Identifier) in Ihr PDF bzw. in Ihre Druckexemplare einfügen, bevor Sie mit dem Publikationsvorgang hier auf eDiss fortfahren. Dazu übernehmen Sie bitte den oben angezeigten DOI und klicken zunächst auf "Speichern und später fortsetzen". Damit ist der Publikationsprozeß für Ihre eDiss unterbrochen und Sie können ihn zu einem späteren Zeitpunkt an dieser Stelle wieder aufnehmen.</p>
+          <p>
+                  Wenn Sie den DOI nicht weiterverwenden wollen, dann fahren Sie einfach mit dem Publikationsprozeß fort, indem Sie auf "Weiter" klicken.</p>
+  </message>
   <message key="xmlui.Submission.submit.AddDoiStep.head">DOI</message>
   <message key="xmlui.Submission.submit.AddDoiStep.section_head">Erstelle DOI für die Publikation</message>
   <message key="xmlui.Submission.submit.itemDOI.no_doi">Diese Publikation bekommt keine DOI.</message>
-  <message key="xmlui.Submission.submit.itemDOI.note">Wenn sie die DOI Ihrer Publikation ins Dokument schreiben wollen, ....</message>
+  <message key="xmlui.Submission.submit.itemDOI.note">
+	  <p>Sie können den DOI (Digital Object Identifier) in Ihr PDF bzw. in Ihre Druckexemplare einfügen, bevor Sie mit dem Publikationsvorgang hier auf eDiss fortfahren. Dazu übernehmen Sie bitte den oben angezeigten DOI und klicken zunächst auf "Speichern und später fortsetzen". Damit ist der Publikationsprozeß für Ihre eDiss unterbrochen und Sie können ihn zu einem späteren Zeitpunkt an dieser Stelle wieder aufnehmen.</p>
+          <p>
+                  Wenn Sie den DOI nicht weiterverwenden wollen, dann fahren Sie einfach mit dem Publikationsprozeß fort, indem Sie auf "Weiter" klicken.</p>
+  </message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_doi">DOI</message>
   <message key="xmlui.administrative.item.EditItemStatusForm.submit_register_doi">DOI registrieren</message>
 
 <!-- org.dspace.app.xmlui.Submission.submit.ShowDoiStep -->
   <message key="xmlui.Submission.submit.ShowDoiStep.head">DOI</message>
   <message key="xmlui.Submission.submit.ShowDoiStep.section_head">Ihrer Publikation wird die DOI {0} zugeordnet.</message>
-  <message key="xmlui.Submission.submit.showitemDOI.infotext">Sie können den DOI (digital object identifier) gern in ihr PDF bzw. in Ihre Druckexemplare einfügen, bevor Sie mit dem Publikationsvorgang hier auf eDiss fortfahren. Dazu übernehmen Sie bitte den an dieser Stelle angezeigten DOI und klicken zunächst auf "Speichern und später fortsetzen". Damit ist ihr Publikationsprozeß für Ihre eDiss unterbrochen und Sie können ihn zu einem späteren Zeitpunkt an dieser Stelle wieder aufnehmen.
-Wenn Sie den DOI nicht weiterverwenden wollen, dann fahren Sie einfach mit dem Publikationsprozeß fort, indem Sie auf "Weiter" klicken.</message>
+  <message key="xmlui.Submission.submit.showitemDOI.infotext"><p>Sie können den DOI (Digital Object Identifier) in Ihr PDF bzw. in Ihre Druckexemplare einfügen, bevor Sie mit dem Publikationsvorgang hier auf eDiss fortfahren. Dazu übernehmen Sie bitte den oben angezeigten DOI und klicken zunächst auf "Speichern und später fortsetzen". Damit ist der Publikationsprozeß für Ihre eDiss unterbrochen und Sie können ihn zu einem späteren Zeitpunkt an dieser Stelle wieder aufnehmen.</p>
+	  <p>
+		  Wenn Sie den DOI nicht weiterverwenden wollen, dann fahren Sie einfach mit dem Publikationsprozeß fort, indem Sie auf "Weiter" klicken.</p>
+  </message>
 
     <!-- Embargo Step -->
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.head">Upload File(s)</message>
@@ -9033,16 +8994,17 @@ Wenn Sie den DOI nicht weiterverwenden wollen, dann fahren Sie einfach mit dem P
 
 
 <!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
-        <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">Ein Problem ist aufgetreten ... {0}</message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.ccws_error"><span class="alert alert-warning">Ein Problem ist aufgetreten ... {0}. Prüfen Sie bitte, ob Sie beide Fragen beantwortet haben. Wenn ja, gehen Sie im Prograssbar einen Schritt zurück und versuchen Sie es nocheinmal.</span></message>
         <message key="xmlui.Submission.submit.CCLicenseStep.head">Fügen Sie Ihrer Arbeit eine Lizenz zu</message>
-	<message key="xmlui.Submission.submit.CCLicenseStep.info1"><p>Grundsätzlich wird jede Veröfentlichung auf eDiss mit einer <a href="http://creativecommons.org/">Creative Commons Lizenz</a> versehen. CC Lizenzen regeln, was Leute, die Ihre Arbeit herunterladen, mit dem Text machen dürfen. Standardmäßig erfolgt die Vergabe von <img class="cc" src="/themes/Mirage2/images/cc-by.png" /> CC BY Namensnennung 4.0.</p> <p>Sie können selbstverständlich eine andere Lizenz vergeben. Dazu treffen Sie bitte im unten stehenden Menü Ihre Auswahl.</p></message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.info1"><p>Grundsätzlich wird jede Veröfentlichung auf eDiss mit einer <a href="http://creativecommons.org/">Creative Commons Lizenz</a> versehen. CC Lizenzen regeln, was Leser, die Ihre Arbeit herunterladen, mit dem Text machen dürfen. Standardmäßig erfolgt die Vergabe von <img class="cc" src="/themes/Mirage2/images/cc-by.png" /> CC BY Namensnennung 4.0.</p> <p>Sie können selbstverständlich eine andere Lizenz vergeben. Dazu treffen Sie bitte im unten stehenden Menü Ihre Auswahl.</p></message>
         <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Lizenz wählen</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Eine Creative Commons Lizenz wählen</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.license">Lizenzauswahl</message>
-        <message key="xmlui.Submission.submit.CCLicenseStep.select_change">Wähle oder ändere das CC-Lizenz</message>
+        <message key="xmlui.Submission.submit.CCLicenseStep.select_change">CC-Lizenz ändern</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.no_license">CC BY 4.0 (Standard)</message>
         <message key="xmlui.Submission.submit.CCLicenseStep.save_changes">Klicken Sie auf "weiter", um die Änderungen zu speichern.</message>
 
+	<message key="xmlui.Submission.submit.CCLicenseStep.selected.license"></message>
 <!-- Site administrator options -->
 	<message key="xmlui.administrative.Navigation.administrative_head">Administrative</message>
 	<message key="xmlui.administrative.Navigation.administrative_access_control">Access Control</message>
@@ -9072,23 +9034,25 @@ Wenn Sie den DOI nicht weiterverwenden wollen, dann fahren Sie einfach mit dem P
 
 	        <!-- from old lifxmlui.ArtifactBrowser.CommunityBrowser.select -->
 		 <!-- <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections">Sammlungen in diesem Bereich</message> -->
-		 <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections"></message>
-		 <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities"></message>
-		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.advisor.column_heading"></message>
-		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading"></message>
-		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ftadvisor.column_heading"></message>
-		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
-		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading"></message>
-		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftadvisor.column_heading"></message>
-		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftreferee.column_heading"></message>
-		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.referee.column_heading"></message>
-		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading"></message>
+		 <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections" />
+		 <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities" />
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.advisor.column_heading" />
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading" />
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.ftadvisor.column_heading" />
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading" />
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.person.column_heading" />
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftadvisor.column_heading" />
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.personftreferee.column_heading" />
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.referee.column_heading" />
+		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading" />
 		 <message key="xmlui.item.published.parts">Einzelne Artikel / Kapitel dieser Arbeit wurden auch separat publiziert:</message>
-		 <message key="xmlui.Submission.submit.LicenseStep.info2"></message>
+		 <message key="xmlui.Submission.submit.LicenseStep.info2" />
 		 <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_authors">Autoren</message>
 		 <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_authors">Autoren</message>
 		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.advisor">Blättern {0} nach Betreuer {1}</message>
 		 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.advisor">Publikationen nach Betreuer</message>
 		 <message key="xmlui.ArtifactBrowser.Navigation.browse_advisor">Betreuer</message>
 		 <message key="xmlui.ArtifactBrowser.RestrictedItem.head_iteme messages">Diese Publikation ist nur eingeschränkt zugänglich</message>
+
+
 </catalogue>

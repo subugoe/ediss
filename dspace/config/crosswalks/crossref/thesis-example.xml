@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/11858/00-1735-0000-0006-ABAA-D" ID="hdl:11858/00-1735-0000-0006-ABAA-D" OBJEDIT="/admin/item?itemID=5508">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="de" element="contributor">Bruss, Volker PD Dr.</dim:field>
+<dim:field qualifier="author" mdschema="dc" language="de" element="contributor">Pairan, Alexander</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" language="de" element="date">2012-04-16T14:56:35Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" language="de" element="date">2013-01-30T23:51:02Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="de" element="date">2005-12-28</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="de" element="identifier">http://hdl.handle.net/11858/00-1735-0000-0006-ABAA-D</dim:field>
+<dim:field qualifier="abstract" mdschema="dc" language="de" element="description">Während der Morphogenese des Hepatitis-B-Virus (HBV)            geht das transmembrane große Hüllprotein (L-Protein)            wahrscheinlich eine direkte Interaktion mit reifen            zytosolischen Nukleokapsiden ein, deren Schale aus dem            Coreprotein aufgebaut ist. Um die Beteiligung einzelner            Aminosäuren (AS) des Coreproteins hierbei zu bestimmen,            wurden sechs (S17, L95, K96, F122, I126 und R127) und            vier oberflächenexponierte Positionen (S21, D22, N90            und R98), bei denen eine Alanin-Substitution die            Umhüllung blockierte bzw. nicht beeinflusste, mit            verschiedenen AS-Resten substituiert.            Die Core-Mutanten wurden in Hinblick auf die            Kapsidbildung, Genomreifung und Umhüllungskompetenz            phänotypisiert. Die Positionen S17, L95, K96 und I126            spielten eine essentielle Rolle während des            Umhüllungsprozesses: 24 von 28 Mutanten erlaubten die            Assemblierung von reifen Nukleokapsiden, blockierten            aber deren Umhüllung (K+/V-). Die drei Positionen S21,            N90 und R98 tolerierten hingegen unterschiedliche            AS-Reste weitgehend ohne Verlust an            Assemblierungsfähigkeit (K+/V+). Mutationen der            Positionen R127 und D22 zeigten keinen einheitlichen            Phänotyp. Die Mutanten der Position F122 blockierten            zumeist die Kapsidformation (K-/V-). Sechs Mutanten,            die keine DNA-Genom-haltigen Kapside bilden konnten,            formten Kapside, die virales RNA-Prägenom enthielten,            was auf eine blockierte reverse Transkription schließen            lässt. Dies deutet auf eine komplexe Beteiligung der            Kapsidschale bei der reversen Transkription hin.            Aufbauend auf den Ergebnissen des ersten Teils wurden            stabile HuH7-Zelllinien etabliert, die konstitutiv die            virale Polymerase und das Wildtyp (WT) Coreprotein bzw.            die I126A Mutante des Coreproteins exprimierten. Ein            mittels Transduktion von rekombinanten MuLV-Retroviren            in die Zellen eingebrachtes verpackungskompetentes aber            replikationsdefizientes HBV-Genom stellte die            Hüllproteine zur Verfügung. Die erfolgreiche            Transkomplementierung, d.h. Sekretion von            virusähnlichen Partikeln, konnte durch PCR nachgewiesen            werden. Mit diesem System sollte der Nachweis einer            direkten L-Protein-Kapsid Interaktion möglich sein,            indem nach einer L-Mutante gesucht wird, die den            Umhüllungsblock der I126A Core-Mutante aufhebt.</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" language="de" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="de" element="language">ger</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="de" element="rights">http://webdoc.sub.gwdg.de/diss/copyr_diss.html</dim:field>
+<dim:field mdschema="dc" language="de" element="title">Charakterisierung von funktionellen Oberflächenstrukturen des Hepatitis-B-Virus Nukleokapsids</dim:field>
+<dim:field mdschema="dc" language="de" element="type">doctoralThesis</dim:field>
+<dim:field qualifier="translated" mdschema="dc" language="de" element="title">Characterization of functional surfaces of the hepatitis B virus nucleocapsid</dim:field>
+<dim:field qualifier="referee" mdschema="dc" language="de" element="contributor">Liebl, Wolfgang Prof. Dr.</dim:field>
+<dim:field qualifier="examination" mdschema="dc" language="de" element="date">2005-11-03</dim:field>
+<dim:field qualifier="dnb" mdschema="dc" language="de" element="subject">570 Biowissenschaften, Biologie</dim:field>
+<dim:field qualifier="abstracteng" mdschema="dc" language="de" element="description">During hepatitis B virus (HBV) morphogenesis the            transmembrane large envelope protein (L protein)            probably directly interacts with mature cytosolic            nucleocapsids. The shell of the capsid is formed by the            core protein. To determine the role of single amino            acid (aa) residues of the core protein during this            process six (S17, L95, K96, F122, I126, and R127) and            four surface exposed positions (S21, D22, N90, and R98)            where alanine substitutions blocked envelopment or were            wild type (wt), respectively, were substituted with            several aa residues.            The core mutants were phenotyped for capsid formation,            genome maturation, and envelopment. Positions S17, L95,            K96, and I126 came out to play an important role: 24            out of 28 mutants allowed assembly of mature            nucleocapsids but blocked the envelopment (c+/v-).            Positions S21, N90, and R98 on the other hand tolerated            several different aa residues nearly without any loss            of virion formation (c+/v+). Mutations at positions            R127 and D22 showed different phenotypes, whereas            mutants at position F122 mostly blocked proper capsid            formation (c-/v-). Six mutants failing to produce            mature, genomic DNA containing capsids, formed            nucleocapsids containing the viral RNA pregenome,            indicating a blocked reverse transcription. This            suggests a complex contribution of the capsid shell in            reverse transcription. Based on the results of the            first part of the thesis stable Huh7 cell lines were            established constitutively expressing the viral            polymerase as well as the wt core protein or the core            mutant I126A, respectively. The envelope proteins were            provided in trans by transduction of recombinant            MuLV-retroviruses containing an encapsidation-competent            but replication-negative HBV genome. Productive            transcomplementation and subsequent secretion of            virus-like-particles were monitored by PCR. By means of            this system the verification of a direct interaction            between the L protein and the core proteins should be            possible by screening for L protein mutants releasing            the envelopment block caused by the core mutant            I126A.</dim:field>
+<dim:field qualifier="coReferee" mdschema="dc" language="de" element="contributor">Doenecke, Detlef Prof. Dr.</dim:field>
+<dim:field qualifier="thirdReferee" mdschema="dc" language="de" element="contributor">Oppermann, Martin Prof. Dr.</dim:field>
+<dim:field qualifier="topic" mdschema="dc" language="de" element="subject">Mathematics and Computer Science</dim:field>
+<dim:field qualifier="ger" mdschema="dc" language="de" element="subject">Hepatitis-B-Virus</dim:field>
+<dim:field qualifier="ger" mdschema="dc" language="de" element="subject">HBV</dim:field>
+<dim:field qualifier="ger" mdschema="dc" language="de" element="subject">Nukleokapsid</dim:field>
+<dim:field qualifier="ger" mdschema="dc" language="de" element="subject">Core-Protein</dim:field>
+<dim:field qualifier="ger" mdschema="dc" language="de" element="subject">Kapsidumhüllung</dim:field>
+<dim:field qualifier="ger" mdschema="dc" language="de" element="subject">Protein-Protein-Interaktion</dim:field>
+<dim:field qualifier="eng" mdschema="dc" language="de" element="subject">hepatitis B virus</dim:field>
+<dim:field qualifier="eng" mdschema="dc" language="de" element="subject">HBV</dim:field>
+<dim:field qualifier="eng" mdschema="dc" language="de" element="subject">nucleocapsid</dim:field>
+<dim:field qualifier="eng" mdschema="dc" language="de" element="subject">core protein</dim:field>
+<dim:field qualifier="eng" mdschema="dc" language="de" element="subject">capsid envelopment</dim:field>
+<dim:field qualifier="eng" mdschema="dc" language="de" element="subject">protein protein interaction</dim:field>
+<dim:field qualifier="bk" mdschema="dc" language="de" element="subject">42.32 Virologie</dim:field>
+<dim:field qualifier="urn" mdschema="dc" language="de" element="identifier">urn:nbn:de:gbv:7-webdoc-627-8</dim:field>
+<dim:field qualifier="purl" mdschema="dc" language="de" element="identifier">webdoc-627</dim:field>
+<dim:field qualifier="institute" mdschema="dc" language="de" element="affiliation">Biologische Fakultät inkl. Psychologie</dim:field>
+<dim:field qualifier="gokfull" mdschema="dc" language="de" element="subject">WUZ 500: Virologie, Virus {Mikrobiologie}</dim:field>
+<dim:field qualifier="gokfull" mdschema="dc" language="de" element="subject">WUZ 510: Virusstruktur und Molekularbiologie {Mikrobiologie}</dim:field>
+<dim:field qualifier="ppn" mdschema="dc" language="de" element="identifier">509320163</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_7992" CHECKSUM="28da20c5894873380f264382669a9043" MIMETYPE="application/pdf" SIZE="8201060" ID="file_7992" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Dissertation" xlink:href="/bitstream/handle/11858/00-1735-0000-0006-ABAA-D/pairan.pdf?sequence=1" xlink:type="locator" xlink:title="pairan.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="LICENSE">
+<mets:file GROUPID="group_file_7993" CHECKSUM="40b6e3f2f31b3a8c6fb0028c69d08a7a" MIMETYPE="text/plain" SIZE="937" ID="file_7993" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:href="/bitstream/handle/11858/00-1735-0000-0006-ABAA-D/license_diss.txt?sequence=2" xlink:type="locator" xlink:title="license_diss.txt"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_7992" CHECKSUM="629f332d30a17f1ec68339258ff6ddeb" MIMETYPE="text/plain" SIZE="351574" ID="file_20288" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/11858/00-1735-0000-0006-ABAA-D/pairan.pdf.txt?sequence=3" xlink:type="locator" xlink:title="pairan.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_7992"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>
+

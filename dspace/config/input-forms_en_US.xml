@@ -65,6 +65,17 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
+
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -271,11 +282,22 @@
 					<dc-element>description</dc-element>
 					<dc-qualifier>abstracteng</dc-qualifier>
 					<repeatable>false</repeatable>
-					<label>* Abstract in English</label>
+					<label>* Abstract in english</label>
 					<input-type>textarea</input-type>
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
 				</field>
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
+
 
 				<field>
 					<dc-schema>dc</dc-schema>
@@ -378,6 +400,16 @@
                                         <required>The author's name is incomplete or missing.</required>
                                 </field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
                                 <field>
                                         <dc-schema>dc</dc-schema>
                                         <dc-element>affiliation</dc-element>
@@ -546,6 +578,17 @@
                                 <field>
                                         <dc-schema>dc</dc-schema>
                                         <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
+
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
                                         <dc-qualifier>abstract</dc-qualifier>
                                         <repeatable>true</repeatable>
                                         <label>Abstract in another language</label>
@@ -654,6 +697,16 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -876,6 +929,17 @@
 					<required>Please write an abstract in English.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
+
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>description</dc-element>
@@ -977,6 +1041,16 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -1164,6 +1238,17 @@
 					<required>Please write an abstract in English.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
+
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>description</dc-element>
@@ -1288,6 +1373,16 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -1498,6 +1593,17 @@
 					<required>Please write an abstract in English.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
+
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>description</dc-element>
@@ -1599,6 +1705,16 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -1807,6 +1923,16 @@
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
 				</field>
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
 
 				<field>
 					<dc-schema>dc</dc-schema>
@@ -1922,6 +2048,16 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -2131,6 +2267,17 @@
 					<required>Please write an abstract in English.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
+
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>description</dc-element>
@@ -2233,6 +2380,16 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -2453,6 +2610,17 @@
 					<required>Please write an abstract in English.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
+
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>description</dc-element>
@@ -2554,6 +2722,16 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -2751,6 +2929,17 @@
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
 				</field>
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
+
 
 				<field>
 					<dc-schema>dc</dc-schema>
@@ -2864,6 +3053,16 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -3084,6 +3283,16 @@
 					<required>Please write an abstract in English.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>description</dc-element>
@@ -3196,6 +3405,16 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -3406,6 +3625,17 @@
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
 				</field>
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
+
 
 				<field>
 					<dc-schema>dc</dc-schema>
@@ -3519,6 +3749,16 @@
 					<required>The author's name is incomplete or missing.</required>
 				</field>
 
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>creator</dc-element>
+                                        <dc-qualifier>birthname</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Birthname</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If different from author's name</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>affiliation</dc-element>
@@ -3729,6 +3969,17 @@
 					<hint>&#160;</hint>
 					<required>Please write an abstract in English.</required>
 				</field>
+
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>description</dc-element>
+                                        <dc-qualifier>abstractger</dc-qualifier>
+                                        <repeatable>true</repeatable>
+                                        <label>Abstract in german</label>
+                                        <input-type>textarea</input-type>
+                                        <hint>&#160;</hint>
+                                        <required></required>
+                                </field>
 
 				<field>
 					<dc-schema>dc</dc-schema>
@@ -4343,3 +4594,4 @@
 	</form-value-pairs>
 
 </input-forms>
+

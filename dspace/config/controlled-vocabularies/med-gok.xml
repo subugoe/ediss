@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<node id="GOK" label="GOK-MEDIZIN">
+  <isComposedBy>
+    <node id="620300566" label="Nachschlagewerke {Medizin} (PPN620300566)">
+      <isComposedBy>
+        <node id="62030085X" label="Personenverzeichnisse {Medizin} (PPN62030085X)"/>
+        <node id="619874872" label="Arzneimittelverzeichnisse (PPN619874872)"/>
+        <node id="619874864" label="Adressenverzeichnisse {Medizin} (PPN619874864)"/>
+        <node id="619874856" label="Zeitschriftenverzeichnisse {Medizin} (PPN619874856)"/>
+        <node id="619874848" label="Abk&#xFC;rzungsverzeichnisse {Medizin} (PPN619874848)"/>
+        <node id="61987483X" label="Spezielle medizinische W&#xF6;rterb&#xFC;cher - mehrsprachig (PPN61987483X)"/>
+        <node id="619874821" label="Spezielle medizinische W&#xF6;rterb&#xFC;cher - einsprachig, sonstige (PPN619874821)"/>
+        <node id="619874813" label="Spezielle medizinische W&#xF6;rterb&#xFC;cher - einsprachig, englisch (PPN619874813)"/>
+        <node id="619874805" label="Spezielle medizinische W&#xF6;rterb&#xFC;cher - einsprachig, deutsch (PPN619874805)"/>
+        <node id="619874791" label="Allgemeine medizinische W&#xF6;rterb&#xFC;cher - mehrsprachig (PPN619874791)"/>
+        <node id="619874783" label="Allgemeine medizinische W&#xF6;rterb&#xFC;cher - einsprachig, sonstige (PPN619874783)"/>
+        <node id="619874775" label="Allgemeine medizinische W&#xF6;rterb&#xFC;cher - einsprachig, englisch (PPN619874775)"/>
+        <node id="619874767" label="Allgemeine medizinische W&#xF6;rterb&#xFC;cher - einsprachig, deutsch (PPN619874767)"/>
+        <node id="619874759" label="Terminologie f&#xFC;r Mediziner - Grundlagen (PPN619874759)"/>
+        <node id="619874740" label="Nichtmedizinische W&#xF6;rterb&#xFC;cher (PPN619874740)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876689" label="Geschichte der Medizin (PPN619876689)"/>
+    <node id="619876670" label="Krankenhauswesen {Medizin} (PPN619876670)"/>
+    <node id="619876662" label="Krankenpflege (PPN619876662)"/>
+    <node id="61987662X" label="Geriatrie / Gerontologie / Altenpflege - Allgemein- und Gesamtdarstellungen (PPN61987662X)">
+      <isComposedBy>
+        <node id="619876654" label="Altenpflege {Medizin} (PPN619876654)"/>
+        <node id="619876646" label="Gerontologie (PPN619876646)"/>
+        <node id="619876638" label="Geriatrie (PPN619876638)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876565" label="Rehabilitation / Physiotherapie / Krankengymnastik / Massage - Allgemein- und Gesamtdarstellungen (PPN619876565)">
+      <isComposedBy>
+        <node id="619876611" label="Massage {Medizin} (PPN619876611)"/>
+        <node id="619876603" label="Krankengymnastik (PPN619876603)"/>
+        <node id="619876581" label="Physiotherapie (PPN619876581)"/>
+        <node id="619876573" label="Rehabilitation {Medizin} (PPN619876573)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876530" label="Komplement&#xE4;rmedizin - Allgemein- und Gesamtdarstellungen (PPN619876530)">
+      <isComposedBy>
+        <node id="619876557" label="Akupunktur (PPN619876557)"/>
+        <node id="619876549" label="Hom&#xF6;opathie (PPN619876549)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876492" label="Versicherungsmedizin / Begutachtung / Rechtsmedizin - Allgemein- und Gesamtdarstellungen (PPN619876492)">
+      <isComposedBy>
+        <node id="619876522" label="Rechtsmedizin (PPN619876522)"/>
+        <node id="619876514" label="Begutachtung {Medizin} (PPN619876514)"/>
+        <node id="619876506" label="Versicherungsmedizin (PPN619876506)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876441" label="&#xD6;ffentliches Gesundheitswesen / Arbeitsmedizin / Pr&#xE4;ventivmedizin / Sozialmedizin - Allgemein- und Gesamtdarstellungen (PPN619876441)">
+      <isComposedBy>
+        <node id="619876484" label="Sozialmedizin (PPN619876484)"/>
+        <node id="619876476" label="Pr&#xE4;ventivmedizin (PPN619876476)"/>
+        <node id="619876468" label="Arbeitsmedizin (PPN619876468)"/>
+        <node id="61987645X" label="&#xD6;ffentliches Gesundheitswesen {Medizin} (PPN61987645X)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876360" label="Zahn-, Mund- und Kieferheilkunde - Allgemein- und Gesamtdarstellungen (PPN619876360)">
+      <isComposedBy>
+        <node id="619876433" label="Kieferorthop&#xE4;die (PPN619876433)"/>
+        <node id="619876425" label="Zahn&#xE4;rztliche Technologie und Werkstoffkunde (PPN619876425)"/>
+        <node id="619876417" label="Prothetik (PPN619876417)"/>
+        <node id="619876409" label="Parodontologie (PPN619876409)"/>
+        <node id="619876395" label="Konservierende Zahnheilkunde (PPN619876395)"/>
+        <node id="619876387" label="Kieferchirurgie (PPN619876387)"/>
+        <node id="619876379" label="Zahn&#xE4;rztliche Chirurgie (PPN619876379)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876344" label="Psychiatrie (PPN619876344)"/>
+    <node id="61987628X" label="Medizinische Psychologie / Medizinische Soziologie / Ethik in der Medizin / Krankenseelsorge / Hospiz - Allgemein- und Gesamtdarstellungen (PPN61987628X)">
+      <isComposedBy>
+        <node id="619876336" label="Hospiz {Medizin} (PPN619876336)"/>
+        <node id="619876328" label="Krankenseelsorge (PPN619876328)"/>
+        <node id="61987631X" label="Ethik in der Medizin (PPN61987631X)"/>
+        <node id="619876301" label="Medizinische Soziologie (PPN619876301)"/>
+        <node id="619876298" label="Medizinische Psychologie (PPN619876298)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876247" label="Neurologie - Allgemein- und Gesamtdarstellungen (PPN619876247)">
+      <isComposedBy>
+        <node id="619876271" label="Neurochirurgie (PPN619876271)"/>
+        <node id="619876263" label="Neurologische Diagnostik, Neuroradiologie (PPN619876263)"/>
+        <node id="619876255" label="Neuroanatomie, Neurophysiologie, Neuropathologie (PPN619876255)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876239" label="Ophthalmologie (PPN619876239)"/>
+    <node id="619876220" label="Oto-Rhino-Laryngologie (PPN619876220)"/>
+    <node id="619876212" label="Sportmedizin (PPN619876212)"/>
+    <node id="619876204" label="Orthop&#xE4;die (PPN619876204)"/>
+    <node id="619876174" label="Dermatologie / Venerologie - Allgemein- und Gesamtdarstellungen (PPN619876174)">
+      <isComposedBy>
+        <node id="619876190" label="Venerologie (PPN619876190)">
+          <isComposedBy>
+            <node id="619875399" label="Infektionskrankheiten (PPN619875399)"/>
+          </isComposedBy>
+        </node>
+        <node id="619876182" label="Dermatologie (PPN619876182)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876166" label="Sexualmedizin (PPN619876166)"/>
+    <node id="619876131" label="Urologie / Andrologie - Allgemein- und Gesamtdarstellungen (PPN619876131)">
+      <isComposedBy>
+        <node id="619876158" label="Andrologie (PPN619876158)"/>
+        <node id="61987614X" label="Urologie (PPN61987614X)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876093" label="P&#xE4;diatrie / Neonatologie / Kinderchirurgie - Allgemein- und Gesamtdarstellungen (PPN619876093)">
+      <isComposedBy>
+        <node id="619876123" label="Kinder- und Jugendpsychiatrie, Kinder- und Jugendpsychotherapie (PPN619876123)"/>
+        <node id="619876115" label="Kinderchirurgie (PPN619876115)"/>
+        <node id="619876107" label="P&#xE4;diatrie, Neonatologie (PPN619876107)"/>
+      </isComposedBy>
+    </node>
+    <node id="619876050" label="Gyn&#xE4;kologie / Geburtshilfe / Perinatologie - Allgemein- und Gesamtdarstellungen (PPN619876050)">
+      <isComposedBy>
+        <node id="619876085" label="Perinatologie (PPN619876085)"/>
+        <node id="619876077" label="Geburtshilfe {Medizin} (PPN619876077)"/>
+        <node id="619876069" label="Gyn&#xE4;kologie (PPN619876069)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875968" label="Chirurgie - Allgemein- und Gesamtdarstellungen (PPN619875968)">
+      <isComposedBy>
+        <node id="619876042" label="Transplantationen (PPN619876042)"/>
+        <node id="619876034" label="Minimal-invasive Chirurgie (PPN619876034)"/>
+        <node id="619876026" label="Plastische Chirurgie (PPN619876026)"/>
+        <node id="619876018" label="Unfallchirurgie (PPN619876018)"/>
+        <node id="61987600X" label="Gef&#xE4;&#xDF;chirurgie (PPN61987600X)"/>
+        <node id="619875992" label="Herzchirurgie (PPN619875992)"/>
+        <node id="619875984" label="Thoraxchirurgie (PPN619875984)"/>
+        <node id="619875976" label="Abdominalchirurgie (PPN619875976)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875917" label="An&#xE4;sthesiologie / Intensivmedizin / Notfallmedizin / Analgesie - Allgemein- und Gesamtdarstellungen (PPN619875917)">
+      <isComposedBy>
+        <node id="61987595X" label="Analgesie (PPN61987595X)"/>
+        <node id="619875941" label="Notfallmedizin (PPN619875941)"/>
+        <node id="619875933" label="Intensivmedizin (PPN619875933)"/>
+        <node id="619875925" label="An&#xE4;sthesiologie (PPN619875925)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875747" label="Innere Medizin - Allgemein- und Gesamtdarstellungen (PPN619875747)">
+      <isComposedBy>
+        <node id="619875909" label="Diabetes mellitus (PPN619875909)"/>
+        <node id="619875895" label="Onkologie (PPN619875895)"/>
+        <node id="619875887" label="Rheumatologie (PPN619875887)"/>
+        <node id="619875860" label="Ern&#xE4;hrung (PPN619875860)"/>
+        <node id="619875852" label="Di&#xE4;tetik (PPN619875852)"/>
+        <node id="619875844" label="Metabolimus (PPN619875844)"/>
+        <node id="619875836" label="Endokrinologie (PPN619875836)"/>
+        <node id="619875828" label="Nephrologie (PPN619875828)"/>
+        <node id="61987581X" label="H&#xE4;matologie (PPN61987581X)"/>
+        <node id="619875801" label="Pneumologie (PPN619875801)"/>
+        <node id="619875798" label="Hepatologie (PPN619875798)"/>
+        <node id="61987578X" label="Gastroenterologie (PPN61987578X)"/>
+        <node id="619875771" label="Phlebologie (PPN619875771)"/>
+        <node id="619875763" label="Angiologie (PPN619875763)"/>
+        <node id="619875755" label="Kardiologie (PPN619875755)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875739" label="Diagnostik {Medizin} (PPN619875739)"/>
+    <node id="619875720" label="Allgemeinmedizin (PPN619875720)"/>
+    <node id="619875674" label="Pathologie / Pathologische Anatomie / Histopathologie / Zytopathologie - Allgemein- und Gesamtdarstellungen (PPN619875674)">
+      <isComposedBy>
+        <node id="619875712" label="Zytopathologie {Medizin} (PPN619875712)"/>
+        <node id="619875704" label="Histopathologie {Medizin} (PPN619875704)"/>
+        <node id="619875690" label="Pathologische Anatomie (PPN619875690)"/>
+        <node id="619875682" label="Pathologie {Medizin} (PPN619875682)"/>
+      </isComposedBy>
+    </node>
+    <node id="61987564X" label="Labormedizin / Klinische Chemie - Allgemein- und Gesamtdarstellungen (PPN61987564X)">
+      <isComposedBy>
+        <node id="619875666" label="Klinische Chemie (PPN619875666)"/>
+        <node id="619875658" label="Labormedizin (PPN619875658)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875585" label="Radiologie / Bildgebende Verfahren / Ultraschall / Nuklearmedizin / Strahlenschutz - Allgemein- und Gesamtdarstellungen (PPN619875585)">
+      <isComposedBy>
+        <node id="619875631" label="Strahlenschutz {Medizin} (PPN619875631)"/>
+        <node id="619875623" label="Nuklearmedizin (PPN619875623)"/>
+        <node id="619875615" label="Ultraschall (PPN619875615)"/>
+        <node id="619875607" label="Bildgebende Verfahren {Medizin} (PPN619875607)"/>
+        <node id="619875593" label="Radiologie (PPN619875593)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875542" label="Pharmazie / Phytotherapie / Heilpflanzen - Allgemein- und Gesamtdarstellungen (PPN619875542)">
+      <isComposedBy>
+        <node id="619875577" label="Heilpflanzen (PPN619875577)"/>
+        <node id="619875569" label="Phytotherapie (PPN619875569)"/>
+        <node id="619875550" label="Pharmazie (PPN619875550)"/>
+      </isComposedBy>
+    </node>
+    <node id="61987550X" label="Pharmakologie / Toxikologie / Pharmakotherapie - Allgemein- und Gesamtdarstellungen (PPN61987550X)">
+      <isComposedBy>
+        <node id="619875534" label="Pharmakotherapie (PPN619875534)"/>
+        <node id="619875526" label="Toxikologie {Medizin} (PPN619875526)"/>
+        <node id="619875518" label="Pharmakologie (PPN619875518)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875445" label="Immunologie / Allergologie / Umweltmedizin / Medizinische &#xD6;kologie - Allgemein- und Gesamtdarstellungen (PPN619875445)">
+      <isComposedBy>
+        <node id="619875488" label="Medizinische &#xD6;kologie (PPN619875488)"/>
+        <node id="61987547X" label="Umweltmedizin (PPN61987547X)"/>
+        <node id="619875461" label="Allergologie {Medizin} (PPN619875461)"/>
+        <node id="619875453" label="Immunologie {Medizin} (PPN619875453)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875356" label="Medizinische Mikrobiologie / Medizinische Virologie / Medizinische Mykologie / Infektionskrankheiten / Hygiene / Impfung / Parasitologie / Tropenmedizin - Allgemein- und Gesamtdarstellungen (PPN619875356)">
+      <isComposedBy>
+        <node id="619875437" label="Tropenmedizin (PPN619875437)"/>
+        <node id="619875429" label="Parasitologie {Medizin} (PPN619875429)"/>
+        <node id="619875410" label="Impfung (PPN619875410)"/>
+        <node id="619875402" label="Hygiene (PPN619875402)"/>
+        <node id="619875399" label="Infektionskrankheiten (PPN619875399)"/>
+        <node id="619875380" label="Medizinische Mykologie (PPN619875380)"/>
+        <node id="619875372" label="Medizinische Virologie (PPN619875372)"/>
+        <node id="619875364" label="Medizinische Mikrobiologie (PPN619875364)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875313" label="Biochemie / Physiologische Chemie / Pathobiochemie - Allgemein- und Gesamtdarstellungen (PPN619875313)">
+      <isComposedBy>
+        <node id="619875348" label="Pathobiochemie {Medizin} (PPN619875348)"/>
+        <node id="61987533X" label="Physiologische Chemie (PPN61987533X)"/>
+        <node id="619875321" label="Biochemie {Medizin} (PPN619875321)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875283" label="Physiologie / Pathophysiologie - Allgemein- und Gesamtdarstellungen (PPN619875283)">
+      <isComposedBy>
+        <node id="619875305" label="Pathophysiologie {Medizin} (PPN619875305)"/>
+        <node id="619875291" label="Physiologie {Medizin} (PPN619875291)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875259" label="Humangenetik / Teratologie - Allgemein- und Gesamtdarstellungen (PPN619875259)">
+      <isComposedBy>
+        <node id="619875275" label="Teratologie (PPN619875275)"/>
+        <node id="619875267" label="Humangenetik (PPN619875267)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875208" label="Anatomie / Histologie / Embryologie / Medizinische Anthropologie - Allgemein- und Gesamtdarstellungen (PPN619875208)">
+      <isComposedBy>
+        <node id="619875240" label="Medizinische Anthropologie (PPN619875240)"/>
+        <node id="619875232" label="Embryologie {Medizin} (PPN619875232)"/>
+        <node id="619875224" label="Histologie {Medizin} (PPN619875224)"/>
+        <node id="619875216" label="Anatomie (PPN619875216)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875194" label="Gentherapie (PPN619875194)"/>
+    <node id="619875151" label="Biologie (PPN619875151)">
+      <isComposedBy>
+        <node id="619875186" label="Molekularbiologie {Medizin} (PPN619875186)"/>
+        <node id="619875178" label="Cytologie {Medizin} (PPN619875178)"/>
+        <node id="61987516X" label="Biologie {Medizin} (PPN61987516X)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875143" label="Methoden und Techniken in der Medizin (PPN619875143)"/>
+    <node id="619875100" label="Physik / Biopyhsik / Biomedizinische Technik - Allgemein- und Gesamtdarstellungen (PPN619875100)">
+      <isComposedBy>
+        <node id="619875135" label="Biomedizinische Technik (PPN619875135)"/>
+        <node id="619875127" label="Biophysik {Medizin} (PPN619875127)"/>
+        <node id="619875119" label="Physik {Medizin} (PPN619875119)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875097" label="Chemie {Medizin} (PPN619875097)"/>
+    <node id="619875089" label="Medizinische Informatik (PPN619875089)"/>
+    <node id="619875046" label="Medizinische Statistik / Biometrie / Epidemiologie - Allgemein- und Gesamtdarstellungen (PPN619875046)">
+      <isComposedBy>
+        <node id="619875070" label="Epidemiologie (PPN619875070)"/>
+        <node id="619875062" label="Biometrie {Medizin} (PPN619875062)"/>
+        <node id="619875054" label="Medizinische Statistik (PPN619875054)"/>
+      </isComposedBy>
+    </node>
+    <node id="619875011" label="Medizinische Dokumentation / Medizinische Klassifikation - Allgemein- und Gesamtdarstellungen (PPN619875011)">
+      <isComposedBy>
+        <node id="619875038" label="Medizinische Klassifikation (PPN619875038)"/>
+        <node id="61987502X" label="Medizinische Dokumentation (PPN61987502X)"/>
+      </isComposedBy>
+    </node>
+    <node id="619874945" label="Informationsquellenkunde {Medizin} - Allgemein- und Gesamtdarstellungen (PPN619874945)">
+      <isComposedBy>
+        <node id="619875003" label="Medizinische Bibliographien - speziell (PPN619875003)"/>
+        <node id="619874996" label="Medizinische Bibliographien - allgemein (PPN619874996)"/>
+        <node id="619874988" label="Thesauri {Medizin} (PPN619874988)"/>
+        <node id="61987497X" label="Datenbanken {Medizin} (PPN61987497X)"/>
+        <node id="619874961" label="Dokumentationsstellen {Medizin} (PPN619874961)"/>
+        <node id="619874953" label="Bibliotheken {Medizin} (PPN619874953)"/>
+      </isComposedBy>
+    </node>
+    <node id="619874880" label="Berufskunde/ Ausbildung / Recht in der Medizin / Medizinische &#xD6;konomie / Wissenschaftssystem - Allgemein- und Gesamtdarstellungen (PPN619874880)">
+      <isComposedBy>
+        <node id="619874937" label="Wissenschaftssystem {Medizin} (PPN619874937)"/>
+        <node id="619874929" label="Medizinische &#xD6;konomie (PPN619874929)"/>
+        <node id="619874910" label="Recht in der Medizin (PPN619874910)"/>
+        <node id="619874902" label="Ausbildung {Medizin} (PPN619874902)"/>
+        <node id="619874899" label="Berufskunde {Medizin} (PPN619874899)"/>
+      </isComposedBy>
+    </node>
+  </isComposedBy>
+</node>
+

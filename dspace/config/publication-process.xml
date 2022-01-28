@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
+
+<body>
+<div id="file.help" n="help" rend="primary">
+	<head><i18n:text>xmlui.help.workflow.head</i18n:text></head>
+
+		<div>
+			<p><i18n:text>xmlui.help.workflow.steps.intro</i18n:text></p>
+		</div>
+		<div>
+			<head><i18n:text>xmlui.help.workflow.steps.head</i18n:text></head>
+		<list type="simple" n="simple">
+			<item><i18n:text>xmlui.help.workflow.steps.list1</i18n:text></item>
+                        <item><i18n:text>xmlui.help.workflow.steps.list2</i18n:text></item>
+                        <item><i18n:text>xmlui.help.workflow.steps.list3</i18n:text></item>
+			<item><i18n:text>xmlui.help.workflow.steps.list4</i18n:text></item>	
+			<item><i18n:text>xmlui.help.workflow.steps.list5</i18n:text></item>
+                </list>
+			<p><i18n:text>xmlui.notify</i18n:text><i18n:text>xmlui.help.workflow.steps.text1</i18n:text></p>
+		</div>
+
+		<div>
+			<head><i18n:text>xmlui.help.workflow.steps.list1</i18n:text></head>
+			<p><i18n:text>xmlui.help.workflow.step1.text1.1</i18n:text></p>
+                        <p><i18n:text>xmlui.notify</i18n:text><i18n:text>xmlui.help.workflow.step1.text1.2</i18n:text></p>
+			<p><i18n:text>xmlui.help.workflow.step1.text2</i18n:text></p>
+		</div>
+
+		<div>
+			<head><i18n:text>xmlui.help.workflow.steps.list2</i18n:text></head>
+			<p><i18n:text>xmlui.help.workflow.step2.text1.1</i18n:text></p>
+                        <p><i18n:text>xmlui.notify</i18n:text><i18n:text>xmlui.help.workflow.step2.text1.2</i18n:text></p>
+			<p><i18n:text>xmlui.help.workflow.step2.text2</i18n:text></p>
+		</div>
+
+		 <div>
+                        <head><i18n:text>xmlui.help.workflow.steps.list3</i18n:text></head>
+                        <p><i18n:text>xmlui.help.workflow.step3.text</i18n:text></p>
+                </div>
+
+		 <div>
+                        <head><i18n:text>xmlui.help.workflow.steps.list4</i18n:text></head>
+                        <p><i18n:text>xmlui.help.workflow.step4.text</i18n:text></p>
+                </div>
+
+		 <div>
+                        <head><i18n:text>xmlui.help.workflow.steps.list5</i18n:text></head>
+                        <p><i18n:text>xmlui.help.workflow.step5.text</i18n:text></p>
+                </div>
+
+	       <div>
+                        <head><i18n:text>xmlui.help.workflow.finished.head</i18n:text></head>
+                        <p><i18n:text>xmlui.notify</i18n:text><i18n:text>xmlui.help.workflow.finished.text</i18n:text></p>
+                </div>
+
+		<div>
+                        <head><i18n:text>xmlui.help.workflow.break.head</i18n:text></head>
+                        <p><i18n:text>xmlui.help.workflow.break.text</i18n:text></p>
+                </div>
+
+		<div>
+                        <head><i18n:text>xmlui.help.workflow.resume.head</i18n:text></head>
+			<p><i18n:text>xmlui.help.workflow.resume.text1</i18n:text></p>
+                         <p><i18n:text>xmlui.notify</i18n:text><i18n:text>xmlui.help.workflow.resume.text2</i18n:text></p>
+                </div>
+
+	
+
+</div>
+</body>
+
+<options/>
+
+<meta>
+<userMeta/>
+<pageMeta>
+	<trail target="/"><i18n:text>xmlui.general.dspace_home</i18n:text></trail>
+	<trail><i18n:text>xmlui.help.workflow.trail</i18n:text></trail>
+</pageMeta>
+<repositoryMeta/>
+</meta>
+</document>
+

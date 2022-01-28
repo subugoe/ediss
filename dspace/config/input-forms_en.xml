@@ -167,17 +167,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>Title in English (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -185,7 +174,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -372,12 +370,12 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>date</dc-element>
+					<dc-element>description</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date on which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>
@@ -468,17 +466,6 @@
                                 <field>
                                         <dc-schema>dc</dc-schema>
                                         <dc-element>title</dc-element>
-                                        <dc-qualifier>translated</dc-qualifier>
-                                        <repeatable>false</repeatable>
-                                        <label>Title in English (translated)</label>
-                                        <input-type>onebox</input-type>
-                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-                                        <required></required>
-                                </field>
-
-                                <field>
-                                        <dc-schema>dc</dc-schema>
-                                        <dc-element>title</dc-element>
                                         <dc-qualifier>alternative</dc-qualifier>
                                         <repeatable>true</repeatable>
                                         <label>Title alternative</label>
@@ -486,7 +473,16 @@
                                         <hint>&#160;</hint>
                                         <required></required>
                                 </field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
                                 <field>
                                         <dc-schema>dc</dc-schema>
                                         <dc-element>title</dc-element>
@@ -670,12 +666,12 @@
 
                                 <field>
                                         <dc-schema>dc</dc-schema>
-                                        <dc-element>date</dc-element>
+                                        <dc-element>description</dc-element>
                                         <dc-qualifier>embargoed</dc-qualifier>
                                         <repeatable>false</repeatable>
                                         <label>Expiring date of embargo</label>
                                         <input-type>onebox</input-type>
-                                        <hint>Date on which an embargo (optional) will be lifted.</hint>
+                                        <hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
                                         <required></required>
                                         <visibility>workflow</visibility>
                                 </field>
@@ -798,17 +794,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>Title in English (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -816,7 +801,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -1014,11 +1008,11 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>date</dc-element>
-					<dc-qualifier>embargoed</dc-qualifier>
+					<dc-qualifier>description</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date on which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>
@@ -1142,17 +1136,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>English title (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -1160,7 +1143,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -1344,12 +1336,12 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>date</dc-element>
+					<dc-element>description</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date on which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>
@@ -1474,17 +1466,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>Title in English (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -1492,7 +1473,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -1676,12 +1666,12 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>date</dc-element>
+					<dc-element>description</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date on which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>
@@ -1806,17 +1796,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>Title in English (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -1824,7 +1803,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -2019,12 +2007,12 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>date</dc-element>
+					<dc-element>description</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date on which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>
@@ -2149,17 +2137,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>Title in English (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -2167,7 +2144,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -2351,12 +2337,12 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>date</dc-element>
+					<dc-element>description</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date at which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>
@@ -2481,17 +2467,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>Title in English (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -2499,7 +2474,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -2693,12 +2677,12 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>date</dc-element>
+					<dc-element>description</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date at which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>
@@ -2823,17 +2807,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>English title (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -2841,7 +2814,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -2970,7 +2952,7 @@
 					<repeatable>true</repeatable>
 					<label>Göttingen Online Classification (GOK)</label>
 					<input-type>onebox</input-type>
-					<hint>Please follow the GOK-Link below and select a category from the GOK tree.</hint>
+					<hint>Please follow the Subject Categories-Link below and select a category from the GOK tree.</hint>
 
 					<vocabulary>med-gok</vocabulary>
 				</field> 
@@ -3024,12 +3006,12 @@
 				
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>date</dc-element>
+					<dc-element>description</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date at which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>
@@ -3154,17 +3136,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>Title in English (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -3172,7 +3143,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -3377,12 +3357,12 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>date</dc-element>
+					<dc-element>description</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date on which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>
@@ -3506,17 +3486,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>Title in English (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -3524,7 +3493,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -3721,12 +3699,12 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>date</dc-element>
+					<dc-element>description</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date on which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>
@@ -3850,17 +3828,6 @@
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
-					<dc-qualifier>translated</dc-qualifier>
-					<repeatable>false</repeatable>
-					<label>Title in English (translated)</label>
-					<input-type>onebox</input-type>
-					<hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
-					<required></required>
-				</field>
-
-				<field>
-					<dc-schema>dc</dc-schema>
-					<dc-element>title</dc-element>
 					<dc-qualifier>alternative</dc-qualifier>
 					<repeatable>true</repeatable>
 					<label>Title alternative</label>
@@ -3868,7 +3835,16 @@
 					<hint>&#160;</hint>
 					<required></required>
 				</field>
-
+                                <field>
+                                        <dc-schema>dc</dc-schema>
+                                        <dc-element>title</dc-element>
+                                        <dc-qualifier>translated</dc-qualifier>
+                                        <repeatable>false</repeatable>
+                                        <label>Title in English (translated)</label>
+                                        <input-type>onebox</input-type>
+                                        <hint>If your work is not written in english, we recommend you to translate the title because of international visibility.</hint>
+                                        <required></required>
+                                </field>
 				<field>
 					<dc-schema>dc</dc-schema>
 					<dc-element>title</dc-element>
@@ -4064,12 +4040,12 @@
 
 				<field>
 					<dc-schema>dc</dc-schema>
-					<dc-element>date</dc-element>
+					<dc-element>description</dc-element>
 					<dc-qualifier>embargoed</dc-qualifier>
 					<repeatable>false</repeatable>
 					<label>Expiring date of embargo</label>
 					<input-type>onebox</input-type>
-					<hint>Date on which an embargo (optional) will be lifted.</hint>
+					<hint>Possible entries: "forever", "unknown" or a date via calendar on which an embargo will be lifted.</hint>
 					<required></required>
 					<visibility>workflow</visibility>
 				</field>

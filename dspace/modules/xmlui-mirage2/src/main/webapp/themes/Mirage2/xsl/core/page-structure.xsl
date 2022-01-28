@@ -264,7 +264,13 @@
                 return false;
                 else
                 return true;
-                }
+		}
+
+		function showMap() {
+                                        <xsl:text disable-output-escaping="yes"><![CDATA[
+                                        window.open('http://www.sub.uni-goettingen.de/index.php?eID=tx_cms_showpic&file=uploads%2FRTEmagicP_zb_grundriss_eg_20131115_txdam4841_ad697b.png&md5=18ac673dac233dab2f971da428ce24792acacf50&parameters%5B0%5D=YTo1OntzOjU6IndpZHRoIjtzOjQ6IjEyODAiO3M6NjoiaGVpZ2h0IjtzOjQ6IjYw&parameters%5B1%5D=MG0iO3M6NzoiYm9keVRhZyI7czo0MToiPGJvZHkgc3R5bGU9Im1hcmdpbjowOyBi&parameters%5B2%5D=YWNrZ3JvdW5kOiNmZmY7Ij4iO3M6NToidGl0bGUiO3M6NjY6IkdydW5kcmlzcyB2&parameters%5B3%5D=b20gRXJkZ2VzY2hvc3MgZGVyIFplbnRyYWxiaWJsaW90aGVrIGRlciBTVUIgR8O2&parameters%5B4%5D=dHRpbmdlbiI7czo0OiJ3cmFwIjtzOjM3OiI8YSBocmVmPSJqYXZhc2NyaXB0OmNs&parameters%5B5%5D=b3NlKCk7Ij4gfCA8L2E%2BIjt9','LocationMap','width=1000,height=600,status=0,menubar=0'); ]]></xsl:text>
+                                }
+
             </script>
 
             <xsl:text disable-output-escaping="yes">&lt;!--[if lt IE 9]&gt;
@@ -858,7 +864,7 @@
                                                 </xsl:attribute>
                                                 <i18n:text>xmlui.dri2xhtml.structural.contact-link</i18n:text>
                                         </a>
-                                        <xsl:text> | </xsl:text>
+					<!-- <xsl:text> | </xsl:text>
                                         <a>
                                                 <xsl:attribute name="href">
                                                         <xsl:value-of
@@ -866,7 +872,7 @@
                                                         <xsl:text>/feedback</xsl:text>
                                                 </xsl:attribute>
                                                 <i18n:text>xmlui.dri2xhtml.structural.feedback-link</i18n:text>
-                                        </a>
+					</a> -->
                                         <xsl:text> | </xsl:text>
                                         <a>
                                                 <xsl:attribute name="href">
@@ -883,7 +889,7 @@
                                                                         select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
                                                         <xsl:text>/dataprivacy</xsl:text>
                                                 </xsl:attribute>
-                                                <xsl:text>Datenschutzerklärung</xsl:text>
+						<i18n:text>xmlui.dri2xhtml.structural.data.privacy-link</i18n:text>
                                         </a>
 				</div>
 			</div>
@@ -892,9 +898,9 @@
                                         <!--<a href="http://www.dspace.org/" target="_blank">DSpace software</a> copyright&#160;&#169;&#160;2002-2011
                                         <xsl:text> | </xsl:text>
                                         <a href="http://www.duraspace.org/" target="_blank">Duraspace</a>-->
-                                        <a href="http://www.sub.uni-goettingen.de">Niedersächsische Staats- und Universitätsbibliothek Göttingen</a>
+					<a href="http://www.sub.uni-goettingen.de"><i18n:text>xmlui.dri2xhtml.structural.sub-link</i18n:text></a>
                                         <xsl:text> | </xsl:text>
-                                        <a href="http://www.uni-goettingen.de">Georg-August-Universität Göttingen</a>
+					<a href="http://www.uni-goettingen.de"><i18n:text>xmlui.dri2xhtml.structural.uni-link</i18n:text></a>
                                 </div>
                                 <!--Invisible link to HTML sitemap (for search engines) -->
                                 <a class="hidden">

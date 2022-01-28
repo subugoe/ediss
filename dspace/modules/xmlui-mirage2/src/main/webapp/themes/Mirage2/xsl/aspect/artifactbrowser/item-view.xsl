@@ -120,6 +120,7 @@
       <xsl:call-template name="itemCoreferee"/>
       <xsl:call-template name="itemThirdreferee"/>
       <xsl:call-template name="itemSeries"/>
+      <xsl:call-template name="itemHaspart"/>
       <xsl:call-template name="itemURI"/>
       <!--<xsl:apply-templates select="$dim" mode="itemType-DIM"/>-->
       <!--<xsl:apply-templates select="$dim" mode="itemLanguage-DIM"/>-->
@@ -708,6 +709,43 @@
       </xsl:for-each>
     </xsl:if>
   </xsl:template>
+
+<xsl:template name="itemHaspart">
+                <xsl:if test="dim:field[@element='relation' and @qualifier='haspart']">
+                        <div class="parts">
+                          <span><strong><i18n:text>xmlui.item.published.parts</i18n:text></strong></span>
+                          <xsl:for-each select="//dim:field[@element='relation' and @qualifier='haspart']">
+                                  <div>
+                  <xsl:choose>
+                          <xsl:when test="contains(., 'DOI: http')">
+                                  <xsl:value-of select="substring-before(., 'DOI: http')"/>
+                                  <a>
+                                          <xsl:attribute name="href">
+                                                  <xsl:value-of select="substring-after(., 'DOI:')"/>
+                                          </xsl:attribute>
+                                          <xsl:text>DOI: </xsl:text><xsl:value-of select="substring-after(., 'DOI:')"/>
+                                  </a>
+                          </xsl:when>
+                          <xsl:when test="contains(., 'DOI: http')">
+                                  <xsl:value-of select="substring-before(., 'DOI: 10.')"/>
+                                  <a>
+                                          <xsl:attribute name="href">
+                                                  <xsl:value-of select="concat('https://doi.org/', substring-after(., 'DOI:'))"/>
+                                          </xsl:attribute>
+                                          <xsl:text>DOI: </xsl:text><xsl:value-of select="substring-after(., 'DOI:')"/>
+                                  </a>
+                          </xsl:when>
+                          <xsl:otherwise>
+                                  <xsl:value-of select="."/>
+                          </xsl:otherwise>
+                  </xsl:choose>
+          </div>
+          </xsl:for-each>
+                </div>
+
+                </xsl:if>
+        </xsl:template>
+
   <xsl:template name="itemTitleTranslated">
     <xsl:if test="dim:field[@element='title' and @qualifier='translated']">
       <p class="title translated">

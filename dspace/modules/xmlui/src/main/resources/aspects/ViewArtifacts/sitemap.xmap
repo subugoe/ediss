@@ -282,7 +282,7 @@ and searching the repository.
 
 			<!-- A simple feedback utility that presents the user with a form to fill 
 				out, the results of which are emailed to the site administrator. -->
-			<map:match pattern="feedback">
+		<!--	<map:match pattern="feedback">
 				<map:act type="SendFeedbackAction">
 					<map:transform type="FeedbackForm">
 						<map:parameter name="comments" value="{comments}" />
@@ -295,7 +295,7 @@ and searching the repository.
 				<map:transform type="FeedbackSent" />
 				<map:serialize type="xml" />
 			</map:match>
-			
+			-->	
 			<!-- A request item flow -->
 			<map:match pattern="itemRequestResponse/*/">
 				<map:act type="ItemRequestResponseAction">
@@ -358,8 +358,15 @@ and searching the repository.
 			<!-- The most basic & generic contact us page. It is expected that most 
 				themes will override this page and replace it with a more detailed version. -->
 			<map:match pattern="contact">
+				<map:act type="DSpacePropertyFileReader">
+                                        <map:parameter name="dspace.dir" value="dspace.dir" />
+                                        <map:transform type="Include" src="file://{dspace.dir}/config/contact.xml" />
+                                </map:act>
+                                <map:serialize type="xml"/>
+				<!--
 				<map:transform type="Contact" />
 				<map:serialize type="xml" />
+				-->
 			</map:match>
 		
 			                        <map:match pattern="impressum">

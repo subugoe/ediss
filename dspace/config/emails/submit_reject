@@ -4,9 +4,23 @@
 # {1}  Name of collection
 # {2}  Name of the rejector
 # {3}  Reason for the rejection
-# {4}  Link to 'My DSpace' page
+# {4}  Link to 'My eDiss' page
 #
-Subject: DSpace: Submission Rejected
+Subject: eDiss: Veröffentlichung abgelehnt / Submission Rejected
+
+Ihre Arbeit: {0}
+
+Sammlung: {1}
+
+Die Veröffentlichung Ihrer Arbeit wurde von {2} mit der folgenden Begründung abgelehnt:
+{3}
+
+Ihre Publikation wurde nicht gelöscht. Sie können (als angemeldeter Benutzer) auf Ihre Publikation unter
+"Mein Benutzerkonto" - "Veröffentlichungen" zugreifen
+und die erforderlichen Korrekturen durchführen. Nach erneutem Abschluss des Online Publikationsprozesses
+wird Ihre Arbeit der Redaktion wieder zur Freischaltung vorgelegt.
+
+-------------------------------------------------------------------------------
 
 You submitted: {0}
 
@@ -17,7 +31,11 @@ with the following explanation:
 
 {3}
 
-Your submission has not been deleted.  You can access it from your
-"My DSpace" page: {4}
+Your submission has not been deleted.  You can access it as logged-in user from your
+"My Account" - "Publications" page: {4} to make any chaneges.
+After you have accomplished the publication process your thesis will be presented to the editorial staff once again.
 
-DSpace
+
+
+
+eDiss Team

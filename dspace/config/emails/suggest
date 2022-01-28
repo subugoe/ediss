@@ -10,17 +10,27 @@
 #             {7} sender message 
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: An item of interest from DSpace
+Subject: eDiss: Dies könnte Sie interessieren / An item of interest
+
+Liebe(r) {0}:
+Im Auftrag von {1} senden wir Ihnen eine Nachricht über eine Veröffentlichung auf {2}.
+
+Titel: {3}
+Sammlung: {6}
+Adresse: {4}
+
+Persönliche Nachricht: {7}
+
+-------------------------------------------------------
+
 
 Hello {0}:
 
-{1} requested we send you this email regarding an item available in {2}.
+As requested by {1} we send you this email regarding an item available in {2}.
 
 Title: {3}
-Location: {5}
+Location: {4}
 In Collection: {6}
 Personal Message: {7}
 
-The DSpace digital repository system captures, stores, indexes, preserves, and distributes digital material.
-For more information, visit www.dspace.org
-
+eDiss Team

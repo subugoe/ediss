@@ -34,4 +34,16 @@
 				}
 			 
 		});
+
+	$('.bookmark').click(function (e) {
+    e.stopPropagation();
+    var t = $(this).width();
+    $(this).hide().after('<input class="bookmark-input" type="text" value="' + $(this).text() + '" />'),
+    $('.bookmark-input').width(t + 2).select(),
+    $('body').click(function () {
+      $('.bookmark-input').remove(),
+      $('.bookmark').show(),
+      $('body').unbind('click')
+    })
+  });
 })(jQuery);

@@ -24,7 +24,7 @@
 
           <head>
             <!-- This section will be filled programmatically. Do not remove! -->
-          </head>
+        	</head>
 
           <body>
             <dissertation>
@@ -34,11 +34,11 @@
               -->
               <contributors>
                 <xsl:choose>
-                    <xsl:when test="//dspace:field[@mdschema='dc' and @element='contributor' and (@qualifier='author' or @qualifier='editor')]">
-                      <xsl:apply-templates select="//dspace:field[@mdschema='dc' and @element='contributor'  and (@qualifier='author' or @qualifier='editor')]" />
+                    <xsl:when test="//dspace:field[@mdschema='dc' and @element='contributor' and @qualifier='author']">
+			    <xsl:apply-templates select="//dspace:field[@mdschema='dc' and @element='contributor'  and @qualifier='author']"/>
                     </xsl:when>
                     <xsl:otherwise>
-                      <anonymous contributor_role="author" sequence="first" />
+                      <anonymous contributor_role="author"  sequence="first"/>
                     </xsl:otherwise>
                 </xsl:choose>
 
@@ -82,15 +82,23 @@
                       <xsl:otherwise>0000</xsl:otherwise>
                   </xsl:choose>
                 </year>
-              </approval_date>
+		</approval_date>
 
-              <institution xmlns="http://www.crossref.org/schema/4.4.2">
-                <institution_name></institution_name>
-              </institution>
+		<institution xmlns="http://www.crossref.org/schema/4.4.2">
+                <institution_name>Georg-August-University Göttingen</institution_name>
+	      </institution> 
+	      
 
-              <doi_data>
-                  <!-- This section will be filled programmitcally. Do not remove! -->
-              </doi_data>
+		<!--
+                  CrossRef
+                  Add DOI information
+                -->
+                <doi_data>
+                    <!-- This section will be filled programmitcally. Do not remove! -->
+	    	</doi_data>
+
+	      <!-- <xsl:apply-templates select="dspace:field[@mdschema='dc' and @element='identifier' and starts-with(., 'http://dx.doi.org/')]" /> -->
+
           </dissertation>
         </body>
       </doi_batch>
@@ -103,14 +111,35 @@
                 <subtitle>
                   <xsl:value-of select="." />
                 </subtitle>
+	    </xsl:when>
+	    <xsl:when test="@qualifier='translated'">
+              <!-- do nothing -->
+      	    </xsl:when>
+            <xsl:when test="@qualifier='alternativeTranslated'">
+              <!-- do nothing -->
+	    </xsl:when>
+      	    <xsl:when test="@qualifier='ger'">
+              <!-- do nothing -->
             </xsl:when>
-            <xsl:otherwise>
+	    <xsl:otherwise>
               <title>
                 <xsl:value-of select="." />
               </title>
-            </xsl:otherwise>
+	    </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
+    <!-- template to create DOI -->
+    <!--<xsl:template match="dspace:field[@mdschema='dc' and @element='identifier' and starts-with(., 'http://dx.doi.org/')]">
+        <doi_data>
+          <doi>
+            <xsl:value-of select="substring(., 19)"/>
+          </doi>
+          <resource>
+            <xsl:value-of select="//dspace:field[@mdschema='dc' and @element='identifier' and @qualifier='uri' and starts-with(., 'http://hdl.handle.net/')]"/>
+          </resource>
+        </doi_data>
+    </xsl:template> -->
 
     <!-- template to create first author -->
     <xsl:template match="//dspace:field[@mdschema='dc' and @element='contributor' and @qualifier='author'][1]">

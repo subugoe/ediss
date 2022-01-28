@@ -1,16 +1,25 @@
-# E-mail sent to DSpace users when they register for an account
+# E-mail sent to eDiss users when they register for an account
 #
 # Parameters: {0} is expanded to a special registration URL
 #
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: DSpace Account Registration
-To complete registration for a DSpace account, please click the link
+Subject: eDiss Registrierung / eDiss Account Registration
+Um Ihre Registrierung bei eDiss abzuschliessen, klicken Sie bitte hier
+
+{0}
+
+Falls Sie bezüglich Ihres Accounts Hilfe benötigen, schicken Sie uns eine E-Mail an
+eDiss@sub.uni-goettingen.de oder rufen Sie uns an +49 551 39-27809.
+
+----------------------------------------------------
+
+To complete registration for eDiss account, please click the link
 below:
 
   {0}
 
 If you need assistance with your account, please email
-dspace-help@myu.edu or call us at xxx-555-xxxx.
+eDiss@sub.uni-goettingen.de or call us at +49 551 39-27809.
 
-The DSpace Team
+eDiss Team

@@ -16,16 +16,16 @@
     <!-- Identifier Service Application Interface.  Will be autowired with
          any Identifier Providers present in Spring context.
     -->
-    <bean id="org.dspace.identifier.IdentifierService"
+    <!-- <bean id="org.dspace.identifier.IdentifierService"
           class="org.dspace.identifier.IdentifierServiceImpl"
           autowire="byType"
           scope="singleton"/>
-
+   -->
    <!-- provider for using the versioned handle identifier instead of the default one. -->
-    <!--<bean id="org.dspace.identifier.HandleIdentifierProvider" class="org.dspace.identifier.VersionedHandleIdentifierProvider"-->
-          <!--scope="singleton">-->
-        <!--<property name="configurationService" ref="org.dspace.services.ConfigurationService"/>-->
-    <!--</bean>-->
+    	<bean id="org.dspace.identifier.HandleIdentifierProvider" class="org.dspace.identifier.VersionedHandleIdentifierProvider"
+          	scope="singleton">
+        	<property name="configurationService" ref="org.dspace.services.ConfigurationService"/>
+    	</bean>
 
     <!-- provider to mint and register DOIs with DSpace.
          To mint DOIs you need a registration agency. The DOIIdentifierProvider
@@ -38,18 +38,17 @@
 
          An optional 'filterService' property may be included with a reference to a bean name
          as configured in item-filters.xml -->
-    <!--
+    
     <bean id="org.dspace.identifier.DOIIdentifierProvider"
         class="org.dspace.identifier.DOIIdentifierProvider"
         scope="singleton">
-        <property name="filterService" ref="is_false_filter"/>
+	<!--	<property name="filterService" ref="is_false_filter"/> -->
         <property name="configurationService"
             ref="org.dspace.services.ConfigurationService" />
         <property name="DOIConnector"
             ref="org.dspace.identifier.doi.DOIConnector" />
 
     </bean>
-    -->
 
     <!-- The DOIConnector will handle the API calls to your DOI registration
          agency for the DOIIdentifierProvider. If your registration agency
@@ -60,7 +59,7 @@
          DOIConnector.
     -->
     <!-- Uncomment this to use the DataCite API directly as DOIConnector. -->
-    <bean id="org.dspace.identifier.doi.DOIConnector"
+    <!-- <bean id="org.dspace.identifier.doi.DOIConnector"
         class="org.dspace.identifier.doi.DataCiteConnector"
         scope="singleton">
         <property name='DATACITE_SCHEME' value='https'/>
@@ -69,9 +68,9 @@
         <property name='DATACITE_METADATA_PATH' value='/metadata/' />
         <property name='disseminationCrosswalkName' value="DataCite" />
     </bean>
+    -->
 
-
-    <!-- Uncomment this to register your DOIs with CrossRef.
+    <!-- Uncomment this to register your DOIs with CrossRef. -->
     <bean id="org.dspace.identifier.doi.DOIConnector"
         class="org.dspace.identifier.doi.CrossRefDoiConnector"
         scope="singleton">
@@ -83,7 +82,6 @@
         <property name="parentIssnField" value="dc.identifier.issn" />
         <property name="parentDoiField" value="local.identifier.doi" />
     </bean>
-    -->
 
     <!-- Provider to mint and register DOIs using EZID as the registrar.
     -->

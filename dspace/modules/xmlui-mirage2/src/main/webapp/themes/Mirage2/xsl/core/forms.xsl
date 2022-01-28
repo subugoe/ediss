@@ -1468,12 +1468,12 @@
 
     <xsl:template match="dri:list[@rend='horizontalVanilla'][@n='selectlist']/dri:item/dri:figure[contains(@source,'Reference/images/information.png')]">
 
-        <a href="javascript:void(0)" class="information">
+	    <!-- <a href="javascript:void(0)" class="information">
                 <xsl:attribute name="title">
                     <xsl:value-of select="@title"/>
                 </xsl:attribute>
         <span class="glyphicon glyphicon-info-sign btn-xs active"/>
-        </a>
+	</a> -->
     </xsl:template>
 
 </xsl:stylesheet>
