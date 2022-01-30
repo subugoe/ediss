@@ -236,6 +236,71 @@
         <!-- =========================== Pipelines ================================= -->
         <map:pipelines>
 
+		<!-- redirects -->
+
+                <map:pipeline>
+                        <map:match pattern="11858/11481">
+                                <map:redirect-to uri="https://ediss.uni-goettingen.de/handle/11858/00-1735-0000-002E-E48B-B" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+                <map:pipeline>
+                        <map:match pattern="handle/11858/350">
+                                <map:redirect-to uri="https://ediss.uni-goettingen.de/handle/11858/00-1735-0000-0023-3EAC-D" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+                <map:pipeline>
+                        <map:match pattern="handle/21.11130/00-1735-0000-0008-5823-E">
+                                <map:redirect-to uri="https://ediss.uni-goettingen.de/handle/21.11130/00-1735-0000-0008-586A-F" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+                <map:pipeline>
+                        <map:match pattern="handle/21.11130/00-1735-0000-0005-1529-6">
+                                <map:redirect-to uri="https://ediss.uni-goettingen.de/handle/21.11130/00-1735-0000-0008-59CB-0" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+                <map:pipeline>
+                        <map:match pattern="handle/21.11130/00-1735-0000-0008-58D8-2">
+                                <map:redirect-to uri="https://ediss.uni-goettingen.de/handle/21.11130/00-1735-0000-0008-59E8-F" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+                
+                <!-- Redirect duplicate records migrated from webdoc -->
+                <!-- Diss at University Bremen: errously migrated -->
+                <map:pipeline>
+                        <map:match pattern="handle/11858/00-1735-0000-0006-AC18-F">
+                                <map:redirect-to uri="http://ediss.uni-goettingen.de/handle/11858/00-1735-0000-0006-AC13-A" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+                <map:pipeline>
+                        <map:match pattern="handle/11858/00-1735-0000-0006-B552-2">
+                                <map:redirect-to uri="http://ediss.uni-goettingen.de/handle/11858/00-1735-0000-0006-B445-C" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+                <map:pipeline>
+                        <map:match pattern="handle/11858/00-1735-0000-0006-AC23-6">
+                                <map:redirect-to uri="http://ediss.uni-goettingen.de/handle/11858/00-1735-0000-0006-AC75-C" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+                <!-- doppelte Publikation: erste Version wegen Plagiat zurückgezogen -->
+                <map:pipeline>
+                        <map:match pattern="handle/11858/00-1735-0000-0006-B67F-9">
+                                <map:redirect-to uri="http://ediss.uni-goettingen.de/handle/11858/00-1735-0000-0028-8770-5" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+
+                <!-- Documents changed. Old version withrawn and redirected to new version -->
+                <map:pipeline>
+                        <map:match pattern="handle/21.11130/00-1735-0000-0005-14A8-7">
+                                <map:redirect-to uri="https://ediss.uni-goettingen.de/handle/21.11130/00-1735-0000-0008-57E4-5" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+                <map:pipeline>
+                        <map:match pattern="handle/11858/00-1735-0000-0006-B1E4-D">
+                                <map:redirect-to uri="https://ediss.uni-goettingen.de/handle/21.11130/00-1735-0000-0008-57E3-6" permanent="yes"/>
+                        </map:match>
+                </map:pipeline>
+
+		<!-- end redirects -->
                 <map:pipeline>
                     <!-- create confirmation site -->
                     <map:select type="AuthenticatedSelector">
